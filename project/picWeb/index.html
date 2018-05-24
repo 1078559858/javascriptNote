@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="full-screen" content="true"/>
+    <meta name="screen-orientation" content="portrait"/>
+    <meta name="x5-fullscreen" content="true"/>
+    <meta name="360-fullscreen" content="true"/>
+
+    <!--<link rel="stylesheet" type="text/css" href="./css/global.css">-->
+
+    <script src="./lib/socket.js"></script>
+    <script src="./lib/clickEvent.js"></script>
+    <script src="./lib/read.js"></script>
+    <script src="./lib/logic.js"></script>
+    <script src="./lib/globalConf.js"></script>
+
+
+</head>
+<body>
+        <img id="preview" />
+        <img id="forecastImg" />
+        <br/>
+
+        <input type="file" id="file" onchange="PreviewPic(this)" />
+        <input type="submit" id="submit" value="提交" onclick="SubmitEvent()">
+        <input type="button" id="forecast" value="forecast" onclick="Forecast()">
+
+
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
+<!--<form action="https://api-cn.faceplusplus.com/facepp/v3/search" enctype="multipart/form-data" method="post" >-->
+    <!--<input type="file" name="image_file"  />-->
+    <!--<input type="text" name="api_key" value="st6qF_2cu4tPpf9MMCXcJHIBMdxcyC3B">-->
+    <!--<input type="text" name="api_secret" value="4MLfkQiwKW4djLj0ieQu0tLP4tXq6XJW">-->
+    <!--<input type="text" name="faceset_token" value="98aeed3af3ee0384350a98e2eff14ef5">-->
+    <!--<input type="submit" id="submit12" value="提交" >-->
+<!--</form>-->
+
+
+    <form action="https://api-cn.faceplusplus.com/facepp/v3/detect" enctype="multipart/form-data" method="post" target="nm_iframe">
+        <input type="file" name="image_file" >
+        <input type="text" name="api_key" value="st6qF_2cu4tPpf9MMCXcJHIBMdxcyC3B">
+        <input type="text" name="api_secret" value="4MLfkQiwKW4djLj0ieQu0tLP4tXq6XJW">
+        <input type="submit" name="submit" value="检测头像" >
+    </form>
+
+</body>
+</html>046c5117f9aac5bcb1e7e1aed577ba19

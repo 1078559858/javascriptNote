@@ -1,0 +1,462 @@
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="robots" content="index,follow"/>
+    <meta name="renderer" content="webkit" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="screen-orientation" content="portrait" />
+    <meta name="browsermode" content="application" />
+    <meta name="format-detection" content="telephone=no, address=no, email=no" />
+    <title>穿越未来二十年</title>
+    <link type="text/css" rel="stylesheet" href="http://static02.babytreeimg.com/img/wetime_promo_static/mg/project/future_appearance/css/style_3.css?ver=20110707" />
+</head>
+<body>
+<div class="stop-page">
+    <div class="stop-activity">
+        <a class="stop-button" href="http://r.babytree.com/4bKHlfV" data-bbt-tracking-pi="BBZD_jsym" data-bbt-tracking-ii="02" data-bbt-tracking-an="2"></a>
+    </div>
+</div>
+<div class="reload-page">
+    <div class="reload-activity">
+        <a class="reload-button" href=""  data-bbt-tracking-pi="BBZD_wfsb" data-bbt-tracking-ii="02" data-bbt-tracking-an="2"></a>
+    </div>
+</div>
+<div class="no-face">
+    <div class="no-face-activity">
+        <a class="no-face-button" href="" data-bbt-tracking-pi="BBZD_wfsb" data-bbt-tracking-ii="01" data-bbt-tracking-an="2"></a>
+    </div>
+</div>
+<div class="mask">
+    <img src="http://pic04.babytreeimg.com/img/wetime_promo_static/mg/project/future_appearance/img/share_to_others.png"/>
+</div>
+<img class="save-pic" src=""/>
+<div class='section-one'>
+    <div class="slogan"></div>
+    <div class="wait"></div>
+    <div class="baby-img">
+        <div class="baby-img-file">
+            <div class="wait-pic"></div>
+            <img class="baby-pic" id="baby-pic" src="http://pic03.babytreeimg.com/img/wetime_promo_static/mg/project/future_appearance/img/demo_4.gif"/>
+        </div>
+    </div>
+    <a href='javascript:;' class="input-button">
+        <input class='click-input' id="click-input" type='file' accept='image/*' data-bbt-tracking-pi="BBZD_sy" data-bbt-tracking-ii="01" data-bbt-tracking-an="2"/>
+    </a>
+    <span class="input-amount">已有<span></span>名宝宝成功穿越</span>
+    <div class='text-notice'></div>
+    <div class='baby'>
+        <div class='boy select-sex'></div>
+        <div class='girl select-sex'></div>
+    </div>
+    <div class="download">
+        <img src="//pic01.babytreeimg.com/img/mg/dist/project/wetime/img/logo.png"/>
+        <a class="download-button" href="http://r.babytree.com/4bKHlfV" data-bbt-tracking-pi="BBZD_sy" data-bbt-tracking-ii="02" data-bbt-tracking-an="2">立即下载</a>
+        <p class="text">
+            下载小时光，解锁更多玩法
+        </p>
+    </div>
+</div>
+<div class="section-two">
+    <div class="slogan-two"></div>
+    <div class="baby-img-two">
+        <div class="raw-img">
+            <img/>
+        </div>
+        <div class="generated-img">
+            <img/>
+        </div>
+    </div>
+    <div class="record-button">
+    </div>
+</div>
+<div class="section-three">
+    <div class="slogan-three"></div>
+    <div class="result-container" id="result-container">
+        <div class="pic-container">
+            <img class="pic-content" src="">
+            <img class="pic-content" src="">
+            <img class="pic-content" src="">
+            <img class="pic-content" src="">
+        </div>
+        <div class="qrcode">
+        </div>
+    </div>
+    <span class="save-img">长按图片保存或分享</span>
+    <div class="replay"></div>
+    <div class="share"></div>
+    <div class="download-button">
+        <a class="download-tab" href="http://r.babytree.com/4bKHlfV" data-bbt-tracking-pi="BBZD_jsym" data-bbt-tracking-ii="03" data-bbt-tracking-an="2">点击下载小时光</a>
+        <p class="text">
+            下载小时光，解锁更多玩法
+        </p>
+    </div>
+</div>
+<script type="text/javascript" src="http://static02.babytreeimg.com/img/js/jquery-1.6.4.1.min.js?ver=1450669666"></script>
+<script type="text/javascript" src="http://static02.babytreeimg.com/img/bca/native/0.1.4/native.min.js?ver=1523164489"></script>
+<script type="text/javascript" src="http://static02.babytreeimg.com/img/bca/tracking/0.1.7/tracking.min.js?ver=20110707"></script>
+<script type="text/javascript" src="http://static02.babytreeimg.com/static/wetime_promo_static/mg/lib/html2canvas/1.0.0-alpha.9/html2canvas.js?ver=20110707"></script>
+<script src="//res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="https://cdn.bootcss.com/exif-js/2.2.3/exif.min.js"></script>
+<script>
+	(function (){
+		$(document).ready(function(){
+			if($(".section-one").height() >= window.innerHeight) {
+				$(".section-one").height($(".section-one").height() + $(".download").height());
+			}
+			var clcik_amount = 171550,
+				activity_status = 0,
+				token = "TPww7ooVRKMZz1RGg0EFDh0SVRwVZ9TImR42DFHw:51NEIAOV1Y5_G-SzAX8hTT30J8g=:eyJzY29wZSI6ImJhYnl0cmVlIiwiZGVhZGxpbmUiOjE1MjY5ODYzMDQsImNhbGxiYWNrVXJsIjoiaHR0cDpcL1wvYXBpLmJhYnl0cmVlLmNvbVwvYXBpXC9tb2JpbGVfcWluaXVcL2xhbWFfY2FsbGJhY2siLCJjYWxsYmFja0JvZHkiOiJlbmNyeXB0ZWRfc3RyaW5nPTllOWNjMTFiZTBmYTMxODBjNzkzNGY4OGRmYTdiYThmJmFsYnVtX3RpdGxlPSZrZXk9JChrZXkpJnBlcnNpc3RlbnRJZD0kKHBlcnNpc3RlbnRJZCkmaGFzaD0kKGhhc2gpJnNpemU9JChmc2l6ZSkmbWltZV90eXBlPSQobWltZVR5cGUpJndpZHRoPSQoeDp3aWR0aCkmaGVpZ2h0PSQoeDpoZWlnaHQpJmV4aWZfbGF0aXR1ZGU9JCh4OmV4aWZfbGF0aXR1ZGUpJmV4aWZfbG9uZ2l0dWRlPSQoeDpleGlmX2xvbmdpdHVkZSkmZXhpZl90aW1lPSQoeDpleGlmX3RpbWUpJnVuaXF1ZV9zaWduPSQoeDp1bmlxdWVfc2lnbikmYXBwX2lkPSQoeDphcHBfaWQpJmNsaWVudF90eXBlPSQoeDpjbGllbnRfdHlwZSkmbWFjPSQoeDptYWMpJnZlcnNpb249JCh4OnZlcnNpb24pJmZhY2VfcmVjb2duaXRpb249JCh4OmZhY2VfcmVjb2duaXRpb24pJmlzX3NraXBfcGhvdG9fZ2FsbGVyeT0kKHg6aXNfc2tpcF9waG90b19nYWxsZXJ5KSZpbWdfd2lkdGg9JChpbWFnZUluZm8ud2lkdGgpJmltZ19oZWlnaHQ9JChpbWFnZUluZm8uaGVpZ2h0KSZvcmllbnRhdGlvbj0kKGltYWdlSW5mby5vcmllbnRhdGlvbikiLCJzYXZlS2V5IjoiJCh5ZWFyKVwvJChtb24pJChkYXkpXC8kKGV0YWcpIiwicGVyc2lzdGVudE9wcyI6ImltYWdlVmlldzJcLzJcL3dcLzI1NjBcL2hcLzI1NjBcL3FcLzk1XC9mb3JtYXRcL3dlYnB8c2F2ZWFzXC9ZbUZpZVhSeVpXVTZKQ2g1WldGeUtTOGtLRzF2Ymlra0tHUmhlU2t2SkNobGRHRm5LVjkzWldKdyIsInBlcnNpc3RlbnRQaXBlbGluZSI6ImNyZWF0ZV93ZWJwIiwicGVyc2lzdGVudE5vdGlmeVVybCI6Imh0dHA6XC9cL2FwaS5iYWJ5dHJlZS5jb21cL2FwaVwvbW9iaWxlX3Fpbml1XC9wZXJzaXN0ZW50X2NhbGxiYWNrIn0=",
+				sign = {"appId":"wxcc49779165335144","nonceStr":"cd2d87628ec38bac","timestamp":1526982704,"signature":"835d9f2cac1c769ac3ef7395f8454e67dcc1b498"};
+
+
+			//初始化页面
+			$(".input-amount span").text(clcik_amount);
+			if(!bbtNative.isApp()) {
+				$(".download, .download-button").css("display","block");
+			} else {
+				$(".save-img").text("点击图片进行分享");
+			}
+			$(".input-button").click(function(e){
+				if(activity_status == 1) {
+					$(".stop-page").css("display", "block");
+					e.preventDefault();
+				}
+			});
+
+			//点击跳转到第二页,图片符合标准时压缩图片尺寸
+			$(".click-input").change(function(e){
+				$(".baby-img-file .wait-pic").css("display", "block");
+				$(".baby-pic").attr("src", "");
+				var Orientation = null;
+				//获取照片方向角属性，用户旋转控制
+				EXIF.getData(e.target.files['0'], function() {
+					EXIF.getAllTags(this);
+					Orientation = EXIF.getTag(this, 'Orientation');
+				});
+				var file = e.target.files.item(0);
+				var freader = new FileReader();
+				freader.readAsDataURL(file);
+				freader.onload = function(e) {
+					var i = new Image();
+					i.src = e.target.result;
+					i.onload = function(){
+						if(i.width >= 560 && i.height >= 720) {
+							if(i.width/i.hehight > 7/9) {
+								i.width = i.width/i.height*720;
+								i.height = 720;
+								if(i.width < 560) {
+									i.height = i.height/i.width*560;
+									i.width = 560;
+								}
+							} else {
+								i.height = i.height/i.width*560;
+								i.width =560;
+								if(i.height < 720) {
+									i.width = i.width/i.height*720;
+									i.height = 720;
+								}
+							}
+						}
+						var dataURL = "";
+						var canvas = document.createElement("canvas");
+						var ctx = canvas.getContext("2d");
+						//如果方向角不为1，都需要进行旋转
+						if(Orientation != ""){
+							switch(Orientation){
+								case 6:
+									canvas.width = i.height;
+									canvas.height = i.width;
+									ctx.rotate(90 * Math.PI / 180);
+									ctx.drawImage(i, 0, -i.height, i.width, i.height);
+									break;
+								case 8:
+									canvas.width = i.height;
+									canvas.height = i.width;
+									ctx.rotate(270 * Math.PI / 180);
+									ctx.drawImage(i, -i.width, 0, i.width, i.height);
+									break;
+								case 3://需要180度旋转
+									canvas.width = i.width;
+									canvas.height = i.height;
+									ctx.rotate(180 * Math.PI / 180);
+									ctx.drawImage(i, -i.width, -i.height, i.width, i.height);
+									break;
+								default:
+									canvas.width = i.width;
+									canvas.height = i.height;
+									ctx.drawImage(i, 0, 0, i.width, i.height);
+									break;
+							}
+						}
+						dataURL = canvas.toDataURL("image/png");
+						$(".baby-img-file .wait-pic").css("display", "none");
+						$(".baby-pic").attr("src",dataURL);
+						if(Orientation == 0) {
+							$(".baby-pic").attr("src",e.target.result);
+						}
+					}
+				}
+				$(".input-button, .input-amount, .section-one .download").css("display", "none");
+				$(".text-notice, .baby").css("display", "block");
+			});
+			$(".reload-button, .no-face-button").attr("href", window.location.href+"?id="+10000*Math.random());
+
+			//点击上传图片
+			$(".select-sex").one("click", function(){
+				$(".wait").fadeIn(2000);
+				var pic = $(".baby-pic")[0].src.replace(/^.*?,/, '');
+				var url = "http://upload.qiniu.com/putb64/"+fileSize(pic);
+				var xhr = new XMLHttpRequest();
+				var sex = undefined;
+				if($(this).hasClass("boy")) {
+					sex = 1;
+					bbtTracking.send({
+						pi: 'BBZD_xzxb',
+						ii: '07',
+						an: '2',
+					});
+				} else {
+					sex = 2;
+					bbtTracking.send({
+						pi: 'BBZD_xzxb',
+						ii: '08',
+						an: '2',
+					});
+				}
+				xhr.onreadystatechange=function(){
+					if (xhr.readyState==4){
+						if(xhr.status === 200) {
+							var keyText = strToJson(xhr.responseText);
+							var imgSrc = keyText.data.thumb_info.big.photo_url;
+							console.log(imgSrc);
+							sendImg(imgSrc, sex);
+						} else {
+							$(".wait").css("display", "none");
+							$(".reload-page").css("display", "block");
+							bbtTracking.send({
+								pi: 'BBZD_jsym',
+								ii: '02',
+								an: '2',
+							});
+						}
+					}
+				}
+				xhr.open("POST", url, true);
+				xhr.setRequestHeader("Content-Type", "application/octet-stream");
+				xhr.setRequestHeader("Authorization", "UpToken " + token);
+				xhr.send(pic);
+			});
+
+			//生成时光穿越记录
+			$(".record-button").click(function(){
+				$(".section-two").css("display","none");
+				$(".section-three").css("display","block");
+				bbtTracking.send({
+					pi: 'BBZD_bl',
+					ii: '01',
+					an: '2',
+				});
+				if(!bbtNative.isApp()) {
+					if(/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream){
+						window.scrollTo(0,0);
+					}
+					html2canvas(document.getElementById("result-container"), {useCORS: true}).then(function (canvas) {
+						$(".save-pic").attr("src",canvas.toDataURL());
+						$(".save-pic").css("display","block");
+					});
+				}
+			})
+			$(".replay").click(function(){
+				window.location.href = window.location.href+"?id="+10000*Math.random();
+				bbtTracking.send({
+					pi: 'BBZD_zszp',
+					ii: '01',
+					an: '2',
+				});
+			});
+
+			//点击图片在站内分享
+			$(".result-container").click(function(){
+				if(bbtNative.isApp()) {
+					bbtTracking.send({
+						pi: 'BBZD_zszp',
+						ii: '03',
+						an: '7',
+					});
+					html2canvas(document.getElementById("result-container"), {useCORS: true}).then(function (canvas) {
+						bbtNative.setShareContent({
+							url: "http://"+location.hostname+"/wetime/promo/baby_up",
+							title: "没毛病，宝宝长大了比我好看",
+							content: "AI黑科技",
+							imageUrl: "http://pic09.babytreeimg.com/common_photo/original/2018/0521/Fl0Qfe_bxOgfZHX1spczyMqpEEpk",
+							type: 'picture',
+							imageBase64: canvas.toDataURL("image/png"),
+							onShared: function (type, status) {
+							}
+						});
+						bbtNative.share({
+							onShared: function (type, status) {}
+						});
+					});
+				} else {
+					bbtTracking.send({
+						pi: 'BBZD_zszp',
+						ii: '08',
+						an: '2',
+					});
+				}
+			});
+			$(".share").click(function(){
+				if(bbtNative.isApp()) {
+					bbtTracking.send({
+						pi: 'BBZD_fxym',
+						ii: '01',
+						an: 'share',
+					});
+					bbtNative.setShareContent({
+						url: "http://"+location.hostname+"/wetime/promo/baby_up",
+						title: "没毛病，宝宝长大了比我好看!",
+						imageUrl:"http://pic09.babytreeimg.com/common_photo/original/2018/0521/Fl0Qfe_bxOgfZHX1spczyMqpEEpk",
+						type:"",
+						content: "AI黑科技",
+						onShared: function (type, status) {
+						}
+					});
+					bbtNative.share({
+						onShared: function (type, status) {}
+					});
+				} else {
+					bbtTracking.send({
+						pi: 'BBZD_fxym',
+						ii: '02',
+						an: 'share',
+					});
+					$(".mask").css("display", "block");
+					setTimeout(function(){
+						$(".mask").css("display", "none");
+					}, 2000);
+				}
+			});
+
+			sign.jsApiList = ['onMenuShareTimeline','onMenuShareAppMessage','onMenuShareQQ','onMenuShareWeibo','onMenuShareQZone'];
+			wx.config(sign);
+			wx.ready(function(){
+				var opt = {
+					title: "没毛病，宝宝长大了比我好看!",
+					desc:  "AI黑科技",
+					link: "http://" + location.hostname+"/wetime/promo/baby_up",
+					imgUrl: "http://pic09.babytreeimg.com/common_photo/original/2018/0521/Fl0Qfe_bxOgfZHX1spczyMqpEEpk"
+				};
+				wx.onMenuShareTimeline(opt);
+				wx.onMenuShareAppMessage(opt);
+				wx.onMenuShareQQ(opt);
+				wx.onMenuShareWeibo(opt);
+				wx.onMenuShareQZone(opt);
+			})
+
+			function sendImg(imgSrc, sex){
+				$.ajax({
+					typr:"POST",
+					url: "/wetime/promo/baby_up/img_process",
+					data: {"url":imgSrc,"sex":sex},
+					dataType: "json",
+					success: function (data) {
+						console.log(data);
+						$("body").css({"background":"url(http://pic01.babytreeimg.com/img/wetime_promo_static/mg/project/future_appearance/img/background_two.jpg)","background-color":"#ffd800", "background-size":"100% auto", "background-repeat":"no-repeat"});
+						$(".section-one").css("display", "none");
+						$(".section-two").css("display", "block");
+						if(data.status == "failed") {
+							$(".no-face").css("display", "block");
+						} else if(data.status == "success") {
+							var imgList = data.data.gifPictureUrls;
+							var imgAll = data.data.sub_img;
+							for(var i = 0; i < 7; i++) {
+								imgAll.push(data.data.sub_img[data.data.sub_img.length - 1]);
+							}
+							var imgOrder = 0;
+							$(".raw-img img").attr("src", imgAll[0]);
+							setInterval(function(){
+								$(".generated-img img").attr("src", imgAll[imgOrder]);
+								$(".generated-img img").fadeIn(50);
+								imgOrder++;
+								if(imgOrder> imgAll.length - 1) {
+									imgOrder = 0;
+								}
+							}, 300);
+							for(var i = 0; i < $(".pic-content").size(); i++) {
+								$($(".pic-content")[i]).attr("src", imgList[i]);
+							}
+						}
+					},
+					error: function(XMLHttpRequest, textStatus, errorThrown) {
+						$(".reload-page").css("display", "block");
+						bbtTracking.send({
+							pi: 'BBZD_jsym',
+							ii: '04',
+							an: '2',
+						});
+					}
+				});
+			}
+			function toast(showContent, receiveMessage) {
+				var Toast = function(config){
+					this.context = config.context==null?$('body'):config.context;//上下文
+					this.message = config.message;//显示内容 .width()
+					this.time = config.time==null?6000:config.time;//持续时间
+					this.left = config.left;//距容器左边的距离
+					this.top = config.top;//距容器上方的距离
+					this.init();
+				}
+				var msgEntity;
+				Toast.prototype = {
+					//初始化显示的位置内容等
+					init : function(){
+						$("#toastMessage").remove();
+						//设置消息体
+						var msgDIV = new Array();
+						msgDIV.push('<div id="toastMessage" style="border-radius:18px;-moz-opacity:0.6;opacity:0.6;">');
+						msgDIV.push('<span>'+this.message+'</span>');
+						msgDIV.push('</div>');
+						msgEntity = $(msgDIV.join('')).appendTo(this.context);
+						//设置消息样式
+						var left = this.left == null ? this.context.width()/2-msgEntity.find('span').width()/2 : this.left;
+						var top = this.top == null ? '14m' : this.top;
+						msgEntity.css({position:'absolute',top:'35vh',width:'60%','z-index':'101','left':'50%','background-color':'black',color:'white','font-size':'15px',padding:'10px',margin:'10px','text-align':'center'});
+						msgEntity.css('transform','translate(-50%,0)');
+						msgEntity.hide();
+					},
+					//显示动画
+					show :function(){
+						msgEntity.fadeIn(this.time/2);
+						msgEntity.fadeOut(this.time/2);
+					}
+				}
+				return new Toast({context:showContent,message:receiveMessage}).show();
+			}
+
+			function fileSize(str) {
+				var fileSize;
+				if(str.indexOf('=')>0) {
+					var indexOf=str.indexOf('=');
+					str=str.substring(0,indexOf);//把末尾的’=‘号去掉
+				}
+				fileSize=parseInt(str.length-(str.length/8)*2);
+				return fileSize;
+			}
+			function strToJson(str) {
+				var json = eval('(' + str + ')');
+				return json;
+			}
+			bbtTracking.init({
+				pi: 'BBZD_sy',
+				an: '1' ,
+			});
+		});
+	})();
+</script>
+</body>
+</html>
