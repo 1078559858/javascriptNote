@@ -11,3 +11,13 @@ var Forecast = function () {
 
 	});
 };
+
+var mSetPicSrc = function (id, imgbase64) {
+	var img = document.getElementById(id);
+	if(!img){
+		alert("can not find pic!")
+		return;
+	}
+
+	img.src = imgbase64;
+};

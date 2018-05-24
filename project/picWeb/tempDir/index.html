@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <meta name="keywords" content="Í¼Æ¬×ªbase64,base64×ªÍ¼Æ¬ImageToBase64,base64ToImage,php,base64,Í¼Æ¬,±àÂë" />
+    <meta name="description" content="¿ìËÙµÄ½«ÄãÉÏ´«µÄÐ¡Í¼±êµÈÍ¼Æ¬ÎÄ¼þ±àÂëÎªBase64±àÂëÂë£¬»òÕß°ÑBase64±àÂë»¹Ô­³ÉÍ¼Æ¬£¬ÒÔ±ãÓÚÄã½«Í¼Æ¬±£´æÔÚÄúµÄ³ÌÐò»òÊý¾Ý¿âÖÐ¡£" />
+    <meta name="copyright" content="VGOT.CN" />
+    <meta name="author" content="pader" />
+    <title>Image2Base64,Í¼Æ¬×ª»»³Ébase64±àÂë,base64»¹Ô­³ÉÍ¼Æ¬</title>
+    <style type="text/css">
+        <!--
+        body {background-color:$F7F7F7; font-size:14px; color:#212121; margin:20px;}
+        form{margin:0;}
+        #image {height:22px; width:450px; background:#FFFFFF; border:1px solid #6A6A6A; line-height:20px;}
+        .submit {height:22px; width:100px; border:1px solid #6A6A6A;}
+        #center {text-align:center; height:400px;}
+        textarea {width:600px; height:180px; border:1px solid #6A6A6A; color:#505050;}
+        #getImage {padding:8px; border:1px solid #E3E3E3;}
+        -->
+    </style>
+</head>
+<script type="text/javascript">
+	<!--
+	function sendi(){
+		var form1 = document.forms["form1"];
+		if(form1.image.value.length < 2){
+			alert("ÇëÑ¡ÔñÒª±àÂëµÄÎÄ¼þ£¡");
+			return false;
+		}
+		form1.submit.disabled = true;
+		form1.submit.value='´«ËÍÖÐ..';
+		setTimeout(function(){
+			alert('ÉÏ´«Í¼Æ¬³¬Ê±!');
+			location.href = '?';
+		},15000);
+	}
+	function sendi2(){
+		var form2 = document.forms['form2'];
+
+	}
+	//-->
+</script>
+<body>
+<div id="center">
+    <a href="logo.png.txt"><img src="?getLogo=logo" alt="ImageToBase64 Logo &#13;Í¼Æ¬¶ÁÈ¡×Ô logo.png.txt ²¢Êä³öÎªÍ¼Æ¬. &#13;µã»÷£¬»òÓÒ¼ü_Ä¿±êÁí´æÎª_²é¿´ logo.png.txt ÎÄ¼þ." border="0" /></a><br />
+    <p><b>±àÂë£º</b>ÇëÑ¡ÔñÄãÒª×ª»»³É Base64 µÄÍ¼Æ¬£¬²¢µã»÷¡°±àÂë¡±¡£<br />²»½¨Òé½«¡°³¬¹ý20KB¡±µÄÍ¼Æ¬±àÂëÊ¹ÓÃ£¬ÕâÑùÆðµ½µÄ·´¶øÊÇ·´×÷ÓÃ¡£</p>
+    <form action="?" method="post" enctype="multipart/form-data" name="form1" onsubmit="return sendi()">
+        <input name="got" type="hidden" value="1" />
+        <p><input name="image" type="file" id="image" />&nbsp;<input type="submit" name="submit" class="submit" value=" ±à  Âë " /></p>
+    </form>
+    <p><b>½âÂë£º</b>ÊäÈëÒª½âÂë³ÉÍ¼Æ¬µÄ Base64 ´úÂë£¬²¢Ñ¡Ôñ½âÂë³ÉÍ¼Æ¬µÄÎÄ¼þÀàÐÍ£¬È»ºóµã»÷¡°½âÂë¡±¡£</p>
+    <form action="?" method="post" name="form2" onsubmit="return sendic()">
+        <input name="got" type="hidden" value="2" />
+        <p><textarea name="base64code" /></textarea><br />
+            <select name="imagetype">
+                <option value="jpg"> JPG </option>
+                <option value="gif"> GIF </option>
+                <option value="png"> PNG </option>
+            </select>
+            <input type="submit" name="submit" class="submit" value=" ½â  Âë " /></p>
+    </form>
+    <script type="text/javascript" charset="gb2312" src="statis.php?hidden"></script>
+    <p>&copy; Copyrights <a href="http://www.vgot.net/">VGOT.NET</a> 2008-2011</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>testPost</title>
+
+
+    <script src="../lib/socket.js"></script>
+    <script src="../lib/globalConf.js"></script>
+    <script src="../lib/libs/jquery-1.9.1.js"></script>
+    <script src="../lib/libs/jquery.form.js"></script>
+
+    <script>
+//        $("#id_form").submit(function () {
+//            $('#id_form').ajaxForm(function () {
+//                alert("submit succeed");
+//			})
+//
+//            return false;
+//		})
+
+		$('#id_form').ajaxForm(function(data) {
+			console.log(data);
+			//$('#id_form').html("提交成功！欢迎下次再来！").show();
+		});
+    </script>
+</head>
+
+
+<body>
+
+<form id="id_form" action="https://api-cn.faceplusplus.com/facepp/v3/detect" enctype="multipart/form-data" method="post" >
+    <input type="file" name="image_file"  />
+    <input type="text" name="api_key" value="st6qF_2cu4tPpf9MMCXcJHIBMdxcyC3B">
+    <input type="text" name="api_secret" value="4MLfkQiwKW4djLj0ieQu0tLP4tXq6XJW">
+    <input type="submit" id="submit12" value="提交" >
+</form>
+
+
+</body>
+</html>

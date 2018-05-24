@@ -43,3 +43,32 @@ var CreateAjaxPost = function(url,data,callback) {
 	};
 	ajax.send(data);
 };
+
+var CreatePost = function (url, data, callback) {
+	//url = url || "https://api-cn.faceplusplus.com/facepp/v3/detect";
+	url = url || "https://api-cn.faceplusplus.com/facepp/v3/face/getdetail";
+	data = data || {
+		"api_key":"st6qF_2cu4tPpf9MMCXcJHIBMdxcyC3B",
+		"api_secret":"4MLfkQiwKW4djLj0ieQu0tLP4tXq6XJW",
+		"face_token":"83ba92dccde3f73f940987736f6df0f3"
+	};
+
+	$.post(url, data, function (data, status) {
+		alert("data:" + JSON.stringify(data) + " ,status:" + status);
+		callback && callback(true);
+	})
+};
+
+// ajax post请求：formdata类型数据  未完成，实现待
+var CreateAjaxPostFormData = function(url,data,callback) {
+	var ajax = CreateAjaxObject();
+	if (!ajax) {
+		callback(null);
+		return;
+	}
+
+	var form = new FormData();
+	form.append("api_key", "st6qF_2cu4tPpf9MMCXcJHIBMdxcyC3B");
+
+	// ajax.send(form);
+};

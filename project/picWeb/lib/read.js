@@ -22,15 +22,13 @@ var PreviewPic = function (fileDom, callback){
 	//读取完成
 	reader.readAsDataURL(file);
 	reader.onload = function(e) {
-		//获取图片dom
-		var img = document.getElementById("image_base64");
-		//图片路径设置为读取的图片
-		img.src = e.target.result;
+		// //获取图片dom
+		// var img = document.getElementById("image_base64");
+		// //图片路径设置为读取的图片
+		// img.src = e.target.result;
 
-		GlobalConf.picData64 = img.src;
-		console.log(img.src);
-
-		callback && callback(img.src);
+		//GlobalConf.picData64 =  e.target.result;
+		callback && callback(e.target.result);
 	};
 };
 
