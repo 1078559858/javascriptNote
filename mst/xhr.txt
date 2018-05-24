@@ -1,0 +1,6 @@
+引用：
+https://segmentfault.com/a/1190000004322487
+http://www.ruanyifeng.com/blog/2012/09/xmlhttprequest_level_2.html
+
+疑问：
+xhr、ajax、post、form的区别？
