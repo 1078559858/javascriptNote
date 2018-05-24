@@ -1,0 +1,18 @@
+跨域：
+引用：
+https://www.zhihu.com/question/31592553  知乎廖雪峰的回答（ok）
+http://www.ruanyifeng.com/blog/2016/04/cors.html			
+https://zhuanlan.zhihu.com/p/28562290
+
+
+结论：
+ajax跨域：	是浏览器保护用户的安全和隐私而给js设定的限制。如果自己写一个浏览器去掉
+			这个限制，js就可以任意跨域访问了。
+form跨域：	历史原因要保持兼容性，一个form表单会刷新页面不会把结果返回给js，相对安
+			全。
+jsonp跨域：	利用浏览器的历史兼容性，最新的font资源就不允许直接跨域引用。
+
+
+造成跨域的原因
+DOM同源策略：进制对不同源页面DOM进行操作，主要是限制不同域名的iframe之间的互相访问。
+XmlHttpRequest同源策略：进制使用XHR对象向不同源的服务器地址发起HTTP请求。
