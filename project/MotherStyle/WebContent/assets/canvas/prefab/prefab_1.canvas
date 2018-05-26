@@ -1,0 +1,163 @@
+{
+  "canvas-version": 2,
+  "settings": {
+    "className": "prefab_1",
+    "sceneWidth": 640,
+    "sceneHeight": 1236,
+    "generateOnSave": true,
+    "enableStepping": false,
+    "stepWidth": 1,
+    "stepHeight": 1,
+    "lang": "JAVA_SCRIPT",
+    "baseClass": "Phaser.Group",
+    "backgroundColor": [
+      192,
+      192,
+      192
+    ],
+    "gridColor": [
+      200,
+      200,
+      200
+    ],
+    "showGrid": false
+  },
+  "stateSettings": {
+    "stageBackgroundColor": [
+      0,
+      0,
+      0
+    ],
+    "autoLoad": true,
+    "preloadSpriteId": "",
+    "preloadSprite_direction": 0,
+    "load.pack": []
+  },
+  "world": {
+    "type": "group",
+    "id": "c88738f5-13ea-4646-837f-db0f0aff248f",
+    "info": {
+      "editorName": "prefab_1",
+      "setAll": [],
+      "children": [{
+        "type": "group",
+        "id": "31c03e1e-558f-412d-a4f5-545a372c99fc",
+        "info": {
+          "editorName": "group",
+          "setAll": [],
+          "children": [
+            {
+              "type": "image",
+              "id": "25c1ef89-7779-4ffd-bc1f-e033b8692e46",
+              "asset": "0",
+              "info": {
+                "editorName": "qestion_question_bg",
+                "x": 52.5,
+                "y": 83
+              }
+            },
+            {
+              "type": "button",
+              "id": "f0beb5e8-72a3-4cb2-91ba-b3ef0cf6d299",
+              "asset": "1",
+              "info": {"editorName": "Q1_title"}
+            },
+            {
+              "type": "text",
+              "id": "64aeb6e3-9686-42c4-95e1-d79c80f43d73",
+              "info": {
+                "editorName": "text",
+                "x": 96,
+                "y": 192,
+                "text": "1、陪孩子学习时，哪句\r\n话最符合你的心情？",
+                "style.fontSize": 40
+              }
+            },
+            {
+              "type": "button",
+              "id": "ae6fdf31-5880-450a-8c3b-1ad628bf0512",
+              "asset": "2",
+              "info": {
+                "editorName": "Q2_answerA",
+                "x": 29,
+                "y": 455,
+                "data": "{\r\n\"value\":\"a\"\r\n}",
+                "callback": "this.clickBtn"
+              }
+            },
+            {
+              "type": "button",
+              "id": "67dc5b43-1da5-40f6-8389-efafe4eb2842",
+              "asset": "3",
+              "info": {
+                "editorName": "Q2_answerB",
+                "x": 286,
+                "y": 295,
+                "data": "{\r\n\"value\":\"b\"\r\n}",
+                "callback": "this.clickBtn"
+              }
+            },
+            {
+              "type": "button",
+              "id": "7f5d914b-5118-415b-8eba-2c2cb77e75f8",
+              "asset": "4",
+              "info": {
+                "editorName": "Q2_answerC",
+                "x": 23,
+                "y": 783,
+                "data": "{\r\n\"value\":\"c\"\r\n}",
+                "callback": "this.clickBtn"
+              }
+            },
+            {
+              "type": "button",
+              "id": "8ecb54c5-595a-40f5-b835-7f16c05cd8ae",
+              "asset": "5",
+              "info": {
+                "editorName": "Q2_answerD",
+                "x": 377,
+                "y": 797,
+                "data": "{\r\n\"value\":\"d\"\r\n}",
+                "callback": "this.clickBtn"
+              }
+            }
+          ]
+        }
+      }]
+    }
+  },
+  "type": "GROUP",
+  "asset-table": {
+    "0": {
+      "file": "WebContent/assets/pack.json",
+      "section": "common",
+      "asset": "qestion_question_bg"
+    },
+    "1": {
+      "file": "WebContent/assets/pack.json",
+      "section": "common",
+      "asset": "Q1_title"
+    },
+    "2": {
+      "file": "WebContent/assets/pack.json",
+      "section": "prefab1",
+      "asset": "Q2_answerA"
+    },
+    "3": {
+      "file": "WebContent/assets/pack.json",
+      "section": "prefab1",
+      "asset": "Q2_answerB"
+    },
+    "4": {
+      "file": "WebContent/assets/pack.json",
+      "section": "prefab1",
+      "asset": "Q2_answerC"
+    },
+    "5": {
+      "file": "WebContent/assets/pack.json",
+      "section": "prefab1",
+      "asset": "Q2_answerD"
+    }
+  },
+  "prefab-table": {}
+}

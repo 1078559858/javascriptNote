@@ -1,0 +1,245 @@
+{
+  "canvas-version": 2,
+  "settings": {
+    "className": "prefab_4",
+    "sceneWidth": 640,
+    "sceneHeight": 1236,
+    "generateOnSave": true,
+    "enableStepping": false,
+    "lang": "JAVA_SCRIPT",
+    "baseClass": "Phaser.Group",
+    "backgroundColor": [
+      180,
+      180,
+      180
+    ],
+    "gridColor": [
+      200,
+      200,
+      200
+    ],
+    "showGrid": false
+  },
+  "stateSettings": {
+    "stageBackgroundColor": [
+      0,
+      0,
+      0
+    ],
+    "autoLoad": true,
+    "preloadSpriteId": "",
+    "preloadSprite_direction": 0,
+    "load.pack": []
+  },
+  "world": {
+    "type": "group",
+    "id": "24f37775-989a-43ce-b7f7-5923e2519536",
+    "info": {
+      "editorName": "prefab_4",
+      "setAll": [],
+      "children": [{
+        "type": "group",
+        "id": "18255664-b4f9-48ff-bc4a-508879aa1f6f",
+        "info": {
+          "editorName": "group",
+          "setAll": [],
+          "children": [
+            {
+              "type": "image",
+              "id": "cbfdd06c-0c63-47df-830f-cf7d80b31c14",
+              "asset": "0",
+              "info": {
+                "editorName": "qestion_question_bg",
+                "x": 53,
+                "y": 74
+              }
+            },
+            {
+              "type": "button",
+              "id": "7d5aed47-5b3d-4fad-9495-7894770ca3e0",
+              "asset": "1",
+              "info": {
+                "editorName": "Q1_title",
+                "x": 39,
+                "y": 11
+              }
+            },
+            {
+              "type": "text",
+              "id": "da869ecd-5470-431f-9445-0c930ac71f39",
+              "info": {
+                "editorName": "text",
+                "x": 68,
+                "y": 198,
+                "text": "4、宝宝把你2000多块的神\r\n     仙水给弄砸了，你会\r\n     怎么处理？",
+                "style.fontSize": 40
+              }
+            },
+            {
+              "type": "group",
+              "id": "781af8b2-1d97-4bef-b75a-9b4702094532",
+              "info": {
+                "editorName": "group1",
+                "y": -1,
+                "setAll": [],
+                "children": [
+                  {
+                    "type": "button",
+                    "id": "8fb6ecea-d41b-4ff1-a5ce-7f462eb9de2b",
+                    "asset": "2",
+                    "info": {
+                      "editorName": "chat",
+                      "x": 52,
+                      "y": 460,
+                      "data": "{\r\n\"value\":\"a\"\r\n}",
+                      "callback": "this.clickBtn"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "017103e4-95af-41fc-b6e2-d7422dce92f0",
+                    "info": {
+                      "editorName": "text1",
+                      "x": 126,
+                      "y": 505,
+                      "text": "A:啥也憋说了，先揍一顿吧",
+                      "style.fontSize": 36
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "group",
+              "id": "61b1241d-b46b-427d-a09b-035741b943f7",
+              "info": {
+                "editorName": "group2",
+                "x": -2,
+                "y": 177,
+                "setAll": [],
+                "children": [
+                  {
+                    "type": "button",
+                    "id": "5b0b1967-b3e1-4976-8fd5-d0c404fab509",
+                    "asset": "3",
+                    "info": {
+                      "editorName": "chat1",
+                      "x": 48,
+                      "y": 472,
+                      "data": "{\r\n\"value\":\"b\"\r\n}",
+                      "callback": "this.clickBtn"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "b3b3193a-b76d-437f-8b56-47f900326a2f",
+                    "info": {
+                      "editorName": "text2",
+                      "x": 138,
+                      "y": 507,
+                      "text": "B: 太心疼了，哇哇大哭",
+                      "style.fontSize": 36
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "group",
+              "id": "7e641718-8d4f-4fde-867c-a18b4ac7f40d",
+              "info": {
+                "editorName": "group3",
+                "y": 376,
+                "setAll": [],
+                "children": [
+                  {
+                    "type": "button",
+                    "id": "bd1f257c-2438-42f9-9545-5e33b3778210",
+                    "asset": "2",
+                    "info": {
+                      "editorName": "chat2",
+                      "x": 52,
+                      "y": 460,
+                      "data": "{\r\n\"value\":\"c\"\r\n}",
+                      "callback": "this.clickBtn"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "88d4e337-72fe-4c5b-8fc5-31cc386e9573",
+                    "info": {
+                      "editorName": "text3",
+                      "x": 135,
+                      "y": 483,
+                      "text": "C：耐心地教导孩子，下次\r\n     把神仙水放高一点",
+                      "style.fontSize": 36
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "group",
+              "id": "683e14d5-33d2-4138-b96f-88e24827a1f1",
+              "info": {
+                "editorName": "group4",
+                "x": -2,
+                "y": 554,
+                "setAll": [],
+                "children": [
+                  {
+                    "type": "button",
+                    "id": "3f54f94e-c067-499a-9e44-8276356f8b19",
+                    "asset": "3",
+                    "info": {
+                      "editorName": "chat3",
+                      "x": 52,
+                      "y": 460,
+                      "data": "{\r\n\"value\":\"d\"\r\n}",
+                      "callback": "this.clickBtn"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "f8992f97-8311-486d-aea8-d94d4455e748",
+                    "info": {
+                      "editorName": "text4",
+                      "x": 139,
+                      "y": 472,
+                      "text": "D：让孩子他爹买个更贵\r\n     的东西",
+                      "style.fontSize": 36
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }]
+    }
+  },
+  "type": "GROUP",
+  "asset-table": {
+    "0": {
+      "file": "WebContent/assets/pack.json",
+      "section": "common",
+      "asset": "qestion_question_bg"
+    },
+    "1": {
+      "file": "WebContent/assets/pack.json",
+      "section": "common",
+      "asset": "Q1_title"
+    },
+    "2": {
+      "file": "WebContent/assets/pack.json",
+      "section": "common",
+      "asset": "chat1"
+    },
+    "3": {
+      "file": "WebContent/assets/pack.json",
+      "section": "common",
+      "asset": "chat3"
+    }
+  },
+  "prefab-table": {}
+}

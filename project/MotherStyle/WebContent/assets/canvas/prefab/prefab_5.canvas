@@ -1,0 +1,165 @@
+{
+  "canvas-version": 2,
+  "settings": {
+    "className": "prefab_5",
+    "sceneWidth": 640,
+    "sceneHeight": 1236,
+    "generateOnSave": true,
+    "enableStepping": false,
+    "lang": "JAVA_SCRIPT",
+    "baseClass": "Phaser.Group",
+    "backgroundColor": [
+      180,
+      180,
+      180
+    ],
+    "gridColor": [
+      200,
+      200,
+      200
+    ],
+    "showGrid": false
+  },
+  "stateSettings": {
+    "stageBackgroundColor": [
+      0,
+      0,
+      0
+    ],
+    "autoLoad": true,
+    "preloadSpriteId": "",
+    "preloadSprite_direction": 0,
+    "load.pack": []
+  },
+  "world": {
+    "type": "group",
+    "id": "1556579e-bd90-45ea-96f5-016eba79bfe6",
+    "info": {
+      "editorName": "prefab_5",
+      "setAll": [],
+      "children": [{
+        "type": "group",
+        "id": "405b0e36-d9f3-49d5-9199-db9417c3d9c1",
+        "info": {
+          "editorName": "group",
+          "setAll": [],
+          "children": [
+            {
+              "type": "image",
+              "id": "c10968d8-81b1-41a7-950c-3c49a7d23f46",
+              "asset": "0",
+              "info": {
+                "editorName": "qestion_question_bg",
+                "x": 50,
+                "y": 80
+              }
+            },
+            {
+              "type": "button",
+              "id": "34b3502a-f5d1-4003-b268-2a756da67241",
+              "asset": "1",
+              "info": {
+                "editorName": "Q1_title",
+                "x": -3,
+                "y": -3
+              }
+            },
+            {
+              "type": "text",
+              "id": "4659369e-5110-4d01-8971-4b9164554831",
+              "info": {
+                "editorName": "text",
+                "x": 68,
+                "y": 191,
+                "text": "5、哪个是孩子开学后，你\r\n     的真实状态",
+                "style.fontSize": 40
+              }
+            },
+            {
+              "type": "button",
+              "id": "6b26f2cd-2d8a-4ee5-a063-9a2b20ddd82f",
+              "asset": "2",
+              "info": {
+                "editorName": "Q2_answerA",
+                "x": 26,
+                "y": 452,
+                "data": "{\r\n\"value\":\"a\"\r\n}",
+                "callback": "this.clickBtn"
+              }
+            },
+            {
+              "type": "button",
+              "id": "ab8cd628-0280-44ab-ac11-0ae298a63cf5",
+              "asset": "3",
+              "info": {
+                "editorName": "Q2_answerB",
+                "x": 283,
+                "y": 292,
+                "data": "{\r\n\"value\":\"b\"\r\n}",
+                "callback": "this.clickBtn"
+              }
+            },
+            {
+              "type": "button",
+              "id": "36c0d594-0e84-444f-831c-c869109847cf",
+              "asset": "4",
+              "info": {
+                "editorName": "Q2_answerC",
+                "x": 20,
+                "y": 780,
+                "data": "{\r\n\"value\":\"c\"\r\n}",
+                "callback": "this.clickBtn"
+              }
+            },
+            {
+              "type": "button",
+              "id": "77d6bd00-2ffa-4c54-a2c1-7151bae8b391",
+              "asset": "5",
+              "info": {
+                "editorName": "Q2_answerD",
+                "x": 374,
+                "y": 794,
+                "data": "{\r\n\"value\":\"d\"\r\n}",
+                "callback": "this.clickBtn"
+              }
+            }
+          ]
+        }
+      }]
+    }
+  },
+  "type": "GROUP",
+  "asset-table": {
+    "0": {
+      "file": "WebContent/assets/pack.json",
+      "section": "common",
+      "asset": "qestion_question_bg"
+    },
+    "1": {
+      "file": "WebContent/assets/pack.json",
+      "section": "common",
+      "asset": "Q1_title"
+    },
+    "2": {
+      "file": "WebContent/assets/pack.json",
+      "section": "prefab1",
+      "asset": "Q2_answerA"
+    },
+    "3": {
+      "file": "WebContent/assets/pack.json",
+      "section": "prefab1",
+      "asset": "Q2_answerB"
+    },
+    "4": {
+      "file": "WebContent/assets/pack.json",
+      "section": "prefab1",
+      "asset": "Q2_answerC"
+    },
+    "5": {
+      "file": "WebContent/assets/pack.json",
+      "section": "prefab1",
+      "asset": "Q2_answerD"
+    }
+  },
+  "prefab-table": {}
+}

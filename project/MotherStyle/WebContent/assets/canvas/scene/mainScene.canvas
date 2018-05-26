@@ -1,0 +1,209 @@
+{
+  "canvas-version": 2,
+  "settings": {
+    "className": "mainScene",
+    "sceneWidth": 640,
+    "sceneHeight": 1236,
+    "generateOnSave": true,
+    "enableStepping": false,
+    "lang": "JAVA_SCRIPT",
+    "baseClass": "Phaser.Group",
+    "backgroundColor": [
+      180,
+      180,
+      180
+    ],
+    "gridColor": [
+      200,
+      200,
+      200
+    ],
+    "showGrid": true
+  },
+  "stateSettings": {
+    "stageBackgroundColor": [
+      0,
+      0,
+      0
+    ],
+    "autoLoad": true,
+    "preloadSpriteId": "",
+    "preloadSprite_direction": 0,
+    "load.pack": []
+  },
+  "world": {
+    "type": "group",
+    "id": "b0c4063a-c3ea-4154-9755-8fee93545cae",
+    "info": {
+      "editorName": "mainScene",
+      "setAll": [],
+      "children": [{
+        "type": "group",
+        "id": "c0c0a8fd-2a94-4c0c-bd48-489b60cc5ec2",
+        "info": {
+          "editorName": "group",
+          "setAll": [],
+          "children": [
+            {
+              "type": "prefab",
+              "prefab": "0",
+              "id": "6f994a64-f0e1-45a0-87cc-7183a9c78929",
+              "info": {
+                "editorName": "groupSetName",
+                "editorPublic": true,
+                "x": 0,
+                "y": 0
+              }
+            },
+            {
+              "type": "prefab",
+              "prefab": "1",
+              "id": "c970e020-a7d4-4efa-80a1-ae2a488f8b27",
+              "info": {
+                "editorName": "group1",
+                "editorPublic": true,
+                "x": 640,
+                "y": 0
+              }
+            },
+            {
+              "type": "prefab",
+              "prefab": "2",
+              "id": "a2cf1b3c-9982-4dd6-9ce3-f416177e4f38",
+              "info": {
+                "editorName": "group2",
+                "editorPublic": true,
+                "x": 641,
+                "y": 0
+              }
+            },
+            {
+              "type": "prefab",
+              "prefab": "3",
+              "id": "a84aa1f5-2618-4762-a725-25d9e14bb970",
+              "info": {
+                "editorName": "group3",
+                "editorPublic": true,
+                "x": 641,
+                "y": 0
+              }
+            },
+            {
+              "type": "prefab",
+              "prefab": "4",
+              "id": "e2a62b1f-bbd2-463b-9f5e-616ff61a5dd4",
+              "info": {
+                "editorName": "group4",
+                "editorPublic": true,
+                "x": 641,
+                "y": 0
+              }
+            },
+            {
+              "type": "prefab",
+              "prefab": "5",
+              "id": "0aa65ee7-b3d7-4ac7-9352-dec83ca0b964",
+              "info": {
+                "editorName": "group5",
+                "editorPublic": true,
+                "x": 641,
+                "y": 0
+              }
+            },
+            {
+              "type": "prefab",
+              "prefab": "6",
+              "id": "ba8ae82e-5cbb-47f6-837f-de3d91aa8b11",
+              "info": {
+                "editorName": "group6",
+                "editorPublic": true,
+                "x": 641,
+                "y": 0
+              }
+            },
+            {
+              "type": "prefab",
+              "prefab": "7",
+              "id": "bde35399-6309-4306-94fa-7551740238e2",
+              "info": {
+                "editorName": "group7",
+                "editorPublic": true,
+                "x": 641,
+                "y": 0
+              }
+            },
+            {
+              "type": "prefab",
+              "prefab": "8",
+              "id": "42ee7562-6978-4909-a6cb-928158fc48bb",
+              "info": {
+                "editorName": "group8",
+                "editorPublic": true,
+                "x": 641,
+                "y": 0
+              }
+            },
+            {
+              "type": "prefab",
+              "prefab": "9",
+              "id": "16cdac26-5f8b-47c0-8c6f-4faaa7d4f022",
+              "info": {
+                "editorName": "groupOver",
+                "editorPublic": true,
+                "x": 641,
+                "y": 0
+              }
+            },
+            {
+              "type": "button",
+              "id": "0b36a72d-b16b-4765-92f4-15d4a682684d",
+              "asset": "0",
+              "info": {
+                "editorName": "bgBtn",
+                "editorPublic": true,
+                "alpha": 0
+              }
+            },
+            {
+              "type": "button",
+              "id": "c9511a7e-7e21-470a-8cef-9df4f4f489dd",
+              "asset": "1",
+              "info": {
+                "editorName": "music_btn",
+                "editorPublic": true,
+                "x": 565,
+                "y": 16,
+                "callback": "this.clickMusic"
+              }
+            }
+          ]
+        }
+      }]
+    }
+  },
+  "type": "GROUP",
+  "asset-table": {
+    "0": {
+      "file": "WebContent/assets/pack.json",
+      "section": "boot",
+      "asset": "bg"
+    },
+    "1": {
+      "file": "WebContent/assets/pack.json",
+      "section": "preSetName",
+      "asset": "music_btn"
+    }
+  },
+  "prefab-table": {
+    "0": "WebContent/assets/canvas/prefab/pre_1.canvas",
+    "1": "WebContent/assets/canvas/prefab/prefab_1.canvas",
+    "2": "WebContent/assets/canvas/prefab/prefab_2.canvas",
+    "3": "WebContent/assets/canvas/prefab/prefab_3.canvas",
+    "4": "WebContent/assets/canvas/prefab/prefab_4.canvas",
+    "5": "WebContent/assets/canvas/prefab/prefab_5.canvas",
+    "6": "WebContent/assets/canvas/prefab/prefab_6.canvas",
+    "7": "WebContent/assets/canvas/prefab/prefab_7.canvas",
+    "8": "WebContent/assets/canvas/prefab/prefab_8.canvas",
+    "9": "WebContent/assets/canvas/prefab/overPrefab.canvas"
+  }
+}

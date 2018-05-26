@@ -2,8 +2,8 @@
   "canvas-version": 2,
   "settings": {
     "className": "Level",
-    "sceneWidth": 800,
-    "sceneHeight": 600,
+    "sceneWidth": 640,
+    "sceneHeight": 1236,
     "generateOnSave": true,
     "enableStepping": false,
     "lang": "JAVA_SCRIPT",
@@ -41,16 +41,7 @@
     "info": {
       "editorName": "Level",
       "setAll": [],
-      "children": [{
-        "type": "text",
-        "id": "1caab328-1560-4093-9221-f7313302024f",
-        "info": {
-          "editorName": "hellowText",
-          "x": 343.9580078125,
-          "y": 292.2246398925781,
-          "text": "Hello world!"
-        }
-      }]
+      "children": []
     }
   },
   "type": "STATE",

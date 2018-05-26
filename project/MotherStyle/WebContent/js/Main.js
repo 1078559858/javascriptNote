@@ -1,11 +1,12 @@
+var gGame = null;
 window.onload = function() {
-	var game = new Phaser.Game(800, 600, Phaser.AUTO);
+	gGame = new Phaser.Game(640, 1236, Phaser.CANVAS, "id_game");
 
 	// Add the States your game has.
-	// game.state.add("Boot", Boot);
-	// game.state.add("Menu", Menu);
-	// game.state.add("Preload", Preload);
-	game.state.add("Level", Level);
+	gGame.state.add("Boot", Boot);
+	gGame.state.add("Video", Video);
+	gGame.state.add("Preload", Preload);
+	gGame.state.add("Level", Level);
 
-	game.state.start("Level");
+	gGame.state.start("Boot");
 };

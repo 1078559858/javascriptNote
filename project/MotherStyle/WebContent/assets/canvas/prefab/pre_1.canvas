@@ -1,0 +1,191 @@
+{
+  "canvas-version": 2,
+  "settings": {
+    "className": "pre_1",
+    "sceneWidth": 640,
+    "sceneHeight": 1236,
+    "generateOnSave": true,
+    "enableStepping": false,
+    "lang": "JAVA_SCRIPT",
+    "baseClass": "Phaser.Group",
+    "backgroundColor": [
+      180,
+      180,
+      180
+    ],
+    "gridColor": [
+      200,
+      200,
+      200
+    ],
+    "showGrid": true
+  },
+  "stateSettings": {
+    "stageBackgroundColor": [
+      0,
+      0,
+      0
+    ],
+    "autoLoad": true,
+    "preloadSpriteId": "",
+    "preloadSprite_direction": 0,
+    "load.pack": []
+  },
+  "world": {
+    "type": "group",
+    "id": "438aa8ac-6d41-420b-b299-a699278fff90",
+    "info": {
+      "editorName": "pre_1",
+      "setAll": [],
+      "children": [{
+        "type": "group",
+        "id": "5e7aa2e0-0b23-4a2e-a824-103a030fdffd",
+        "info": {
+          "editorName": "group",
+          "setAll": [],
+          "children": [
+            {
+              "type": "image",
+              "id": "2da90462-f9fe-4dd3-9b0c-7711f3b9eb8f",
+              "asset": "0",
+              "info": {"editorName": "home_bg"}
+            },
+            {
+              "type": "group",
+              "id": "9d92c960-337e-46e2-8907-676904e2e8c2",
+              "info": {
+                "editorName": "groupError",
+                "setAll": [],
+                "children": [
+                  {
+                    "type": "image",
+                    "id": "04f653b9-5bf9-4ee7-93ae-de9dc8aa018d",
+                    "asset": "1",
+                    "info": {
+                      "editorName": "Dialog_home_null",
+                      "editorPublic": true,
+                      "x": 146,
+                      "y": 631
+                    }
+                  },
+                  {
+                    "type": "image",
+                    "id": "8080c6b3-79f2-4e75-a2d2-ed0afe08576b",
+                    "asset": "2",
+                    "info": {
+                      "editorName": "Dialog_home_fourl",
+                      "editorPublic": true,
+                      "x": 141,
+                      "y": 635
+                    }
+                  },
+                  {
+                    "type": "image",
+                    "id": "9056d93b-7815-4c2e-a645-e0c413567f45",
+                    "asset": "3",
+                    "info": {
+                      "editorName": "Dialog_home_error",
+                      "editorPublic": true,
+                      "x": 165,
+                      "y": 641
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "image",
+              "id": "c8c21149-01a0-4ba5-8c47-e4f0b81997e8",
+              "asset": "4",
+              "info": {
+                "editorName": "ball",
+                "editorPublic": true,
+                "x": 161,
+                "y": 988
+              }
+            },
+            {
+              "type": "button",
+              "id": "5415b6f2-d0b2-48d7-b0d2-4c13f4453d84",
+              "asset": "5",
+              "info": {
+                "editorName": "btnLeft",
+                "editorPublic": true,
+                "x": 148,
+                "y": 976,
+                "scale.x": 2,
+                "scale.y": 2,
+                "alpha": 0,
+                "callback": "this.clickLeft"
+              }
+            },
+            {
+              "type": "button",
+              "id": "78b81dad-5d69-49a7-9e4b-bbc28e93ab9c",
+              "asset": "5",
+              "info": {
+                "editorName": "btnRight",
+                "editorPublic": true,
+                "x": 341,
+                "y": 971,
+                "scale.x": 2,
+                "scale.y": 2,
+                "alpha": 0,
+                "callback": "this.clickRight"
+              }
+            },
+            {
+              "type": "button",
+              "id": "2c486979-09d8-4537-aa13-448350acee22",
+              "asset": "5",
+              "info": {
+                "editorName": "btnGo",
+                "editorPublic": true,
+                "x": 156,
+                "y": 1048,
+                "scale.x": 4.5,
+                "scale.y": 2,
+                "alpha": 0,
+                "callback": "this.clickGo"
+              }
+            }
+          ]
+        }
+      }]
+    }
+  },
+  "type": "GROUP",
+  "asset-table": {
+    "0": {
+      "file": "WebContent/assets/pack.json",
+      "section": "preSetName",
+      "asset": "home_bg2"
+    },
+    "1": {
+      "file": "WebContent/assets/pack.json",
+      "section": "preSetName",
+      "asset": "Dialog_home_null"
+    },
+    "2": {
+      "file": "WebContent/assets/pack.json",
+      "section": "preSetName",
+      "asset": "Dialog_home_fourl"
+    },
+    "3": {
+      "file": "WebContent/assets/pack.json",
+      "section": "preSetName",
+      "asset": "Dialog_home_error"
+    },
+    "4": {
+      "file": "WebContent/assets/pack.json",
+      "section": "preSetName",
+      "asset": "104"
+    },
+    "5": {
+      "file": "WebContent/assets/pack.json",
+      "section": "preSetName",
+      "asset": "5000"
+    }
+  },
+  "prefab-table": {}
+}

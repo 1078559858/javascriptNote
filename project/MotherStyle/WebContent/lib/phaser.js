@@ -82362,6 +82362,9 @@ Phaser.Create.prototype = {
      *   'E333E',
      *   ' 333 ',
      *   ' 3 3 '
+	 *
+	 *
+	 *
      * ];`
      *
      * `game.create.texture('bob', data);`

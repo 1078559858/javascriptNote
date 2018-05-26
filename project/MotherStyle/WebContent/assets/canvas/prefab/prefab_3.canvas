@@ -1,0 +1,247 @@
+{
+  "canvas-version": 2,
+  "settings": {
+    "className": "prefab_3",
+    "sceneWidth": 640,
+    "sceneHeight": 1236,
+    "generateOnSave": true,
+    "enableStepping": false,
+    "lang": "JAVA_SCRIPT",
+    "baseClass": "Phaser.Group",
+    "backgroundColor": [
+      180,
+      180,
+      180
+    ],
+    "gridColor": [
+      200,
+      200,
+      200
+    ],
+    "showGrid": false
+  },
+  "stateSettings": {
+    "stageBackgroundColor": [
+      0,
+      0,
+      0
+    ],
+    "autoLoad": true,
+    "preloadSpriteId": "",
+    "preloadSprite_direction": 0,
+    "load.pack": []
+  },
+  "world": {
+    "type": "group",
+    "id": "1b3f2d7b-a1cb-40c7-99f7-35cf97c31d3c",
+    "info": {
+      "editorName": "prefab_3",
+      "setAll": [],
+      "children": [{
+        "type": "group",
+        "id": "3232c060-d2ed-4bf0-a5f8-7e8c17a8ef97",
+        "info": {
+          "editorName": "group",
+          "setAll": [],
+          "children": [
+            {
+              "type": "image",
+              "id": "a52daccd-455c-4fad-b9a1-72adc94b7db7",
+              "asset": "0",
+              "info": {
+                "editorName": "qestion_question_bg",
+                "x": 52,
+                "y": 74
+              }
+            },
+            {
+              "type": "button",
+              "id": "798652fe-53e6-4517-87c6-be9c9243a3c7",
+              "asset": "1",
+              "info": {
+                "editorName": "Q1_title",
+                "x": 38,
+                "y": 11
+              }
+            },
+            {
+              "type": "text",
+              "id": "673a057b-7986-4ada-9f25-9de5629b03ad",
+              "info": {
+                "editorName": "text",
+                "x": 67,
+                "y": 198,
+                "text": "3、宝宝的小卧室，你最希\r\n     望装修成什么风格",
+                "style.fontSize": 40
+              }
+            },
+            {
+              "type": "group",
+              "id": "0356e557-4ec9-4b51-b158-184413b7e019",
+              "info": {
+                "editorName": "group1",
+                "x": -1,
+                "y": -1,
+                "setAll": [],
+                "children": [
+                  {
+                    "type": "button",
+                    "id": "a3aa9142-8b29-4398-a40c-fff730f6c170",
+                    "asset": "2",
+                    "info": {
+                      "editorName": "chat",
+                      "x": 52,
+                      "y": 460,
+                      "data": "{\r\n\"value\":\"a\"\r\n}",
+                      "callback": "this.clickBtn"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "09823627-6d71-45ce-a693-a2881012c437",
+                    "info": {
+                      "editorName": "text1",
+                      "x": 136,
+                      "y": 505,
+                      "text": "A:小猪佩奇社会风",
+                      "style.fontSize": 36
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "group",
+              "id": "85ca6672-bccc-4152-8fb5-1f00d514afcc",
+              "info": {
+                "editorName": "group2",
+                "x": -3,
+                "y": 177,
+                "setAll": [],
+                "children": [
+                  {
+                    "type": "button",
+                    "id": "1ffaa75e-6feb-4fbc-8c82-5cbfc4fe34b7",
+                    "asset": "3",
+                    "info": {
+                      "editorName": "chat1",
+                      "x": 48,
+                      "y": 472,
+                      "data": "{\r\n\"value\":\"b\"\r\n}",
+                      "callback": "this.clickBtn"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "f3d4d932-a1bc-48c4-89c5-54b8f88a3038",
+                    "info": {
+                      "editorName": "text2",
+                      "x": 138,
+                      "y": 507,
+                      "text": "B: 幻想童话风",
+                      "style.fontSize": 36
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "group",
+              "id": "d3dca283-4c8e-44e0-9a31-841f109b3992",
+              "info": {
+                "editorName": "group3",
+                "x": -1,
+                "y": 376,
+                "setAll": [],
+                "children": [
+                  {
+                    "type": "button",
+                    "id": "bb624f58-cd47-4d4a-8e57-901537749e07",
+                    "asset": "2",
+                    "info": {
+                      "editorName": "chat2",
+                      "x": 52,
+                      "y": 460,
+                      "data": "{\r\n\"value\":\"c\"\r\n}",
+                      "callback": "this.clickBtn"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "ff8a8597-6a9f-4387-9e19-dcf7496db1f7",
+                    "info": {
+                      "editorName": "text3",
+                      "x": 135,
+                      "y": 502,
+                      "text": "C：运动风",
+                      "style.fontSize": 36
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "group",
+              "id": "f2709740-591e-4bdd-8623-3ea611bb739e",
+              "info": {
+                "editorName": "group4",
+                "x": -3,
+                "y": 554,
+                "setAll": [],
+                "children": [
+                  {
+                    "type": "button",
+                    "id": "bfa172f3-4591-4669-a6fa-5238c540f5cf",
+                    "asset": "3",
+                    "info": {
+                      "editorName": "chat3",
+                      "x": 52,
+                      "y": 460,
+                      "data": "{\r\n\"value\":\"d\"\r\n}",
+                      "callback": "this.clickBtn"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "dbdbf2ba-0744-4438-b88f-fa53f35f77f8",
+                    "info": {
+                      "editorName": "text4",
+                      "x": 139,
+                      "y": 494,
+                      "text": "D：懒得拾掇，交给Ta爹",
+                      "style.fontSize": 36
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }]
+    }
+  },
+  "type": "GROUP",
+  "asset-table": {
+    "0": {
+      "file": "WebContent/assets/pack.json",
+      "section": "common",
+      "asset": "qestion_question_bg"
+    },
+    "1": {
+      "file": "WebContent/assets/pack.json",
+      "section": "common",
+      "asset": "Q1_title"
+    },
+    "2": {
+      "file": "WebContent/assets/pack.json",
+      "section": "common",
+      "asset": "chat1"
+    },
+    "3": {
+      "file": "WebContent/assets/pack.json",
+      "section": "common",
+      "asset": "chat3"
+    }
+  },
+  "prefab-table": {}
+}

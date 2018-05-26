@@ -1,0 +1,251 @@
+{
+  "canvas-version": 2,
+  "settings": {
+    "className": "overPrefab",
+    "sceneWidth": 640,
+    "sceneHeight": 1236,
+    "generateOnSave": true,
+    "enableStepping": false,
+    "lang": "JAVA_SCRIPT",
+    "baseClass": "Phaser.Group",
+    "backgroundColor": [
+      180,
+      180,
+      180
+    ],
+    "gridColor": [
+      200,
+      200,
+      200
+    ],
+    "showGrid": true
+  },
+  "stateSettings": {
+    "stageBackgroundColor": [
+      0,
+      0,
+      0
+    ],
+    "autoLoad": true,
+    "preloadSpriteId": "",
+    "preloadSprite_direction": 0,
+    "load.pack": []
+  },
+  "world": {
+    "type": "group",
+    "id": "c2129198-665a-4ce7-8ced-8081269eb21c",
+    "info": {
+      "editorName": "overPrefab",
+      "setAll": [],
+      "children": [{
+        "type": "group",
+        "id": "29bab504-30ee-47f1-b5f0-9c6edd15a33f",
+        "info": {
+          "editorName": "group",
+          "setAll": [],
+          "children": [
+            {
+              "type": "group",
+              "id": "ebe401eb-bf58-4db8-a40a-6c708c004a5c",
+              "info": {
+                "editorName": "groupFoxi",
+                "editorPublic": true,
+                "editorShow": false,
+                "scale.x": 0,
+                "setAll": [],
+                "children": [
+                  {
+                    "type": "image",
+                    "id": "a997590e-a148-4086-9f9d-e3cf5ded0aff",
+                    "asset": "0",
+                    "info": {"editorName": "Result_foxi"}
+                  },
+                  {
+                    "type": "text",
+                    "id": "408550d1-3175-42ee-b884-69b364c94943",
+                    "info": {
+                      "editorName": "text",
+                      "x": 23,
+                      "y": 379,
+                      "text": "      所谓佛系妈妈，指的是：对各种养娃路上\r\n的糟心事都保持：\u201c有也行，没有也罢，不\r\n争不抢，爱咋咋地\u201d的冷静、淡定、平和的心\r\n态，不管遭遇到何种突发状况，都可以淡然\r\n处之。怎么都行、不大走心、看淡一切的育\r\n娃理念，使你在育娃路上显得得心应手，云\r\n淡风轻，宠辱不惊.",
+                      "style.fontSize": 30
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "group",
+              "id": "ce512e02-ff6a-4cf6-8d7d-b391aa66f76e",
+              "info": {
+                "editorName": "groupShaonv",
+                "editorPublic": true,
+                "editorShow": false,
+                "scale.x": 0,
+                "setAll": [],
+                "children": [
+                  {
+                    "type": "image",
+                    "id": "ec2912dd-bbf5-4254-9130-647e87e9d00b",
+                    "asset": "1",
+                    "info": {"editorName": "Result_shaonv"}
+                  },
+                  {
+                    "type": "text",
+                    "id": "f670cfb5-c61d-4f3c-be64-30878df83068",
+                    "info": {
+                      "editorName": "text1",
+                      "x": 40,
+                      "y": 403,
+                      "text": "      社会我辣妈，即使是成为母亲后，仍然\r\n调整心态、成熟思考、有序打理生活、细\r\n心照顾儿女、勇敢追求人生梦想的积极向\r\n上的心态和形象，单手抱娃、一字马关后\r\n备箱都不在话下，家庭事业双丰收才是你\r\n的人生目标。",
+                      "style.fontSize": 30
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "group",
+              "id": "ebbc48e7-03c7-4408-8306-2175d24f76b4",
+              "info": {
+                "editorName": "groupHU",
+                "editorPublic": true,
+                "editorShow": false,
+                "scale.x": 0,
+                "setAll": [],
+                "children": [
+                  {
+                    "type": "image",
+                    "id": "5cda98cd-fa1e-42c3-9d15-0cb4fd41960a",
+                    "asset": "2",
+                    "info": {
+                      "editorName": "Result_huxi",
+                      "x": -1,
+                      "y": 1
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "cb763a42-7f85-4daf-9d1a-6d7baacc8048",
+                    "info": {
+                      "editorName": "text2",
+                      "x": 27,
+                      "y": 408,
+                      "text": "    你对孩子有一套严格的管理理念，既注重\r\n家长对孩子的严格教导，也关注孩子的自主\r\n发展。既严格要求孩子按照指定好的目标努\r\n力，不能松懈和半途而废，也允许孩子有自\r\n己的时间发展兴趣爱好。让孩子成为更好的\r\n人就是你育娃路上的灯塔。",
+                      "style.fontSize": 30
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "group",
+              "id": "6eb6d4bc-afe5-4e7b-8ec8-18d8f10ca766",
+              "info": {
+                "editorName": "groupHuan",
+                "editorPublic": true,
+                "scale.x": 0,
+                "setAll": [],
+                "children": [
+                  {
+                    "type": "image",
+                    "id": "1bf6b161-623a-4122-925a-ead0b05fddbb",
+                    "asset": "3",
+                    "info": {"editorName": "Result_naodong"}
+                  },
+                  {
+                    "type": "text",
+                    "id": "1154e554-60e6-453f-8ff8-3a2555f25357",
+                    "info": {
+                      "editorName": "text3",
+                      "x": 44,
+                      "y": 458,
+                      "text": "  你的育娃理念天马行空，想象力很超前。\r\n咱们还是先去找个男朋友好吗？",
+                      "style.fontSize": 30
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "text",
+              "id": "1cd43022-8099-423e-92a7-668aef77126d",
+              "info": {
+                "editorName": "texta",
+                "editorPublic": true,
+                "x": 233,
+                "y": 754,
+                "text": "10%",
+                "style.fontSize": 30,
+                "style.fill": "#008000"
+              }
+            },
+            {
+              "type": "text",
+              "id": "80607a56-db7a-4be2-ae0d-c4276fc4188e",
+              "info": {
+                "editorName": "textb",
+                "editorPublic": true,
+                "x": 512,
+                "y": 754,
+                "text": "10%",
+                "style.fontSize": 30,
+                "style.fill": "#ff8080"
+              }
+            },
+            {
+              "type": "text",
+              "id": "3f9eee15-0e6f-4510-ad9e-b9a07816cedd",
+              "info": {
+                "editorName": "textc",
+                "editorPublic": true,
+                "x": 233,
+                "y": 814,
+                "text": "10%",
+                "style.fontSize": 30,
+                "style.fill": "#ffff00"
+              }
+            },
+            {
+              "type": "text",
+              "id": "29ad7991-ef82-4936-b598-9c030d91029a",
+              "info": {
+                "editorName": "textd",
+                "editorPublic": true,
+                "x": 510,
+                "y": 813,
+                "text": "10%",
+                "style.fontSize": 30,
+                "style.fill": "#c0c0c0"
+              }
+            }
+          ]
+        }
+      }]
+    }
+  },
+  "type": "GROUP",
+  "asset-table": {
+    "0": {
+      "file": "WebContent/assets/pack.json",
+      "section": "over",
+      "asset": "Result_foxi"
+    },
+    "1": {
+      "file": "WebContent/assets/pack.json",
+      "section": "over",
+      "asset": "Result_shaonv"
+    },
+    "2": {
+      "file": "WebContent/assets/pack.json",
+      "section": "over",
+      "asset": "Result_huxi"
+    },
+    "3": {
+      "file": "WebContent/assets/pack.json",
+      "section": "over",
+      "asset": "Result_naodong"
+    }
+  },
+  "prefab-table": {}
+}

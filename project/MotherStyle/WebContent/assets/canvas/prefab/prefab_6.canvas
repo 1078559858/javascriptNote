@@ -1,0 +1,247 @@
+{
+  "canvas-version": 2,
+  "settings": {
+    "className": "prefab_6",
+    "sceneWidth": 640,
+    "sceneHeight": 1236,
+    "generateOnSave": true,
+    "enableStepping": false,
+    "lang": "JAVA_SCRIPT",
+    "baseClass": "Phaser.Group",
+    "backgroundColor": [
+      180,
+      180,
+      180
+    ],
+    "gridColor": [
+      200,
+      200,
+      200
+    ],
+    "showGrid": false
+  },
+  "stateSettings": {
+    "stageBackgroundColor": [
+      0,
+      0,
+      0
+    ],
+    "autoLoad": true,
+    "preloadSpriteId": "",
+    "preloadSprite_direction": 0,
+    "load.pack": []
+  },
+  "world": {
+    "type": "group",
+    "id": "d16ea76f-cf83-42ba-888e-57ff33bb52cf",
+    "info": {
+      "editorName": "prefab_6",
+      "setAll": [],
+      "children": [{
+        "type": "group",
+        "id": "d0bc275c-8724-46a3-b25e-a22bdf53f012",
+        "info": {
+          "editorName": "group",
+          "setAll": [],
+          "children": [
+            {
+              "type": "image",
+              "id": "1a05998b-c54a-4f44-b7fc-18466894e5e3",
+              "asset": "0",
+              "info": {
+                "editorName": "qestion_question_bg",
+                "x": 51,
+                "y": 72
+              }
+            },
+            {
+              "type": "button",
+              "id": "0873fbff-fe9e-4c8a-b2d5-5a2fd5a2b0b2",
+              "asset": "1",
+              "info": {
+                "editorName": "Q1_title",
+                "x": 37,
+                "y": 9
+              }
+            },
+            {
+              "type": "text",
+              "id": "840e14cc-4672-4db1-9d0f-6ba47c946884",
+              "info": {
+                "editorName": "text",
+                "x": 66,
+                "y": 196,
+                "text": "6、孩子问：\u201c妈妈，我们家\r\n     有钱吗?\u201d你的回答是： ",
+                "style.fontSize": 40
+              }
+            },
+            {
+              "type": "group",
+              "id": "38e6f41f-cc53-4f65-8077-cd8bdbe4ab58",
+              "info": {
+                "editorName": "group1",
+                "x": -2,
+                "y": -3,
+                "setAll": [],
+                "children": [
+                  {
+                    "type": "button",
+                    "id": "b9392971-bf92-4e0b-b6d2-be4eaaa7d668",
+                    "asset": "2",
+                    "info": {
+                      "editorName": "chat",
+                      "x": 52,
+                      "y": 460,
+                      "data": "{\r\n\"value\":\"a\"\r\n}",
+                      "callback": "this.clickBtn"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "074484c1-739b-45d0-a5ac-f773fa3d6510",
+                    "info": {
+                      "editorName": "text1",
+                      "x": 124,
+                      "y": 489,
+                      "text": "A:扔给孩子一本辅导习题集，然\r\n    后告诉他\u201c书中自有黄金屋\u201d",
+                      "style.fontSize": 30
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "group",
+              "id": "ce840bb7-fe51-4843-ab48-31d15b94194c",
+              "info": {
+                "editorName": "group2",
+                "x": -4,
+                "y": 175,
+                "setAll": [],
+                "children": [
+                  {
+                    "type": "button",
+                    "id": "7a7a3361-9b29-44ee-9705-bd49aa220d47",
+                    "asset": "3",
+                    "info": {
+                      "editorName": "chat1",
+                      "x": 48,
+                      "y": 472,
+                      "data": "{\r\n\"value\":\"b\"\r\n}",
+                      "callback": "this.clickBtn"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "62f86d7f-4b85-4766-a3d7-6cfec1b381b0",
+                    "info": {
+                      "editorName": "text2",
+                      "x": 134,
+                      "y": 490,
+                      "text": "B:这是你祖母留下来的青铜器，\r\n    你收好，将来价值连城。",
+                      "style.fontSize": 30
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "group",
+              "id": "22286e1d-bd1a-4694-918e-6fe2dfb591d8",
+              "info": {
+                "editorName": "group3",
+                "x": -2,
+                "y": 374,
+                "setAll": [],
+                "children": [
+                  {
+                    "type": "button",
+                    "id": "070ffd0c-8d73-4e3d-8d60-ea3b695db2ba",
+                    "asset": "2",
+                    "info": {
+                      "editorName": "chat2",
+                      "x": 52,
+                      "y": 460,
+                      "data": "{\r\n\"value\":\"c\"\r\n}",
+                      "callback": "this.clickBtn"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "5b4727fa-4045-406c-a18c-a7c02dc3be69",
+                    "info": {
+                      "editorName": "text3",
+                      "x": 131,
+                      "y": 506,
+                      "text": "C：我有钱，但你没有。",
+                      "style.fontSize": 30
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "group",
+              "id": "48b44ca2-ca3f-4d14-b12a-590b27476b4c",
+              "info": {
+                "editorName": "group4",
+                "x": -4,
+                "y": 552,
+                "setAll": [],
+                "children": [
+                  {
+                    "type": "button",
+                    "id": "542ffee2-b5ce-424b-bf1e-7f506082da58",
+                    "asset": "3",
+                    "info": {
+                      "editorName": "chat3",
+                      "x": 52,
+                      "y": 460,
+                      "data": "{\r\n\"value\":\"d\"\r\n}",
+                      "callback": "this.clickBtn"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "b5ee6797-c7f9-4042-90bb-f34e3c73462a",
+                    "info": {
+                      "editorName": "text4",
+                      "x": 139,
+                      "y": 472,
+                      "text": "D：我们家有很多钱，以后这些\r\n     钱都是你的。",
+                      "style.fontSize": 30
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }]
+    }
+  },
+  "type": "GROUP",
+  "asset-table": {
+    "0": {
+      "file": "WebContent/assets/pack.json",
+      "section": "common",
+      "asset": "qestion_question_bg"
+    },
+    "1": {
+      "file": "WebContent/assets/pack.json",
+      "section": "common",
+      "asset": "Q1_title"
+    },
+    "2": {
+      "file": "WebContent/assets/pack.json",
+      "section": "common",
+      "asset": "chat1"
+    },
+    "3": {
+      "file": "WebContent/assets/pack.json",
+      "section": "common",
+      "asset": "chat3"
+    }
+  },
+  "prefab-table": {}
+}

@@ -1,0 +1,244 @@
+{
+  "canvas-version": 2,
+  "settings": {
+    "className": "prefab_2",
+    "sceneWidth": 640,
+    "sceneHeight": 1236,
+    "generateOnSave": true,
+    "enableStepping": false,
+    "lang": "JAVA_SCRIPT",
+    "baseClass": "Phaser.Group",
+    "backgroundColor": [
+      180,
+      180,
+      180
+    ],
+    "gridColor": [
+      200,
+      200,
+      200
+    ],
+    "showGrid": false
+  },
+  "stateSettings": {
+    "stageBackgroundColor": [
+      0,
+      0,
+      0
+    ],
+    "autoLoad": true,
+    "preloadSpriteId": "",
+    "preloadSprite_direction": 0,
+    "load.pack": []
+  },
+  "world": {
+    "type": "group",
+    "id": "85da335f-58e6-4706-8b3a-4c5e88473ff0",
+    "info": {
+      "editorName": "prefab_2",
+      "setAll": [],
+      "children": [{
+        "type": "group",
+        "id": "d702d50d-36bd-4db2-92ad-30c8c2f85572",
+        "info": {
+          "editorName": "group",
+          "setAll": [],
+          "children": [
+            {
+              "type": "image",
+              "id": "980da3e0-6742-49d8-b445-c6a9bfdfd842",
+              "asset": "0",
+              "info": {
+                "editorName": "qestion_question_bg",
+                "x": 52.5,
+                "y": 75
+              }
+            },
+            {
+              "type": "button",
+              "id": "a942ecc5-3c44-4e09-a256-50e9ed7ea905",
+              "asset": "1",
+              "info": {
+                "editorName": "Q1_title",
+                "x": 39,
+                "y": 12
+              }
+            },
+            {
+              "type": "text",
+              "id": "ef48ebd1-8035-4f43-84a6-7826d50834cf",
+              "info": {
+                "editorName": "text",
+                "x": 82,
+                "y": 197,
+                "text": "2、2岁的宝宝想爬楼梯，\r\n     此时你会?",
+                "style.fontSize": 45
+              }
+            },
+            {
+              "type": "group",
+              "id": "c8b17d0d-b786-42da-bcc3-8a56b61fb7d1",
+              "info": {
+                "editorName": "group1",
+                "setAll": [],
+                "children": [
+                  {
+                    "type": "button",
+                    "id": "aa44d8c0-ef82-4df5-bd78-06443e46a9c8",
+                    "asset": "2",
+                    "info": {
+                      "editorName": "chat",
+                      "x": 52,
+                      "y": 460,
+                      "data": "{\r\n\"value\":\"a\"\r\n}",
+                      "callback": "this.clickBtn"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "1fe3152e-88ee-4ddc-9350-a0fea8cc877b",
+                    "info": {
+                      "editorName": "text1",
+                      "x": 132,
+                      "y": 480,
+                      "text": "A:他想爬就爬，稍微看着\r\n   点就行了",
+                      "style.fontSize": 36
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "group",
+              "id": "3a53170a-7d1d-4559-afea-b5681ce18f47",
+              "info": {
+                "editorName": "group2",
+                "x": -2,
+                "y": 178,
+                "setAll": [],
+                "children": [
+                  {
+                    "type": "button",
+                    "id": "a5cfd758-c487-4010-bc4b-1e488f9a7a42",
+                    "asset": "3",
+                    "info": {
+                      "editorName": "chat22",
+                      "x": 52,
+                      "y": 460,
+                      "data": "{\r\n\"value\":\"b\"\r\n}",
+                      "callback": "this.clickBtn"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "29446135-24f9-4aa1-92e0-57798f5942a2",
+                    "info": {
+                      "editorName": "text3",
+                      "x": 132,
+                      "y": 480,
+                      "text": "B: 不许爬，包衣服和手都\r\n    弄脏了",
+                      "style.fontSize": 36
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "group",
+              "id": "48e7c99d-2f58-4e70-9c87-137168eef64c",
+              "info": {
+                "editorName": "group3",
+                "y": 377,
+                "setAll": [],
+                "children": [
+                  {
+                    "type": "button",
+                    "id": "70a8acce-249a-4453-9d60-8c0292475803",
+                    "asset": "2",
+                    "info": {
+                      "editorName": "chat1",
+                      "x": 52,
+                      "y": 460,
+                      "data": "{\r\n\"value\":\"c\"\r\n}",
+                      "callback": "this.clickBtn"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "81aaf934-09f1-4184-97f3-39f25e00b275",
+                    "info": {
+                      "editorName": "text2",
+                      "x": 132,
+                      "y": 502,
+                      "text": "C：跟在宝宝背后保护Ta",
+                      "style.fontSize": 36
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "group",
+              "id": "aa22dc45-0440-4223-a0b2-022a4810a569",
+              "info": {
+                "editorName": "group4",
+                "x": -2,
+                "y": 555,
+                "setAll": [],
+                "children": [
+                  {
+                    "type": "button",
+                    "id": "246bf63c-c908-42b6-883f-90ab3b019dae",
+                    "asset": "3",
+                    "info": {
+                      "editorName": "chat2",
+                      "x": 52,
+                      "y": 460,
+                      "data": "{\r\n\"value\":\"d\"\r\n}",
+                      "callback": "this.clickBtn"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "f0283ca3-6877-4c18-8e12-a5f76dc6ef04",
+                    "info": {
+                      "editorName": "text4",
+                      "x": 132,
+                      "y": 488,
+                      "text": "D：懒得拾掇，交给Ta爹",
+                      "style.fontSize": 36
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }]
+    }
+  },
+  "type": "GROUP",
+  "asset-table": {
+    "0": {
+      "file": "WebContent/assets/pack.json",
+      "section": "common",
+      "asset": "qestion_question_bg"
+    },
+    "1": {
+      "file": "WebContent/assets/pack.json",
+      "section": "common",
+      "asset": "Q1_title"
+    },
+    "2": {
+      "file": "WebContent/assets/pack.json",
+      "section": "common",
+      "asset": "chat1"
+    },
+    "3": {
+      "file": "WebContent/assets/pack.json",
+      "section": "common",
+      "asset": "chat3"
+    }
+  },
+  "prefab-table": {}
+}

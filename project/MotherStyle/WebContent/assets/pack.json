@@ -1,7 +1,157 @@
-{"meta": {
-  "generated": "1490300737380",
-  "app": "Phaser Editor",
-  "url": "http://phasereditor.boniatillo.com",
-  "version": "1.0",
-  "copyright": "Arian Fornaris (c) 2015,2016"
-}}
+{
+  "boot": [
+    {
+      "type": "image",
+      "key": "bg",
+      "url": "assets/image/loading/bg.png",
+      "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "processbar1",
+      "url": "assets/image/loading/processbar1.png",
+      "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "processbar2",
+      "url": "assets/image/loading/processbar2.png",
+      "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "Load_bg",
+      "url": "assets/image/loading/Load_bg.jpg",
+      "overwrite": false
+    }
+  ],
+  "preSetName": [
+    {
+      "type": "image",
+      "key": "Dialog_home_error",
+      "url": "assets/image/preSetName/Dialog_home_error.png",
+      "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "Dialog_home_fourl",
+      "url": "assets/image/preSetName/Dialog_home_fourl.png",
+      "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "Dialog_home_null",
+      "url": "assets/image/preSetName/Dialog_home_null.png",
+      "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "home_bg2",
+      "url": "assets/image/preSetName/home_bg2.jpg",
+      "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "104",
+      "url": "assets/image/preSetName/104.png",
+      "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "5000",
+      "url": "assets/image/preSetName/5000.png",
+      "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "music_btn",
+      "url": "assets/image/preSetName/music_btn.png",
+      "overwrite": false
+    }
+  ],
+  "common": [
+    {
+      "type": "image",
+      "key": "Q1_title",
+      "url": "assets/image/common/Q1_title.png",
+      "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "qestion_question_bg",
+      "url": "assets/image/common/qestion_question_bg.png",
+      "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "chat1",
+      "url": "assets/image/common/1.png",
+      "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "chat3",
+      "url": "assets/image/common/3.png",
+      "overwrite": false
+    }
+  ],
+  "prefab1": [
+    {
+      "type": "image",
+      "key": "Q2_answerA",
+      "url": "assets/image/prefab1/Q2_answerA.png",
+      "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "Q2_answerB",
+      "url": "assets/image/prefab1/Q2_answerB.png",
+      "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "Q2_answerC",
+      "url": "assets/image/prefab1/Q2_answerC.png",
+      "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "Q2_answerD",
+      "url": "assets/image/prefab1/Q2_answerD.png",
+      "overwrite": false
+    }
+  ],
+  "over": [
+    {
+      "type": "image",
+      "key": "Result_foxi",
+      "url": "assets/image/over/Result_foxi.jpg",
+      "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "Result_huxi",
+      "url": "assets/image/over/Result_huxi.jpg",
+      "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "Result_naodong",
+      "url": "assets/image/over/Result_naodong.jpg",
+      "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "Result_shaonv",
+      "url": "assets/image/over/Result_shaonv.jpg",
+      "overwrite": false
+    }
+  ],
+  "meta": {
+    "generated": "1527304583158",
+    "app": "Phaser Editor",
+    "url": "http://phasereditor.boniatillo.com",
+    "version": "1.0",
+    "copyright": "Arian Fornaris (c) 2015,2016"
+  }
+}
