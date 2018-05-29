@@ -66,6 +66,8 @@ function mainScene(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBody
 	
 	var _music_btn = this.game.add.button(859, -23, 'music_btn', this.clickMusic, this, null, null, null, null, this);
 	
+	var _groupAD = new adPrefab(this.game, this);
+	
 	
 	
 	// public fields
@@ -85,6 +87,7 @@ function mainScene(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBody
 	this.fGroupOver = _groupOver;
 	this.fBgBtn = _bgBtn;
 	this.fMusic_btn = _music_btn;
+	this.fGroupAD = _groupAD;
 	
 }
 
@@ -152,6 +155,14 @@ mainScene.prototype.disAppearGroup = function (group) {
 mainScene.prototype.initOnce = function () {
 	this.setAnchorMiddle(this.fMusic_btn);
 	this.fBgBtn.inputEnabled = false;
+
+	// this.game.input.onDown.add(this.onGameDown, "down");
+	// this.game.input.onUp.add(this.onGameUp, "up");
+	// this.game.input.addMoveCallback(this.onGameMove, "move");
+	//移除事件
+	// this.game.input.onDown.remove(this.onDown, "down");
+	// this.game.input.onUp.remove(this.onUp, "up");
+	// this.game.input.deleteMoveCallback(this.onMoveCallBack, "move");
 };
 
 mainScene.prototype.update = function () {
@@ -215,4 +226,59 @@ mainScene.prototype.setTempAction1 = function (layer) {
 		});
 		tweenA.chain(tweenB);
 	}
+};
+
+mainScene.touchPoint = {
+	"pointY":0,
+	"cellHeightMin":213,			//table cell 的初始高度
+	"cellHeightMax":845,			//table cell 的初始高度
+	"isDown":false,				//判断是否是按下状态
+	"isMoved":false				//判断是否是移动状态
+};
+mainScene.prototype.onGameDown = function (point, x, y, isTap) {
+	var menuPre = gGame.gameScene;
+	menuPre.touchPoint.pointY = point.y;
+	menuPre.touchPoint.isMoved = false;
+	menuPre.touchPoint.isDown = true;
+};
+
+mainScene.prototype.onGameUp = function (point, x, y, isTap) {
+	var menuPre = gGame.gameScene;
+	menuPre.touchPoint.isDown = false;
+	// if(!menuPre.resetPositionUp()){
+	// 	menuPre.resetPositionDown();
+	// }
+};
+
+mainScene.prototype.onGameMove = function (point, x, y, isTap) {
+	var menuPre = gGame.gameScene;
+
+	if(!menuPre.touchPoint.isDown){
+		return;
+	}
+
+	menuPre.updatePos(menuPre.touchPoint.pointY - point.y);
+	menuPre.touchPoint.pointY = point.y;
+	menuPre.touchPoint.isMoved = true;
+};
+
+mainScene.prototype.onGameReset = function () {
+
+};
+
+mainScene.prototype.updatePos = function (disY) {
+	//check from up to down
+	// if(up.y > this.touchPoint.cellHeightMin && disY < 0){
+	// 	disY /= 3;
+	// }
+	//
+	// //check from down to up
+	// if(bottom.y + bottom.getJingChaiHeight() < this.touchPoint.cellHeightMax + this.touchPoint.cellHeightMin - 10
+	// 	&& disY > 0){
+	// 	disY /= 6;
+	// }
+	//
+	// for(var i = 0; i < this.fGroupOne.children.length; i++){
+	// 	this.fGroupOne.getChildAt(i).y -= disY;
+	// }
 };

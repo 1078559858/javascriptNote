@@ -201,6 +201,12 @@
       "key": "tempChat",
       "url": "assets/image/temp/tempChat.png",
       "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "football",
+      "url": "assets/image/temp/football.png",
+      "overwrite": false
     }
   ],
   "colorAtlas": [
@@ -227,7 +233,7 @@
     }
   ],
   "meta": {
-    "generated": "1527560923575",
+    "generated": "1527581251381",
     "app": "Phaser Editor",
     "url": "http://phasereditor.boniatillo.com",
     "version": "1.0",

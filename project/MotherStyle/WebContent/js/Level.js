@@ -23,6 +23,7 @@ Level.prototype.create = function() {
 	gGame.gameScene.fGroupSetName.initOnce();
 	gGame.gameScene.fGroup1.initOnce();
 	gGame.gameScene.fGroup2.initOnce();
+	gGame.gameScene.fGroupAD.initOnce();
 
 	//1 8082
 	// if(document.documentElement.scrollHeight <= document.documentElement.clientHeight) {

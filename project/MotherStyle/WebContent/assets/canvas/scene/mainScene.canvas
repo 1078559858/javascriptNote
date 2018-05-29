@@ -227,6 +227,17 @@
                 "y": -23,
                 "callback": "this.clickMusic"
               }
+            },
+            {
+              "type": "prefab",
+              "prefab": "10",
+              "id": "f491f675-0abb-41a2-86dd-4a2b04523ddd",
+              "info": {
+                "editorName": "groupAD",
+                "editorPublic": true,
+                "x": 0,
+                "y": 0
+              }
             }
           ]
         }
@@ -268,6 +279,7 @@
     "6": "WebContent/assets/canvas/prefab/prefab_6.canvas",
     "7": "WebContent/assets/canvas/prefab/prefab_7.canvas",
     "8": "WebContent/assets/canvas/prefab/prefab_8.canvas",
-    "9": "WebContent/assets/canvas/prefab/overPrefab.canvas"
+    "9": "WebContent/assets/canvas/prefab/overPrefab.canvas",
+    "10": "WebContent/assets/canvas/prefab/adPrefab.canvas"
   }
 }
