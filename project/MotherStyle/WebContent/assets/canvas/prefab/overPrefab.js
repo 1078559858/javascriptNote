@@ -79,47 +79,38 @@ overPrefab.prototype.constructor = overPrefab;
 // -- user code here --
 
 overPrefab.prototype.initOnce = function () {
-	var perA = 0,
-		perB = 0,
-		perC = 0,
-		perD = 0;
+	var score = 0;
+
+	var ballArr = [
+		{"a":1, "b":2, "c":3, "d":4},
+		{"a":4, "b":1, "c":3, "d":2},
+		{"a":3, "b":1, "c":2, "d":4},
+		{"a":4, "b":2, "c":1, "d":3},
+
+		{"a":1, "b":2, "c":3, "d":4},
+		{"a":2, "b":3, "c":1, "d":4},
+		{"a":2, "b":1, "c":4, "d":3},
+		{"a":3, "b":4, "c":2, "d":1}
+	];
 
 	for(var i = 0; i < gUserInfo.choice.length; i++){
-		if(gUserInfo.choice[i] === 'a'){
-			perA += 125;
-		}
-
-		if(gUserInfo.choice[i] === 'b'){
-			perB += 125;
-		}
-
-		if(gUserInfo.choice[i] === 'c'){
-			perC += 125;
-		}
-
-		if(gUserInfo.choice[i] === 'd'){
-			perD += 125;
-		}
+		score += ballArr[i][gUserInfo.choice[i]];
 	}
 
-	var max = Math.max(perA, perB, perC, perD);
-
-	if(gUserInfo.haveBoy){
-		if(max === perA){
-			this.fGroupFoxi.scale.x = 1;
-		}else if(max === perB){
-			this.fGroupShaonv.scale.x = 1;
-		}else{
-			this.fGroupHU.scale.x = 1;
-		}
-	}else{
+	if(score <= 8){
+		this.fGroupFoxi.scale.x = 1;
+	}else if(score <= 16){
+		this.fGroupShaonv.scale.x = 1;
+	}else if(score <= 24){
+		this.fGroupHU.scale.x = 1;
+	}else {
 		this.fGroupHuan.scale.x = 1;
 	}
 
-	this.fTexta.text = perA/10 + "%";
-	this.fTextb.text = perB/10 + "%";
-	this.fTextc.text = perC/10 + "%";
-	this.fTextd.text = perD/10 + "%";
+	// this.fTexta.text = perA/10 + "%";
+	// this.fTextb.text = perB/10 + "%";
+	// this.fTextc.text = perC/10 + "%";
+	// this.fTextd.text = perD/10 + "%";
 };
 
 overPrefab.prototype.clickBtn = function (btn) {

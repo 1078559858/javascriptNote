@@ -150,12 +150,6 @@
   "temp": [
     {
       "type": "image",
-      "key": "temp1",
-      "url": "assets/image/temp/temp1.jpg",
-      "overwrite": false
-    },
-    {
-      "type": "image",
       "key": "temp2",
       "url": "assets/image/temp/temp2.png",
       "overwrite": false
@@ -168,32 +162,8 @@
     },
     {
       "type": "image",
-      "key": "none",
-      "url": "assets/image/temp/none.png",
-      "overwrite": false
-    },
-    {
-      "type": "image",
-      "key": "nullLittle",
-      "url": "assets/image/temp/nullLittle.png",
-      "overwrite": false
-    },
-    {
-      "type": "image",
-      "key": "temp4",
-      "url": "assets/image/temp/temp4.png",
-      "overwrite": false
-    },
-    {
-      "type": "image",
       "key": "tempIcon",
       "url": "assets/image/temp/tempIcon.png",
-      "overwrite": false
-    },
-    {
-      "type": "image",
-      "key": "temp5",
-      "url": "assets/image/temp/temp5.png",
       "overwrite": false
     },
     {
@@ -206,6 +176,12 @@
       "type": "image",
       "key": "football",
       "url": "assets/image/temp/football.png",
+      "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "nullLittle",
+      "url": "assets/image/temp/nullLittle.png",
       "overwrite": false
     }
   ],
@@ -233,7 +209,7 @@
     }
   ],
   "meta": {
-    "generated": "1527581251381",
+    "generated": "1527599354335",
     "app": "Phaser Editor",
     "url": "http://phasereditor.boniatillo.com",
     "version": "1.0",

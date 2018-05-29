@@ -4,7 +4,13 @@
 
     <meta charset="UTF-8" />
     <meta name=viewport content="width=device-width,initial-scale=1, user-scalable=no" />
-    <title>MatherType</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="full-screen" content="true" />
+    <meta name="screen-orientation" content="portrait" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="360-fullscreen" content="true" />
+    <title>MatherType5</title>
 
     <!--libs-->
     <script src="lib/jquery-1.12.4.min.js"></script>
@@ -64,8 +70,32 @@
             user-select: text
         }
     </style>
+
+    <script>
+//		var screenHeight = document.body.clientHeight;
+//		var u = navigator.userAgent;
+//		var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+//		if (isAndroid) {
+//			$("#style_game").height(screenHeight);
+//		}
+
+
+
+    </script>
+
 </head>
 <body>
     <div id="id_game" class="style_game"></div>
 </body>
+
+<script>
+    //android 软键盘弹出后 页面压缩
+	var bHeight1 = $('#id_game').height();
+	var bWidth1 = $('#id_game').width();
+    $(window).resize(function () {
+		$('#id_game').height(bHeight1);
+		$('#id_game').width(bWidth1);
+	})
+
+</script>
 </html>
