@@ -19,6 +19,19 @@
 function mainScene(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyType) {
 	
 	Phaser.Group.call(this, aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyType);
+	var _groupColor = this.game.add.group(this);
+	_groupColor.position.setTo(-55, -40);
+	
+	var _white_png = this.game.add.sprite(-31, -21, 'color', 'white.png', _groupColor);
+	_white_png.scale.setTo(2.5, 8.5);
+	
+	var _colorBottom = this.game.add.sprite(-31, -21, 'color', 'fde500.png', _groupColor);
+	_colorBottom.scale.setTo(2.5, 8.5);
+	_colorBottom.alpha = 0.0;
+	
+	var _color_up = this.game.add.sprite(-31, -21, 'color', 'white.png', _groupColor);
+	_color_up.scale.setTo(2.5, 8.5);
+	
 	var _groupSetName = new pre_1(this.game, this);
 	
 	var _group1 = new prefab_1(this.game, this);
@@ -51,12 +64,15 @@ function mainScene(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBody
 	var _bgBtn = this.game.add.button(0, 0, 'bg', null, this, null, null, null, null, this);
 	_bgBtn.alpha = 0.0;
 	
-	var _music_btn = this.game.add.button(565, 16, 'music_btn', this.clickMusic, this, null, null, null, null, this);
+	var _music_btn = this.game.add.button(859, -23, 'music_btn', this.clickMusic, this, null, null, null, null, this);
 	
 	
 	
 	// public fields
 	
+	this.fGroupColor = _groupColor;
+	this.fColorBottom = _colorBottom;
+	this.fColor_up = _color_up;
 	this.fGroupSetName = _groupSetName;
 	this.fGroup1 = _group1;
 	this.fGroup2 = _group2;
@@ -84,7 +100,7 @@ mainScene.prototype.constructor = mainScene;
 mainScene.prototype.appearGroup = function (group) {
 	this.fBgBtn.inputEnabled = true;
 
-	group.setBackground();
+
 
 	//3 f7973a
 	//4 fde500
@@ -94,7 +110,7 @@ mainScene.prototype.appearGroup = function (group) {
 	//8 995ba3
 	//9 ee465d
 
-	var tween = this.game.add.tween(group).to( { x:0, y:0}, 1000,
+	var tween = this.game.add.tween(group).to( { x:0, y:0}, 500,
 		Phaser.Easing.Exponential.InOut, true);
 
 	tween.onComplete.addOnce(function () {
@@ -102,8 +118,34 @@ mainScene.prototype.appearGroup = function (group) {
 	})
 };
 
+mainScene.prototype.appearGroup2 = function (bObj, eObj) {
+	this.fBgBtn.inputEnabled = true;
+
+	bObj.x = -640;
+
+	var group = eObj;
+	group.x = 0;
+	group.setBackground();
+
+	this.setTempAction1(group);
+
+	// group.fGroup1.x += 640;
+	// group.fGroup2.x += 640;
+	// group.fGroup3.x += 640;
+	// group.fGroup4.x += 640;
+	// group.fTextTitle.x += 640;
+	// group.fQestion_question_bg.x += 640;
+	//
+	// this.setTempAction1(group.fGroup1);
+	// this.setTempAction1(group.fGroup2);
+	// this.setTempAction1(group.fGroup3);
+	// this.setTempAction1(group.fGroup4);
+	// this.setTempAction1(group.fQestion_question_bg);
+	// this.setTempAction1(group.fTextTitle);
+};
+
 mainScene.prototype.disAppearGroup = function (group) {
-	var tween = this.game.add.tween(group).to( { x:-gGameConf.width, y:0}, 1000,
+	var tween = this.game.add.tween(group).to( { x:-gGameConf.width, y:0}, 500,
 		Phaser.Easing.Exponential.InOut, true);
 };
 
@@ -126,4 +168,51 @@ mainScene.prototype.setAnchorMiddle = function (spr) {
 	spr.anchor.set(0.5,0.5);
 	spr.x += spr.width/2;
 	spr.y += spr.height/2;
+};
+
+mainScene.prototype.setColorChange = function (color) {
+	if(this.fColor_up.alpha === 0){
+		this.fColor_up.frameName = color + ".png";
+
+		this.game.add.tween(this.fColor_up).to( { alpha:1}, 1000,
+			Phaser.Easing.Linear.None, true);
+		this.game.add.tween(this.fColorBottom).to( { alpha:0}, 1000,
+			Phaser.Easing.Linear.None, true);
+	}else{
+		this.fColorBottom.frameName = color + ".png";
+
+		this.game.add.tween(this.fColor_up).to( { alpha:0}, 1000,
+			Phaser.Easing.Linear.None, true);
+		this.game.add.tween(this.fColorBottom).to( { alpha:1}, 1000,
+			Phaser.Easing.Linear.None, true);
+	}
+};
+
+mainScene.prototype.setGroupTween = function (obj, width, time1, time2) {
+	width = width || 50;
+	time1 = 500 || 500;
+	time2 = 1500 || 1500;
+
+	var begainX = obj.x + width;
+	var endX = obj.x;
+
+	var tweenA = this.game.add.tween(obj).to({x:begainX}, time1, Phaser.Easing.Linear.None);
+	var tweenB = this.game.add.tween(obj).to({x:endX}, time2, Phaser.Easing.Bounce.Out);
+	tweenA.chain(tweenB);
+	tweenA.start();
+};
+
+mainScene.prototype.setTempAction1 = function (layer) {
+	for(var i = 0; i < layer.length; i++){
+		var group = layer.getChildAt(i);
+		group.x += 640;
+
+		var time = Math.random()*200;
+		var tweenA = this.game.add.tween(group).to({x:group.x - 300}, 100, Phaser.Easing.Linear.None, true);
+		var tweenB = this.game.add.tween(group).to({x:group.x - 640}, 2600 + time, Phaser.Easing.Elastic.Out);
+		tweenB.onComplete.addOnce(function () {
+			gGame.gameScene.fBgBtn.inputEnabled = false;
+		});
+		tweenA.chain(tweenB);
+	}
 };

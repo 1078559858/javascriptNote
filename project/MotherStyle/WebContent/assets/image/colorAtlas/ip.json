@@ -1,0 +1,76 @@
+{"frames": [
+
+{
+	"filename": "bird.png",
+	"frame": {"x":0,"y":423,"w":190,"h":157},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":190,"h":157},
+	"sourceSize": {"w":190,"h":157}
+},
+{
+	"filename": "boy.png",
+	"frame": {"x":100,"y":248,"w":100,"h":175},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":175},
+	"sourceSize": {"w":100,"h":175}
+},
+{
+	"filename": "boy2.png",
+	"frame": {"x":100,"y":0,"w":100,"h":248},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":248},
+	"sourceSize": {"w":100,"h":248}
+},
+{
+	"filename": "eyu.png",
+	"frame": {"x":0,"y":580,"w":240,"h":252},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":240,"h":252},
+	"sourceSize": {"w":240,"h":252}
+},
+{
+	"filename": "girl.png",
+	"frame": {"x":0,"y":248,"w":100,"h":146},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":146},
+	"sourceSize": {"w":100,"h":146}
+},
+{
+	"filename": "girl2.png",
+	"frame": {"x":0,"y":0,"w":100,"h":232},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":232},
+	"sourceSize": {"w":100,"h":232}
+},
+{
+	"filename": "huli.png",
+	"frame": {"x":0,"y":832,"w":240,"h":223},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":240,"h":223},
+	"sourceSize": {"w":240,"h":223}
+},
+{
+	"filename": "xiong.png",
+	"frame": {"x":0,"y":1055,"w":240,"h":262},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":240,"h":262},
+	"sourceSize": {"w":240,"h":262}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "ip.png",
+	"format": "RGBA8888",
+	"size": {"w":240,"h":1317},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:fe1ccc67c67ec143cb515d5306227f05:2760e78f9c1c6b51c87e4a43c80c0b23:ab9094a208439df46140e23f995e3a6e$"
+}
+}

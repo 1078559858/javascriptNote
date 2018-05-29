@@ -45,23 +45,33 @@
           "setAll": [],
           "children": [
             {
-              "type": "image",
-              "id": "cbfdd06c-0c63-47df-830f-cf7d80b31c14",
+              "type": "atlas-sprite",
+              "id": "411fedf9-c9e0-49d1-b108-a28725d5e563",
               "asset": "0",
               "info": {
-                "editorName": "qestion_question_bg",
-                "x": 53,
-                "y": 74
+                "editorName": "heiban_png",
+                "x": 87,
+                "y": 65
               }
             },
             {
-              "type": "button",
-              "id": "7d5aed47-5b3d-4fad-9495-7894770ca3e0",
+              "type": "image",
+              "id": "e7a8347d-e6b5-4d0d-8839-915393cc4d46",
               "asset": "1",
               "info": {
-                "editorName": "Q1_title",
-                "x": 39,
-                "y": 11
+                "editorName": "temp",
+                "scale.x": 0.3,
+                "scale.y": 0.3
+              }
+            },
+            {
+              "type": "atlas-sprite",
+              "id": "539d3de4-532d-4885-8d5c-a27c3f3144a0",
+              "asset": "2",
+              "info": {
+                "editorName": "bird_png",
+                "x": 252,
+                "y": 15
               }
             },
             {
@@ -69,10 +79,11 @@
               "id": "da869ecd-5470-431f-9445-0c930ac71f39",
               "info": {
                 "editorName": "text",
-                "x": 68,
-                "y": 198,
-                "text": "4、宝宝把你2000多块的神\r\n     仙水给弄砸了，你会\r\n     怎么处理？",
-                "style.fontSize": 40
+                "x": 144,
+                "y": 209,
+                "text": "4、宝宝把你2000多\r\n     块的神仙水给弄\r\n     砸了，你会怎么\r\n     处理？",
+                "style.fontSize": 40,
+                "style.fill": "#ffffff"
               }
             },
             {
@@ -86,7 +97,7 @@
                   {
                     "type": "button",
                     "id": "8fb6ecea-d41b-4ff1-a5ce-7f462eb9de2b",
-                    "asset": "2",
+                    "asset": "3",
                     "info": {
                       "editorName": "chat",
                       "x": 52,
@@ -121,7 +132,7 @@
                   {
                     "type": "button",
                     "id": "5b0b1967-b3e1-4976-8fd5-d0c404fab509",
-                    "asset": "3",
+                    "asset": "4",
                     "info": {
                       "editorName": "chat1",
                       "x": 48,
@@ -155,7 +166,7 @@
                   {
                     "type": "button",
                     "id": "bd1f257c-2438-42f9-9545-5e33b3778210",
-                    "asset": "2",
+                    "asset": "3",
                     "info": {
                       "editorName": "chat2",
                       "x": 52,
@@ -190,7 +201,7 @@
                   {
                     "type": "button",
                     "id": "3f54f94e-c067-499a-9e44-8276356f8b19",
-                    "asset": "3",
+                    "asset": "4",
                     "info": {
                       "editorName": "chat3",
                       "x": 52,
@@ -222,20 +233,27 @@
   "asset-table": {
     "0": {
       "file": "WebContent/assets/pack.json",
-      "section": "common",
-      "asset": "qestion_question_bg"
+      "section": "colorAtlas",
+      "asset": "common1",
+      "sprite": "heiban.png"
     },
     "1": {
       "file": "WebContent/assets/pack.json",
-      "section": "common",
-      "asset": "Q1_title"
+      "section": "temp",
+      "asset": "temp3"
     },
     "2": {
+      "file": "WebContent/assets/pack.json",
+      "section": "colorAtlas",
+      "asset": "ip",
+      "sprite": "girl.png"
+    },
+    "3": {
       "file": "WebContent/assets/pack.json",
       "section": "common",
       "asset": "chat1"
     },
-    "3": {
+    "4": {
       "file": "WebContent/assets/pack.json",
       "section": "common",
       "asset": "chat3"

@@ -40,8 +40,8 @@ Video.prototype.preload = function() {
 };
 
 Video.prototype.create = function() {
-	this.initVideo();
-	//this.game.state.start("Preload");
+	//this.initVideo();
+	this.game.state.start("Preload");
 };
 
 Video.prototype.update = function() {
@@ -73,12 +73,14 @@ Video.prototype.start = function () {
 };
 
 Video.prototype.playBg = function () {
+	return;
 	if(this.couldPlayMusic()){
 		this.videoInfo.data["bg"].video.play();
 	}
 };
 
 Video.prototype.playClick = function () {
+	return;
 	if(this.couldPlaySound()){
 		this.videoInfo.data["click"].video.play();
 	}

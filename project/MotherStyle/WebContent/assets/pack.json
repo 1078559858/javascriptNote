@@ -147,8 +147,87 @@
       "overwrite": false
     }
   ],
+  "temp": [
+    {
+      "type": "image",
+      "key": "temp1",
+      "url": "assets/image/temp/temp1.jpg",
+      "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "temp2",
+      "url": "assets/image/temp/temp2.png",
+      "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "temp3",
+      "url": "assets/image/temp/temp3.png",
+      "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "none",
+      "url": "assets/image/temp/none.png",
+      "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "nullLittle",
+      "url": "assets/image/temp/nullLittle.png",
+      "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "temp4",
+      "url": "assets/image/temp/temp4.png",
+      "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "tempIcon",
+      "url": "assets/image/temp/tempIcon.png",
+      "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "temp5",
+      "url": "assets/image/temp/temp5.png",
+      "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "tempChat",
+      "url": "assets/image/temp/tempChat.png",
+      "overwrite": false
+    }
+  ],
+  "colorAtlas": [
+    {
+      "type": "atlas",
+      "key": "color",
+      "textureURL": "assets/image/colorAtlas/color.png",
+      "atlasURL": "assets/image/colorAtlas/color.json",
+      "format": "TEXTURE_ATLAS_JSON_ARRAY"
+    },
+    {
+      "type": "atlas",
+      "key": "common1",
+      "textureURL": "assets/image/colorAtlas/common.png",
+      "atlasURL": "assets/image/colorAtlas/common.json",
+      "format": "TEXTURE_ATLAS_JSON_ARRAY"
+    },
+    {
+      "type": "atlas",
+      "key": "ip",
+      "textureURL": "assets/image/colorAtlas/ip.png",
+      "atlasURL": "assets/image/colorAtlas/ip.json",
+      "format": "TEXTURE_ATLAS_JSON_ARRAY"
+    }
+  ],
   "meta": {
-    "generated": "1527304583158",
+    "generated": "1527560923575",
     "app": "Phaser Editor",
     "url": "http://phasereditor.boniatillo.com",
     "version": "1.0",

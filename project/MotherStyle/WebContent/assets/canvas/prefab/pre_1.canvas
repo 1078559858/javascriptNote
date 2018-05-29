@@ -148,6 +148,16 @@
                 "alpha": 0,
                 "callback": "this.clickGo"
               }
+            },
+            {
+              "type": "image",
+              "id": "1650efae-67ab-42da-aabf-d59adfbc3c08",
+              "asset": "6",
+              "info": {
+                "editorName": "temp",
+                "scale.x": 0.3,
+                "scale.y": 0.3
+              }
             }
           ]
         }
@@ -185,6 +195,11 @@
       "file": "WebContent/assets/pack.json",
       "section": "preSetName",
       "asset": "5000"
+    },
+    "6": {
+      "file": "WebContent/assets/pack.json",
+      "section": "temp",
+      "asset": "temp3"
     }
   },
   "prefab-table": {}

@@ -9,9 +9,9 @@
     "lang": "JAVA_SCRIPT",
     "baseClass": "Phaser.Group",
     "backgroundColor": [
-      180,
-      180,
-      180
+      192,
+      192,
+      192
     ],
     "gridColor": [
       200,
@@ -51,26 +51,48 @@
               "info": {"editorName": "Load_bg"}
             },
             {
-              "type": "image",
-              "id": "65af7c6b-aac2-4787-ae60-46a16cb14b25",
-              "asset": "1",
-              "info": {
-                "editorName": "processbar",
-                "editorPublic": true,
-                "x": 187,
-                "y": 579
-              }
-            },
-            {
               "type": "text",
               "id": "40903cb9-f463-45cb-a580-d20c7442fc15",
               "info": {
                 "editorName": "per",
                 "editorPublic": true,
-                "x": 292.3711242675781,
-                "y": 682,
+                "x": 293,
+                "y": 688,
                 "text": "0%",
                 "style.fontSize": 40
+              }
+            },
+            {
+              "type": "image",
+              "id": "25dd3504-a4b9-479a-92d7-551c97cf2fcf",
+              "asset": "1",
+              "info": {
+                "editorName": "temp2",
+                "x": 100,
+                "y": 2
+              }
+            },
+            {
+              "type": "image",
+              "id": "26fd8b0c-c202-4a19-bb7b-4bf5d8b86b8d",
+              "asset": "2",
+              "info": {
+                "editorName": "temp1",
+                "x": 153,
+                "y": 340,
+                "scale.x": 0.5,
+                "scale.y": 0.5
+              }
+            },
+            {
+              "type": "image",
+              "id": "65af7c6b-aac2-4787-ae60-46a16cb14b25",
+              "asset": "3",
+              "info": {
+                "editorName": "processbar",
+                "editorPublic": true,
+                "x": 183,
+                "y": 619
               }
             }
           ]
@@ -86,6 +108,16 @@
       "asset": "Load_bg"
     },
     "1": {
+      "file": "WebContent/assets/pack.json",
+      "section": "temp",
+      "asset": "temp3"
+    },
+    "2": {
+      "file": "WebContent/assets/pack.json",
+      "section": "temp",
+      "asset": "temp2"
+    },
+    "3": {
       "file": "WebContent/assets/pack.json",
       "section": "boot",
       "asset": "processbar2"

@@ -45,23 +45,33 @@
           "setAll": [],
           "children": [
             {
-              "type": "image",
-              "id": "a52daccd-455c-4fad-b9a1-72adc94b7db7",
+              "type": "atlas-sprite",
+              "id": "dfffe56f-b869-444a-9bea-584793b5a78c",
               "asset": "0",
               "info": {
-                "editorName": "qestion_question_bg",
-                "x": 52,
-                "y": 74
+                "editorName": "heiban_png",
+                "x": 89,
+                "y": 60
               }
             },
             {
-              "type": "button",
-              "id": "798652fe-53e6-4517-87c6-be9c9243a3c7",
+              "type": "image",
+              "id": "0dff27e8-c884-4428-942c-0978e8930c65",
               "asset": "1",
               "info": {
-                "editorName": "Q1_title",
-                "x": 38,
-                "y": 11
+                "editorName": "temp",
+                "scale.x": 0.3,
+                "scale.y": 0.3
+              }
+            },
+            {
+              "type": "atlas-sprite",
+              "id": "9e322104-a5db-40d8-9015-3a00bc3dd114",
+              "asset": "2",
+              "info": {
+                "editorName": "bird_png",
+                "x": 243,
+                "y": -5
               }
             },
             {
@@ -69,10 +79,11 @@
               "id": "673a057b-7986-4ada-9f25-9de5629b03ad",
               "info": {
                 "editorName": "text",
-                "x": 67,
-                "y": 198,
-                "text": "3、宝宝的小卧室，你最希\r\n     望装修成什么风格",
-                "style.fontSize": 40
+                "x": 135,
+                "y": 209,
+                "text": "3、宝宝的小卧室，\r\n     你最希望装修成\r\n     什么风格",
+                "style.fontSize": 40,
+                "style.fill": "#ffffff"
               }
             },
             {
@@ -87,7 +98,7 @@
                   {
                     "type": "button",
                     "id": "a3aa9142-8b29-4398-a40c-fff730f6c170",
-                    "asset": "2",
+                    "asset": "3",
                     "info": {
                       "editorName": "chat",
                       "x": 52,
@@ -122,7 +133,7 @@
                   {
                     "type": "button",
                     "id": "1ffaa75e-6feb-4fbc-8c82-5cbfc4fe34b7",
-                    "asset": "3",
+                    "asset": "4",
                     "info": {
                       "editorName": "chat1",
                       "x": 48,
@@ -157,7 +168,7 @@
                   {
                     "type": "button",
                     "id": "bb624f58-cd47-4d4a-8e57-901537749e07",
-                    "asset": "2",
+                    "asset": "3",
                     "info": {
                       "editorName": "chat2",
                       "x": 52,
@@ -192,7 +203,7 @@
                   {
                     "type": "button",
                     "id": "bfa172f3-4591-4669-a6fa-5238c540f5cf",
-                    "asset": "3",
+                    "asset": "4",
                     "info": {
                       "editorName": "chat3",
                       "x": 52,
@@ -224,20 +235,27 @@
   "asset-table": {
     "0": {
       "file": "WebContent/assets/pack.json",
-      "section": "common",
-      "asset": "qestion_question_bg"
+      "section": "colorAtlas",
+      "asset": "common1",
+      "sprite": "heiban.png"
     },
     "1": {
       "file": "WebContent/assets/pack.json",
-      "section": "common",
-      "asset": "Q1_title"
+      "section": "temp",
+      "asset": "temp3"
     },
     "2": {
+      "file": "WebContent/assets/pack.json",
+      "section": "colorAtlas",
+      "asset": "ip",
+      "sprite": "boy.png"
+    },
+    "3": {
       "file": "WebContent/assets/pack.json",
       "section": "common",
       "asset": "chat1"
     },
-    "3": {
+    "4": {
       "file": "WebContent/assets/pack.json",
       "section": "common",
       "asset": "chat3"

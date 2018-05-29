@@ -45,23 +45,34 @@
           "setAll": [],
           "children": [
             {
-              "type": "image",
-              "id": "1a05998b-c54a-4f44-b7fc-18466894e5e3",
+              "type": "atlas-sprite",
+              "id": "617bec9a-b7fd-4a29-a785-908c8f851077",
               "asset": "0",
               "info": {
-                "editorName": "qestion_question_bg",
-                "x": 51,
-                "y": 72
+                "editorName": "heiban_png",
+                "x": 94,
+                "y": 35
               }
             },
             {
-              "type": "button",
-              "id": "0873fbff-fe9e-4c8a-b2d5-5a2fd5a2b0b2",
+              "type": "image",
+              "id": "8510fdac-4c49-46a9-a01d-fe70b4c4f624",
               "asset": "1",
               "info": {
-                "editorName": "Q1_title",
-                "x": 37,
-                "y": 9
+                "editorName": "temp",
+                "scale.x": 0.3,
+                "scale.y": 0.3
+              }
+            },
+            {
+              "type": "atlas-sprite",
+              "id": "159011d0-b44c-42df-bced-a5c43158af28",
+              "asset": "2",
+              "info": {
+                "editorName": "bird_png",
+                "x": 243,
+                "scale.x": 0.5,
+                "scale.y": 0.5
               }
             },
             {
@@ -69,10 +80,11 @@
               "id": "840e14cc-4672-4db1-9d0f-6ba47c946884",
               "info": {
                 "editorName": "text",
-                "x": 66,
-                "y": 196,
-                "text": "6、孩子问：\u201c妈妈，我们家\r\n     有钱吗?\u201d你的回答是： ",
-                "style.fontSize": 40
+                "x": 143,
+                "y": 189,
+                "text": "6、孩子问：\u201c妈妈，\r\n     我们家有钱吗?\u201d\r\n     你的回答是： ",
+                "style.fontSize": 40,
+                "style.fill": "#ffffff"
               }
             },
             {
@@ -87,7 +99,7 @@
                   {
                     "type": "button",
                     "id": "b9392971-bf92-4e0b-b6d2-be4eaaa7d668",
-                    "asset": "2",
+                    "asset": "3",
                     "info": {
                       "editorName": "chat",
                       "x": 52,
@@ -122,7 +134,7 @@
                   {
                     "type": "button",
                     "id": "7a7a3361-9b29-44ee-9705-bd49aa220d47",
-                    "asset": "3",
+                    "asset": "4",
                     "info": {
                       "editorName": "chat1",
                       "x": 48,
@@ -157,7 +169,7 @@
                   {
                     "type": "button",
                     "id": "070ffd0c-8d73-4e3d-8d60-ea3b695db2ba",
-                    "asset": "2",
+                    "asset": "3",
                     "info": {
                       "editorName": "chat2",
                       "x": 52,
@@ -192,7 +204,7 @@
                   {
                     "type": "button",
                     "id": "542ffee2-b5ce-424b-bf1e-7f506082da58",
-                    "asset": "3",
+                    "asset": "4",
                     "info": {
                       "editorName": "chat3",
                       "x": 52,
@@ -224,20 +236,27 @@
   "asset-table": {
     "0": {
       "file": "WebContent/assets/pack.json",
-      "section": "common",
-      "asset": "qestion_question_bg"
+      "section": "colorAtlas",
+      "asset": "common1",
+      "sprite": "heiban.png"
     },
     "1": {
       "file": "WebContent/assets/pack.json",
-      "section": "common",
-      "asset": "Q1_title"
+      "section": "temp",
+      "asset": "temp3"
     },
     "2": {
+      "file": "WebContent/assets/pack.json",
+      "section": "colorAtlas",
+      "asset": "ip",
+      "sprite": "eyu.png"
+    },
+    "3": {
       "file": "WebContent/assets/pack.json",
       "section": "common",
       "asset": "chat1"
     },
-    "3": {
+    "4": {
       "file": "WebContent/assets/pack.json",
       "section": "common",
       "asset": "chat3"

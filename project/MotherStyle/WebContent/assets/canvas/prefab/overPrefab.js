@@ -127,5 +127,5 @@ overPrefab.prototype.clickBtn = function (btn) {
 };
 
 overPrefab.prototype.setBackground = function () {
-	//this.game.stage.backgroundColor = '#995ba3';
+
 };

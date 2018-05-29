@@ -20,16 +20,21 @@ function preloadScene(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsB
 	Phaser.Group.call(this, aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyType);
 	this.game.add.sprite(0, 0, 'Load_bg', null, this);
 	
-	var _processbar = this.game.add.sprite(187, 579, 'processbar2', null, this);
+	var _per = this.game.add.text(293, 688, '0%', {"font":"bold 40px Arial"}, this);
 	
-	var _per = this.game.add.text(292, 682, '0%', {"font":"bold 40px Arial"}, this);
+	this.game.add.sprite(100, 2, 'temp3', null, this);
+	
+	var _temp1 = this.game.add.sprite(153, 340, 'temp2', null, this);
+	_temp1.scale.setTo(0.5, 0.5);
+	
+	var _processbar = this.game.add.sprite(183, 619, 'processbar2', null, this);
 	
 	
 	
 	// public fields
 	
-	this.fProcessbar = _processbar;
 	this.fPer = _per;
+	this.fProcessbar = _processbar;
 	
 }
 
@@ -40,3 +45,10 @@ preloadScene.prototype.constructor = preloadScene;
 
 /* --- end generated code --- */
 // -- user code here --
+
+
+preloadScene.prototype.initOnce = function () {
+	this.fPer.anchor.set(0.5,0.5);
+	this.fPer.x += this.fPer.width/2;
+	this.fPer.y += this.fPer.height/2;
+};

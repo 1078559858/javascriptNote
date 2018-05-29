@@ -45,6 +45,58 @@
           "setAll": [],
           "children": [
             {
+              "type": "group",
+              "id": "acd5fe64-b902-4069-9f27-fd53b423d951",
+              "info": {
+                "editorName": "groupColor",
+                "editorPublic": true,
+                "x": -55,
+                "y": -40,
+                "setAll": [],
+                "children": [
+                  {
+                    "type": "atlas-sprite",
+                    "id": "cbfc1340-5810-4f76-9fac-ecb222f61211",
+                    "asset": "0",
+                    "info": {
+                      "editorName": "white_png",
+                      "x": -31,
+                      "y": -21,
+                      "scale.x": 2.5,
+                      "scale.y": 8.5
+                    }
+                  },
+                  {
+                    "type": "atlas-sprite",
+                    "id": "edadc6ff-8dc8-4957-8161-a30bfa884807",
+                    "asset": "1",
+                    "info": {
+                      "editorName": "colorBottom",
+                      "editorPublic": true,
+                      "x": -31,
+                      "y": -21,
+                      "scale.x": 2.5,
+                      "scale.y": 8.5,
+                      "alpha": 0
+                    }
+                  },
+                  {
+                    "type": "atlas-sprite",
+                    "id": "d384c675-3f9a-4b45-9d15-dc5061a5449c",
+                    "asset": "0",
+                    "info": {
+                      "editorName": "color_up",
+                      "editorPublic": true,
+                      "x": -31,
+                      "y": -21,
+                      "scale.x": 2.5,
+                      "scale.y": 8.5
+                    }
+                  }
+                ]
+              }
+            },
+            {
               "type": "prefab",
               "prefab": "0",
               "id": "6f994a64-f0e1-45a0-87cc-7183a9c78929",
@@ -157,7 +209,7 @@
             {
               "type": "button",
               "id": "0b36a72d-b16b-4765-92f4-15d4a682684d",
-              "asset": "0",
+              "asset": "2",
               "info": {
                 "editorName": "bgBtn",
                 "editorPublic": true,
@@ -167,12 +219,12 @@
             {
               "type": "button",
               "id": "c9511a7e-7e21-470a-8cef-9df4f4f489dd",
-              "asset": "1",
+              "asset": "3",
               "info": {
                 "editorName": "music_btn",
                 "editorPublic": true,
-                "x": 565,
-                "y": 16,
+                "x": 859,
+                "y": -23,
                 "callback": "this.clickMusic"
               }
             }
@@ -185,10 +237,22 @@
   "asset-table": {
     "0": {
       "file": "WebContent/assets/pack.json",
+      "section": "colorAtlas",
+      "asset": "color",
+      "sprite": "white.png"
+    },
+    "1": {
+      "file": "WebContent/assets/pack.json",
+      "section": "colorAtlas",
+      "asset": "color",
+      "sprite": "fde500.png"
+    },
+    "2": {
+      "file": "WebContent/assets/pack.json",
       "section": "boot",
       "asset": "bg"
     },
-    "1": {
+    "3": {
       "file": "WebContent/assets/pack.json",
       "section": "preSetName",
       "asset": "music_btn"

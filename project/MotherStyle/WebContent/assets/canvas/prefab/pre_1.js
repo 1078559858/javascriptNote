@@ -9,8 +9,7 @@
 /**
  * pre_1.
  * @param {Phaser.Game} aGame A reference to the currently running game.
- * @param {Phaser.Group} aParent The parent Group (or other {@link DisplayObject}) that this group will be added to.
-    If undefined/unspecified the Group will be added to the {@link Phaser.Game#world Game World}; if null the Group will not be added to any parent.
+ * @param {Phaser.Group} aParent The parent Group (or other {@link DisplayObject}) that this group will be added to.    If undefined/unspecified the Group will be added to the {@link Phaser.Game#world Game World}; if null the Group will not be added to any parent.
  * @param {string} aName A name for this group. Not used internally but useful for debugging.
  * @param {boolean} aAddToStage If true this group will be added directly to the Game.Stage instead of Game.World.
  * @param {boolean} aEnableBody If true all Sprites created with {@link #create} or {@link #createMulitple} will have a physics body created on them. Change the body type with {@link #physicsBodyType}.
@@ -43,6 +42,9 @@ function pre_1(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyType
 	_btnGo.scale.setTo(4.5, 2.0);
 	_btnGo.alpha = 0.0;
 	
+	var _temp = this.game.add.sprite(0, 0, 'temp3', null, this);
+	_temp.scale.setTo(0.3, 0.3);
+	
 	
 	
 	// public fields
@@ -72,7 +74,7 @@ pre_1.prototype.initOnce  = function () {
 	this.fDialog_home_null.visible = false;
 
 	this.gChatInput = this.game.make.inputField(240, 880, {
-		font: '36px Arial',
+		font: '30px Arial',
 		fill: '#000000',
 		fontWeight: 'bold',
 		width: 150,
@@ -81,8 +83,9 @@ pre_1.prototype.initOnce  = function () {
 		borderWidth: 1,
 		borderColor: '#ffffff',
 		borderRadius: 6,
-		fillAlpha:0,
-		placeHolder: "输入姓名",
+		fillAlpha:1,
+		placeHolder: "  输入姓名",
+		textAlign:"center",
 		type: PhaserInput.InputType.text
 	});
 
@@ -117,8 +120,14 @@ pre_1.prototype.checkName = function () {
 		return;
 	}
 
-	gGame.gameScene.disAppearGroup(this);
-	gGame.gameScene.appearGroup(gGame.gameScene.fGroup1);
+
+	this.x = -gGameConf.width;
+	gGame.gameScene.fGroup1.x = 0;
+	gGame.gameScene.fColor_up.frameName = "fde500.png";
+	//this.game.stage.backgroundColor = '#4dbb84';
+
+	// gGame.gameScene.disAppearGroup(this);
+	// gGame.gameScene.appearGroup(gGame.gameScene.fGroup1);
 };
 
 pre_1.prototype.focusIn = function () {

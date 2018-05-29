@@ -9,8 +9,7 @@
 /**
  * prefab_6.
  * @param {Phaser.Game} aGame A reference to the currently running game.
- * @param {Phaser.Group} aParent The parent Group (or other {@link DisplayObject}) that this group will be added to.
-    If undefined/unspecified the Group will be added to the {@link Phaser.Game#world Game World}; if null the Group will not be added to any parent.
+ * @param {Phaser.Group} aParent The parent Group (or other {@link DisplayObject}) that this group will be added to.    If undefined/unspecified the Group will be added to the {@link Phaser.Game#world Game World}; if null the Group will not be added to any parent.
  * @param {string} aName A name for this group. Not used internally but useful for debugging.
  * @param {boolean} aAddToStage If true this group will be added directly to the Game.Stage instead of Game.World.
  * @param {boolean} aEnableBody If true all Sprites created with {@link #create} or {@link #createMulitple} will have a physics body created on them. Change the body type with {@link #physicsBodyType}.
@@ -19,11 +18,15 @@
 function prefab_6(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyType) {
 	
 	Phaser.Group.call(this, aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyType);
-	this.game.add.sprite(51, 72, 'qestion_question_bg', null, this);
+	this.game.add.sprite(94, 35, 'common1', 'heiban.png', this);
 	
-	this.game.add.button(37, 9, 'Q1_title', null, this, null, null, null, null, this);
+	var _temp = this.game.add.sprite(0, 0, 'temp3', null, this);
+	_temp.scale.setTo(0.3, 0.3);
 	
-	this.game.add.text(66, 196, '6、孩子问：“妈妈，我们家\n     有钱吗?”你的回答是： ', {"font":"bold 40px Arial"}, this);
+	var _bird_png = this.game.add.sprite(243, 0, 'ip', 'eyu.png', this);
+	_bird_png.scale.setTo(0.5, 0.5);
+	
+	this.game.add.text(143, 189, '6、孩子问：“妈妈，\n     我们家有钱吗?”\n     你的回答是： ', {"font":"bold 40px Arial","fill":"#ffffff"}, this);
 	
 	var _group1 = this.game.add.group(this);
 	_group1.position.setTo(-2, -3);
@@ -84,11 +87,11 @@ prefab_6.prototype.clickBtn = function (btn) {
 	this.game.state.states.Video.playClick();
 
 	gUserInfo.choice.push(btn.data.value);
-
-	gGame.gameScene.disAppearGroup(this);
-	gGame.gameScene.appearGroup(gGame.gameScene.fGroup7);
+	gGame.gameScene.appearGroup2(this, gGame.gameScene.fGroup7);
+	// gGame.gameScene.disAppearGroup(this);
+	// gGame.gameScene.appearGroup(gGame.gameScene.fGroup7);
 };
 
 prefab_6.prototype.setBackground = function () {
-	this.game.stage.backgroundColor = '#4dbb84';
+	gGame.gameScene.setColorChange( '4dbb84');
 };

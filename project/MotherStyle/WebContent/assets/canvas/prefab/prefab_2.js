@@ -9,8 +9,7 @@
 /**
  * prefab_2.
  * @param {Phaser.Game} aGame A reference to the currently running game.
- * @param {Phaser.Group} aParent The parent Group (or other {@link DisplayObject}) that this group will be added to.
-    If undefined/unspecified the Group will be added to the {@link Phaser.Game#world Game World}; if null the Group will not be added to any parent.
+ * @param {Phaser.Group} aParent The parent Group (or other {@link DisplayObject}) that this group will be added to.    If undefined/unspecified the Group will be added to the {@link Phaser.Game#world Game World}; if null the Group will not be added to any parent.
  * @param {string} aName A name for this group. Not used internally but useful for debugging.
  * @param {boolean} aAddToStage If true this group will be added directly to the Game.Stage instead of Game.World.
  * @param {boolean} aEnableBody If true all Sprites created with {@link #create} or {@link #createMulitple} will have a physics body created on them. Change the body type with {@link #physicsBodyType}.
@@ -19,52 +18,85 @@
 function prefab_2(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyType) {
 	
 	Phaser.Group.call(this, aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyType);
-	this.game.add.sprite(53, 75, 'qestion_question_bg', null, this);
+	this.game.add.sprite(96, 30, 'common1', 'heiban.png', this);
 	
-	this.game.add.button(39, 12, 'Q1_title', null, this, null, null, null, null, this);
+	var _textTitle = this.game.add.text(138, 179, '2、2岁的宝宝想爬\n      楼梯，此时你\n      会?', {"font":"bold 45px Arial","fill":"#ffffff"}, this);
 	
-	this.game.add.text(82, 197, '2、2岁的宝宝想爬楼梯，\n     此时你会?', {"font":"bold 45px Arial"}, this);
+	var _temp = this.game.add.sprite(0, 0, 'temp3', null, this);
+	_temp.scale.setTo(0.3, 0.3);
 	
 	var _group1 = this.game.add.group(this);
+	_group1.position.setTo(30, 6);
 	
-	var _chat = this.game.add.button(52, 460, 'chat1', this.clickBtn, this, null, null, null, null, _group1);
-	_chat.data = {
+	var _bgBtn2 = this.game.add.button(26, 421, 'color', this.clickBtn, this, null, 'ee465d.png', null, null, _group1);
+	_bgBtn2.scale.setTo(1.8, 0.77);
+	_bgBtn2.alpha = 0.0;
+	_bgBtn2.data = {
 	"value":"a"
 	};
 	
-	this.game.add.text(132, 480, 'A:他想爬就爬，稍微看着\n   点就行了', {"font":"bold 36px Arial"}, _group1);
+	var _dhk_png = this.game.add.sprite(33, 428, 'common1', 'dhk.png', _group1);
+	_dhk_png.scale.setTo(1.2, 1.2);
+	
+	this.game.add.text(123, 451, 'A:他想爬就爬，稍微看着\n   点就行了', {"font":"bold 36px Arial","fill":"#ffffff"}, _group1);
 	
 	var _group2 = this.game.add.group(this);
-	_group2.position.setTo(-2, 178);
+	_group2.position.setTo(21, 191);
 	
-	var _chat22 = this.game.add.button(52, 460, 'chat3', this.clickBtn, this, null, null, null, null, _group2);
-	_chat22.data = {
+	var _bgBtn1 = this.game.add.button(33, 456, 'color', this.clickBtn, this, null, 'ee465d.png', null, null, _group2);
+	_bgBtn1.scale.setTo(1.8, 0.77);
+	_bgBtn1.alpha = 0.0;
+	_bgBtn1.data = {
 	"value":"b"
 	};
 	
-	this.game.add.text(132, 480, 'B: 不许爬，包衣服和手都\n    弄脏了', {"font":"bold 36px Arial"}, _group2);
+	var _dhk_png1 = this.game.add.sprite(31, 471, 'common1', 'dhk.png', _group2);
+	_dhk_png1.scale.setTo(1.2, 1.2);
+	
+	this.game.add.text(125, 487, 'B:不许爬，包衣服和手都\n    弄脏了', {"font":"bold 36px Arial","fill":"#ffffff"}, _group2);
 	
 	var _group3 = this.game.add.group(this);
-	_group3.position.setTo(0, 377);
+	_group3.position.setTo(7, 379);
 	
-	var _chat1 = this.game.add.button(52, 460, 'chat1', this.clickBtn, this, null, null, null, null, _group3);
-	_chat1.data = {
+	var _bgBtn = this.game.add.button(45, 458, 'color', this.clickBtn, this, null, 'f7973a.png', null, null, _group3);
+	_bgBtn.scale.setTo(1.8, 0.77);
+	_bgBtn.alpha = 0.0;
+	_bgBtn.data = {
 	"value":"c"
 	};
 	
-	this.game.add.text(132, 502, 'C：跟在宝宝背后保护Ta', {"font":"bold 36px Arial"}, _group3);
+	var _dhk_png2 = this.game.add.sprite(58, 470, 'common1', 'dhk.png', _group3);
+	_dhk_png2.scale.setTo(1.2, 1.2);
+	
+	this.game.add.text(140, 508, 'C:跟在宝宝背后保护Ta', {"font":"bold 36px Arial","fill":"#ffffff"}, _group3);
 	
 	var _group4 = this.game.add.group(this);
 	_group4.position.setTo(-2, 555);
 	
-	var _chat2 = this.game.add.button(52, 460, 'chat3', this.clickBtn, this, null, null, null, null, _group4);
-	_chat2.data = {
+	var _bgBtn4 = this.game.add.button(51, 449, 'color', this.clickBtn, this, null, 'bad53f.png', null, null, _group4);
+	_bgBtn4.scale.setTo(1.8, 0.77);
+	_bgBtn4.alpha = 0.0;
+	_bgBtn4.data = {
 	"value":"d"
 	};
 	
-	this.game.add.text(132, 488, 'D：懒得拾掇，交给Ta爹', {"font":"bold 36px Arial"}, _group4);
+	var _dhk_png3 = this.game.add.sprite(53, 456, 'common1', 'dhk.png', _group4);
+	_dhk_png3.scale.setTo(1.2, 1.2);
+	
+	this.game.add.text(141, 500, 'D:懒得拾掇，交给Ta爹', {"font":"bold 36px Arial","fill":"#ffffff"}, _group4);
+	
+	var _huli_png = this.game.add.sprite(259, 7, 'ip', 'huli.png', this);
+	_huli_png.scale.setTo(0.5, 0.5);
 	
 	
+	
+	// public fields
+	
+	this.fTextTitle = _textTitle;
+	this.fGroup1 = _group1;
+	this.fGroup2 = _group2;
+	this.fGroup3 = _group3;
+	this.fGroup4 = _group4;
 	
 }
 
@@ -86,10 +118,17 @@ prefab_2.prototype.clickBtn = function (btn) {
 
 	gUserInfo.choice.push(btn.data.value);
 
-	gGame.gameScene.disAppearGroup(this);
-	gGame.gameScene.appearGroup(gGame.gameScene.fGroup3);
+	gGame.gameScene.appearGroup2(this, gGame.gameScene.fGroup3);
+	// gGame.gameScene.disAppearGroup(this);
+	// gGame.gameScene.appearGroup(gGame.gameScene.fGroup3);
 };
 
 prefab_2.prototype.setBackground = function () {
-	this.game.stage.backgroundColor = '#404040';
+	gGame.gameScene.setColorChange( '995ba3');
+
+	// gGame.gameScene.setGroupTween(this.fQestion_question_bg, -20);
+	// gGame.gameScene.setGroupTween(this.fGroup1, 20);
+	// gGame.gameScene.setGroupTween(this.fGroup2, 50);
+	// gGame.gameScene.setGroupTween(this.fGroup3, 30);
+	// gGame.gameScene.setGroupTween(this.fGroup4, 50);
 };

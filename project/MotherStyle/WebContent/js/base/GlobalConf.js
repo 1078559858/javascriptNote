@@ -11,6 +11,11 @@ var gGameConf = {
 };
 
 
+//game info
+var gGameInfo = {
+	"changeColor":false
+};
+
 //设置信息
 var gSettingInfo = {
 	"music":true,			//音乐

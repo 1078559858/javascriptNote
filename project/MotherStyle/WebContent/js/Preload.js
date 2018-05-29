@@ -71,11 +71,14 @@ Preload.prototype.preload = function() {
 
 
 	//this.game.state.states.Net.createNet();
-	
+
+	var count = 0;
 	gGame.preloadScene = new preloadScene(this.game);
+	gGame.preloadScene.initOnce();
 	this.load.setPreloadSprite(gGame.preloadScene.fProcessbar);
 	this.load.onPackComplete.add(function (process) {
-		gGame.preloadScene.fPer.text = "100%";
+		count++;
+		gGame.preloadScene.fPer.text = count*20 + "%";
 		//console.log(process);
 	}, this);
 
@@ -94,6 +97,7 @@ Preload.prototype.preload = function() {
 	this.load.pack("preSetName","assets/pack.json");
 	this.load.pack("prefab1","assets/pack.json");
 	this.load.pack("over","assets/pack.json");
+	this.load.pack("colorAtlas","assets/pack.json");
 	// this.load.bitmapFont("yellow", "assets/fnt/yellow_0.png", "assets/fnt/yellow.xml");
 	// this.load.bitmapFont("myBetText", "assets/fnt/mine_0.png", "assets/fnt/mine.xml");
 	// this.load.bitmapFont("totalBetText", "assets/fnt/total_0.png", "assets/fnt/total.xml");

@@ -45,23 +45,35 @@
           "setAll": [],
           "children": [
             {
-              "type": "image",
-              "id": "aab3cc66-5423-465a-a1b5-1243813259d4",
+              "type": "atlas-sprite",
+              "id": "f69838bd-920b-4fea-9ff7-04b5c5786bce",
               "asset": "0",
               "info": {
-                "editorName": "qestion_question_bg",
-                "x": 54,
-                "y": 75
+                "editorName": "heiban_png",
+                "x": 103,
+                "y": 32
               }
             },
             {
-              "type": "button",
-              "id": "c2ad961a-fdda-493d-84b7-cc160296f572",
+              "type": "image",
+              "id": "87b63fff-4990-4678-8ab0-4fb21b88e552",
               "asset": "1",
               "info": {
-                "editorName": "Q1_title",
-                "x": 40,
-                "y": 12
+                "editorName": "temp",
+                "scale.x": 0.3,
+                "scale.y": 0.3
+              }
+            },
+            {
+              "type": "atlas-sprite",
+              "id": "02326b9e-8584-4816-8083-22b4ac4d60b8",
+              "asset": "2",
+              "info": {
+                "editorName": "bird_png",
+                "x": 282,
+                "y": 8,
+                "scale.x": 0.5,
+                "scale.y": 0.5
               }
             },
             {
@@ -69,10 +81,11 @@
               "id": "1c4a067d-de69-45aa-aef2-a770f775393e",
               "info": {
                 "editorName": "text",
-                "x": 69,
-                "y": 199,
-                "text": "7、逢年过节收到给孩子的\r\n     10万元压岁钱后，你会?",
-                "style.fontSize": 40
+                "x": 147,
+                "y": 191,
+                "text": "7、逢年过节收到给\r\n     孩子的10万元压\r\n     岁钱后，你会?",
+                "style.fontSize": 40,
+                "style.fill": "#ffffff"
               }
             },
             {
@@ -86,7 +99,7 @@
                   {
                     "type": "button",
                     "id": "2c9216c0-aaa0-4d81-8944-c35fde22922d",
-                    "asset": "2",
+                    "asset": "3",
                     "info": {
                       "editorName": "chat",
                       "x": 52,
@@ -121,7 +134,7 @@
                   {
                     "type": "button",
                     "id": "8d6f76d8-7ba4-4924-9666-856f84598c97",
-                    "asset": "3",
+                    "asset": "4",
                     "info": {
                       "editorName": "chat1",
                       "x": 48,
@@ -156,7 +169,7 @@
                   {
                     "type": "button",
                     "id": "4b8508fa-f192-414b-9e32-03df2863f065",
-                    "asset": "2",
+                    "asset": "3",
                     "info": {
                       "editorName": "chat2",
                       "x": 52,
@@ -191,7 +204,7 @@
                   {
                     "type": "button",
                     "id": "285fbd01-e659-4702-9f66-e04fcb6db4e9",
-                    "asset": "3",
+                    "asset": "4",
                     "info": {
                       "editorName": "chat3",
                       "x": 52,
@@ -223,20 +236,27 @@
   "asset-table": {
     "0": {
       "file": "WebContent/assets/pack.json",
-      "section": "common",
-      "asset": "qestion_question_bg"
+      "section": "colorAtlas",
+      "asset": "common1",
+      "sprite": "heiban.png"
     },
     "1": {
       "file": "WebContent/assets/pack.json",
-      "section": "common",
-      "asset": "Q1_title"
+      "section": "temp",
+      "asset": "temp3"
     },
     "2": {
+      "file": "WebContent/assets/pack.json",
+      "section": "colorAtlas",
+      "asset": "ip",
+      "sprite": "boy2.png"
+    },
+    "3": {
       "file": "WebContent/assets/pack.json",
       "section": "common",
       "asset": "chat1"
     },
-    "3": {
+    "4": {
       "file": "WebContent/assets/pack.json",
       "section": "common",
       "asset": "chat3"

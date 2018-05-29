@@ -45,23 +45,35 @@
           "setAll": [],
           "children": [
             {
-              "type": "image",
-              "id": "a7e5beb7-83e5-4aae-9b45-8e73da7ffb31",
+              "type": "atlas-sprite",
+              "id": "df56ee9b-a630-4de4-b247-2d0fd5dae4f8",
               "asset": "0",
               "info": {
-                "editorName": "qestion_question_bg",
-                "x": 51,
-                "y": 73
+                "editorName": "heiban_png",
+                "x": 97,
+                "y": 29
               }
             },
             {
-              "type": "button",
-              "id": "02384f6f-d42e-466a-aed4-cc02d59d4ef1",
+              "type": "image",
+              "id": "67f20783-98a0-45c0-9f00-72c4936b182a",
               "asset": "1",
               "info": {
-                "editorName": "Q1_title",
-                "x": 37,
-                "y": 10
+                "editorName": "temp",
+                "scale.x": 0.3,
+                "scale.y": 0.3
+              }
+            },
+            {
+              "type": "atlas-sprite",
+              "id": "4a2fb3e7-177f-4895-b3f1-33ac3feaff94",
+              "asset": "2",
+              "info": {
+                "editorName": "bird_png",
+                "x": 276,
+                "y": 5,
+                "scale.x": 0.5,
+                "scale.y": 0.5
               }
             },
             {
@@ -69,10 +81,11 @@
               "id": "5f926f0f-8f81-4671-bc64-0a2ff44afaf0",
               "info": {
                 "editorName": "text",
-                "x": 74,
-                "y": 225,
-                "text": "8、下面4个，你最想拥有？ ",
-                "style.fontSize": 40
+                "x": 169,
+                "y": 207,
+                "text": "8、下面4个，\r\n    你最想拥有？ ",
+                "style.fontSize": 40,
+                "style.fill": "#ffffff"
               }
             },
             {
@@ -87,7 +100,7 @@
                   {
                     "type": "button",
                     "id": "9a4fe08c-bc6f-4bec-84c0-ff3291303ae8",
-                    "asset": "2",
+                    "asset": "3",
                     "info": {
                       "editorName": "chat",
                       "x": 52,
@@ -122,7 +135,7 @@
                   {
                     "type": "button",
                     "id": "a1be7fa2-a072-45cb-8c5d-5becab1ffec6",
-                    "asset": "3",
+                    "asset": "4",
                     "info": {
                       "editorName": "chat1",
                       "x": 48,
@@ -157,7 +170,7 @@
                   {
                     "type": "button",
                     "id": "6a80c4fd-4a01-4517-bd2b-9c5611196b9a",
-                    "asset": "2",
+                    "asset": "3",
                     "info": {
                       "editorName": "chat2",
                       "x": 52,
@@ -192,7 +205,7 @@
                   {
                     "type": "button",
                     "id": "027a4ef2-5073-427a-a80d-3c3d8e38ca17",
-                    "asset": "3",
+                    "asset": "4",
                     "info": {
                       "editorName": "chat3",
                       "x": 52,
@@ -224,20 +237,27 @@
   "asset-table": {
     "0": {
       "file": "WebContent/assets/pack.json",
-      "section": "common",
-      "asset": "qestion_question_bg"
+      "section": "colorAtlas",
+      "asset": "common1",
+      "sprite": "heiban.png"
     },
     "1": {
       "file": "WebContent/assets/pack.json",
-      "section": "common",
-      "asset": "Q1_title"
+      "section": "temp",
+      "asset": "temp3"
     },
     "2": {
+      "file": "WebContent/assets/pack.json",
+      "section": "colorAtlas",
+      "asset": "ip",
+      "sprite": "girl2.png"
+    },
+    "3": {
       "file": "WebContent/assets/pack.json",
       "section": "common",
       "asset": "chat1"
     },
-    "3": {
+    "4": {
       "file": "WebContent/assets/pack.json",
       "section": "common",
       "asset": "chat3"

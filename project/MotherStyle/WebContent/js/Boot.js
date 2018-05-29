@@ -24,6 +24,8 @@ Boot.prototype.init = function() {
 
 Boot.prototype.preload = function() {
 	this.load.pack("boot", "assets/pack.json");
+	this.load.pack("temp", "assets/pack.json");
+	this.game.stage.backgroundColor = '#ffffff';
 };
 
 Boot.prototype.create = function() {

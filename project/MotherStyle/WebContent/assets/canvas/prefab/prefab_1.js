@@ -9,8 +9,7 @@
 /**
  * prefab_1.
  * @param {Phaser.Game} aGame A reference to the currently running game.
- * @param {Phaser.Group} aParent The parent Group (or other {@link DisplayObject}) that this group will be added to.
-    If undefined/unspecified the Group will be added to the {@link Phaser.Game#world Game World}; if null the Group will not be added to any parent.
+ * @param {Phaser.Group} aParent The parent Group (or other {@link DisplayObject}) that this group will be added to.    If undefined/unspecified the Group will be added to the {@link Phaser.Game#world Game World}; if null the Group will not be added to any parent.
  * @param {string} aName A name for this group. Not used internally but useful for debugging.
  * @param {boolean} aAddToStage If true this group will be added directly to the Game.Stage instead of Game.World.
  * @param {boolean} aEnableBody If true all Sprites created with {@link #create} or {@link #createMulitple} will have a physics body created on them. Change the body type with {@link #physicsBodyType}.
@@ -19,11 +18,9 @@
 function prefab_1(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyType) {
 	
 	Phaser.Group.call(this, aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyType);
-	this.game.add.sprite(53, 83, 'qestion_question_bg', null, this);
+	this.game.add.sprite(102, 62, 'common1', 'heiban.png', this);
 	
-	this.game.add.button(0, 0, 'Q1_title', null, this, null, null, null, null, this);
-	
-	this.game.add.text(96, 192, '1、陪孩子学习时，哪句\n话最符合你的心情？', {"font":"bold 40px Arial"}, this);
+	this.game.add.text(156, 226, '1、陪孩子学习时，\n     哪句话最符合你\n     的心情？', {"font":"bold 40px Arial","fill":"#ffffff"}, this);
 	
 	var _Q2_answerA = this.game.add.button(29, 455, 'Q2_answerA', this.clickBtn, this, null, null, null, null, this);
 	_Q2_answerA.data = {
@@ -45,6 +42,11 @@ function prefab_1(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyT
 	"value":"d"
 	};
 	
+	var _temp = this.game.add.sprite(0, 0, 'temp3', null, this);
+	_temp.scale.setTo(0.3, 0.3);
+	
+	this.game.add.sprite(215, 0, 'ip', 'bird.png', this);
+	
 	
 	
 }
@@ -57,14 +59,13 @@ prefab_1.prototype.constructor = prefab_1;
 /* --- end generated code --- */
 // -- user code here --
 
-
-
 prefab_1.prototype.clickBtn = function (btn) {
 	this.game.state.states.Video.playClick();
 
 	gUserInfo.choice.push(btn.data.value);
-	gGame.gameScene.disAppearGroup(this);
-	gGame.gameScene.appearGroup(gGame.gameScene.fGroup2);
+	gGame.gameScene.appearGroup2(this, gGame.gameScene.fGroup2);
+	// gGame.gameScene.disAppearGroup(this);
+	// gGame.gameScene.appearGroup(gGame.gameScene.fGroup2);
 };
 
 prefab_1.prototype.initOnce = function () {
@@ -72,5 +73,6 @@ prefab_1.prototype.initOnce = function () {
 };
 
 prefab_1.prototype.setBackground = function () {
-	this.game.stage.backgroundColor = '#ffffff';
+	//gGame.gameScene.setColorChange( 'ffffff');
+
 };
