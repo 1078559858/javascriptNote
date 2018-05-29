@@ -100,10 +100,8 @@ mainScene.prototype.constructor = mainScene;
 // -- user code here --
 
 
-mainScene.prototype.appearGroup = function (group) {
+mainScene.prototype.appearGroup = function (group1, group2) {
 	this.fBgBtn.inputEnabled = true;
-
-
 
 	//3 f7973a
 	//4 fde500
@@ -113,7 +111,10 @@ mainScene.prototype.appearGroup = function (group) {
 	//8 995ba3
 	//9 ee465d
 
-	var tween = this.game.add.tween(group).to( { x:0, y:0}, 500,
+	this.game.add.tween(group1).to( { x:-641, y:0}, 1500,
+		Phaser.Easing.Exponential.InOut, true);
+
+	var tween = this.game.add.tween(group2).to( { x:0, y:0}, 1500,
 		Phaser.Easing.Exponential.InOut, true);
 
 	tween.onComplete.addOnce(function () {
@@ -130,21 +131,10 @@ mainScene.prototype.appearGroup2 = function (bObj, eObj) {
 	group.x = 0;
 	group.setBackground();
 
-	this.setTempAction1(group);
+	for(var i = 0; i < group.length; i++){
+		this.setTempAction1(group.getChildAt(i));
+	}
 
-	// group.fGroup1.x += 640;
-	// group.fGroup2.x += 640;
-	// group.fGroup3.x += 640;
-	// group.fGroup4.x += 640;
-	// group.fTextTitle.x += 640;
-	// group.fQestion_question_bg.x += 640;
-	//
-	// this.setTempAction1(group.fGroup1);
-	// this.setTempAction1(group.fGroup2);
-	// this.setTempAction1(group.fGroup3);
-	// this.setTempAction1(group.fGroup4);
-	// this.setTempAction1(group.fQestion_question_bg);
-	// this.setTempAction1(group.fTextTitle);
 };
 
 mainScene.prototype.disAppearGroup = function (group) {
@@ -213,72 +203,16 @@ mainScene.prototype.setGroupTween = function (obj, width, time1, time2) {
 	tweenA.start();
 };
 
-mainScene.prototype.setTempAction1 = function (layer) {
-	for(var i = 0; i < layer.length; i++){
-		var group = layer.getChildAt(i);
-		group.x += 640;
+mainScene.prototype.setTempAction1 = function (group) {
+	group.x += 640;
 
-		var time = Math.random()*200;
-		var tweenA = this.game.add.tween(group).to({x:group.x - 300}, 100, Phaser.Easing.Linear.None, true);
-		var tweenB = this.game.add.tween(group).to({x:group.x - 640}, 2600 + time, Phaser.Easing.Elastic.Out);
+	var time = Math.random()*200;
+	var tweenA = this.game.add.tween(group).to({x:group.x - 300}, 100, Phaser.Easing.Linear.None, true);
+	tweenA.onComplete.addOnce(function () {
+		var tweenB = gGame.add.tween(group).to({x:group.x - 340}, 2600 + time, Phaser.Easing.Elastic.Out, true);
 		tweenB.onComplete.addOnce(function () {
 			gGame.gameScene.fBgBtn.inputEnabled = false;
-		});
-		tweenA.chain(tweenB);
-	}
+		})
+	});
 };
 
-mainScene.touchPoint = {
-	"pointY":0,
-	"cellHeightMin":213,			//table cell 的初始高度
-	"cellHeightMax":845,			//table cell 的初始高度
-	"isDown":false,				//判断是否是按下状态
-	"isMoved":false				//判断是否是移动状态
-};
-mainScene.prototype.onGameDown = function (point, x, y, isTap) {
-	var menuPre = gGame.gameScene;
-	menuPre.touchPoint.pointY = point.y;
-	menuPre.touchPoint.isMoved = false;
-	menuPre.touchPoint.isDown = true;
-};
-
-mainScene.prototype.onGameUp = function (point, x, y, isTap) {
-	var menuPre = gGame.gameScene;
-	menuPre.touchPoint.isDown = false;
-	// if(!menuPre.resetPositionUp()){
-	// 	menuPre.resetPositionDown();
-	// }
-};
-
-mainScene.prototype.onGameMove = function (point, x, y, isTap) {
-	var menuPre = gGame.gameScene;
-
-	if(!menuPre.touchPoint.isDown){
-		return;
-	}
-
-	menuPre.updatePos(menuPre.touchPoint.pointY - point.y);
-	menuPre.touchPoint.pointY = point.y;
-	menuPre.touchPoint.isMoved = true;
-};
-
-mainScene.prototype.onGameReset = function () {
-
-};
-
-mainScene.prototype.updatePos = function (disY) {
-	//check from up to down
-	// if(up.y > this.touchPoint.cellHeightMin && disY < 0){
-	// 	disY /= 3;
-	// }
-	//
-	// //check from down to up
-	// if(bottom.y + bottom.getJingChaiHeight() < this.touchPoint.cellHeightMax + this.touchPoint.cellHeightMin - 10
-	// 	&& disY > 0){
-	// 	disY /= 6;
-	// }
-	//
-	// for(var i = 0; i < this.fGroupOne.children.length; i++){
-	// 	this.fGroupOne.getChildAt(i).y -= disY;
-	// }
-};
