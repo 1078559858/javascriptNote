@@ -9,7 +9,8 @@
 /**
  * preloadScene.
  * @param {Phaser.Game} aGame A reference to the currently running game.
- * @param {Phaser.Group} aParent The parent Group (or other {@link DisplayObject}) that this group will be added to.    If undefined/unspecified the Group will be added to the {@link Phaser.Game#world Game World}; if null the Group will not be added to any parent.
+ * @param {Phaser.Group} aParent The parent Group (or other {@link DisplayObject}) that this group will be added to.
+    If undefined/unspecified the Group will be added to the {@link Phaser.Game#world Game World}; if null the Group will not be added to any parent.
  * @param {string} aName A name for this group. Not used internally but useful for debugging.
  * @param {boolean} aAddToStage If true this group will be added directly to the Game.Stage instead of Game.World.
  * @param {boolean} aEnableBody If true all Sprites created with {@link #create} or {@link #createMulitple} will have a physics body created on them. Change the body type with {@link #physicsBodyType}.
@@ -20,20 +21,16 @@ function preloadScene(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsB
 	Phaser.Group.call(this, aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyType);
 	this.game.add.sprite(0, 0, 'Load_bg', null, this);
 	
-	var _per = this.game.add.text(293, 688, '0%', {"font":"bold 40px Arial"}, this);
+	this.game.add.sprite(145, 493, 'temp2', null, this);
 	
-	this.game.add.sprite(100, 2, 'temp3', null, this);
+	var _processbar = this.game.add.sprite(183, 1000, 'processbar2', null, this);
 	
-	var _temp1 = this.game.add.sprite(153, 340, 'temp2', null, this);
-	_temp1.scale.setTo(0.5, 0.5);
-	
-	var _processbar = this.game.add.sprite(183, 619, 'processbar2', null, this);
+	this.game.add.sprite(34, 26, 'logo', null, this);
 	
 	
 	
 	// public fields
 	
-	this.fPer = _per;
 	this.fProcessbar = _processbar;
 	
 }
@@ -48,7 +45,5 @@ preloadScene.prototype.constructor = preloadScene;
 
 
 preloadScene.prototype.initOnce = function () {
-	this.fPer.anchor.set(0.5,0.5);
-	this.fPer.x += this.fPer.width/2;
-	this.fPer.y += this.fPer.height/2;
+
 };

@@ -51,8 +51,97 @@
               "info": {
                 "editorName": "dragBg",
                 "editorPublic": true,
-                "scale.x": 2,
-                "scale.y": 28
+                "scale.x": 2.03,
+                "scale.y": 46.55
+              }
+            },
+            {
+              "type": "group",
+              "id": "b0b5e3e2-c6c0-4e65-b5d1-962639982868",
+              "info": {
+                "editorName": "groupNine",
+                "editorPublic": true,
+                "setAll": [],
+                "children": [
+                  {
+                    "type": "image",
+                    "id": "689851ab-66e2-41ee-b539-9b9ae87eb139",
+                    "asset": "1",
+                    "info": {"editorName": "nine_"}
+                  },
+                  {
+                    "type": "image",
+                    "id": "d9746608-f557-463f-9369-b1069240f777",
+                    "asset": "2",
+                    "info": {
+                      "editorName": "nine_1",
+                      "y": 906
+                    }
+                  },
+                  {
+                    "type": "image",
+                    "id": "5ae4878a-cc3f-42c4-ae84-354e59f138e7",
+                    "asset": "3",
+                    "info": {
+                      "editorName": "nine_2",
+                      "y": 1812
+                    }
+                  },
+                  {
+                    "type": "image",
+                    "id": "58d116f9-cdfc-434c-9fb5-879773c8af8c",
+                    "asset": "4",
+                    "info": {
+                      "editorName": "nine_3",
+                      "y": 2718
+                    }
+                  },
+                  {
+                    "type": "image",
+                    "id": "b2e3e2a3-d834-45bf-8c3e-ab40ef1bb293",
+                    "asset": "5",
+                    "info": {
+                      "editorName": "nine_4",
+                      "y": 3624
+                    }
+                  },
+                  {
+                    "type": "image",
+                    "id": "1face454-5d03-472b-b958-3b37e5be3979",
+                    "asset": "6",
+                    "info": {
+                      "editorName": "nine_5",
+                      "y": 4530
+                    }
+                  },
+                  {
+                    "type": "image",
+                    "id": "0e9ef340-d18f-444f-835f-ca143a1580c5",
+                    "asset": "7",
+                    "info": {
+                      "editorName": "nine_6",
+                      "y": 5436
+                    }
+                  },
+                  {
+                    "type": "image",
+                    "id": "74146f49-a0d4-4dac-99b5-898344893423",
+                    "asset": "8",
+                    "info": {
+                      "editorName": "nine_7",
+                      "y": 6342
+                    }
+                  },
+                  {
+                    "type": "image",
+                    "id": "ca7e801d-6388-4ebe-bf8f-d60a269c0cb2",
+                    "asset": "9",
+                    "info": {
+                      "editorName": "nine_8",
+                      "y": 7248
+                    }
+                  }
+                ]
               }
             },
             {
@@ -62,104 +151,20 @@
                 "editorName": "groupAll",
                 "editorPublic": true,
                 "setAll": [],
-                "children": [
-                  {
-                    "type": "image",
-                    "id": "66db4c9c-5883-4847-9efb-6dbfbc899c6e",
-                    "asset": "1",
-                    "info": {
-                      "editorName": "football",
-                      "editorPublic": true,
-                      "y": -10,
-                      "scale.x": 1.3,
-                      "scale.y": 1.5
-                    }
-                  },
-                  {
-                    "type": "image",
-                    "id": "c41ec438-775d-437d-b707-8dac67d94852",
-                    "asset": "1",
-                    "info": {
-                      "editorName": "football1",
-                      "editorPublic": true,
-                      "y": 3660,
-                      "scale.x": 1.3,
-                      "scale.y": 1.5
-                    }
-                  },
-                  {
-                    "type": "image",
-                    "id": "e9f20056-6f63-4f5a-9d1a-b42b70adaaa4",
-                    "asset": "1",
-                    "info": {
-                      "editorName": "football2",
-                      "editorPublic": true,
-                      "y": 2440,
-                      "scale.x": 1.3,
-                      "scale.y": 1.5
-                    }
-                  },
-                  {
-                    "type": "image",
-                    "id": "34de1941-a3d7-4066-91da-72863ba1095e",
-                    "asset": "1",
-                    "info": {
-                      "editorName": "football3",
-                      "editorPublic": true,
-                      "y": 1220,
-                      "scale.x": 1.3,
-                      "scale.y": 1.5
-                    }
-                  },
-                  {
-                    "type": "button",
-                    "id": "3b961ff8-a618-4147-af1d-bc602d1d8a0b",
-                    "asset": "2",
-                    "info": {
-                      "editorName": "btnBaidu",
-                      "x": -22,
-                      "y": 4438,
-                      "scale.x": 0.5,
-                      "scale.y": 0.5,
-                      "callback": "this.clickBaidu"
-                    }
-                  },
-                  {
-                    "type": "text",
-                    "id": "daa21b2f-5b6d-43b9-bfd0-e542c425427e",
-                    "info": {
-                      "editorName": "text",
-                      "x": 56,
-                      "y": 4489,
-                      "text": "°Ù¶È",
-                      "style.fontSize": 40
-                    }
-                  },
-                  {
-                    "type": "button",
-                    "id": "33bc2f78-1c65-4bd4-9051-03138b79750b",
-                    "asset": "2",
-                    "info": {
-                      "editorName": "btnGo",
-                      "x": 341,
-                      "y": 4435,
-                      "scale.x": 0.5,
-                      "scale.y": 0.5,
-                      "callback": "this.clickGo"
-                    }
-                  },
-                  {
-                    "type": "text",
-                    "id": "fb61bab7-9ef0-4b41-906e-b8264047787c",
-                    "info": {
-                      "editorName": "text1",
-                      "x": 411,
-                      "y": 4474,
-                      "text": "¼ÌÐø²âÊÔ",
-                      "style.fontSize": 40
-                    }
+                "children": [{
+                  "type": "button",
+                  "id": "291962e8-513a-4050-80a3-1926d28f7b41",
+                  "asset": "0",
+                  "info": {
+                    "editorName": "white_png",
+                    "x": 35,
+                    "y": 797,
+                    "scale.x": 1.8,
+                    "scale.y": 0.5,
+                    "alpha": 0,
+                    "callback": "this.clickGo"
                   }
-                ]
+                }]
               }
             }
           ]
@@ -177,13 +182,48 @@
     },
     "1": {
       "file": "WebContent/assets/pack.json",
-      "section": "temp",
-      "asset": "football"
+      "section": "ninePic",
+      "asset": "nine_1"
     },
     "2": {
       "file": "WebContent/assets/pack.json",
-      "section": "common",
-      "asset": "qestion_question_bg"
+      "section": "ninePic",
+      "asset": "nine_2"
+    },
+    "3": {
+      "file": "WebContent/assets/pack.json",
+      "section": "ninePic",
+      "asset": "nine_3"
+    },
+    "4": {
+      "file": "WebContent/assets/pack.json",
+      "section": "ninePic",
+      "asset": "nine_4"
+    },
+    "5": {
+      "file": "WebContent/assets/pack.json",
+      "section": "ninePic",
+      "asset": "nine_5"
+    },
+    "6": {
+      "file": "WebContent/assets/pack.json",
+      "section": "ninePic",
+      "asset": "nine_6"
+    },
+    "7": {
+      "file": "WebContent/assets/pack.json",
+      "section": "ninePic",
+      "asset": "nine_7"
+    },
+    "8": {
+      "file": "WebContent/assets/pack.json",
+      "section": "ninePic",
+      "asset": "nine_8"
+    },
+    "9": {
+      "file": "WebContent/assets/pack.json",
+      "section": "ninePic",
+      "asset": "nine_9"
     }
   },
   "prefab-table": {}

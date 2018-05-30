@@ -76,11 +76,11 @@ Preload.prototype.preload = function() {
 	gGame.preloadScene = new preloadScene(this.game);
 	gGame.preloadScene.initOnce();
 	this.load.setPreloadSprite(gGame.preloadScene.fProcessbar);
-	this.load.onPackComplete.add(function (process) {
-		count++;
-		gGame.preloadScene.fPer.text = count*20 + "%";
-		//console.log(process);
-	}, this);
+	// this.load.onPackComplete.add(function (process) {
+	// 	count++;
+	// 	gGame.preloadScene.fPer.text = Math.min(count * 17 , 100) + "%";
+	// 	//console.log(process);
+	// }, this);
 
 	gGame.add.plugin(PhaserSpine.SpinePlugin);
 	gGame.add.plugin(PhaserInput.Plugin);
@@ -98,6 +98,7 @@ Preload.prototype.preload = function() {
 	this.load.pack("prefab1","assets/pack.json");
 	this.load.pack("over","assets/pack.json");
 	this.load.pack("colorAtlas","assets/pack.json");
+	this.load.pack("ninePic","assets/pack.json");
 	// this.load.bitmapFont("yellow", "assets/fnt/yellow_0.png", "assets/fnt/yellow.xml");
 	// this.load.bitmapFont("myBetText", "assets/fnt/mine_0.png", "assets/fnt/mine.xml");
 	// this.load.bitmapFont("totalBetText", "assets/fnt/total_0.png", "assets/fnt/total.xml");

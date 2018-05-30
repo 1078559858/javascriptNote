@@ -20,42 +20,41 @@ function adPrefab(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyT
 	
 	Phaser.Group.call(this, aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyType);
 	var _dragBg = this.game.add.sprite(0, 0, 'color', 'white.png', this);
-	_dragBg.scale.setTo(2.0, 28.0);
+	_dragBg.scale.setTo(2.03, 46.55);
+	
+	var _groupNine = this.game.add.group(this);
+	
+	this.game.add.sprite(0, 0, 'nine_1', null, _groupNine);
+	
+	this.game.add.sprite(0, 906, 'nine_2', null, _groupNine);
+	
+	this.game.add.sprite(0, 1812, 'nine_3', null, _groupNine);
+	
+	this.game.add.sprite(0, 2718, 'nine_4', null, _groupNine);
+	
+	this.game.add.sprite(0, 3624, 'nine_5', null, _groupNine);
+	
+	this.game.add.sprite(0, 4530, 'nine_6', null, _groupNine);
+	
+	this.game.add.sprite(0, 5436, 'nine_7', null, _groupNine);
+	
+	this.game.add.sprite(0, 6342, 'nine_8', null, _groupNine);
+	
+	this.game.add.sprite(0, 7248, 'nine_9', null, _groupNine);
 	
 	var _groupAll = this.game.add.group(this);
 	
-	var _football = this.game.add.sprite(0, -10, 'football', null, _groupAll);
-	_football.scale.setTo(1.3, 1.5);
-	
-	var _football1 = this.game.add.sprite(0, 3660, 'football', null, _groupAll);
-	_football1.scale.setTo(1.3, 1.5);
-	
-	var _football2 = this.game.add.sprite(0, 2440, 'football', null, _groupAll);
-	_football2.scale.setTo(1.3, 1.5);
-	
-	var _football3 = this.game.add.sprite(0, 1220, 'football', null, _groupAll);
-	_football3.scale.setTo(1.3, 1.5);
-	
-	var _btnBaidu = this.game.add.button(-22, 4438, 'qestion_question_bg', this.clickBaidu, this, null, null, null, null, _groupAll);
-	_btnBaidu.scale.setTo(0.5, 0.5);
-	
-	this.game.add.text(56, 4489, '百度', {"font":"bold 40px Arial"}, _groupAll);
-	
-	var _btnGo = this.game.add.button(341, 4435, 'qestion_question_bg', this.clickGo, this, null, null, null, null, _groupAll);
-	_btnGo.scale.setTo(0.5, 0.5);
-	
-	this.game.add.text(411, 4474, '继续测试', {"font":"bold 40px Arial"}, _groupAll);
+	var _white_png = this.game.add.button(35, 797, 'color', this.clickGo, this, null, 'white.png', null, null, _groupAll);
+	_white_png.scale.setTo(1.8, 0.5);
+	_white_png.alpha = 0.0;
 	
 	
 	
 	// public fields
 	
 	this.fDragBg = _dragBg;
+	this.fGroupNine = _groupNine;
 	this.fGroupAll = _groupAll;
-	this.fFootball = _football;
-	this.fFootball1 = _football1;
-	this.fFootball2 = _football2;
-	this.fFootball3 = _football3;
 	
 }
 
@@ -71,11 +70,13 @@ adPrefab.prototype.initOnce = function () {
 	this.setDrag(this.fDragBg);
 };
 
+
 adPrefab.prototype.onDragStart = function (sprite, pointer) {
-
-
 	// sprite.x = sprite.x;
 	// sprite.y = pointer.y;
+
+	gUserInfo.moveTime = Date.now();
+	gUserInfo.moveBegainY = this.fDragBg.y;
 };
 
 adPrefab.prototype.clickBaidu = function () {
@@ -83,28 +84,53 @@ adPrefab.prototype.clickBaidu = function () {
 };
 
 adPrefab.prototype.clickGo = function () {
-	this.game.add.tween(this).to({x:-800},500, Phaser.Easing.Linear.None, true);
+	this.game.add.tween(this).to({x:-641},500, Phaser.Easing.Linear.None, true);
+	this.game.add.tween(gGame.gameScene.fGroup1).to({x:0}, 500, Phaser.Easing.Linear.None, true);
+	this.game.add.tween(gGame.gameScene.fColor_up).to({x:-31}, 500, Phaser.Easing.Linear.None, true);
 };
 
 adPrefab.prototype.onDragStop = function () {
 	if(this.fDragBg.y > 0){
 		this.game.add.tween(this.fDragBg).to({y:0},500, Phaser.Easing.Exponential.Out, true);
 		this.game.add.tween(this.fGroupAll).to({y:0},500, Phaser.Easing.Exponential.Out, true);
+		this.game.add.tween(this.fGroupNine).to({y:0},500, Phaser.Easing.Exponential.Out, true);
+		return;
 	}
 
-	if(this.fDragBg.y < -3560){
-		this.game.add.tween(this.fDragBg).to({y:-3560},500, Phaser.Easing.Exponential.Out, true);
-		this.game.add.tween(this.fGroupAll).to({y:-3560},500, Phaser.Easing.Exponential.Out, true);
+	if(this.fDragBg.y < -6900){
+		this.game.add.tween(this.fDragBg).to({y:-6900},500, Phaser.Easing.Exponential.Out, true);
+		this.game.add.tween(this.fGroupAll).to({y:-6900},500, Phaser.Easing.Exponential.Out, true);
+		this.game.add.tween(this.fGroupNine).to({y:-6900},500, Phaser.Easing.Exponential.Out, true);
+		return;
 	}
+
+	var span = this.fDragBg.y - gUserInfo.moveBegainY;
+	var time = Date.now() - gUserInfo.moveTime;
+	var dis = this.fDragBg.y + span*100/time;
+
+	if(dis > 0){
+		dis = 0;
+	}
+
+	if(dis < -6900){
+		dis = -6900;
+	}
+
+	this.game.add.tween(this.fDragBg).to({y:dis},500, Phaser.Easing.Cubic.Out, true);
+	this.game.add.tween(this.fGroupAll).to({y:dis},500, Phaser.Easing.Cubic.Out, true);
+	this.game.add.tween(this.fGroupNine).to({y:dis},500, Phaser.Easing.Cubic.Out, true);
 };
 
 adPrefab.prototype.onDragUpdate = function () {
 	if(this.fDragBg.y > 0){
 		this.fGroupAll.y = this.fDragBg.y/6;
-	}else if(this.fDragBg.y < -3560){
-		this.fGroupAll.y = this.fDragBg.y - (this.fDragBg.y + 3560)/1.5;
+		this.fGroupNine.y = this.fDragBg.y/6;
+	}else if(this.fDragBg.y < -6900){
+		this.fGroupAll.y = this.fDragBg.y - (this.fDragBg.y + 6900)/1.5;
+		this.fGroupNine.y = this.fDragBg.y - (this.fDragBg.y + 6900)/1.5;
 	}else{
 		this.fGroupAll.y = this.fDragBg.y;
+		this.fGroupNine.y = this.fDragBg.y;
 	}
 };
 

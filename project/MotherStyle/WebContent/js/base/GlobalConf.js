@@ -28,5 +28,7 @@ var gSettingInfo = {
 var gUserInfo = {
 	"nick":"",
 	"haveBoy":false,
-	"choice":[]
+	"choice":[],
+	"moveTime":0,
+	"moveBegainY":0
 };

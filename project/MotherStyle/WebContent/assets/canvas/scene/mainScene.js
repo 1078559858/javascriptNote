@@ -9,8 +9,7 @@
 /**
  * mainScene.
  * @param {Phaser.Game} aGame A reference to the currently running game.
- * @param {Phaser.Group} aParent The parent Group (or other {@link DisplayObject}) that this group will be added to.
-    If undefined/unspecified the Group will be added to the {@link Phaser.Game#world Game World}; if null the Group will not be added to any parent.
+ * @param {Phaser.Group} aParent The parent Group (or other {@link DisplayObject}) that this group will be added to.    If undefined/unspecified the Group will be added to the {@link Phaser.Game#world Game World}; if null the Group will not be added to any parent.
  * @param {string} aName A name for this group. Not used internally but useful for debugging.
  * @param {boolean} aAddToStage If true this group will be added directly to the Game.Stage instead of Game.World.
  * @param {boolean} aEnableBody If true all Sprites created with {@link #create} or {@link #createMulitple} will have a physics body created on them. Change the body type with {@link #physicsBodyType}.
@@ -29,10 +28,11 @@ function mainScene(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBody
 	_colorBottom.scale.setTo(2.5, 8.5);
 	_colorBottom.alpha = 0.0;
 	
-	var _color_up = this.game.add.sprite(-31, -21, 'color', 'white.png', _groupColor);
+	var _color_up = this.game.add.sprite(698, -13, 'color', '404040.png', _groupColor);
 	_color_up.scale.setTo(2.5, 8.5);
 	
 	var _groupSetName = new pre_1(this.game, this);
+	_groupSetName.position.setTo(-641, 0);
 	
 	var _group1 = new prefab_1(this.game, this);
 	_group1.position.setTo(640, 0);

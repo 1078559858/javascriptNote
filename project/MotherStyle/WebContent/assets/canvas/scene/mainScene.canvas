@@ -83,12 +83,12 @@
                   {
                     "type": "atlas-sprite",
                     "id": "d384c675-3f9a-4b45-9d15-dc5061a5449c",
-                    "asset": "0",
+                    "asset": "2",
                     "info": {
                       "editorName": "color_up",
                       "editorPublic": true,
-                      "x": -31,
-                      "y": -21,
+                      "x": 698,
+                      "y": -13,
                       "scale.x": 2.5,
                       "scale.y": 8.5
                     }
@@ -103,7 +103,7 @@
               "info": {
                 "editorName": "groupSetName",
                 "editorPublic": true,
-                "x": 0,
+                "x": -641,
                 "y": 0
               }
             },
@@ -209,7 +209,7 @@
             {
               "type": "button",
               "id": "0b36a72d-b16b-4765-92f4-15d4a682684d",
-              "asset": "2",
+              "asset": "3",
               "info": {
                 "editorName": "bgBtn",
                 "editorPublic": true,
@@ -219,7 +219,7 @@
             {
               "type": "button",
               "id": "c9511a7e-7e21-470a-8cef-9df4f4f489dd",
-              "asset": "3",
+              "asset": "4",
               "info": {
                 "editorName": "music_btn",
                 "editorPublic": true,
@@ -260,10 +260,16 @@
     },
     "2": {
       "file": "WebContent/assets/pack.json",
+      "section": "colorAtlas",
+      "asset": "color",
+      "sprite": "404040.png"
+    },
+    "3": {
+      "file": "WebContent/assets/pack.json",
       "section": "boot",
       "asset": "bg"
     },
-    "3": {
+    "4": {
       "file": "WebContent/assets/pack.json",
       "section": "preSetName",
       "asset": "music_btn"
