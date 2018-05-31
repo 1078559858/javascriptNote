@@ -17,8 +17,8 @@
       <file leaf-file-name="mainScene.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebContent/assets/canvas/scene/mainScene.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="167" column="0" lean-forward="false" selection-start-line="167" selection-start-column="0" selection-end-line="167" selection-end-column="0" />
+            <state relative-caret-position="1447">
+              <caret line="134" column="49" lean-forward="true" selection-start-line="134" selection-start-column="49" selection-end-line="134" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -27,8 +27,8 @@
       <file leaf-file-name="adPrefab.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebContent/assets/canvas/prefab/adPrefab.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="101" column="33" lean-forward="false" selection-start-line="101" selection-start-column="20" selection-end-line="101" selection-end-column="33" />
+            <state relative-caret-position="725">
+              <caret line="91" column="21" lean-forward="true" selection-start-line="91" selection-start-column="21" selection-end-line="91" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -47,8 +47,8 @@
       <file leaf-file-name="prefab_8.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebContent/assets/canvas/prefab/prefab_8.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="472">
-              <caret line="95" column="0" lean-forward="false" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
+            <state relative-caret-position="636">
+              <caret line="101" column="44" lean-forward="false" selection-start-line="101" selection-start-column="31" selection-end-line="101" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -64,11 +64,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="overPrefab.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="overPrefab.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/WebContent/assets/canvas/prefab/overPrefab.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="101" column="48" lean-forward="false" selection-start-line="101" selection-start-column="34" selection-end-line="101" selection-end-column="48" />
+            <state relative-caret-position="661">
+              <caret line="104" column="0" lean-forward="true" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -77,18 +77,18 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebContent/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="65" column="25" lean-forward="false" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="25" />
+            <state relative-caret-position="275">
+              <caret line="55" column="23" lean-forward="true" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pre_1.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pre_1.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebContent/assets/canvas/prefab/pre_1.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="88" column="42" lean-forward="false" selection-start-line="88" selection-start-column="42" selection-end-line="88" selection-end-column="42" />
+            <state relative-caret-position="1047">
+              <caret line="67" column="31" lean-forward="true" selection-start-line="67" selection-start-column="31" selection-end-line="67" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -98,8 +98,15 @@
         <entry file="file://$PROJECT_DIR$/WebContent/assets/canvas/prefab/prefab_1.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="711">
-              <caret line="95" column="0" lean-forward="false" selection-start-line="95" selection-start-column="0" selection-end-line="97" selection-end-column="2" />
-              <folding />
+              <caret line="92" column="0" lean-forward="false" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+              <folding>
+                <marker date="1527790216128" expanded="true" signature="1110:2903" ph="{...}" />
+                <marker date="1527790216128" expanded="true" signature="2905:2930" ph="/*Phaser.Group*/" />
+                <marker date="1527790216128" expanded="true" signature="3072:3104" ph="/*...*/" />
+                <marker date="1527790216128" expanded="true" signature="3175:3424" ph="{...}" />
+                <marker date="1527790216128" expanded="true" signature="3324:3422" ph="//..." />
+                <marker date="1527790216128" expanded="true" signature="3469:3473" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -118,7 +125,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>left</find>
       <find>cu</find>
       <find>phaser.tween</find>
       <find>state</find>
@@ -134,7 +140,6 @@
       <find>choice</find>
       <find>main</find>
       <find>onGameDown</find>
-      <find>setTempAction1</find>
       <find>onDragStart</find>
       <find>backgroundColor</find>
       <find>fde500</find>
@@ -147,6 +152,8 @@
       <find>appearPopLayer</find>
       <find>clickGo</find>
       <find>fGroupSetName</find>
+      <find>fde</find>
+      <find>setTempAction1</find>
       <find>clickStudy</find>
     </findStrings>
   </component>
@@ -164,18 +171,18 @@
         <option value="$PROJECT_DIR$/WebContent/assets/canvas/prefab/prefab_7.js" />
         <option value="$PROJECT_DIR$/WebContent/assets/canvas/prefab/prefab_2.js" />
         <option value="$PROJECT_DIR$/WebContent/js/Level.js" />
-        <option value="$PROJECT_DIR$/WebContent/assets/canvas/prefab/prefab_8.js" />
         <option value="$PROJECT_DIR$/WebContent/assets/canvas/scene/preloadScene.js" />
         <option value="$PROJECT_DIR$/WebContent/js/base/GlobalConf.js" />
         <option value="$PROJECT_DIR$/WebContent/js/Main.js" />
         <option value="$PROJECT_DIR$/WebContent/js/Boot.js" />
         <option value="$PROJECT_DIR$/WebContent/index.html" />
-        <option value="$PROJECT_DIR$/WebContent/assets/canvas/prefab/prefab_1.js" />
         <option value="$PROJECT_DIR$/WebContent/js/Preload.js" />
-        <option value="$PROJECT_DIR$/WebContent/assets/canvas/scene/mainScene.js" />
-        <option value="$PROJECT_DIR$/WebContent/assets/canvas/prefab/overPrefab.js" />
-        <option value="$PROJECT_DIR$/WebContent/assets/canvas/prefab/adPrefab.js" />
         <option value="$PROJECT_DIR$/WebContent/assets/canvas/prefab/pre_1.js" />
+        <option value="$PROJECT_DIR$/WebContent/assets/canvas/prefab/prefab_8.js" />
+        <option value="$PROJECT_DIR$/WebContent/assets/canvas/scene/mainScene.js" />
+        <option value="$PROJECT_DIR$/WebContent/assets/canvas/prefab/prefab_1.js" />
+        <option value="$PROJECT_DIR$/WebContent/assets/canvas/prefab/adPrefab.js" />
+        <option value="$PROJECT_DIR$/WebContent/assets/canvas/prefab/overPrefab.js" />
       </list>
     </option>
   </component>
@@ -337,12 +344,12 @@
       <workItem from="1527680636879" duration="8101000" />
       <workItem from="1527732824467" duration="1540000" />
       <workItem from="1527739799321" duration="3419000" />
-      <workItem from="1527766009470" duration="9294000" />
+      <workItem from="1527766009470" duration="12063000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80659000" />
+    <option name="totallyTimeSpent" value="83428000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
@@ -668,34 +675,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="65" column="25" lean-forward="false" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/assets/canvas/prefab/prefab_8.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="95" column="0" lean-forward="false" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/js/Preload.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="310">
           <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/assets/canvas/prefab/prefab_1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="711">
-          <caret line="95" column="0" lean-forward="false" selection-start-line="95" selection-start-column="0" selection-end-line="97" selection-end-column="2" />
           <folding />
         </state>
       </provider>
@@ -708,30 +691,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/assets/canvas/prefab/overPrefab.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="101" column="48" lean-forward="false" selection-start-line="101" selection-start-column="34" selection-end-line="101" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/assets/canvas/scene/mainScene.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="167" column="0" lean-forward="false" selection-start-line="167" selection-start-column="0" selection-end-line="167" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/assets/canvas/prefab/adPrefab.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="101" column="33" lean-forward="false" selection-start-line="101" selection-start-column="20" selection-end-line="101" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/js/Level.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="311">
@@ -740,10 +699,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/assets/canvas/prefab/prefab_8.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="636">
+          <caret line="101" column="44" lean-forward="false" selection-start-line="101" selection-start-column="31" selection-end-line="101" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/assets/canvas/prefab/pre_1.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="88" column="42" lean-forward="false" selection-start-line="88" selection-start-column="42" selection-end-line="88" selection-end-column="42" />
+        <state relative-caret-position="1047">
+          <caret line="67" column="31" lean-forward="true" selection-start-line="67" selection-start-column="31" selection-end-line="67" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/assets/canvas/scene/mainScene.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1447">
+          <caret line="134" column="49" lean-forward="true" selection-start-line="134" selection-start-column="49" selection-end-line="134" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="55" column="23" lean-forward="true" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/assets/canvas/prefab/prefab_1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="711">
+          <caret line="92" column="0" lean-forward="false" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+          <folding>
+            <marker date="1527790216128" expanded="true" signature="1110:2903" ph="{...}" />
+            <marker date="1527790216128" expanded="true" signature="2905:2930" ph="/*Phaser.Group*/" />
+            <marker date="1527790216128" expanded="true" signature="3072:3104" ph="/*...*/" />
+            <marker date="1527790216128" expanded="true" signature="3175:3424" ph="{...}" />
+            <marker date="1527790216128" expanded="true" signature="3324:3422" ph="//..." />
+            <marker date="1527790216128" expanded="true" signature="3469:3473" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/assets/canvas/prefab/adPrefab.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="725">
+          <caret line="91" column="21" lean-forward="true" selection-start-line="91" selection-start-column="21" selection-end-line="91" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/assets/canvas/prefab/overPrefab.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="661">
+          <caret line="104" column="0" lean-forward="true" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
           <folding />
         </state>
       </provider>
