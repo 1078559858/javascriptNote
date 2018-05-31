@@ -24,36 +24,20 @@ function overPrefab(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBod
 	
 	this.game.add.sprite(0, 0, 'Result_foxi', null, _groupFoxi);
 	
-	this.game.add.text(23, 379, '      所谓佛系妈妈，指的是：对各种养娃路上\n的糟心事都保持：“有也行，没有也罢，不\n争不抢，爱咋咋地”的冷静、淡定、平和的心\n态，不管遭遇到何种突发状况，都可以淡然\n处之。怎么都行、不大走心、看淡一切的育\n娃理念，使你在育娃路上显得得心应手，云\n淡风轻，宠辱不惊.', {"font":"bold 30px Arial"}, _groupFoxi);
-	
 	var _groupShaonv = this.game.add.group(this);
 	_groupShaonv.scale.setTo(0.0, 1.0);
 	
 	this.game.add.sprite(0, 0, 'Result_shaonv', null, _groupShaonv);
-	
-	this.game.add.text(40, 403, '      社会我辣妈，即使是成为母亲后，仍然\n调整心态、成熟思考、有序打理生活、细\n心照顾儿女、勇敢追求人生梦想的积极向\n上的心态和形象，单手抱娃、一字马关后\n备箱都不在话下，家庭事业双丰收才是你\n的人生目标。', {"font":"bold 30px Arial"}, _groupShaonv);
 	
 	var _groupHU = this.game.add.group(this);
 	_groupHU.scale.setTo(0.0, 1.0);
 	
 	this.game.add.sprite(-1, 1, 'Result_huxi', null, _groupHU);
 	
-	this.game.add.text(27, 408, '    你对孩子有一套严格的管理理念，既注重\n家长对孩子的严格教导，也关注孩子的自主\n发展。既严格要求孩子按照指定好的目标努\n力，不能松懈和半途而废，也允许孩子有自\n己的时间发展兴趣爱好。让孩子成为更好的\n人就是你育娃路上的灯塔。', {"font":"bold 30px Arial"}, _groupHU);
-	
 	var _groupHuan = this.game.add.group(this);
 	_groupHuan.scale.setTo(0.0, 1.0);
 	
 	this.game.add.sprite(0, 0, 'Result_naodong', null, _groupHuan);
-	
-	this.game.add.text(44, 458, '  你的育娃理念天马行空，想象力很超前。\n咱们还是先去找个男朋友好吗？', {"font":"bold 30px Arial"}, _groupHuan);
-	
-	var _texta = this.game.add.text(233, 754, '10%', {"font":"bold 30px Arial","fill":"#008000"}, this);
-	
-	var _textb = this.game.add.text(512, 754, '10%', {"font":"bold 30px Arial","fill":"#ff8080"}, this);
-	
-	var _textc = this.game.add.text(233, 814, '10%', {"font":"bold 30px Arial","fill":"#ffff00"}, this);
-	
-	var _textd = this.game.add.text(510, 813, '10%', {"font":"bold 30px Arial","fill":"#c0c0c0"}, this);
 	
 	
 	
@@ -63,10 +47,6 @@ function overPrefab(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBod
 	this.fGroupShaonv = _groupShaonv;
 	this.fGroupHU = _groupHU;
 	this.fGroupHuan = _groupHuan;
-	this.fTexta = _texta;
-	this.fTextb = _textb;
-	this.fTextc = _textc;
-	this.fTextd = _textd;
 	
 }
 
@@ -106,11 +86,6 @@ overPrefab.prototype.initOnce = function () {
 	}else {
 		this.fGroupHuan.scale.x = 1;
 	}
-
-	// this.fTexta.text = perA/10 + "%";
-	// this.fTextb.text = perB/10 + "%";
-	// this.fTextc.text = perC/10 + "%";
-	// this.fTextd.text = perD/10 + "%";
 };
 
 overPrefab.prototype.clickBtn = function (btn) {

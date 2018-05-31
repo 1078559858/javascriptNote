@@ -2,8 +2,8 @@
   "canvas-version": 2,
   "settings": {
     "className": "pre_1",
-    "sceneWidth": 640,
-    "sceneHeight": 1236,
+    "sceneWidth": 750,
+    "sceneHeight": 1206,
     "generateOnSave": true,
     "enableStepping": false,
     "lang": "JAVA_SCRIPT",

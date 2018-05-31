@@ -51,8 +51,8 @@
               "info": {
                 "editorName": "dragBg",
                 "editorPublic": true,
-                "scale.x": 2.03,
-                "scale.y": 46.55
+                "scale.x": 2.38,
+                "scale.y": 54.555
               }
             },
             {
@@ -75,8 +75,7 @@
                     "asset": "2",
                     "info": {
                       "editorName": "nine_1",
-                      "x": -7,
-                      "y": 1060
+                      "y": 1061
                     }
                   },
                   {
@@ -85,7 +84,7 @@
                     "asset": "3",
                     "info": {
                       "editorName": "nine_2",
-                      "y": 1812
+                      "y": 2122
                     }
                   },
                   {
@@ -94,7 +93,7 @@
                     "asset": "4",
                     "info": {
                       "editorName": "nine_3",
-                      "y": 2718
+                      "y": 3183
                     }
                   },
                   {
@@ -103,7 +102,7 @@
                     "asset": "5",
                     "info": {
                       "editorName": "nine_4",
-                      "y": 3624
+                      "y": 4244
                     }
                   },
                   {
@@ -112,7 +111,7 @@
                     "asset": "6",
                     "info": {
                       "editorName": "nine_5",
-                      "y": 4530
+                      "y": 5305
                     }
                   },
                   {
@@ -121,7 +120,7 @@
                     "asset": "7",
                     "info": {
                       "editorName": "nine_6",
-                      "y": 5436
+                      "y": 6366
                     }
                   },
                   {
@@ -130,7 +129,7 @@
                     "asset": "8",
                     "info": {
                       "editorName": "nine_7",
-                      "y": 6342
+                      "y": 7427
                     }
                   },
                   {
@@ -139,7 +138,7 @@
                     "asset": "9",
                     "info": {
                       "editorName": "nine_8",
-                      "y": 7248
+                      "y": 8488
                     }
                   }
                 ]
@@ -159,8 +158,8 @@
                   "info": {
                     "editorName": "white_png",
                     "x": 35,
-                    "y": 797,
-                    "scale.x": 1.8,
+                    "y": 937,
+                    "scale.x": 2.1,
                     "scale.y": 0.5,
                     "alpha": 0,
                     "callback": "this.clickGo"

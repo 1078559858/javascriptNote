@@ -21,45 +21,45 @@ function mainScene(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBody
 	var _groupColor = this.game.add.group(this);
 	_groupColor.position.setTo(-55, -40);
 	
-	var _white_png = this.game.add.sprite(-31, -21, 'color', 'white.png', _groupColor);
+	var _white_png = this.game.add.sprite(30, -10, 'color', 'white.png', _groupColor);
 	_white_png.scale.setTo(2.5, 8.5);
 	
-	var _colorBottom = this.game.add.sprite(-31, -21, 'color', 'fde500.png', _groupColor);
+	var _colorBottom = this.game.add.sprite(30, -17, 'color', 'fde500.png', _groupColor);
 	_colorBottom.scale.setTo(2.5, 8.5);
 	_colorBottom.alpha = 0.0;
 	
-	var _color_up = this.game.add.sprite(698, -13, 'color', '404040.png', _groupColor);
+	var _color_up = this.game.add.sprite(812, -19, 'color', '404040.png', _groupColor);
 	_color_up.scale.setTo(2.5, 8.5);
 	
 	var _groupSetName = new pre_1(this.game, this);
-	_groupSetName.position.setTo(-641, 0);
+	_groupSetName.position.setTo(-751, 0);
 	
 	var _group1 = new prefab_1(this.game, this);
-	_group1.position.setTo(640, 0);
+	_group1.position.setTo(751, 0);
 	
 	var _group2 = new prefab_2(this.game, this);
-	_group2.position.setTo(641, 0);
+	_group2.position.setTo(751, 0);
 	
 	var _group3 = new prefab_3(this.game, this);
-	_group3.position.setTo(641, 0);
+	_group3.position.setTo(751, 0);
 	
 	var _group4 = new prefab_4(this.game, this);
-	_group4.position.setTo(641, 0);
+	_group4.position.setTo(751, 0);
 	
 	var _group5 = new prefab_5(this.game, this);
-	_group5.position.setTo(641, 0);
+	_group5.position.setTo(751, 0);
 	
 	var _group6 = new prefab_6(this.game, this);
-	_group6.position.setTo(641, 0);
+	_group6.position.setTo(751, 0);
 	
 	var _group7 = new prefab_7(this.game, this);
-	_group7.position.setTo(641, 0);
+	_group7.position.setTo(751, 0);
 	
 	var _group8 = new prefab_8(this.game, this);
-	_group8.position.setTo(641, 0);
+	_group8.position.setTo(751, 0);
 	
 	var _groupOver = new overPrefab(this.game, this);
-	_groupOver.position.setTo(641, 0);
+	_groupOver.position.setTo(751, 0);
 	
 	var _bgBtn = this.game.add.button(0, 0, 'bg', null, this, null, null, null, null, this);
 	_bgBtn.alpha = 0.0;
@@ -138,7 +138,7 @@ mainScene.prototype.appearGroup2 = function (bObj, eObj) {
 };
 
 mainScene.prototype.disAppearGroup = function (group) {
-	var tween = this.game.add.tween(group).to( { x:-gGameConf.width, y:0}, 500,
+	var tween = this.game.add.tween(group).to( { x:-gGameConf.width - 1, y:0}, 500,
 		Phaser.Easing.Exponential.InOut, true);
 };
 
@@ -204,12 +204,12 @@ mainScene.prototype.setGroupTween = function (obj, width, time1, time2) {
 };
 
 mainScene.prototype.setTempAction1 = function (group) {
-	group.x += 640;
+	group.x += gGameConf.width;
 
 	var time = Math.random()*200;
-	var tweenA = this.game.add.tween(group).to({x:group.x - 300}, 100, Phaser.Easing.Linear.None, true);
+	var tweenA = this.game.add.tween(group).to({x:group.x - 350}, 100, Phaser.Easing.Linear.None, true);
 	tweenA.onComplete.addOnce(function () {
-		var tweenB = gGame.add.tween(group).to({x:group.x - 340}, 2600 + time, Phaser.Easing.Elastic.Out, true);
+		var tweenB = gGame.add.tween(group).to({x:group.x - 390}, 2600 + time, Phaser.Easing.Elastic.Out, true);
 		tweenB.onComplete.addOnce(function () {
 			gGame.gameScene.fBgBtn.inputEnabled = false;
 		})
