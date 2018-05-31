@@ -39,12 +39,12 @@ Preload.prototype = proto;
 Preload.prototype.preload = function() {
 	var game = this.game;
 
-	this.scale.scaleMode = Phaser.ScaleManager.EXACT_FIT;
+	this.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
 	// this.scale.fullScreenScaleMode = Phaser.ScaleManager.EXACT_FIT;
 	// this.scale.pageAlignHorizontally = true;
 	// this.scale.pageAlignVertically = true;
 
-	var bounding = this.game.canvas.getBoundingClientRect();
+	// var bounding = this.game.canvas.getBoundingClientRect();
 	// if(bounding.width/ this.game.width < bounding.height/this.game.height){
 	// 	this.scale.pageAlignHorizontally = true;
 	// }else{
