@@ -52,8 +52,7 @@
               "asset": "0",
               "info": {
                 "editorName": "heiban_png",
-                "x": 102,
-                "y": 62
+                "x": 105
               }
             },
             {
@@ -61,67 +60,21 @@
               "id": "64aeb6e3-9686-42c4-95e1-d79c80f43d73",
               "info": {
                 "editorName": "text",
-                "x": 156,
-                "y": 226,
-                "text": "1、陪孩子学习时，\r\n     哪句话最符合你\r\n     的心情？",
+                "x": 165,
+                "y": 266,
+                "text": "1、陪孩子学习时，哪句\r\n     话最符合你的心情？",
                 "style.fontSize": 40,
                 "style.fill": "#ffffff"
               }
             },
             {
-              "type": "button",
-              "id": "ae6fdf31-5880-450a-8c3b-1ad628bf0512",
-              "asset": "1",
-              "info": {
-                "editorName": "Q2_answerA",
-                "x": 29,
-                "y": 455,
-                "data": "{\r\n\"value\":\"a\"\r\n}",
-                "callback": "this.clickBtn"
-              }
-            },
-            {
-              "type": "button",
-              "id": "67dc5b43-1da5-40f6-8389-efafe4eb2842",
-              "asset": "2",
-              "info": {
-                "editorName": "Q2_answerB",
-                "x": 286,
-                "y": 295,
-                "data": "{\r\n\"value\":\"b\"\r\n}",
-                "callback": "this.clickBtn"
-              }
-            },
-            {
-              "type": "button",
-              "id": "7f5d914b-5118-415b-8eba-2c2cb77e75f8",
-              "asset": "3",
-              "info": {
-                "editorName": "Q2_answerC",
-                "x": 23,
-                "y": 783,
-                "data": "{\r\n\"value\":\"c\"\r\n}",
-                "callback": "this.clickBtn"
-              }
-            },
-            {
-              "type": "button",
-              "id": "8ecb54c5-595a-40f5-b835-7f16c05cd8ae",
-              "asset": "4",
-              "info": {
-                "editorName": "Q2_answerD",
-                "x": 377,
-                "y": 797,
-                "data": "{\r\n\"value\":\"d\"\r\n}",
-                "callback": "this.clickBtn"
-              }
-            },
-            {
               "type": "image",
               "id": "be7b9574-9544-4298-a122-503641875f78",
-              "asset": "5",
+              "asset": "1",
               "info": {
                 "editorName": "temp",
+                "x": 23,
+                "y": 17,
                 "scale.x": 0.3,
                 "scale.y": 0.3
               }
@@ -129,10 +82,142 @@
             {
               "type": "atlas-sprite",
               "id": "cd61f630-e6b4-4074-a2b8-282e2a646e6c",
-              "asset": "6",
+              "asset": "2",
               "info": {
                 "editorName": "bird_png",
-                "x": 215
+                "x": 275
+              }
+            },
+            {
+              "type": "group",
+              "id": "61b74597-e661-4b4a-8fa4-27157250ff30",
+              "info": {
+                "editorName": "group1",
+                "x": 66,
+                "y": 579,
+                "setAll": [],
+                "children": [
+                  {
+                    "type": "button",
+                    "id": "3595e5c2-cf89-4c8f-9b6e-5b1857926f55",
+                    "asset": "3",
+                    "info": {
+                      "editorName": "p11_jpg1",
+                      "data": "{\r\n\"value\":\"a\"\r\n}",
+                      "callback": "this.clickBtn"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "859d1362-2c72-4ea1-9f93-996db54ac03d",
+                    "info": {
+                      "editorName": "text1",
+                      "x": 6,
+                      "y": 245,
+                      "text": "A:这么笨，是时候打一下了。",
+                      "style.fill": "#ffffff"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "group",
+              "id": "2c35ef90-877c-4666-8b58-c28f23001fe6",
+              "info": {
+                "editorName": "group2",
+                "x": 408,
+                "y": 579,
+                "setAll": [],
+                "children": [
+                  {
+                    "type": "button",
+                    "id": "8f43634f-b35c-41bf-bd22-0067bfd7fce3",
+                    "asset": "4",
+                    "info": {
+                      "editorName": "p11_jpg",
+                      "data": "{\r\n\"value\":\"b\"\r\n}",
+                      "callback": "this.clickBtn"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "ae1bc4bf-c69b-4ccf-b138-29f5f7a6a359",
+                    "info": {
+                      "editorName": "text2",
+                      "x": 28,
+                      "y": 244,
+                      "text": "B:不管怎样，不能熬夜！",
+                      "style.fill": "#ffffff"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "group",
+              "id": "931c6aa2-f872-4e92-8235-302695e46820",
+              "info": {
+                "editorName": "group3",
+                "x": 66,
+                "y": 887,
+                "setAll": [],
+                "children": [
+                  {
+                    "type": "button",
+                    "id": "e4f9da63-17a4-4eff-a312-f31b4c1e5dee",
+                    "asset": "5",
+                    "info": {
+                      "editorName": "p11_jpg2",
+                      "data": "{\r\n\"value\":\"c\"\r\n}",
+                      "callback": "this.clickBtn"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "7c7af86e-45b9-4414-8277-d882507aed3f",
+                    "info": {
+                      "editorName": "text3",
+                      "x": 19,
+                      "y": 244,
+                      "text": "C:头可断，剧不可不看！",
+                      "style.fill": "#ffffff"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "group",
+              "id": "bd3e01df-1509-440d-8fd9-6bab05276fef",
+              "info": {
+                "editorName": "group4",
+                "x": 408,
+                "y": 887,
+                "setAll": [],
+                "children": [
+                  {
+                    "type": "button",
+                    "id": "8e0875b7-c76a-40f5-a848-6eaf39058a0f",
+                    "asset": "6",
+                    "info": {
+                      "editorName": "p11_jpg3",
+                      "data": "{\r\n\"value\":\"d\"\r\n}",
+                      "callback": "this.clickBtn"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "0b3514b9-c728-4ef7-b8fb-06a1d572aaa2",
+                    "info": {
+                      "editorName": "text4",
+                      "x": 49,
+                      "y": 244,
+                      "text": "D:孩他爹，赶快去！",
+                      "style.fill": "#ffffff"
+                    }
+                  }
+                ]
               }
             }
           ]
@@ -150,34 +235,38 @@
     },
     "1": {
       "file": "WebContent/assets/pack.json",
-      "section": "prefab1",
-      "asset": "Q2_answerA"
-    },
-    "2": {
-      "file": "WebContent/assets/pack.json",
-      "section": "prefab1",
-      "asset": "Q2_answerB"
-    },
-    "3": {
-      "file": "WebContent/assets/pack.json",
-      "section": "prefab1",
-      "asset": "Q2_answerC"
-    },
-    "4": {
-      "file": "WebContent/assets/pack.json",
-      "section": "prefab1",
-      "asset": "Q2_answerD"
-    },
-    "5": {
-      "file": "WebContent/assets/pack.json",
       "section": "temp",
       "asset": "temp3"
     },
-    "6": {
+    "2": {
       "file": "WebContent/assets/pack.json",
       "section": "colorAtlas",
       "asset": "ip",
       "sprite": "bird.png"
+    },
+    "3": {
+      "file": "WebContent/assets/pack.json",
+      "section": "colorAtlas",
+      "asset": "eightProblems",
+      "sprite": "p11.jpg"
+    },
+    "4": {
+      "file": "WebContent/assets/pack.json",
+      "section": "colorAtlas",
+      "asset": "eightProblems",
+      "sprite": "p12.jpg"
+    },
+    "5": {
+      "file": "WebContent/assets/pack.json",
+      "section": "colorAtlas",
+      "asset": "eightProblems",
+      "sprite": "p13.jpg"
+    },
+    "6": {
+      "file": "WebContent/assets/pack.json",
+      "section": "colorAtlas",
+      "asset": "eightProblems",
+      "sprite": "p14.jpg"
     }
   },
   "prefab-table": {}

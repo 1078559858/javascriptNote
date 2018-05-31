@@ -28,7 +28,7 @@ function prefab_3(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyT
 	this.game.add.text(135, 209, '3、宝宝的小卧室，\n     你最希望装修成\n     什么风格', {"font":"bold 40px Arial","fill":"#ffffff"}, this);
 	
 	var _group1 = this.game.add.group(this);
-	_group1.position.setTo(-1, -1);
+	_group1.position.setTo(40, 121);
 	
 	var _chat = this.game.add.button(52, 460, 'chat1', this.clickBtn, this, null, null, null, null, _group1);
 	_chat.data = {
@@ -38,7 +38,7 @@ function prefab_3(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyT
 	this.game.add.text(136, 505, 'A:小猪佩奇社会风', {"font":"bold 36px Arial"}, _group1);
 	
 	var _group2 = this.game.add.group(this);
-	_group2.position.setTo(-3, 177);
+	_group2.position.setTo(38, 264);
 	
 	var _chat1 = this.game.add.button(48, 472, 'chat3', this.clickBtn, this, null, null, null, null, _group2);
 	_chat1.data = {
@@ -48,7 +48,7 @@ function prefab_3(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyT
 	this.game.add.text(138, 507, 'B: 幻想童话风', {"font":"bold 36px Arial"}, _group2);
 	
 	var _group3 = this.game.add.group(this);
-	_group3.position.setTo(-1, 376);
+	_group3.position.setTo(36, 399);
 	
 	var _chat2 = this.game.add.button(52, 460, 'chat1', this.clickBtn, this, null, null, null, null, _group3);
 	_chat2.data = {
@@ -58,7 +58,7 @@ function prefab_3(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyT
 	this.game.add.text(135, 502, 'C：运动风', {"font":"bold 36px Arial"}, _group3);
 	
 	var _group4 = this.game.add.group(this);
-	_group4.position.setTo(-3, 554);
+	_group4.position.setTo(34, 537);
 	
 	var _chat3 = this.game.add.button(52, 460, 'chat3', this.clickBtn, this, null, null, null, null, _group4);
 	_chat3.data = {

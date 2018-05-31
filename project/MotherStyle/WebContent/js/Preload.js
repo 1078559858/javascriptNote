@@ -95,7 +95,6 @@ Preload.prototype.preload = function() {
 
 	this.load.pack("common","assets/pack.json");
 	this.load.pack("preSetName","assets/pack.json");
-	this.load.pack("prefab1","assets/pack.json");
 	this.load.pack("over","assets/pack.json");
 	this.load.pack("colorAtlas","assets/pack.json");
 	this.load.pack("ninePic","assets/pack.json");

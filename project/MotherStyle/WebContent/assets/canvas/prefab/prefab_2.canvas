@@ -50,8 +50,7 @@
               "asset": "0",
               "info": {
                 "editorName": "heiban_png",
-                "x": 151.5,
-                "y": 30
+                "x": 105
               }
             },
             {
@@ -60,9 +59,9 @@
               "info": {
                 "editorName": "textTitle",
                 "editorPublic": true,
-                "x": 241,
-                "y": 167,
-                "text": "2、2岁的宝宝想爬\r\n      楼梯，此时你\r\n      会?",
+                "x": 142,
+                "y": 239,
+                "text": "2、2岁的宝宝想爬楼梯,\r\n     此时你会?",
                 "style.fontSize": 45,
                 "style.fill": "#ffffff"
               }
@@ -83,31 +82,18 @@
               "info": {
                 "editorName": "group1",
                 "editorPublic": true,
+                "x": 55,
+                "y": 570,
                 "setAll": [],
                 "children": [
                   {
                     "type": "button",
-                    "id": "af42812b-009d-4a00-9b8d-e5163f6dbd22",
+                    "id": "10fe6996-8dc8-48bb-a004-9b0efde46d4d",
                     "asset": "2",
                     "info": {
-                      "editorName": "bgBtn2",
-                      "x": -1,
-                      "y": -1,
-                      "scale.x": 1.8,
-                      "scale.y": 0.77,
-                      "alpha": 0,
+                      "editorName": "dhk_png4",
                       "data": "{\r\n\"value\":\"a\"\r\n}",
                       "callback": "this.clickBtn"
-                    }
-                  },
-                  {
-                    "type": "atlas-sprite",
-                    "id": "98c96586-162b-4b29-9bd5-4e1c05cd03a8",
-                    "asset": "3",
-                    "info": {
-                      "editorName": "dhk_png",
-                      "x": 5,
-                      "y": 5
                     }
                   },
                   {
@@ -115,8 +101,8 @@
                     "id": "1fe3152e-88ee-4ddc-9350-a0fea8cc877b",
                     "info": {
                       "editorName": "text1",
-                      "x": 66,
-                      "y": 19,
+                      "x": 122,
+                      "y": 14,
                       "text": "A:他想爬就爬，稍微看着\r\n   点就行了",
                       "style.fontSize": 36,
                       "style.fill": "#ffffff"
@@ -127,48 +113,31 @@
             },
             {
               "type": "group",
-              "id": "3a53170a-7d1d-4559-afea-b5681ce18f47",
+              "id": "c629e0cd-25ee-4357-99a9-808766063acd",
               "info": {
                 "editorName": "group2",
                 "editorPublic": true,
-                "x": 61,
-                "y": -118,
+                "x": 55,
+                "y": 720,
                 "setAll": [],
                 "children": [
                   {
                     "type": "button",
-                    "id": "99584fbd-02a6-4ea1-afc9-29f4044e10a2",
+                    "id": "70ceb4e4-79d9-4bb2-9a10-d5b3c77ceeb7",
                     "asset": "2",
                     "info": {
-                      "editorName": "bgBtn1",
-                      "x": 33,
-                      "y": 456,
-                      "scale.x": 1.8,
-                      "scale.y": 0.77,
-                      "alpha": 0,
+                      "editorName": "dhk_png",
                       "data": "{\r\n\"value\":\"b\"\r\n}",
                       "callback": "this.clickBtn"
                     }
                   },
                   {
-                    "type": "atlas-sprite",
-                    "id": "98854b0f-277e-4099-9382-82d45d17f5e7",
-                    "asset": "3",
-                    "info": {
-                      "editorName": "dhk_png1",
-                      "x": 31,
-                      "y": 471,
-                      "scale.x": 1.2,
-                      "scale.y": 1.2
-                    }
-                  },
-                  {
                     "type": "text",
-                    "id": "29446135-24f9-4aa1-92e0-57798f5942a2",
+                    "id": "317be3a3-2952-4f8f-8f9b-854eb4793e3a",
                     "info": {
-                      "editorName": "text3",
-                      "x": 125,
-                      "y": 487,
+                      "editorName": "text",
+                      "x": 122,
+                      "y": 14,
                       "text": "B:不许爬，包衣服和手都\r\n    弄脏了",
                       "style.fontSize": 36,
                       "style.fill": "#ffffff"
@@ -179,48 +148,31 @@
             },
             {
               "type": "group",
-              "id": "48e7c99d-2f58-4e70-9c87-137168eef64c",
+              "id": "c02102b3-ffd7-4117-86aa-80408a04994c",
               "info": {
                 "editorName": "group3",
                 "editorPublic": true,
-                "x": 49,
-                "y": 388,
+                "x": 55,
+                "y": 870,
                 "setAll": [],
                 "children": [
                   {
                     "type": "button",
-                    "id": "b6861b12-c7f2-45aa-89b1-77827eab23e6",
-                    "asset": "4",
+                    "id": "7c6f7376-8700-48bb-b0cb-7cf7e0eea00b",
+                    "asset": "2",
                     "info": {
-                      "editorName": "bgBtn",
-                      "x": 45,
-                      "y": 458,
-                      "scale.x": 1.8,
-                      "scale.y": 0.77,
-                      "alpha": 0,
+                      "editorName": "dhk_png1",
                       "data": "{\r\n\"value\":\"c\"\r\n}",
                       "callback": "this.clickBtn"
                     }
                   },
                   {
-                    "type": "atlas-sprite",
-                    "id": "67294da0-f4b3-4c4d-8f4d-0a313e1725e0",
-                    "asset": "3",
-                    "info": {
-                      "editorName": "dhk_png2",
-                      "x": 58,
-                      "y": 470,
-                      "scale.x": 1.2,
-                      "scale.y": 1.2
-                    }
-                  },
-                  {
                     "type": "text",
-                    "id": "81aaf934-09f1-4184-97f3-39f25e00b275",
+                    "id": "4dcb8243-984a-4041-9a14-55658342c2a1",
                     "info": {
-                      "editorName": "text2",
-                      "x": 140,
-                      "y": 508,
+                      "editorName": "text3",
+                      "x": 122,
+                      "y": 33,
                       "text": "C:跟在宝宝背后保护Ta",
                       "style.fontSize": 36,
                       "style.fill": "#ffffff"
@@ -231,48 +183,31 @@
             },
             {
               "type": "group",
-              "id": "aa22dc45-0440-4223-a0b2-022a4810a569",
+              "id": "cdce7858-f465-465a-8232-45c4ec1e5c38",
               "info": {
                 "editorName": "group4",
                 "editorPublic": true,
-                "x": 40,
-                "y": 564,
+                "x": 55,
+                "y": 1020,
                 "setAll": [],
                 "children": [
                   {
                     "type": "button",
-                    "id": "b949edb7-2b49-4a61-a675-72f3236c37ea",
-                    "asset": "5",
+                    "id": "66ac2a93-99c2-4820-bf7a-34a9c268a6ca",
+                    "asset": "2",
                     "info": {
-                      "editorName": "bgBtn4",
-                      "x": 51,
-                      "y": 449,
-                      "scale.x": 1.8,
-                      "scale.y": 0.77,
-                      "alpha": 0,
+                      "editorName": "dhk_png2",
                       "data": "{\r\n\"value\":\"d\"\r\n}",
                       "callback": "this.clickBtn"
                     }
                   },
                   {
-                    "type": "atlas-sprite",
-                    "id": "75c906d1-1b39-4632-b211-5dba8a9e65f3",
-                    "asset": "3",
-                    "info": {
-                      "editorName": "dhk_png3",
-                      "x": 53,
-                      "y": 456,
-                      "scale.x": 1.2,
-                      "scale.y": 1.2
-                    }
-                  },
-                  {
                     "type": "text",
-                    "id": "f0283ca3-6877-4c18-8e12-a5f76dc6ef04",
+                    "id": "247e5849-d16f-4eaf-b544-74dc17178892",
                     "info": {
-                      "editorName": "text4",
-                      "x": 141,
-                      "y": 500,
+                      "editorName": "text2",
+                      "x": 122,
+                      "y": 33,
                       "text": "D:懒得拾掇，交给Ta爹",
                       "style.fontSize": 36,
                       "style.fill": "#ffffff"
@@ -283,14 +218,11 @@
             },
             {
               "type": "atlas-sprite",
-              "id": "0c07c62c-4ace-4a63-bbba-b5ee0163ad02",
-              "asset": "6",
+              "id": "a18bd599-e8d8-41e4-9e78-c998fa09825c",
+              "asset": "3",
               "info": {
                 "editorName": "huli_png",
-                "x": 316,
-                "y": 13,
-                "scale.x": 0.5,
-                "scale.y": 0.5
+                "x": 275
               }
             }
           ]
@@ -314,28 +246,10 @@
     "2": {
       "file": "WebContent/assets/pack.json",
       "section": "colorAtlas",
-      "asset": "color",
-      "sprite": "ee465d.png"
-    },
-    "3": {
-      "file": "WebContent/assets/pack.json",
-      "section": "colorAtlas",
       "asset": "common1",
       "sprite": "dhk.png"
     },
-    "4": {
-      "file": "WebContent/assets/pack.json",
-      "section": "colorAtlas",
-      "asset": "color",
-      "sprite": "f7973a.png"
-    },
-    "5": {
-      "file": "WebContent/assets/pack.json",
-      "section": "colorAtlas",
-      "asset": "color",
-      "sprite": "bad53f.png"
-    },
-    "6": {
+    "3": {
       "file": "WebContent/assets/pack.json",
       "section": "colorAtlas",
       "asset": "ip",

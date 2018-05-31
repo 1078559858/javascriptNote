@@ -28,26 +28,6 @@ function prefab_5(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyT
 	
 	this.game.add.text(128, 212, '5、哪个是孩子开学后，\n     你的真实状态?', {"font":"bold 40px Arial","fill":"#ffffff"}, this);
 	
-	var _Q2_answerA = this.game.add.button(26, 452, 'Q2_answerA', this.clickBtn, this, null, null, null, null, this);
-	_Q2_answerA.data = {
-	"value":"a"
-	};
-	
-	var _Q2_answerB = this.game.add.button(283, 292, 'Q2_answerB', this.clickBtn, this, null, null, null, null, this);
-	_Q2_answerB.data = {
-	"value":"b"
-	};
-	
-	var _Q2_answerC = this.game.add.button(20, 780, 'Q2_answerC', this.clickBtn, this, null, null, null, null, this);
-	_Q2_answerC.data = {
-	"value":"c"
-	};
-	
-	var _Q2_answerD = this.game.add.button(374, 794, 'Q2_answerD', this.clickBtn, this, null, null, null, null, this);
-	_Q2_answerD.data = {
-	"value":"d"
-	};
-	
 	
 	
 }

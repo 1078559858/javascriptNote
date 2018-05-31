@@ -107,32 +107,6 @@
       "overwrite": false
     }
   ],
-  "prefab1": [
-    {
-      "type": "image",
-      "key": "Q2_answerA",
-      "url": "assets/image/prefab1/Q2_answerA.png",
-      "overwrite": false
-    },
-    {
-      "type": "image",
-      "key": "Q2_answerB",
-      "url": "assets/image/prefab1/Q2_answerB.png",
-      "overwrite": false
-    },
-    {
-      "type": "image",
-      "key": "Q2_answerC",
-      "url": "assets/image/prefab1/Q2_answerC.png",
-      "overwrite": false
-    },
-    {
-      "type": "image",
-      "key": "Q2_answerD",
-      "url": "assets/image/prefab1/Q2_answerD.png",
-      "overwrite": false
-    }
-  ],
   "over": [
     {
       "type": "image",
@@ -189,6 +163,12 @@
       "key": "temp1",
       "url": "assets/image/temp/temp.png",
       "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "heiban1",
+      "url": "assets/image/temp/heiban1.png",
+      "overwrite": false
     }
   ],
   "colorAtlas": [
@@ -211,6 +191,13 @@
       "key": "ip",
       "textureURL": "assets/image/colorAtlas/ip.png",
       "atlasURL": "assets/image/colorAtlas/ip.json",
+      "format": "TEXTURE_ATLAS_JSON_ARRAY"
+    },
+    {
+      "type": "atlas",
+      "key": "eightProblems",
+      "textureURL": "assets/image/colorAtlas/eightProblems.png",
+      "atlasURL": "assets/image/colorAtlas/eightProblems.json",
       "format": "TEXTURE_ATLAS_JSON_ARRAY"
     }
   ],
@@ -271,7 +258,7 @@
     }
   ],
   "meta": {
-    "generated": "1527771979700",
+    "generated": "1527774702840",
     "app": "Phaser Editor",
     "url": "http://phasereditor.boniatillo.com",
     "version": "1.0",

@@ -91,8 +91,8 @@
               "id": "0356e557-4ec9-4b51-b158-184413b7e019",
               "info": {
                 "editorName": "group1",
-                "x": -1,
-                "y": -1,
+                "x": 40,
+                "y": 121,
                 "setAll": [],
                 "children": [
                   {
@@ -126,8 +126,8 @@
               "id": "85ca6672-bccc-4152-8fb5-1f00d514afcc",
               "info": {
                 "editorName": "group2",
-                "x": -3,
-                "y": 177,
+                "x": 38,
+                "y": 264,
                 "setAll": [],
                 "children": [
                   {
@@ -161,8 +161,8 @@
               "id": "d3dca283-4c8e-44e0-9a31-841f109b3992",
               "info": {
                 "editorName": "group3",
-                "x": -1,
-                "y": 376,
+                "x": 36,
+                "y": 399,
                 "setAll": [],
                 "children": [
                   {
@@ -196,8 +196,8 @@
               "id": "f2709740-591e-4bdd-8623-3ea611bb739e",
               "info": {
                 "editorName": "group4",
-                "x": -3,
-                "y": 554,
+                "x": 34,
+                "y": 537,
                 "setAll": [],
                 "children": [
                   {

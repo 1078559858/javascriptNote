@@ -87,54 +87,6 @@
                 "style.fontSize": 40,
                 "style.fill": "#ffffff"
               }
-            },
-            {
-              "type": "button",
-              "id": "6b26f2cd-2d8a-4ee5-a063-9a2b20ddd82f",
-              "asset": "3",
-              "info": {
-                "editorName": "Q2_answerA",
-                "x": 26,
-                "y": 452,
-                "data": "{\r\n\"value\":\"a\"\r\n}",
-                "callback": "this.clickBtn"
-              }
-            },
-            {
-              "type": "button",
-              "id": "ab8cd628-0280-44ab-ac11-0ae298a63cf5",
-              "asset": "4",
-              "info": {
-                "editorName": "Q2_answerB",
-                "x": 283,
-                "y": 292,
-                "data": "{\r\n\"value\":\"b\"\r\n}",
-                "callback": "this.clickBtn"
-              }
-            },
-            {
-              "type": "button",
-              "id": "36c0d594-0e84-444f-831c-c869109847cf",
-              "asset": "5",
-              "info": {
-                "editorName": "Q2_answerC",
-                "x": 20,
-                "y": 780,
-                "data": "{\r\n\"value\":\"c\"\r\n}",
-                "callback": "this.clickBtn"
-              }
-            },
-            {
-              "type": "button",
-              "id": "77d6bd00-2ffa-4c54-a2c1-7151bae8b391",
-              "asset": "6",
-              "info": {
-                "editorName": "Q2_answerD",
-                "x": 374,
-                "y": 794,
-                "data": "{\r\n\"value\":\"d\"\r\n}",
-                "callback": "this.clickBtn"
-              }
             }
           ]
         }
@@ -159,26 +111,6 @@
       "section": "colorAtlas",
       "asset": "ip",
       "sprite": "xiong.png"
-    },
-    "3": {
-      "file": "WebContent/assets/pack.json",
-      "section": "prefab1",
-      "asset": "Q2_answerA"
-    },
-    "4": {
-      "file": "WebContent/assets/pack.json",
-      "section": "prefab1",
-      "asset": "Q2_answerB"
-    },
-    "5": {
-      "file": "WebContent/assets/pack.json",
-      "section": "prefab1",
-      "asset": "Q2_answerC"
-    },
-    "6": {
-      "file": "WebContent/assets/pack.json",
-      "section": "prefab1",
-      "asset": "Q2_answerD"
     }
   },
   "prefab-table": {}
