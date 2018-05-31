@@ -46,17 +46,30 @@
           "children": [
             {
               "type": "atlas-sprite",
-              "id": "dfffe56f-b869-444a-9bea-584793b5a78c",
+              "id": "93aed97c-1292-4798-9471-e64ce635f9a7",
               "asset": "0",
               "info": {
                 "editorName": "heiban_png",
-                "x": 89,
-                "y": 60
+                "x": 104.99996948242188,
+                "y": -3
+              }
+            },
+            {
+              "type": "text",
+              "id": "f211cc2b-f6f5-4059-9d20-a419e7381bb2",
+              "info": {
+                "editorName": "textTitle",
+                "editorPublic": true,
+                "x": 138.97512817382812,
+                "y": 248,
+                "text": "3、宝宝的小卧室，你最\r\n     希望装成什么风格?",
+                "style.fontSize": 45,
+                "style.fill": "#ffffff"
               }
             },
             {
               "type": "image",
-              "id": "0dff27e8-c884-4428-942c-0978e8930c65",
+              "id": "d9f80a86-99f1-4647-baf4-d2dea4d44f15",
               "asset": "1",
               "info": {
                 "editorName": "temp",
@@ -65,57 +78,35 @@
               }
             },
             {
-              "type": "atlas-sprite",
-              "id": "9e322104-a5db-40d8-9015-3a00bc3dd114",
-              "asset": "2",
-              "info": {
-                "editorName": "bird_png",
-                "x": 243,
-                "y": -5
-              }
-            },
-            {
-              "type": "text",
-              "id": "673a057b-7986-4ada-9f25-9de5629b03ad",
-              "info": {
-                "editorName": "text",
-                "x": 135,
-                "y": 209,
-                "text": "3、宝宝的小卧室，\r\n     你最希望装修成\r\n     什么风格",
-                "style.fontSize": 40,
-                "style.fill": "#ffffff"
-              }
-            },
-            {
               "type": "group",
-              "id": "0356e557-4ec9-4b51-b158-184413b7e019",
+              "id": "bda343a5-ae53-415e-aa2d-272997a5c4aa",
               "info": {
                 "editorName": "group1",
-                "x": 40,
-                "y": 121,
+                "editorPublic": true,
+                "x": 56,
+                "y": 567,
                 "setAll": [],
                 "children": [
                   {
                     "type": "button",
-                    "id": "a3aa9142-8b29-4398-a40c-fff730f6c170",
-                    "asset": "3",
+                    "id": "08121e45-7be2-4b70-9645-f577ac39757a",
+                    "asset": "2",
                     "info": {
-                      "editorName": "chat",
-                      "x": 52,
-                      "y": 460,
+                      "editorName": "dhk_png",
                       "data": "{\r\n\"value\":\"a\"\r\n}",
                       "callback": "this.clickBtn"
                     }
                   },
                   {
                     "type": "text",
-                    "id": "09823627-6d71-45ce-a693-a2881012c437",
+                    "id": "6d3fcdb7-b180-45f2-915b-0cd362d90ee0",
                     "info": {
-                      "editorName": "text1",
-                      "x": 136,
-                      "y": 505,
+                      "editorName": "text",
+                      "x": 122,
+                      "y": 33,
                       "text": "A:小猪佩奇社会风",
-                      "style.fontSize": 36
+                      "style.fontSize": 36,
+                      "style.fill": "#ffffff"
                     }
                   }
                 ]
@@ -123,34 +114,34 @@
             },
             {
               "type": "group",
-              "id": "85ca6672-bccc-4152-8fb5-1f00d514afcc",
+              "id": "28276ce6-f971-4682-89c5-75b065a18bcf",
               "info": {
                 "editorName": "group2",
-                "x": 38,
-                "y": 264,
+                "editorPublic": true,
+                "x": 56,
+                "y": 717,
                 "setAll": [],
                 "children": [
                   {
                     "type": "button",
-                    "id": "1ffaa75e-6feb-4fbc-8c82-5cbfc4fe34b7",
-                    "asset": "4",
+                    "id": "5fc17467-0ad4-4296-80c2-8180e83b2372",
+                    "asset": "2",
                     "info": {
-                      "editorName": "chat1",
-                      "x": 48,
-                      "y": 472,
+                      "editorName": "dhk_png1",
                       "data": "{\r\n\"value\":\"b\"\r\n}",
                       "callback": "this.clickBtn"
                     }
                   },
                   {
                     "type": "text",
-                    "id": "f3d4d932-a1bc-48c4-89c5-54b8f88a3038",
+                    "id": "38f725dd-f556-43cd-b7f5-7c0268187238",
                     "info": {
-                      "editorName": "text2",
-                      "x": 138,
-                      "y": 507,
-                      "text": "B: 幻想童话风",
-                      "style.fontSize": 36
+                      "editorName": "text1",
+                      "x": 122,
+                      "y": 33,
+                      "text": "B:幻想童话风",
+                      "style.fontSize": 36,
+                      "style.fill": "#ffffff"
                     }
                   }
                 ]
@@ -158,34 +149,34 @@
             },
             {
               "type": "group",
-              "id": "d3dca283-4c8e-44e0-9a31-841f109b3992",
+              "id": "09dfd4e7-7376-41f0-9f60-848db218f0f6",
               "info": {
                 "editorName": "group3",
-                "x": 36,
-                "y": 399,
+                "editorPublic": true,
+                "x": 56,
+                "y": 867,
                 "setAll": [],
                 "children": [
                   {
                     "type": "button",
-                    "id": "bb624f58-cd47-4d4a-8e57-901537749e07",
-                    "asset": "3",
+                    "id": "7333f842-763e-45bf-a93d-8de8368907fb",
+                    "asset": "2",
                     "info": {
-                      "editorName": "chat2",
-                      "x": 52,
-                      "y": 460,
+                      "editorName": "dhk_png2",
                       "data": "{\r\n\"value\":\"c\"\r\n}",
                       "callback": "this.clickBtn"
                     }
                   },
                   {
                     "type": "text",
-                    "id": "ff8a8597-6a9f-4387-9e19-dcf7496db1f7",
+                    "id": "fd160946-ed37-4e99-8229-f02357caad9e",
                     "info": {
-                      "editorName": "text3",
-                      "x": 135,
-                      "y": 502,
-                      "text": "C：运动风",
-                      "style.fontSize": 36
+                      "editorName": "text2",
+                      "x": 122,
+                      "y": 33,
+                      "text": "C:运动风",
+                      "style.fontSize": 36,
+                      "style.fill": "#ffffff"
                     }
                   }
                 ]
@@ -193,37 +184,46 @@
             },
             {
               "type": "group",
-              "id": "f2709740-591e-4bdd-8623-3ea611bb739e",
+              "id": "3987383b-2e97-4066-bc33-ac6abf33731e",
               "info": {
                 "editorName": "group4",
-                "x": 34,
-                "y": 537,
+                "editorPublic": true,
+                "x": 56,
+                "y": 1017,
                 "setAll": [],
                 "children": [
                   {
                     "type": "button",
-                    "id": "bfa172f3-4591-4669-a6fa-5238c540f5cf",
-                    "asset": "4",
+                    "id": "a1502176-84f6-420f-8a05-614c9240ad96",
+                    "asset": "2",
                     "info": {
-                      "editorName": "chat3",
-                      "x": 52,
-                      "y": 460,
+                      "editorName": "dhk_png3",
                       "data": "{\r\n\"value\":\"d\"\r\n}",
                       "callback": "this.clickBtn"
                     }
                   },
                   {
                     "type": "text",
-                    "id": "dbdbf2ba-0744-4438-b88f-fa53f35f77f8",
+                    "id": "1c5e1238-2189-4e1e-b180-bf2b1667af24",
                     "info": {
-                      "editorName": "text4",
-                      "x": 139,
-                      "y": 494,
-                      "text": "D：懒得拾掇，交给Ta爹",
-                      "style.fontSize": 36
+                      "editorName": "text3",
+                      "x": 122,
+                      "y": 33,
+                      "text": "D:懒得拾掇，交给Ta爹",
+                      "style.fontSize": 36,
+                      "style.fill": "#ffffff"
                     }
                   }
                 ]
+              }
+            },
+            {
+              "type": "atlas-sprite",
+              "id": "7bb9e6fd-2ba4-4f23-a11b-0ecce2f69d0c",
+              "asset": "3",
+              "info": {
+                "editorName": "huli_png",
+                "x": 319
               }
             }
           ]
@@ -247,18 +247,14 @@
     "2": {
       "file": "WebContent/assets/pack.json",
       "section": "colorAtlas",
-      "asset": "ip",
-      "sprite": "boy.png"
+      "asset": "common1",
+      "sprite": "dhk.png"
     },
     "3": {
       "file": "WebContent/assets/pack.json",
-      "section": "common",
-      "asset": "chat1"
-    },
-    "4": {
-      "file": "WebContent/assets/pack.json",
-      "section": "common",
-      "asset": "chat3"
+      "section": "colorAtlas",
+      "asset": "ip",
+      "sprite": "boy.png"
     }
   },
   "prefab-table": {}

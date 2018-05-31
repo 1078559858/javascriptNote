@@ -46,77 +46,78 @@
           "children": [
             {
               "type": "atlas-sprite",
-              "id": "617bec9a-b7fd-4a29-a785-908c8f851077",
+              "id": "25542260-a52f-46eb-ae98-85d8d616479b",
               "asset": "0",
               "info": {
                 "editorName": "heiban_png",
-                "x": 94,
-                "y": 35
+                "x": 105,
+                "y": -1
+              }
+            },
+            {
+              "type": "text",
+              "id": "fe0495fe-b347-457f-af40-ed1c995facae",
+              "info": {
+                "editorName": "text",
+                "x": 174.98651123046875,
+                "y": 235,
+                "text": "6、孩子问：\u201c妈妈，我\r\n     们家有钱吗?\u201d你的\r\n     回答是？ ",
+                "style.fontSize": 40,
+                "style.fill": "#ffffff"
               }
             },
             {
               "type": "image",
-              "id": "8510fdac-4c49-46a9-a01d-fe70b4c4f624",
+              "id": "76f23dc2-b2ac-4eea-b34e-3b252119625d",
               "asset": "1",
               "info": {
                 "editorName": "temp",
+                "x": 18,
+                "y": 16,
                 "scale.x": 0.3,
                 "scale.y": 0.3
               }
             },
             {
               "type": "atlas-sprite",
-              "id": "159011d0-b44c-42df-bced-a5c43158af28",
+              "id": "c173c057-ba8f-48f3-95bc-9f888fa403cd",
               "asset": "2",
               "info": {
                 "editorName": "bird_png",
-                "x": 243,
-                "scale.x": 0.5,
-                "scale.y": 0.5
-              }
-            },
-            {
-              "type": "text",
-              "id": "840e14cc-4672-4db1-9d0f-6ba47c946884",
-              "info": {
-                "editorName": "text",
-                "x": 143,
-                "y": 189,
-                "text": "6、孩子问：\u201c妈妈，\r\n     我们家有钱吗?\u201d\r\n     你的回答是： ",
-                "style.fontSize": 40,
-                "style.fill": "#ffffff"
+                "x": 335,
+                "y": -1
               }
             },
             {
               "type": "group",
-              "id": "38e6f41f-cc53-4f65-8077-cd8bdbe4ab58",
+              "id": "ddefe65a-99bf-43a5-8e17-9cea58c4d0e2",
               "info": {
                 "editorName": "group1",
-                "x": -2,
-                "y": -3,
+                "editorPublic": true,
+                "x": 55,
+                "y": 570,
                 "setAll": [],
                 "children": [
                   {
                     "type": "button",
-                    "id": "b9392971-bf92-4e0b-b6d2-be4eaaa7d668",
+                    "id": "761fceb5-ea3e-4211-ad65-3dfef0f1b1f9",
                     "asset": "3",
                     "info": {
-                      "editorName": "chat",
-                      "x": 52,
-                      "y": 460,
+                      "editorName": "dhk_png",
                       "data": "{\r\n\"value\":\"a\"\r\n}",
                       "callback": "this.clickBtn"
                     }
                   },
                   {
                     "type": "text",
-                    "id": "074484c1-739b-45d0-a5ac-f773fa3d6510",
+                    "id": "66c79bc2-5bf8-4683-a14c-fde22a5a0e8f",
                     "info": {
                       "editorName": "text1",
-                      "x": 124,
-                      "y": 489,
-                      "text": "A:扔给孩子一本辅导习题集，然\r\n    后告诉他\u201c书中自有黄金屋\u201d",
-                      "style.fontSize": 30
+                      "x": 122,
+                      "y": 18,
+                      "text": "A:扔给孩子一本辅导习题集，\r\n    然后告诉他\u201c书中自有黄金屋\u201d。",
+                      "style.fontSize": 30,
+                      "style.fill": "#ffffff"
                     }
                   }
                 ]
@@ -124,34 +125,34 @@
             },
             {
               "type": "group",
-              "id": "ce840bb7-fe51-4843-ab48-31d15b94194c",
+              "id": "3b4f2ac8-8f8e-4b34-8772-239c6517071b",
               "info": {
                 "editorName": "group2",
-                "x": -4,
-                "y": 175,
+                "editorPublic": true,
+                "x": 55,
+                "y": 720,
                 "setAll": [],
                 "children": [
                   {
                     "type": "button",
-                    "id": "7a7a3361-9b29-44ee-9705-bd49aa220d47",
-                    "asset": "4",
+                    "id": "3a229826-ba17-458c-95e4-05da160aff88",
+                    "asset": "3",
                     "info": {
-                      "editorName": "chat1",
-                      "x": 48,
-                      "y": 472,
+                      "editorName": "dhk_png1",
                       "data": "{\r\n\"value\":\"b\"\r\n}",
                       "callback": "this.clickBtn"
                     }
                   },
                   {
                     "type": "text",
-                    "id": "62f86d7f-4b85-4766-a3d7-6cfec1b381b0",
+                    "id": "b2d1b5b3-ca2a-4f2f-a399-ed5447db42d3",
                     "info": {
                       "editorName": "text2",
-                      "x": 134,
-                      "y": 490,
+                      "x": 122,
+                      "y": 12,
                       "text": "B:这是你祖母留下来的青铜器，\r\n    你收好，将来价值连城。",
-                      "style.fontSize": 30
+                      "style.fontSize": 36,
+                      "style.fill": "#ffffff"
                     }
                   }
                 ]
@@ -159,34 +160,34 @@
             },
             {
               "type": "group",
-              "id": "22286e1d-bd1a-4694-918e-6fe2dfb591d8",
+              "id": "b63e300a-b75f-44e2-9a56-790ecdfe6157",
               "info": {
                 "editorName": "group3",
-                "x": -2,
-                "y": 374,
+                "editorPublic": true,
+                "x": 55,
+                "y": 870,
                 "setAll": [],
                 "children": [
                   {
                     "type": "button",
-                    "id": "070ffd0c-8d73-4e3d-8d60-ea3b695db2ba",
+                    "id": "2e2d99d6-d062-43d7-8999-4deb8e66387d",
                     "asset": "3",
                     "info": {
-                      "editorName": "chat2",
-                      "x": 52,
-                      "y": 460,
+                      "editorName": "dhk_png2",
                       "data": "{\r\n\"value\":\"c\"\r\n}",
                       "callback": "this.clickBtn"
                     }
                   },
                   {
                     "type": "text",
-                    "id": "5b4727fa-4045-406c-a18c-a7c02dc3be69",
+                    "id": "9fdb09c6-023e-43b7-81c7-bbdbf5478047",
                     "info": {
                       "editorName": "text3",
-                      "x": 131,
-                      "y": 506,
-                      "text": "C：我有钱，但你没有。",
-                      "style.fontSize": 30
+                      "x": 122,
+                      "y": 33,
+                      "text": "C:我有钱，但你没有。 ",
+                      "style.fontSize": 36,
+                      "style.fill": "#ffffff"
                     }
                   }
                 ]
@@ -194,34 +195,34 @@
             },
             {
               "type": "group",
-              "id": "48b44ca2-ca3f-4d14-b12a-590b27476b4c",
+              "id": "3e8be8f9-4d6e-45c4-8ccf-bbfd62d6d07b",
               "info": {
                 "editorName": "group4",
-                "x": -4,
-                "y": 552,
+                "editorPublic": true,
+                "x": 55,
+                "y": 1020,
                 "setAll": [],
                 "children": [
                   {
                     "type": "button",
-                    "id": "542ffee2-b5ce-424b-bf1e-7f506082da58",
-                    "asset": "4",
+                    "id": "74ca6a5d-0656-4a8e-a447-0d92d6c6a228",
+                    "asset": "3",
                     "info": {
-                      "editorName": "chat3",
-                      "x": 52,
-                      "y": 460,
+                      "editorName": "dhk_png3",
                       "data": "{\r\n\"value\":\"d\"\r\n}",
                       "callback": "this.clickBtn"
                     }
                   },
                   {
                     "type": "text",
-                    "id": "b5ee6797-c7f9-4042-90bb-f34e3c73462a",
+                    "id": "420f29d1-936d-499b-8131-6f3f73c7aa88",
                     "info": {
                       "editorName": "text4",
-                      "x": 139,
-                      "y": 472,
-                      "text": "D：我们家有很多钱，以后这些\r\n     钱都是你的。",
-                      "style.fontSize": 30
+                      "x": 122,
+                      "y": 12,
+                      "text": "D:我们家有很多钱，以后这些\r\n    钱都是你的。",
+                      "style.fontSize": 36,
+                      "style.fill": "#ffffff"
                     }
                   }
                 ]
@@ -249,17 +250,13 @@
       "file": "WebContent/assets/pack.json",
       "section": "colorAtlas",
       "asset": "ip",
-      "sprite": "eyu.png"
+      "sprite": "boy2.png"
     },
     "3": {
       "file": "WebContent/assets/pack.json",
-      "section": "common",
-      "asset": "chat1"
-    },
-    "4": {
-      "file": "WebContent/assets/pack.json",
-      "section": "common",
-      "asset": "chat3"
+      "section": "colorAtlas",
+      "asset": "common1",
+      "sprite": "dhk.png"
     }
   },
   "prefab-table": {}

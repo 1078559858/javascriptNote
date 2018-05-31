@@ -9,7 +9,8 @@
 /**
  * pre_1.
  * @param {Phaser.Game} aGame A reference to the currently running game.
- * @param {Phaser.Group} aParent The parent Group (or other {@link DisplayObject}) that this group will be added to.    If undefined/unspecified the Group will be added to the {@link Phaser.Game#world Game World}; if null the Group will not be added to any parent.
+ * @param {Phaser.Group} aParent The parent Group (or other {@link DisplayObject}) that this group will be added to.
+    If undefined/unspecified the Group will be added to the {@link Phaser.Game#world Game World}; if null the Group will not be added to any parent.
  * @param {string} aName A name for this group. Not used internally but useful for debugging.
  * @param {boolean} aAddToStage If true this group will be added directly to the Game.Stage instead of Game.World.
  * @param {boolean} aEnableBody If true all Sprites created with {@link #create} or {@link #createMulitple} will have a physics body created on them. Change the body type with {@link #physicsBodyType}.
@@ -18,44 +19,15 @@
 function pre_1(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyType) {
 	
 	Phaser.Group.call(this, aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyType);
-	this.game.add.sprite(0, 0, 'home_bg2', null, this);
+	var _bg = this.game.add.button(0, 0, 'bg', null, this, null, null, null, null, this);
+	_bg.scale.setTo(1.18, 0.98);
 	
-	var _groupError = this.game.add.group(this);
+	this.game.add.sprite(75, 352, 'pop', null, this);
 	
-	var _Dialog_home_null = this.game.add.sprite(146, 631, 'Dialog_home_null', null, _groupError);
-	
-	var _Dialog_home_fourl = this.game.add.sprite(141, 635, 'Dialog_home_fourl', null, _groupError);
-	
-	var _Dialog_home_error = this.game.add.sprite(165, 641, 'Dialog_home_error', null, _groupError);
-	
-	var _ball = this.game.add.sprite(161, 988, '104', null, this);
-	
-	var _btnLeft = this.game.add.button(148, 976, '5000', this.clickLeft, this, null, null, null, null, this);
-	_btnLeft.scale.setTo(2.0, 2.0);
-	_btnLeft.alpha = 0.0;
-	
-	var _btnRight = this.game.add.button(341, 971, '5000', this.clickRight, this, null, null, null, null, this);
-	_btnRight.scale.setTo(2.0, 2.0);
-	_btnRight.alpha = 0.0;
-	
-	var _btnGo = this.game.add.button(156, 1048, '5000', this.clickGo, this, null, null, null, null, this);
-	_btnGo.scale.setTo(4.5, 2.0);
-	_btnGo.alpha = 0.0;
-	
-	var _temp = this.game.add.sprite(0, 0, 'temp3', null, this);
-	_temp.scale.setTo(0.3, 0.3);
+	var _close_png = this.game.add.button(628, 319, 'common1', this.clickClose, this, null, 'close.png', null, null, this);
+	_close_png.scale.setTo(1.5, 1.5);
 	
 	
-	
-	// public fields
-	
-	this.fDialog_home_null = _Dialog_home_null;
-	this.fDialog_home_fourl = _Dialog_home_fourl;
-	this.fDialog_home_error = _Dialog_home_error;
-	this.fBall = _ball;
-	this.fBtnLeft = _btnLeft;
-	this.fBtnRight = _btnRight;
-	this.fBtnGo = _btnGo;
 	
 }
 
@@ -68,41 +40,54 @@ pre_1.prototype.constructor = pre_1;
 // -- user code here --
 
 
-pre_1.prototype.initOnce  = function () {
-	this.fDialog_home_error.visible = false;
-	this.fDialog_home_fourl.visible = false;
-	this.fDialog_home_null.visible = false;
+pre_1.prototype.appearPopLayer = function () {
+	this.x = 375;
+	this.y = 603;
+	this.scale.x = 0;
+	this.scale.y = 0;
 
-	this.gChatInput = this.game.make.inputField(240, 880, {
-		font: '30px Arial',
-		fill: '#000000',
-		fontWeight: 'bold',
-		width: 150,
-		height:43,
-		padding: 1,
-		borderWidth: 1,
-		borderColor: '#ffffff',
-		borderRadius: 6,
-		fillAlpha:1,
-		placeHolder: "  输入姓名",
-		textAlign:"center",
-		type: PhaserInput.InputType.text
-	});
-
-	this.addChild(this.gChatInput);
-
-	var _thisChat = this;
-	this.gChatInput.focusIn.add(function () {
-		_thisChat.focusIn();
-	}, this);
-
-	this.gChatInput.focusOut.add(function () {
-		_thisChat.focusOut();
-	}, this);
+	this.game.add.tween(this.scale).to({x:1, y:1}, 1500, Phaser.Easing.Bounce.Out, true);
 };
 
-pre_1.prototype.appearNameLimitPic = function () {
+pre_1.prototype.initOnce  = function () {
+	this.pivot.x = 375;
+	this.pivot.y = 603;
 
+
+	// this.fDialog_home_error.visible = false;
+	// this.fDialog_home_fourl.visible = false;
+	// this.fDialog_home_null.visible = false;
+	//
+	// this.gChatInput = this.game.make.inputField(240, 880, {
+	// 	font: '30px Arial',
+	// 	fill: '#000000',
+	// 	fontWeight: 'bold',
+	// 	width: 150,
+	// 	height:43,
+	// 	padding: 1,
+	// 	borderWidth: 1,
+	// 	borderColor: '#ffffff',
+	// 	borderRadius: 6,
+	// 	fillAlpha:1,
+	// 	placeHolder: "  输入姓名",
+	// 	textAlign:"center",
+	// 	type: PhaserInput.InputType.text
+	// });
+	//
+	// this.addChild(this.gChatInput);
+	//
+	// var _thisChat = this;
+	// this.gChatInput.focusIn.add(function () {
+	// 	_thisChat.focusIn();
+	// }, this);
+	//
+	// this.gChatInput.focusOut.add(function () {
+	// 	_thisChat.focusOut();
+	// }, this);
+};
+
+pre_1.prototype.clickClose = function () {
+	this.game.add.tween(this.scale).to({x:0, y:0}, 1000, Phaser.Easing.Bounce.Out, true);
 };
 
 pre_1.prototype.checkName = function () {

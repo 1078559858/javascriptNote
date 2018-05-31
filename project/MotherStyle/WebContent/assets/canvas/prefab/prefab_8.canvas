@@ -46,78 +46,68 @@
           "children": [
             {
               "type": "atlas-sprite",
-              "id": "df56ee9b-a630-4de4-b247-2d0fd5dae4f8",
+              "id": "46fea781-4c2e-4fbd-a172-6c540e79fd24",
               "asset": "0",
               "info": {
                 "editorName": "heiban_png",
-                "x": 97,
-                "y": 29
+                "x": 105,
+                "y": -7
+              }
+            },
+            {
+              "type": "text",
+              "id": "a102b37f-acf1-4792-a17c-5dd614652bd3",
+              "info": {
+                "editorName": "textTitle",
+                "editorPublic": true,
+                "x": 194.5435791015625,
+                "y": 248,
+                "text": "8、面4个，你最想\r\n      拥有？",
+                "style.fontSize": 45,
+                "style.fill": "#ffffff"
               }
             },
             {
               "type": "image",
-              "id": "67f20783-98a0-45c0-9f00-72c4936b182a",
+              "id": "d8027206-3786-4e66-8cdc-cc10667b92a2",
               "asset": "1",
               "info": {
                 "editorName": "temp",
+                "y": -4,
                 "scale.x": 0.3,
                 "scale.y": 0.3
               }
             },
             {
-              "type": "atlas-sprite",
-              "id": "4a2fb3e7-177f-4895-b3f1-33ac3feaff94",
-              "asset": "2",
-              "info": {
-                "editorName": "bird_png",
-                "x": 276,
-                "y": 5,
-                "scale.x": 0.5,
-                "scale.y": 0.5
-              }
-            },
-            {
-              "type": "text",
-              "id": "5f926f0f-8f81-4671-bc64-0a2ff44afaf0",
-              "info": {
-                "editorName": "text",
-                "x": 169,
-                "y": 207,
-                "text": "8、下面4个，\r\n    你最想拥有？ ",
-                "style.fontSize": 40,
-                "style.fill": "#ffffff"
-              }
-            },
-            {
               "type": "group",
-              "id": "7100610b-abc7-4741-a984-9e2e909ef02e",
+              "id": "346c79c0-c57a-43d6-bef1-1084fe2c99a3",
               "info": {
                 "editorName": "group1",
-                "x": -2,
-                "y": -2,
+                "editorPublic": true,
+                "x": 56,
+                "y": 563,
                 "setAll": [],
                 "children": [
                   {
                     "type": "button",
-                    "id": "9a4fe08c-bc6f-4bec-84c0-ff3291303ae8",
-                    "asset": "3",
+                    "id": "4ab18157-0631-4bcc-9ceb-133e9ab16eb3",
+                    "asset": "2",
                     "info": {
-                      "editorName": "chat",
-                      "x": 52,
-                      "y": 460,
+                      "editorName": "dhk_png",
                       "data": "{\r\n\"value\":\"a\"\r\n}",
                       "callback": "this.clickBtn"
                     }
                   },
                   {
                     "type": "text",
-                    "id": "40bf724d-7070-4567-a80d-bf8b400bacea",
+                    "id": "863511cb-6b24-414c-addb-9799fb1211c3",
                     "info": {
-                      "editorName": "text1",
-                      "x": 136,
-                      "y": 505,
+                      "editorName": "text",
+                      "x": 122,
+                      "y": 33,
                       "text": "A:全新戴森无绳吸尘器",
-                      "style.fontSize": 36
+                      "style.fontSize": 36,
+                      "style.fill": "#ffffff"
                     }
                   }
                 ]
@@ -125,34 +115,34 @@
             },
             {
               "type": "group",
-              "id": "274fe207-fbbe-4946-a2d5-fbdb84a0aa77",
+              "id": "4219817f-462a-4e80-aa4e-51213e92ddbf",
               "info": {
                 "editorName": "group2",
-                "x": -4,
-                "y": 176,
+                "editorPublic": true,
+                "x": 56,
+                "y": 713,
                 "setAll": [],
                 "children": [
                   {
                     "type": "button",
-                    "id": "a1be7fa2-a072-45cb-8c5d-5becab1ffec6",
-                    "asset": "4",
+                    "id": "2926da30-808f-4a11-be66-d0f0876bf942",
+                    "asset": "2",
                     "info": {
-                      "editorName": "chat1",
-                      "x": 48,
-                      "y": 472,
+                      "editorName": "dhk_png1",
                       "data": "{\r\n\"value\":\"b\"\r\n}",
                       "callback": "this.clickBtn"
                     }
                   },
                   {
                     "type": "text",
-                    "id": "8aafe64a-a4ad-4a14-8319-74fb8dd9cadd",
+                    "id": "159ebf05-37cf-4e47-9b72-9e2a6a198b3f",
                     "info": {
-                      "editorName": "text2",
-                      "x": 138,
-                      "y": 507,
-                      "text": "B: LV最新限量款包包",
-                      "style.fontSize": 36
+                      "editorName": "text1",
+                      "x": 122,
+                      "y": 33,
+                      "text": "B:LV最新限量款包包",
+                      "style.fontSize": 36,
+                      "style.fill": "#ffffff"
                     }
                   }
                 ]
@@ -160,34 +150,34 @@
             },
             {
               "type": "group",
-              "id": "f2c708fa-ef65-452d-a3bc-1fa10943f922",
+              "id": "a99141b2-8489-4ac3-b47c-3ec967442e1a",
               "info": {
                 "editorName": "group3",
-                "x": -2,
-                "y": 375,
+                "editorPublic": true,
+                "x": 56,
+                "y": 863,
                 "setAll": [],
                 "children": [
                   {
                     "type": "button",
-                    "id": "6a80c4fd-4a01-4517-bd2b-9c5611196b9a",
-                    "asset": "3",
+                    "id": "f6cfe442-f6b1-45f5-8834-297af6a5ecdc",
+                    "asset": "2",
                     "info": {
-                      "editorName": "chat2",
-                      "x": 52,
-                      "y": 460,
+                      "editorName": "dhk_png2",
                       "data": "{\r\n\"value\":\"c\"\r\n}",
                       "callback": "this.clickBtn"
                     }
                   },
                   {
                     "type": "text",
-                    "id": "01ab39e2-d514-469b-8320-c9037ab33595",
+                    "id": "7f75a68e-fc6c-4829-865b-c780b0c587a3",
                     "info": {
-                      "editorName": "text3",
-                      "x": 135,
-                      "y": 502,
-                      "text": "C：环游世界的旅游",
-                      "style.fontSize": 36
+                      "editorName": "text2",
+                      "x": 122,
+                      "y": 33,
+                      "text": "C:环游世界的旅游",
+                      "style.fontSize": 36,
+                      "style.fill": "#ffffff"
                     }
                   }
                 ]
@@ -195,37 +185,47 @@
             },
             {
               "type": "group",
-              "id": "3ff04512-d5a9-4f75-b835-185125d93d93",
+              "id": "32bc12b1-88a1-4ea0-882a-c1824348ee0b",
               "info": {
                 "editorName": "group4",
-                "x": -4,
-                "y": 553,
+                "editorPublic": true,
+                "x": 56,
+                "y": 1013,
                 "setAll": [],
                 "children": [
                   {
                     "type": "button",
-                    "id": "027a4ef2-5073-427a-a80d-3c3d8e38ca17",
-                    "asset": "4",
+                    "id": "c8516280-9ee1-40fb-ab7b-c36853e5b890",
+                    "asset": "2",
                     "info": {
-                      "editorName": "chat3",
-                      "x": 52,
-                      "y": 460,
+                      "editorName": "dhk_png3",
                       "data": "{\r\n\"value\":\"d\"\r\n}",
                       "callback": "this.clickBtn"
                     }
                   },
                   {
                     "type": "text",
-                    "id": "e85ba31b-a25c-478a-a536-6ef797a9bbf7",
+                    "id": "30a513ee-d046-47a4-a93d-6692cf4863cf",
                     "info": {
-                      "editorName": "text4",
-                      "x": 139,
-                      "y": 494,
-                      "text": "D：孩子是牛娃",
-                      "style.fontSize": 36
+                      "editorName": "text3",
+                      "x": 122,
+                      "y": 33,
+                      "text": "D:孩子是牛娃",
+                      "style.fontSize": 36,
+                      "style.fill": "#ffffff"
                     }
                   }
                 ]
+              }
+            },
+            {
+              "type": "atlas-sprite",
+              "id": "38f70d60-1243-47b8-a18a-c17e314378fe",
+              "asset": "3",
+              "info": {
+                "editorName": "huli_png",
+                "x": 284,
+                "y": -4
               }
             }
           ]
@@ -249,18 +249,14 @@
     "2": {
       "file": "WebContent/assets/pack.json",
       "section": "colorAtlas",
-      "asset": "ip",
-      "sprite": "girl2.png"
+      "asset": "common1",
+      "sprite": "dhk.png"
     },
     "3": {
       "file": "WebContent/assets/pack.json",
-      "section": "common",
-      "asset": "chat1"
-    },
-    "4": {
-      "file": "WebContent/assets/pack.json",
-      "section": "common",
-      "asset": "chat3"
+      "section": "colorAtlas",
+      "asset": "ip",
+      "sprite": "xiong.png"
     }
   },
   "prefab-table": {}

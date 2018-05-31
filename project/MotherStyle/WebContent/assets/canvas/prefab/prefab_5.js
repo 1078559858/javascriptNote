@@ -18,15 +18,54 @@
 function prefab_5(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyType) {
 	
 	Phaser.Group.call(this, aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyType);
-	this.game.add.sprite(106, 50, 'common1', 'heiban.png', this);
+	this.game.add.sprite(105, 0, 'common1', 'heiban.png', this);
 	
-	var _temp = this.game.add.sprite(0, 0, 'temp3', null, this);
+	this.game.add.text(179, 254, '5、哪个是孩子开学后，\n     你的真实状态？', {"font":"bold 40px Arial","fill":"#ffffff"}, this);
+	
+	var _temp = this.game.add.sprite(-1, 17, 'temp3', null, this);
 	_temp.scale.setTo(0.3, 0.3);
 	
-	var _bird_png = this.game.add.sprite(255, 15, 'ip', 'xiong.png', this);
-	_bird_png.scale.setTo(0.5, 0.5);
+	this.game.add.sprite(275, 0, 'ip', 'eyu.png', this);
 	
-	this.game.add.text(128, 212, '5、哪个是孩子开学后，\n     你的真实状态?', {"font":"bold 40px Arial","fill":"#ffffff"}, this);
+	var _group1 = this.game.add.group(this);
+	_group1.position.setTo(42, 579);
+	
+	var _p11_jpg = this.game.add.button(0, 0, 'eightProblems', this.clickBtn, this, null, 'p21.jpg', null, null, _group1);
+	_p11_jpg.data = {
+	"value":"a"
+	};
+	
+	this.game.add.text(50, 244, 'A:风清扬，心飞扬！', {"font":"bold 20px Arial"}, _group1);
+	
+	var _group2 = this.game.add.group(this);
+	_group2.position.setTo(384, 579);
+	
+	var _p11_jpg1 = this.game.add.button(0, 0, 'eightProblems', this.clickBtn, this, null, 'p22.jpg', null, null, _group2);
+	_p11_jpg1.data = {
+	"value":"b"
+	};
+	
+	this.game.add.text(-5, 244, 'B:终于可以开心的shopping了！', {"font":"bold 20px Arial"}, _group2);
+	
+	var _group3 = this.game.add.group(this);
+	_group3.position.setTo(42, 887);
+	
+	var _p11_jpg2 = this.game.add.button(0, 0, 'eightProblems', this.clickBtn, this, null, 'p23.jpg', null, null, _group3);
+	_p11_jpg2.data = {
+	"value":"c"
+	};
+	
+	this.game.add.text(19, 244, 'C:还得自己干家务，唉。', {"font":"bold 20px Arial"}, _group3);
+	
+	var _group4 = this.game.add.group(this);
+	_group4.position.setTo(384, 887);
+	
+	var _p11_jpg3 = this.game.add.button(0, 0, 'eightProblems', this.clickBtn, this, null, 'p24.jpg', null, null, _group4);
+	_p11_jpg3.data = {
+	"value":"d"
+	};
+	
+	this.game.add.text(0, 244, 'D:我想孩子了，孩子会想我吗？', {"font":"bold 20px Arial"}, _group4);
 	
 	
 	

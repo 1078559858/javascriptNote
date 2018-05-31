@@ -93,7 +93,6 @@ Preload.prototype.preload = function() {
 		this.game.load.spine(vSpineName, gResSpine[vSpineName]);
 	}
 
-	this.load.pack("common","assets/pack.json");
 	this.load.pack("preSetName","assets/pack.json");
 	this.load.pack("over","assets/pack.json");
 	this.load.pack("colorAtlas","assets/pack.json");

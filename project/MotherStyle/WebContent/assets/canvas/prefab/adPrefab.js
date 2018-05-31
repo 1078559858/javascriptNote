@@ -9,7 +9,8 @@
 /**
  * adPrefab.
  * @param {Phaser.Game} aGame A reference to the currently running game.
- * @param {Phaser.Group} aParent The parent Group (or other {@link DisplayObject}) that this group will be added to.    If undefined/unspecified the Group will be added to the {@link Phaser.Game#world Game World}; if null the Group will not be added to any parent.
+ * @param {Phaser.Group} aParent The parent Group (or other {@link DisplayObject}) that this group will be added to.
+    If undefined/unspecified the Group will be added to the {@link Phaser.Game#world Game World}; if null the Group will not be added to any parent.
  * @param {string} aName A name for this group. Not used internally but useful for debugging.
  * @param {boolean} aAddToStage If true this group will be added directly to the Game.Stage instead of Game.World.
  * @param {boolean} aEnableBody If true all Sprites created with {@link #create} or {@link #createMulitple} will have a physics body created on them. Change the body type with {@link #physicsBodyType}.
@@ -47,6 +48,8 @@ function adPrefab(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyT
 	_white_png.scale.setTo(2.1, 0.5);
 	_white_png.alpha = 0.0;
 	
+	var _study = this.game.add.button(114, 9251, 'common1', this.clickStudy, this, null, 'go.png', null, null, _groupAll);
+	
 	
 	
 	// public fields
@@ -54,6 +57,7 @@ function adPrefab(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyT
 	this.fDragBg = _dragBg;
 	this.fGroupNine = _groupNine;
 	this.fGroupAll = _groupAll;
+	this.fStudy = _study;
 	
 }
 
@@ -65,8 +69,12 @@ adPrefab.prototype.constructor = adPrefab;
 /* --- end generated code --- */
 // -- user code here --
 
+
 adPrefab.prototype.initOnce = function () {
 	this.setDrag(this.fDragBg);
+
+	gGame.gameScene.setAnchorMiddle(this.fStudy);
+	//this.game.add.tween(this.fStudy.scale.x).to({x:0.5, y:0.5}, 1000, )
 };
 
 
@@ -84,9 +92,14 @@ adPrefab.prototype.clickBaidu = function () {
 
 var tHeight = 8488+1060-1206;
 adPrefab.prototype.clickGo = function () {
+	gGame.gameScene.fGroup1.x = gGameConf.x + 1;
 	this.game.add.tween(this).to({x:-gGameConf.width - 1 },500, Phaser.Easing.Linear.None, true);
 	this.game.add.tween(gGame.gameScene.fGroup1).to({x:0}, 500, Phaser.Easing.Linear.None, true);
 	this.game.add.tween(gGame.gameScene.fColor_up).to({x:30}, 500, Phaser.Easing.Linear.None, true);
+};
+
+adPrefab.prototype.clickStudy = function () {
+	gGame.gameScene.fGroupSetName.appearPopLayer();
 };
 
 adPrefab.prototype.onDragStop = function () {
@@ -141,4 +154,7 @@ adPrefab.prototype.setDrag = function (obj) {
 	obj.events.onDragUpdate.add(this.onDragUpdate, this);
 	obj.events.onDragStop.add(this.onDragStop, this);
 	obj.input.allowHorizontalDrag = false;
+};
+
+adPrefab.prototype.setBackground = function () {
 };

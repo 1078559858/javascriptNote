@@ -50,14 +50,15 @@
               "info": {
                 "editorName": "groupFoxi",
                 "editorPublic": true,
-                "editorShow": false,
-                "scale.x": 0,
                 "setAll": [],
                 "children": [{
                   "type": "image",
                   "id": "a997590e-a148-4086-9f9d-e3cf5ded0aff",
                   "asset": "0",
-                  "info": {"editorName": "Result_foxi"}
+                  "info": {
+                    "editorName": "Result_foxi",
+                    "scale.x": 0
+                  }
                 }]
               }
             },
@@ -114,6 +115,30 @@
                   "info": {"editorName": "Result_naodong"}
                 }]
               }
+            },
+            {
+              "type": "button",
+              "id": "af31e9fe-51cc-4ee8-9e18-48a43999b2bf",
+              "asset": "4",
+              "info": {
+                "editorName": "again_png",
+                "x": 36,
+                "y": 775,
+                "alpha": 0,
+                "callback": "this.clickAgain"
+              }
+            },
+            {
+              "type": "button",
+              "id": "3a9d0e88-101a-4396-819a-efb9679aee50",
+              "asset": "5",
+              "info": {
+                "editorName": "go_png",
+                "x": 411,
+                "y": 778,
+                "alpha": 0,
+                "callback": "this.clickStudy"
+              }
             }
           ]
         }
@@ -141,6 +166,18 @@
       "file": "WebContent/assets/pack.json",
       "section": "over",
       "asset": "Result_naodong"
+    },
+    "4": {
+      "file": "WebContent/assets/pack.json",
+      "section": "colorAtlas",
+      "asset": "common1",
+      "sprite": "again.png"
+    },
+    "5": {
+      "file": "WebContent/assets/pack.json",
+      "section": "colorAtlas",
+      "asset": "common1",
+      "sprite": "go.png"
     }
   },
   "prefab-table": {}

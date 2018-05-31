@@ -46,46 +46,171 @@
           "children": [
             {
               "type": "atlas-sprite",
-              "id": "19a7338f-8f6d-49db-9041-bcf21d7e3085",
+              "id": "1a9bcb26-28ba-4d4f-800a-1de803e506a6",
               "asset": "0",
               "info": {
                 "editorName": "heiban_png",
-                "x": 106,
-                "y": 50
+                "x": 105
+              }
+            },
+            {
+              "type": "text",
+              "id": "f551b625-4cbd-449e-aecd-8b05e4d7aef6",
+              "info": {
+                "editorName": "text",
+                "x": 178.6964111328125,
+                "y": 254,
+                "text": "5、哪个是孩子开学后，\r\n     你的真实状态？",
+                "style.fontSize": 40,
+                "style.fill": "#ffffff"
               }
             },
             {
               "type": "image",
-              "id": "6b603c23-4e3e-4007-b588-52e762533493",
+              "id": "87bec0f5-98eb-4f7a-874a-ae9911948c49",
               "asset": "1",
               "info": {
                 "editorName": "temp",
+                "x": -1,
+                "y": 17,
                 "scale.x": 0.3,
                 "scale.y": 0.3
               }
             },
             {
               "type": "atlas-sprite",
-              "id": "98ee1518-2cc9-488a-b011-ce4f7d5ab2b4",
+              "id": "75945a7f-6597-49bf-831e-eec00a50933c",
               "asset": "2",
               "info": {
                 "editorName": "bird_png",
-                "x": 255,
-                "y": 15,
-                "scale.x": 0.5,
-                "scale.y": 0.5
+                "x": 275
               }
             },
             {
-              "type": "text",
-              "id": "4659369e-5110-4d01-8971-4b9164554831",
+              "type": "group",
+              "id": "e94fe31e-177c-4d0a-afb5-9e522502ef16",
               "info": {
-                "editorName": "text",
-                "x": 128,
-                "y": 212,
-                "text": "5、哪个是孩子开学后，\r\n     你的真实状态?",
-                "style.fontSize": 40,
-                "style.fill": "#ffffff"
+                "editorName": "group1",
+                "x": 42,
+                "y": 579,
+                "setAll": [],
+                "children": [
+                  {
+                    "type": "button",
+                    "id": "6905f845-1ee5-4567-bb3d-ad703d4de044",
+                    "asset": "3",
+                    "info": {
+                      "editorName": "p11_jpg",
+                      "data": "{\r\n\"value\":\"a\"\r\n}",
+                      "callback": "this.clickBtn"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "9007b2e2-8cee-427e-bbd1-bbcd410261d9",
+                    "info": {
+                      "editorName": "text1",
+                      "x": 50,
+                      "y": 244,
+                      "text": "A:风清扬，心飞扬！"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "group",
+              "id": "e7888b9f-0260-4395-974b-2f2caadf33b9",
+              "info": {
+                "editorName": "group2",
+                "x": 384,
+                "y": 579,
+                "setAll": [],
+                "children": [
+                  {
+                    "type": "button",
+                    "id": "e7c7c66c-8134-4fdb-b772-8b2f3eeeb0a6",
+                    "asset": "4",
+                    "info": {
+                      "editorName": "p11_jpg1",
+                      "data": "{\r\n\"value\":\"b\"\r\n}",
+                      "callback": "this.clickBtn"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "ea0851bf-ae68-4204-b826-91ed5a6f5648",
+                    "info": {
+                      "editorName": "text2",
+                      "x": -5,
+                      "y": 244,
+                      "text": "B:终于可以开心的shopping了！"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "group",
+              "id": "5c72a192-c01d-4c41-ba4e-325cb9a6b916",
+              "info": {
+                "editorName": "group3",
+                "x": 42,
+                "y": 887,
+                "setAll": [],
+                "children": [
+                  {
+                    "type": "button",
+                    "id": "49779c45-f28d-4b03-b479-7f9c009c6eaf",
+                    "asset": "5",
+                    "info": {
+                      "editorName": "p11_jpg2",
+                      "data": "{\r\n\"value\":\"c\"\r\n}",
+                      "callback": "this.clickBtn"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "9a37a0e3-65fb-4a0f-91f3-f2279b02d69e",
+                    "info": {
+                      "editorName": "text3",
+                      "x": 19,
+                      "y": 244,
+                      "text": "C:还得自己干家务，唉。"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "group",
+              "id": "55a2a5ad-ebb2-437e-ba80-827f0f788777",
+              "info": {
+                "editorName": "group4",
+                "x": 384,
+                "y": 887,
+                "setAll": [],
+                "children": [
+                  {
+                    "type": "button",
+                    "id": "dc46ad37-bd09-41cd-8e7d-63e5065a91b2",
+                    "asset": "6",
+                    "info": {
+                      "editorName": "p11_jpg3",
+                      "data": "{\r\n\"value\":\"d\"\r\n}",
+                      "callback": "this.clickBtn"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "3baa31c1-3744-445c-adc0-3bca1843df24",
+                    "info": {
+                      "editorName": "text4",
+                      "y": 244,
+                      "text": "D:我想孩子了，孩子会想我吗？"
+                    }
+                  }
+                ]
               }
             }
           ]
@@ -110,7 +235,31 @@
       "file": "WebContent/assets/pack.json",
       "section": "colorAtlas",
       "asset": "ip",
-      "sprite": "xiong.png"
+      "sprite": "eyu.png"
+    },
+    "3": {
+      "file": "WebContent/assets/pack.json",
+      "section": "colorAtlas",
+      "asset": "eightProblems",
+      "sprite": "p21.jpg"
+    },
+    "4": {
+      "file": "WebContent/assets/pack.json",
+      "section": "colorAtlas",
+      "asset": "eightProblems",
+      "sprite": "p22.jpg"
+    },
+    "5": {
+      "file": "WebContent/assets/pack.json",
+      "section": "colorAtlas",
+      "asset": "eightProblems",
+      "sprite": "p23.jpg"
+    },
+    "6": {
+      "file": "WebContent/assets/pack.json",
+      "section": "colorAtlas",
+      "asset": "eightProblems",
+      "sprite": "p24.jpg"
     }
   },
   "prefab-table": {}

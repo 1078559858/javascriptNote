@@ -2,7 +2,7 @@
 
 {
 	"filename": "1.png",
-	"frame": {"x":240,"y":0,"w":80,"h":80},
+	"frame": {"x":373,"y":0,"w":80,"h":80},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":80,"h":80},
@@ -10,7 +10,7 @@
 },
 {
 	"filename": "2.png",
-	"frame": {"x":400,"y":0,"w":80,"h":80},
+	"frame": {"x":453,"y":0,"w":80,"h":80},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":80,"h":80},
@@ -18,7 +18,7 @@
 },
 {
 	"filename": "3.png",
-	"frame": {"x":320,"y":0,"w":80,"h":80},
+	"frame": {"x":293,"y":0,"w":80,"h":80},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":80,"h":80},
@@ -26,7 +26,7 @@
 },
 {
 	"filename": "4.png",
-	"frame": {"x":80,"y":0,"w":80,"h":80},
+	"frame": {"x":133,"y":0,"w":80,"h":80},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":80,"h":80},
@@ -34,7 +34,7 @@
 },
 {
 	"filename": "5.png",
-	"frame": {"x":0,"y":0,"w":80,"h":80},
+	"frame": {"x":53,"y":0,"w":80,"h":80},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":80,"h":80},
@@ -42,7 +42,7 @@
 },
 {
 	"filename": "6.png",
-	"frame": {"x":160,"y":0,"w":80,"h":80},
+	"frame": {"x":213,"y":0,"w":80,"h":80},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":80,"h":80},
@@ -50,11 +50,19 @@
 },
 {
 	"filename": "again.png",
-	"frame": {"x":480,"y":0,"w":300,"h":99},
+	"frame": {"x":533,"y":0,"w":300,"h":99},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":300,"h":99},
 	"sourceSize": {"w":300,"h":99}
+},
+{
+	"filename": "close.png",
+	"frame": {"x":0,"y":0,"w":53,"h":53},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":53,"h":53},
+	"sourceSize": {"w":53,"h":53}
 },
 {
 	"filename": "dhk.png",
@@ -87,6 +95,6 @@
 	"format": "RGBA8888",
 	"size": {"w":840,"h":722},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:816b4056749b5c8d3032682fce81fd7f:aa852f53fa83fa4553724828d08045ed:5f8fd6ff9a85da144f948e71be2ecc32$"
+	"smartupdate": "$TexturePacker:SmartUpdate:267d21a803b8ca404bffebad37e5f30c:ded8966c103896534895d165cacfadf4:5f8fd6ff9a85da144f948e71be2ecc32$"
 }
 }

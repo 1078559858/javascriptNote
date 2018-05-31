@@ -20,9 +20,9 @@ function overPrefab(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBod
 	
 	Phaser.Group.call(this, aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyType);
 	var _groupFoxi = this.game.add.group(this);
-	_groupFoxi.scale.setTo(0.0, 1.0);
 	
-	this.game.add.sprite(0, 0, 'Result_foxi', null, _groupFoxi);
+	var _Result_foxi = this.game.add.sprite(0, 0, 'Result_foxi', null, _groupFoxi);
+	_Result_foxi.scale.setTo(0.0, 1.0);
 	
 	var _groupShaonv = this.game.add.group(this);
 	_groupShaonv.scale.setTo(0.0, 1.0);
@@ -38,6 +38,12 @@ function overPrefab(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBod
 	_groupHuan.scale.setTo(0.0, 1.0);
 	
 	this.game.add.sprite(0, 0, 'Result_naodong', null, _groupHuan);
+	
+	var _again_png = this.game.add.button(36, 775, 'common1', this.clickAgain, this, null, 'again.png', null, null, this);
+	_again_png.alpha = 0.0;
+	
+	var _go_png = this.game.add.button(411, 778, 'common1', this.clickStudy, this, null, 'go.png', null, null, this);
+	_go_png.alpha = 0.0;
 	
 	
 	
@@ -91,6 +97,16 @@ overPrefab.prototype.initOnce = function () {
 overPrefab.prototype.clickBtn = function (btn) {
 
 };
+
+overPrefab.prototype.clickStudy = function (btn) {
+	gGame.gameScene.fGroupSetName.appearPopLayer();
+};
+
+overPrefab.prototype.clickAgain = function (btn) {
+	gGame.gameScene.fGroupAD.x = gGameConf.width + 1;
+	gGame.gameScene.appearGroup(this, gGame.gameScene.fGroupAD);
+};
+
 
 overPrefab.prototype.setBackground = function () {
 

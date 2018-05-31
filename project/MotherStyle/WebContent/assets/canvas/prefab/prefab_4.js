@@ -18,56 +18,64 @@
 function prefab_4(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyType) {
 	
 	Phaser.Group.call(this, aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyType);
-	this.game.add.sprite(87, 65, 'common1', 'heiban.png', this);
+	this.game.add.sprite(105, 0, 'common1', 'heiban.png', this);
+	
+	var _textTitle = this.game.add.text(156, 225, '4、宝宝把你2000多块\n     的神仙水给弄砸了，\n     你会怎么处理？', {"font":"bold 45px Arial","fill":"#ffffff"}, this);
 	
 	var _temp = this.game.add.sprite(0, 0, 'temp3', null, this);
 	_temp.scale.setTo(0.3, 0.3);
 	
-	this.game.add.sprite(252, 15, 'ip', 'girl.png', this);
-	
-	this.game.add.text(144, 209, '4、宝宝把你2000多\n     块的神仙水给弄\n     砸了，你会怎么\n     处理？', {"font":"bold 40px Arial","fill":"#ffffff"}, this);
-	
 	var _group1 = this.game.add.group(this);
-	_group1.position.setTo(0, -1);
+	_group1.position.setTo(55, 570);
 	
-	var _chat = this.game.add.button(52, 460, 'chat1', this.clickBtn, this, null, null, null, null, _group1);
-	_chat.data = {
+	var _dhk_png = this.game.add.button(0, 0, 'common1', this.clickBtn, this, null, 'dhk.png', null, null, _group1);
+	_dhk_png.data = {
 	"value":"a"
 	};
 	
-	this.game.add.text(126, 505, 'A:啥也憋说了，先揍一顿吧', {"font":"bold 36px Arial"}, _group1);
+	this.game.add.text(122, 33, 'A:啥也憋说了，先揍一顿吧', {"font":"bold 36px Arial","fill":"#ffffff"}, _group1);
 	
 	var _group2 = this.game.add.group(this);
-	_group2.position.setTo(-2, 177);
+	_group2.position.setTo(55, 720);
 	
-	var _chat1 = this.game.add.button(48, 472, 'chat3', this.clickBtn, this, null, null, null, null, _group2);
-	_chat1.data = {
+	var _dhk_png1 = this.game.add.button(0, 0, 'common1', this.clickBtn, this, null, 'dhk.png', null, null, _group2);
+	_dhk_png1.data = {
 	"value":"b"
 	};
 	
-	this.game.add.text(138, 507, 'B: 太心疼了，哇哇大哭', {"font":"bold 36px Arial"}, _group2);
+	this.game.add.text(122, 33, 'B:太心疼了，哇哇大哭', {"font":"bold 36px Arial","fill":"#ffffff"}, _group2);
 	
 	var _group3 = this.game.add.group(this);
-	_group3.position.setTo(0, 376);
+	_group3.position.setTo(55, 870);
 	
-	var _chat2 = this.game.add.button(52, 460, 'chat1', this.clickBtn, this, null, null, null, null, _group3);
-	_chat2.data = {
+	var _dhk_png2 = this.game.add.button(0, 0, 'common1', this.clickBtn, this, null, 'dhk.png', null, null, _group3);
+	_dhk_png2.data = {
 	"value":"c"
 	};
 	
-	this.game.add.text(135, 483, 'C：耐心地教导孩子，下次\n     把神仙水放高一点', {"font":"bold 36px Arial"}, _group3);
+	this.game.add.text(122, 12, 'C:耐心地教导孩子，下次把\n    神仙水放高一点', {"font":"bold 36px Arial","fill":"#ffffff"}, _group3);
 	
 	var _group4 = this.game.add.group(this);
-	_group4.position.setTo(-2, 554);
+	_group4.position.setTo(55, 1020);
 	
-	var _chat3 = this.game.add.button(52, 460, 'chat3', this.clickBtn, this, null, null, null, null, _group4);
-	_chat3.data = {
+	var _dhk_png3 = this.game.add.button(0, 0, 'common1', this.clickBtn, this, null, 'dhk.png', null, null, _group4);
+	_dhk_png3.data = {
 	"value":"d"
 	};
 	
-	this.game.add.text(139, 472, 'D：让孩子他爹买个更贵\n     的东西', {"font":"bold 36px Arial"}, _group4);
+	this.game.add.text(122, 33, 'D:让孩子他爹买个更贵的东西', {"font":"bold 36px Arial","fill":"#ffffff"}, _group4);
+	
+	this.game.add.sprite(307, 0, 'ip', 'girl.png', this);
 	
 	
+	
+	// public fields
+	
+	this.fTextTitle = _textTitle;
+	this.fGroup1 = _group1;
+	this.fGroup2 = _group2;
+	this.fGroup3 = _group3;
+	this.fGroup4 = _group4;
 	
 }
 

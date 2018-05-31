@@ -37,76 +37,12 @@
       "overwrite": false
     }
   ],
-  "preSetName": [
-    {
-      "type": "image",
-      "key": "Dialog_home_error",
-      "url": "assets/image/preSetName/Dialog_home_error.png",
-      "overwrite": false
-    },
-    {
-      "type": "image",
-      "key": "Dialog_home_fourl",
-      "url": "assets/image/preSetName/Dialog_home_fourl.png",
-      "overwrite": false
-    },
-    {
-      "type": "image",
-      "key": "Dialog_home_null",
-      "url": "assets/image/preSetName/Dialog_home_null.png",
-      "overwrite": false
-    },
-    {
-      "type": "image",
-      "key": "home_bg2",
-      "url": "assets/image/preSetName/home_bg2.jpg",
-      "overwrite": false
-    },
-    {
-      "type": "image",
-      "key": "104",
-      "url": "assets/image/preSetName/104.png",
-      "overwrite": false
-    },
-    {
-      "type": "image",
-      "key": "5000",
-      "url": "assets/image/preSetName/5000.png",
-      "overwrite": false
-    },
-    {
-      "type": "image",
-      "key": "music_btn",
-      "url": "assets/image/preSetName/music_btn.png",
-      "overwrite": false
-    }
-  ],
-  "common": [
-    {
-      "type": "image",
-      "key": "Q1_title",
-      "url": "assets/image/common/Q1_title.png",
-      "overwrite": false
-    },
-    {
-      "type": "image",
-      "key": "qestion_question_bg",
-      "url": "assets/image/common/qestion_question_bg.png",
-      "overwrite": false
-    },
-    {
-      "type": "image",
-      "key": "chat1",
-      "url": "assets/image/common/1.png",
-      "overwrite": false
-    },
-    {
-      "type": "image",
-      "key": "chat3",
-      "url": "assets/image/common/3.png",
-      "overwrite": false
-    }
-  ],
+  "preSetName": [{
+    "type": "image",
+    "key": "music_btn",
+    "url": "assets/image/preSetName/music_btn.png",
+    "overwrite": false
+  }],
   "over": [
     {
       "type": "image",
@@ -131,6 +67,12 @@
       "key": "Result_shaonv",
       "url": "assets/image/over/Result_shaonv.jpg",
       "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "pop",
+      "url": "assets/image/over/pop.png",
+      "overwrite": false
     }
   ],
   "temp": [
@@ -138,12 +80,6 @@
       "type": "image",
       "key": "temp3",
       "url": "assets/image/temp/temp3.png",
-      "overwrite": false
-    },
-    {
-      "type": "image",
-      "key": "tempChat",
-      "url": "assets/image/temp/tempChat.png",
       "overwrite": false
     },
     {
@@ -258,7 +194,7 @@
     }
   ],
   "meta": {
-    "generated": "1527774702840",
+    "generated": "1527782155005",
     "app": "Phaser Editor",
     "url": "http://phasereditor.boniatillo.com",
     "version": "1.0",

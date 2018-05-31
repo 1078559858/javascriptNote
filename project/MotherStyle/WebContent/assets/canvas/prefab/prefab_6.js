@@ -18,57 +18,63 @@
 function prefab_6(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyType) {
 	
 	Phaser.Group.call(this, aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyType);
-	this.game.add.sprite(94, 35, 'common1', 'heiban.png', this);
+	this.game.add.sprite(105, -1, 'common1', 'heiban.png', this);
 	
-	var _temp = this.game.add.sprite(0, 0, 'temp3', null, this);
+	this.game.add.text(175, 235, '6、孩子问：“妈妈，我\n     们家有钱吗?”你的\n     回答是？ ', {"font":"bold 40px Arial","fill":"#ffffff"}, this);
+	
+	var _temp = this.game.add.sprite(18, 16, 'temp3', null, this);
 	_temp.scale.setTo(0.3, 0.3);
 	
-	var _bird_png = this.game.add.sprite(243, 0, 'ip', 'eyu.png', this);
-	_bird_png.scale.setTo(0.5, 0.5);
-	
-	this.game.add.text(143, 189, '6、孩子问：“妈妈，\n     我们家有钱吗?”\n     你的回答是： ', {"font":"bold 40px Arial","fill":"#ffffff"}, this);
+	this.game.add.sprite(335, -1, 'ip', 'boy2.png', this);
 	
 	var _group1 = this.game.add.group(this);
-	_group1.position.setTo(-2, -3);
+	_group1.position.setTo(55, 570);
 	
-	var _chat = this.game.add.button(52, 460, 'chat1', this.clickBtn, this, null, null, null, null, _group1);
-	_chat.data = {
+	var _dhk_png = this.game.add.button(0, 0, 'common1', this.clickBtn, this, null, 'dhk.png', null, null, _group1);
+	_dhk_png.data = {
 	"value":"a"
 	};
 	
-	this.game.add.text(124, 489, 'A:扔给孩子一本辅导习题集，然\n    后告诉他“书中自有黄金屋”', {"font":"bold 30px Arial"}, _group1);
+	this.game.add.text(122, 18, 'A:扔给孩子一本辅导习题集，\n    然后告诉他“书中自有黄金屋”。', {"font":"bold 30px Arial","fill":"#ffffff"}, _group1);
 	
 	var _group2 = this.game.add.group(this);
-	_group2.position.setTo(-4, 175);
+	_group2.position.setTo(55, 720);
 	
-	var _chat1 = this.game.add.button(48, 472, 'chat3', this.clickBtn, this, null, null, null, null, _group2);
-	_chat1.data = {
+	var _dhk_png1 = this.game.add.button(0, 0, 'common1', this.clickBtn, this, null, 'dhk.png', null, null, _group2);
+	_dhk_png1.data = {
 	"value":"b"
 	};
 	
-	this.game.add.text(134, 490, 'B:这是你祖母留下来的青铜器，\n    你收好，将来价值连城。', {"font":"bold 30px Arial"}, _group2);
+	this.game.add.text(122, 12, 'B:这是你祖母留下来的青铜器，\n    你收好，将来价值连城。', {"font":"bold 36px Arial","fill":"#ffffff"}, _group2);
 	
 	var _group3 = this.game.add.group(this);
-	_group3.position.setTo(-2, 374);
+	_group3.position.setTo(55, 870);
 	
-	var _chat2 = this.game.add.button(52, 460, 'chat1', this.clickBtn, this, null, null, null, null, _group3);
-	_chat2.data = {
+	var _dhk_png2 = this.game.add.button(0, 0, 'common1', this.clickBtn, this, null, 'dhk.png', null, null, _group3);
+	_dhk_png2.data = {
 	"value":"c"
 	};
 	
-	this.game.add.text(131, 506, 'C：我有钱，但你没有。', {"font":"bold 30px Arial"}, _group3);
+	this.game.add.text(122, 33, 'C:我有钱，但你没有。 ', {"font":"bold 36px Arial","fill":"#ffffff"}, _group3);
 	
 	var _group4 = this.game.add.group(this);
-	_group4.position.setTo(-4, 552);
+	_group4.position.setTo(55, 1020);
 	
-	var _chat3 = this.game.add.button(52, 460, 'chat3', this.clickBtn, this, null, null, null, null, _group4);
-	_chat3.data = {
+	var _dhk_png3 = this.game.add.button(0, 0, 'common1', this.clickBtn, this, null, 'dhk.png', null, null, _group4);
+	_dhk_png3.data = {
 	"value":"d"
 	};
 	
-	this.game.add.text(139, 472, 'D：我们家有很多钱，以后这些\n     钱都是你的。', {"font":"bold 30px Arial"}, _group4);
+	this.game.add.text(122, 12, 'D:我们家有很多钱，以后这些\n    钱都是你的。', {"font":"bold 36px Arial","fill":"#ffffff"}, _group4);
 	
 	
+	
+	// public fields
+	
+	this.fGroup1 = _group1;
+	this.fGroup2 = _group2;
+	this.fGroup3 = _group3;
+	this.fGroup4 = _group4;
 	
 }
 

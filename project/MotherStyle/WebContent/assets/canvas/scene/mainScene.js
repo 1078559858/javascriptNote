@@ -9,8 +9,7 @@
 /**
  * mainScene.
  * @param {Phaser.Game} aGame A reference to the currently running game.
- * @param {Phaser.Group} aParent The parent Group (or other {@link DisplayObject}) that this group will be added to.
-    If undefined/unspecified the Group will be added to the {@link Phaser.Game#world Game World}; if null the Group will not be added to any parent.
+ * @param {Phaser.Group} aParent The parent Group (or other {@link DisplayObject}) that this group will be added to.    If undefined/unspecified the Group will be added to the {@link Phaser.Game#world Game World}; if null the Group will not be added to any parent.
  * @param {string} aName A name for this group. Not used internally but useful for debugging.
  * @param {boolean} aAddToStage If true this group will be added directly to the Game.Stage instead of Game.World.
  * @param {boolean} aEnableBody If true all Sprites created with {@link #create} or {@link #createMulitple} will have a physics body created on them. Change the body type with {@link #physicsBodyType}.
@@ -31,9 +30,6 @@ function mainScene(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBody
 	
 	var _color_up = this.game.add.sprite(812, -19, 'color', '404040.png', _groupColor);
 	_color_up.scale.setTo(2.5, 8.5);
-	
-	var _groupSetName = new pre_1(this.game, this);
-	_groupSetName.position.setTo(-751, 0);
 	
 	var _group1 = new prefab_1(this.game, this);
 	_group1.position.setTo(751, 0);
@@ -69,6 +65,9 @@ function mainScene(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBody
 	
 	var _groupAD = new adPrefab(this.game, this);
 	
+	var _groupSetName = new pre_1(this.game, this);
+	_groupSetName.position.setTo(-751, 0);
+	
 	
 	
 	// public fields
@@ -76,7 +75,6 @@ function mainScene(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBody
 	this.fGroupColor = _groupColor;
 	this.fColorBottom = _colorBottom;
 	this.fColor_up = _color_up;
-	this.fGroupSetName = _groupSetName;
 	this.fGroup1 = _group1;
 	this.fGroup2 = _group2;
 	this.fGroup3 = _group3;
@@ -89,6 +87,7 @@ function mainScene(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBody
 	this.fBgBtn = _bgBtn;
 	this.fMusic_btn = _music_btn;
 	this.fGroupAD = _groupAD;
+	this.fGroupSetName = _groupSetName;
 	
 }
 
@@ -99,7 +98,6 @@ mainScene.prototype.constructor = mainScene;
 
 /* --- end generated code --- */
 // -- user code here --
-
 
 mainScene.prototype.appearGroup = function (group1, group2) {
 	this.fBgBtn.inputEnabled = true;
@@ -112,7 +110,7 @@ mainScene.prototype.appearGroup = function (group1, group2) {
 	//8 995ba3
 	//9 ee465d
 
-	this.game.add.tween(group1).to( { x:-641, y:0}, 1500,
+	this.game.add.tween(group1).to( { x:-gGameConf.width, y:0}, 1500,
 		Phaser.Easing.Exponential.InOut, true);
 
 	var tween = this.game.add.tween(group2).to( { x:0, y:0}, 1500,
@@ -124,7 +122,7 @@ mainScene.prototype.appearGroup = function (group1, group2) {
 };
 
 mainScene.prototype.appearGroup2 = function (bObj, eObj) {
-	this.fBgBtn.inputEnabled = true;
+	//this.fBgBtn.inputEnabled = true;
 
 	bObj.x = -gGameConf.width;
 
@@ -212,7 +210,7 @@ mainScene.prototype.setTempAction1 = function (group) {
 	tweenA.onComplete.addOnce(function () {
 		var tweenB = gGame.add.tween(group).to({x:group.x - 390}, 2600 + time, Phaser.Easing.Elastic.Out, true);
 		tweenB.onComplete.addOnce(function () {
-			gGame.gameScene.fBgBtn.inputEnabled = false;
+			//gGame.gameScene.fBgBtn.inputEnabled = false;
 		})
 	});
 };

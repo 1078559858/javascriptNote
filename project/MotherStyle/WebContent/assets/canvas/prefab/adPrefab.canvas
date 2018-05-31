@@ -151,20 +151,34 @@
                 "editorName": "groupAll",
                 "editorPublic": true,
                 "setAll": [],
-                "children": [{
-                  "type": "button",
-                  "id": "291962e8-513a-4050-80a3-1926d28f7b41",
-                  "asset": "0",
-                  "info": {
-                    "editorName": "white_png",
-                    "x": 35,
-                    "y": 937,
-                    "scale.x": 2.1,
-                    "scale.y": 0.5,
-                    "alpha": 0,
-                    "callback": "this.clickGo"
+                "children": [
+                  {
+                    "type": "button",
+                    "id": "291962e8-513a-4050-80a3-1926d28f7b41",
+                    "asset": "0",
+                    "info": {
+                      "editorName": "white_png",
+                      "x": 35,
+                      "y": 937,
+                      "scale.x": 2.1,
+                      "scale.y": 0.5,
+                      "alpha": 0,
+                      "callback": "this.clickGo"
+                    }
+                  },
+                  {
+                    "type": "button",
+                    "id": "08ceb4fe-7795-42e5-a64a-b4ea0d1d2966",
+                    "asset": "10",
+                    "info": {
+                      "editorName": "study",
+                      "editorPublic": true,
+                      "x": 114,
+                      "y": 9251,
+                      "callback": "this.clickStudy"
+                    }
                   }
-                }]
+                ]
               }
             }
           ]
@@ -224,6 +238,12 @@
       "file": "WebContent/assets/pack.json",
       "section": "ninePic",
       "asset": "nine_9"
+    },
+    "10": {
+      "file": "WebContent/assets/pack.json",
+      "section": "colorAtlas",
+      "asset": "common1",
+      "sprite": "go.png"
     }
   },
   "prefab-table": {}

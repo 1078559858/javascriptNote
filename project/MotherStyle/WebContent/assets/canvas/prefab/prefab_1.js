@@ -20,7 +20,7 @@ function prefab_1(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyT
 	Phaser.Group.call(this, aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyType);
 	this.game.add.sprite(105, 0, 'common1', 'heiban.png', this);
 	
-	this.game.add.text(165, 266, '1、陪孩子学习时，哪句\n     话最符合你的心情？', {"font":"bold 40px Arial","fill":"#ffffff"}, this);
+	this.game.add.text(167, 254, '1、陪孩子学习时，哪句\n     话最符合你的心情？', {"font":"bold 40px Arial","fill":"#ffffff"}, this);
 	
 	var _temp = this.game.add.sprite(23, 17, 'temp3', null, this);
 	_temp.scale.setTo(0.3, 0.3);
