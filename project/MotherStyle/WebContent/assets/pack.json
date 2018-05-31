@@ -183,6 +183,12 @@
       "key": "temp2",
       "url": "assets/image/temp/temp2.png",
       "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "temp1",
+      "url": "assets/image/temp/temp.png",
+      "overwrite": false
     }
   ],
   "colorAtlas": [
@@ -265,7 +271,7 @@
     }
   ],
   "meta": {
-    "generated": "1527685588864",
+    "generated": "1527771979700",
     "app": "Phaser Editor",
     "url": "http://phasereditor.boniatillo.com",
     "version": "1.0",
