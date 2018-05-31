@@ -2,75 +2,75 @@
 
 {
 	"filename": "bird.png",
-	"frame": {"x":0,"y":423,"w":190,"h":157},
+	"frame": {"x":0,"y":0,"w":200,"h":208},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":190,"h":157},
-	"sourceSize": {"w":190,"h":157}
+	"spriteSourceSize": {"x":0,"y":0,"w":200,"h":208},
+	"sourceSize": {"w":200,"h":208}
 },
 {
 	"filename": "boy.png",
-	"frame": {"x":100,"y":248,"w":100,"h":175},
+	"frame": {"x":200,"y":0,"w":113,"h":200},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":175},
-	"sourceSize": {"w":100,"h":175}
+	"spriteSourceSize": {"x":0,"y":0,"w":113,"h":200},
+	"sourceSize": {"w":113,"h":200}
 },
 {
 	"filename": "boy2.png",
-	"frame": {"x":100,"y":0,"w":100,"h":248},
+	"frame": {"x":313,"y":0,"w":80,"h":200},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":248},
-	"sourceSize": {"w":100,"h":248}
+	"spriteSourceSize": {"x":0,"y":0,"w":80,"h":200},
+	"sourceSize": {"w":80,"h":200}
 },
 {
 	"filename": "eyu.png",
-	"frame": {"x":0,"y":580,"w":240,"h":252},
+	"frame": {"x":393,"y":0,"w":200,"h":210},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":240,"h":252},
-	"sourceSize": {"w":240,"h":252}
+	"spriteSourceSize": {"x":0,"y":0,"w":200,"h":210},
+	"sourceSize": {"w":200,"h":210}
 },
 {
 	"filename": "girl.png",
-	"frame": {"x":0,"y":248,"w":100,"h":146},
+	"frame": {"x":593,"y":0,"w":136,"h":200},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":146},
-	"sourceSize": {"w":100,"h":146}
+	"spriteSourceSize": {"x":0,"y":0,"w":136,"h":200},
+	"sourceSize": {"w":136,"h":200}
 },
 {
 	"filename": "girl2.png",
-	"frame": {"x":0,"y":0,"w":100,"h":232},
+	"frame": {"x":729,"y":0,"w":85,"h":200},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":232},
-	"sourceSize": {"w":100,"h":232}
+	"spriteSourceSize": {"x":0,"y":0,"w":85,"h":200},
+	"sourceSize": {"w":85,"h":200}
 },
 {
 	"filename": "huli.png",
-	"frame": {"x":0,"y":832,"w":240,"h":223},
+	"frame": {"x":814,"y":0,"w":200,"h":185},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":240,"h":223},
-	"sourceSize": {"w":240,"h":223}
+	"spriteSourceSize": {"x":0,"y":0,"w":200,"h":185},
+	"sourceSize": {"w":200,"h":185}
 },
 {
 	"filename": "xiong.png",
-	"frame": {"x":0,"y":1055,"w":240,"h":262},
+	"frame": {"x":1014,"y":0,"w":182,"h":200},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":240,"h":262},
-	"sourceSize": {"w":240,"h":262}
+	"spriteSourceSize": {"x":0,"y":0,"w":182,"h":200},
+	"sourceSize": {"w":182,"h":200}
 }],
 "meta": {
 	"app": "http://www.codeandweb.com/texturepacker",
 	"version": "1.0",
 	"image": "ip.png",
 	"format": "RGBA8888",
-	"size": {"w":240,"h":1317},
+	"size": {"w":1196,"h":210},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:fe1ccc67c67ec143cb515d5306227f05:2760e78f9c1c6b51c87e4a43c80c0b23:ab9094a208439df46140e23f995e3a6e$"
+	"smartupdate": "$TexturePacker:SmartUpdate:b2fb14d8a5d23d5ef798e5a25ce0fb26:443a7e1bce4b8366c60a07b7b3b93230:ab9094a208439df46140e23f995e3a6e$"
 }
 }
