@@ -2,8 +2,8 @@
   "canvas-version": 2,
   "settings": {
     "className": "preloadScene",
-    "sceneWidth": 640,
-    "sceneHeight": 1236,
+    "sceneWidth": 750,
+    "sceneHeight": 1206,
     "generateOnSave": true,
     "enableStepping": false,
     "lang": "JAVA_SCRIPT",
@@ -56,8 +56,8 @@
               "asset": "1",
               "info": {
                 "editorName": "temp1",
-                "x": 144.99996948242188,
-                "y": 493
+                "x": 200,
+                "y": 478
               }
             },
             {
@@ -67,8 +67,8 @@
               "info": {
                 "editorName": "processbar",
                 "editorPublic": true,
-                "x": 182.99993896484375,
-                "y": 1000
+                "x": 238,
+                "y": 950
               }
             },
             {

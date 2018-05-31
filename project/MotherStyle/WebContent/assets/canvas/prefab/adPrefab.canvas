@@ -2,8 +2,8 @@
   "canvas-version": 2,
   "settings": {
     "className": "adPrefab",
-    "sceneWidth": 640,
-    "sceneHeight": 1236,
+    "sceneWidth": 750,
+    "sceneHeight": 1206,
     "generateOnSave": true,
     "enableStepping": false,
     "lang": "JAVA_SCRIPT",
@@ -75,7 +75,8 @@
                     "asset": "2",
                     "info": {
                       "editorName": "nine_1",
-                      "y": 906
+                      "x": -7,
+                      "y": 1060
                     }
                   },
                   {

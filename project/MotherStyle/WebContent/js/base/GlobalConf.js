@@ -3,8 +3,8 @@
  */
 //游戏基础设置
 var gGameConf = {
-    width:640,      		//游戏设计宽度
-    height:1236,     		//游戏设计高度
+    width:750,      		//游戏设计宽度
+    height:1206,     		//游戏设计高度
 	"update":60,			//游戏一秒内update调用次数
 	'render':0.5,			//游戏一秒内render的次数（1：60次；2：120次）
 	"stop":false			//关闭游戏
