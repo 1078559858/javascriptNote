@@ -50,6 +50,9 @@ function adPrefab(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyT
 	
 	var _study = this.game.add.button(114, 9251, 'common1', this.clickStudy, this, null, 'go.png', null, null, _groupAll);
 	
+	var _get = this.game.add.sprite(536, 9274, 'common1', 'get.png', _groupAll);
+	_get.scale.setTo(-0.5, 0.5);
+	
 	
 	
 	// public fields
@@ -58,6 +61,7 @@ function adPrefab(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyT
 	this.fGroupNine = _groupNine;
 	this.fGroupAll = _groupAll;
 	this.fStudy = _study;
+	this.fGet = _get;
 	
 }
 
@@ -74,7 +78,18 @@ adPrefab.prototype.initOnce = function () {
 	this.setDrag(this.fDragBg);
 
 	gGame.gameScene.setAnchorMiddle(this.fStudy);
-	//this.game.add.tween(this.fStudy.scale.x).to({x:0.5, y:0.5}, 1000, )
+	var tween = this.game.add.tween(this.fStudy.scale).to({x:1.2, y:1.2}, 1000, Phaser.Easing.Linear.None,
+		true, 0, -1);
+	tween.yoyo(true);
+
+	gGame.gameScene.setAnchorMiddle(this.fGet);
+	var tween = this.game.add.tween(this.fGet).to({alpha:0.5}, 500, Phaser.Easing.Linear.None,
+		true, 0, -1);
+	tween.yoyo(true);
+
+	var tween = this.game.add.tween(this.fGet).to({x:this.fGet.x + 10}, 500, Phaser.Easing.Linear.None,
+		true, 0, -1);
+	tween.yoyo(true);
 };
 
 
@@ -92,6 +107,7 @@ adPrefab.prototype.clickBaidu = function () {
 
 var tHeight = 8488+1060-1206;
 adPrefab.prototype.clickGo = function () {
+	gGame.gameScene.fGroup1.setBackground();
 	gGame.gameScene.fGroup1.x = gGameConf.x + 1;
 	this.game.add.tween(this).to({x:-gGameConf.width - 1 },500, Phaser.Easing.Linear.None, true);
 	this.game.add.tween(gGame.gameScene.fGroup1).to({x:0}, 500, Phaser.Easing.Linear.None, true);

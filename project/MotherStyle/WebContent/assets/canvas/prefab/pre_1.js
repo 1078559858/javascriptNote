@@ -53,7 +53,6 @@ pre_1.prototype.initOnce  = function () {
 	this.pivot.x = 375;
 	this.pivot.y = 603;
 
-
 	// this.fDialog_home_error.visible = false;
 	// this.fDialog_home_fourl.visible = false;
 	// this.fDialog_home_null.visible = false;

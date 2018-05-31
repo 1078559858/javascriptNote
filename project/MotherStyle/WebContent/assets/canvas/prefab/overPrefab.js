@@ -9,8 +9,7 @@
 /**
  * overPrefab.
  * @param {Phaser.Game} aGame A reference to the currently running game.
- * @param {Phaser.Group} aParent The parent Group (or other {@link DisplayObject}) that this group will be added to.
-    If undefined/unspecified the Group will be added to the {@link Phaser.Game#world Game World}; if null the Group will not be added to any parent.
+ * @param {Phaser.Group} aParent The parent Group (or other {@link DisplayObject}) that this group will be added to.    If undefined/unspecified the Group will be added to the {@link Phaser.Game#world Game World}; if null the Group will not be added to any parent.
  * @param {string} aName A name for this group. Not used internally but useful for debugging.
  * @param {boolean} aAddToStage If true this group will be added directly to the Game.Stage instead of Game.World.
  * @param {boolean} aEnableBody If true all Sprites created with {@link #create} or {@link #createMulitple} will have a physics body created on them. Change the body type with {@link #physicsBodyType}.
@@ -42,8 +41,10 @@ function overPrefab(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBod
 	var _again_png = this.game.add.button(36, 775, 'common1', this.clickAgain, this, null, 'again.png', null, null, this);
 	_again_png.alpha = 0.0;
 	
-	var _go_png = this.game.add.button(411, 778, 'common1', this.clickStudy, this, null, 'go.png', null, null, this);
-	_go_png.alpha = 0.0;
+	var _goStudy = this.game.add.button(342, 772, 'common1', this.clickStudy, this, null, 'go.png', null, null, this);
+	
+	var _get = this.game.add.sprite(753, 795, 'common1', 'get.png', this);
+	_get.scale.setTo(-0.5, 0.5);
 	
 	
 	
@@ -53,6 +54,8 @@ function overPrefab(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBod
 	this.fGroupShaonv = _groupShaonv;
 	this.fGroupHU = _groupHU;
 	this.fGroupHuan = _groupHuan;
+	this.fGoStudy = _goStudy;
+	this.fGet = _get;
 	
 }
 
@@ -92,6 +95,21 @@ overPrefab.prototype.initOnce = function () {
 	}else {
 		this.fGroupHuan.scale.x = 1;
 	}
+
+
+	gGame.gameScene.setAnchorMiddle(this.fGoStudy);
+	var tween = this.game.add.tween(this.fGoStudy.scale).to({x:1.2, y:1.2}, 1000, Phaser.Easing.Linear.None,
+		true, 0, -1);
+	tween.yoyo(true);
+
+	gGame.gameScene.setAnchorMiddle(this.fGet);
+	var tween = this.game.add.tween(this.fGet).to({alpha:0.5}, 500, Phaser.Easing.Linear.None,
+		true, 0, -1);
+	tween.yoyo(true);
+
+	var tween = this.game.add.tween(this.fGet).to({x:this.fGet.x + 10}, 500, Phaser.Easing.Linear.None,
+		true, 0, -1);
+	tween.yoyo(true);
 };
 
 overPrefab.prototype.clickBtn = function (btn) {
@@ -109,5 +127,5 @@ overPrefab.prototype.clickAgain = function (btn) {
 
 
 overPrefab.prototype.setBackground = function () {
-
+	document.body.style.background="#ffbc49";
 };

@@ -133,11 +133,24 @@
               "id": "3a9d0e88-101a-4396-819a-efb9679aee50",
               "asset": "5",
               "info": {
-                "editorName": "go_png",
-                "x": 411,
-                "y": 778,
-                "alpha": 0,
+                "editorName": "goStudy",
+                "editorPublic": true,
+                "x": 342,
+                "y": 772,
                 "callback": "this.clickStudy"
+              }
+            },
+            {
+              "type": "atlas-sprite",
+              "id": "07c363eb-b6ef-433f-9e3b-c3315fe3b805",
+              "asset": "6",
+              "info": {
+                "editorName": "get",
+                "editorPublic": true,
+                "x": 753,
+                "y": 795,
+                "scale.x": -0.5,
+                "scale.y": 0.5
               }
             }
           ]
@@ -178,6 +191,12 @@
       "section": "colorAtlas",
       "asset": "common1",
       "sprite": "go.png"
+    },
+    "6": {
+      "file": "WebContent/assets/pack.json",
+      "section": "colorAtlas",
+      "asset": "common1",
+      "sprite": "get.png"
     }
   },
   "prefab-table": {}

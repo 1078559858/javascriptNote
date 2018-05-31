@@ -9,7 +9,8 @@
 /**
  * mainScene.
  * @param {Phaser.Game} aGame A reference to the currently running game.
- * @param {Phaser.Group} aParent The parent Group (or other {@link DisplayObject}) that this group will be added to.    If undefined/unspecified the Group will be added to the {@link Phaser.Game#world Game World}; if null the Group will not be added to any parent.
+ * @param {Phaser.Group} aParent The parent Group (or other {@link DisplayObject}) that this group will be added to.
+    If undefined/unspecified the Group will be added to the {@link Phaser.Game#world Game World}; if null the Group will not be added to any parent.
  * @param {string} aName A name for this group. Not used internally but useful for debugging.
  * @param {boolean} aAddToStage If true this group will be added directly to the Game.Stage instead of Game.World.
  * @param {boolean} aEnableBody If true all Sprites created with {@link #create} or {@link #createMulitple} will have a physics body created on them. Change the body type with {@link #physicsBodyType}.
@@ -122,7 +123,7 @@ mainScene.prototype.appearGroup = function (group1, group2) {
 };
 
 mainScene.prototype.appearGroup2 = function (bObj, eObj) {
-	//this.fBgBtn.inputEnabled = true;
+	this.fBgBtn.inputEnabled = true;
 
 	bObj.x = -gGameConf.width;
 
@@ -171,6 +172,8 @@ mainScene.prototype.setAnchorMiddle = function (spr) {
 };
 
 mainScene.prototype.setColorChange = function (color) {
+	document.body.style.background="#" + color;
+
 	if(this.fColor_up.alpha === 0){
 		this.fColor_up.frameName = color + ".png";
 
@@ -208,9 +211,9 @@ mainScene.prototype.setTempAction1 = function (group) {
 	var time = Math.random()*200;
 	var tweenA = this.game.add.tween(group).to({x:group.x - 350}, 100, Phaser.Easing.Linear.None, true);
 	tweenA.onComplete.addOnce(function () {
-		var tweenB = gGame.add.tween(group).to({x:group.x - 390}, 2600 + time, Phaser.Easing.Elastic.Out, true);
+		var tweenB = gGame.add.tween(group).to({x:group.x - 390}, 1600 + time, Phaser.Easing.Elastic.Out, true);
 		tweenB.onComplete.addOnce(function () {
-			//gGame.gameScene.fBgBtn.inputEnabled = false;
+			gGame.gameScene.fBgBtn.inputEnabled = false;
 		})
 	});
 };

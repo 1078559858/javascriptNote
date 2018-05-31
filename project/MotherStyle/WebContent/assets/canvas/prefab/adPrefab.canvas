@@ -177,6 +177,19 @@
                       "y": 9251,
                       "callback": "this.clickStudy"
                     }
+                  },
+                  {
+                    "type": "atlas-sprite",
+                    "id": "122952ae-6f00-4324-bbf1-01c066ad198d",
+                    "asset": "11",
+                    "info": {
+                      "editorName": "get",
+                      "editorPublic": true,
+                      "x": 536,
+                      "y": 9274,
+                      "scale.x": -0.5,
+                      "scale.y": 0.5
+                    }
                   }
                 ]
               }
@@ -244,6 +257,12 @@
       "section": "colorAtlas",
       "asset": "common1",
       "sprite": "go.png"
+    },
+    "11": {
+      "file": "WebContent/assets/pack.json",
+      "section": "colorAtlas",
+      "asset": "common1",
+      "sprite": "get.png"
     }
   },
   "prefab-table": {}
