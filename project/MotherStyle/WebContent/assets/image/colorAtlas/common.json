@@ -2,30 +2,6 @@
 
 {
 	"filename": "1.png",
-	"frame": {"x":0,"y":0,"w":80,"h":80},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":80,"h":80},
-	"sourceSize": {"w":80,"h":80}
-},
-{
-	"filename": "2.png",
-	"frame": {"x":80,"y":0,"w":80,"h":80},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":80,"h":80},
-	"sourceSize": {"w":80,"h":80}
-},
-{
-	"filename": "3.png",
-	"frame": {"x":160,"y":0,"w":80,"h":80},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":80,"h":80},
-	"sourceSize": {"w":80,"h":80}
-},
-{
-	"filename": "4.png",
 	"frame": {"x":240,"y":0,"w":80,"h":80},
 	"rotated": false,
 	"trimmed": false,
@@ -33,15 +9,7 @@
 	"sourceSize": {"w":80,"h":80}
 },
 {
-	"filename": "5.png",
-	"frame": {"x":320,"y":0,"w":80,"h":80},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":80,"h":80},
-	"sourceSize": {"w":80,"h":80}
-},
-{
-	"filename": "6.png",
+	"filename": "2.png",
 	"frame": {"x":400,"y":0,"w":80,"h":80},
 	"rotated": false,
 	"trimmed": false,
@@ -49,16 +17,64 @@
 	"sourceSize": {"w":80,"h":80}
 },
 {
+	"filename": "3.png",
+	"frame": {"x":320,"y":0,"w":80,"h":80},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":80,"h":80},
+	"sourceSize": {"w":80,"h":80}
+},
+{
+	"filename": "4.png",
+	"frame": {"x":80,"y":0,"w":80,"h":80},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":80,"h":80},
+	"sourceSize": {"w":80,"h":80}
+},
+{
+	"filename": "5.png",
+	"frame": {"x":0,"y":0,"w":80,"h":80},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":80,"h":80},
+	"sourceSize": {"w":80,"h":80}
+},
+{
+	"filename": "6.png",
+	"frame": {"x":160,"y":0,"w":80,"h":80},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":80,"h":80},
+	"sourceSize": {"w":80,"h":80}
+},
+{
+	"filename": "again.png",
+	"frame": {"x":480,"y":0,"w":300,"h":99},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":300,"h":99},
+	"sourceSize": {"w":300,"h":99}
+},
+{
 	"filename": "dhk.png",
-	"frame": {"x":0,"y":80,"w":640,"h":110},
+	"frame": {"x":0,"y":612,"w":640,"h":110},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":640,"h":110},
 	"sourceSize": {"w":640,"h":110}
 },
 {
+	"filename": "go.png",
+	"frame": {"x":0,"y":99,"w":300,"h":100},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":300,"h":100},
+	"sourceSize": {"w":300,"h":100}
+},
+{
 	"filename": "heiban.png",
-	"frame": {"x":0,"y":190,"w":540,"h":513},
+	"frame": {"x":300,"y":99,"w":540,"h":513},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":540,"h":513},
@@ -69,8 +85,8 @@
 	"version": "1.0",
 	"image": "common.png",
 	"format": "RGBA8888",
-	"size": {"w":640,"h":703},
+	"size": {"w":840,"h":722},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:ba5aaea906394e42444f06a7979457f7:2b10b74eb2abda848110f24e330ce3b3:5f8fd6ff9a85da144f948e71be2ecc32$"
+	"smartupdate": "$TexturePacker:SmartUpdate:816b4056749b5c8d3032682fce81fd7f:aa852f53fa83fa4553724828d08045ed:5f8fd6ff9a85da144f948e71be2ecc32$"
 }
 }
