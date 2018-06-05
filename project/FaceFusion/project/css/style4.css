@@ -1,0 +1,706 @@
+@keyframes rotate {
+    0% {
+        -webkit-transform:rotate(0);
+        transform:rotate(0)
+    }
+    100% {
+        -webkit-transform:rotate(360deg);
+        transform:rotate(360deg)
+    }
+}@-moz-keyframes rotate {
+     0% {
+         -webkit-transform:rotate(0);
+         transform:rotate(0)
+     }
+     100% {
+         -webkit-transform:rotate(360deg);
+         transform:rotate(360deg)
+     }
+ }@-webkit-keyframes rotate {
+      0% {
+          -webkit-transform:rotate(0);
+          transform:rotate(0)
+      }
+      100% {
+          -webkit-transform:rotate(360deg);
+          transform:rotate(360deg)
+      }
+  }@-o-keyframes rotate {
+       0% {
+           -webkit-transform:rotate(0);
+           transform:rotate(0)
+       }
+       100% {
+           -webkit-transform:rotate(360deg);
+           transform:rotate(360deg)
+       }
+   }@keyframes notice {
+        0% {
+            top:83%
+        }
+        50% {
+            top:80%
+        }
+        100% {
+            top:83%
+        }
+    }@-moz-keyframes notice {
+         0% {
+             top:83%
+         }
+         50% {
+             top:80%
+         }
+         100% {
+             top:83%
+         }
+     }@-webkit-keyframes notice {
+          0% {
+              top:83%
+          }
+          50% {
+              top:80%
+          }
+          100% {
+              top:83%
+          }
+      }@-o-keyframes notice {
+           0% {
+               top:83%
+           }
+           50% {
+               top:80%
+           }
+           100% {
+               top:83%
+           }
+       }@keyframes move {
+            0% {
+                top:20%
+            }
+            50% {
+                top:17%
+            }
+            100% {
+                top:20%
+            }
+        }@-moz-keyframes move {
+             0% {
+                 top:20%
+             }
+             50% {
+                 top:17%
+             }
+             100% {
+                 top:20%
+             }
+         }@-webkit-keyframes move {
+              0% {
+                  top:20%
+              }
+              50% {
+                  top:17%
+              }
+              100% {
+                  top:20%
+              }
+          }@-o-keyframes move {
+               0% {
+                   top:20%
+               }
+               50% {
+                   top:17%
+               }
+               100% {
+                   top:20%
+               }
+           }body,html {
+                margin:0;
+                padding:0
+            }
+body {
+    padding-top:5%;
+    background-image:url('../res/game/bg.jpg');
+    /*tpa=http://static02.babytreeimg.com/img/wetime_promo_static/mg/project/future_appearance/css/img/background.777da901.jpg*/
+
+;
+    background-color:#ffd800;
+    background-size:100% auto;
+    background-repeat:no-repeat
+}
+.mask,.problem,.reload-page,.stop-page {
+    display:none;
+    position:fixed;
+    width:100vw;
+    height:100vh;
+    margin-top:-6%;
+    background-color:rgba(0,0,0,.65);
+    z-index:999
+}
+.mask img {
+    position:absolute;
+    width:40%;
+    right:7%;
+    top:2%
+}
+.save-pic {
+    display:none;
+    position:absolute;
+    width:90%;
+    height:0;
+    padding-bottom:78%;
+    margin:30% 0 -10% 5%;
+    background-size:100% auto;
+    background-repeat:no-repeat;
+    z-index:101
+}
+.stop-activity {
+    position:relative;
+    width:60vw;
+    height:40vw;
+    margin-left:20%;
+    margin-top:50vh;
+    top:-20vw;
+    background:url(stop_activity.cc64051b.png)
+    /*tpa=http://static02.babytreeimg.com/img/wetime_promo_static/mg/project/future_appearance/css/img/stop_activity.cc64051b.png*/
+
+;
+    background-size:100% auto;
+    background-repeat:no-repeat
+}
+.reload-activity {
+    position:relative;
+    width:60vw;
+    height:40vw;
+    margin-left:20%;
+    margin-top:50vh;
+    top:-20vw;
+    background:url(reload_activity.c84f2305.png)
+    /*tpa=http://static02.babytreeimg.com/img/wetime_promo_static/mg/project/future_appearance/css/img/reload_activity.c84f2305.png*/
+
+;
+    background-size:100% auto;
+    background-repeat:no-repeat
+}
+.problem-activity {
+    position:relative;
+    width:60vw;
+    height:40vw;
+    margin-left:20%;
+    margin-top:50vh;
+    top:-20vw
+}
+.not-clear {
+    background:url(not_clear.3427d055.png)
+    /*tpa=http://static02.babytreeimg.com/img/wetime_promo_static/mg/project/future_appearance/css/img/return_result/not_clear.3427d055.png*/
+
+;
+    background-size:100% auto;
+    background-repeat:no-repeat
+}
+.pic-bigger {
+    background:url(pic_bigger.7465c20a.png)
+    /*tpa=http://static02.babytreeimg.com/img/wetime_promo_static/mg/project/future_appearance/css/img/return_result/pic_bigger.7465c20a.png*/
+
+;
+    background-size:100% auto;
+    background-repeat:no-repeat
+}
+.with-color {
+    background:url(with_color.7ccff20d.png)
+    /*tpa=http://static02.babytreeimg.com/img/wetime_promo_static/mg/project/future_appearance/css/img/return_result/with_color.7ccff20d.png*/
+
+;
+    background-size:100% auto;
+    background-repeat:no-repeat
+}
+.no-one-face {
+    background:url(no_one_face.15a23c71.png)
+    /*tpa=http://static02.babytreeimg.com/img/wetime_promo_static/mg/project/future_appearance/css/img/return_result/no_one_face.15a23c71.png*/
+
+;
+    background-size:100% auto;
+    background-repeat:no-repeat
+}
+.face-normal {
+    background:url(face_normal.f6de7cc1.png)
+    /*tpa=http://static02.babytreeimg.com/img/wetime_promo_static/mg/project/future_appearance/css/img/return_result/face_normal.f6de7cc1.png*/
+
+;
+    background-size:100% auto;
+    background-repeat:no-repeat
+}
+.main-face {
+    background:url(main_face.2a5ad25d.png)
+    /*tpa=http://static02.babytreeimg.com/img/wetime_promo_static/mg/project/future_appearance/css/img/return_result/main_face.2a5ad25d.png*/
+
+;
+    background-size:100% auto;
+    background-repeat:no-repeat
+}
+.network-down {
+    background:url(network_down.14179217.png)
+    /*tpa=http://static02.babytreeimg.com/img/wetime_promo_static/mg/project/future_appearance/css/img/return_result/network_down.14179217.png*/
+
+;
+    background-size:100% auto;
+    background-repeat:no-repeat
+}
+.problem-button,.reload-button,.stop-button {
+    position:absolute;
+    width:36%;
+    height:19%;
+    left:32%;
+    bottom:13%;
+    background:url(stop_button.02b088de.png)
+    /*tpa=http://static02.babytreeimg.com/img/wetime_promo_static/mg/project/future_appearance/css/img/stop_button.02b088de.png*/
+
+;
+    background-size:100% auto;
+    background-repeat:no-repeat
+}
+.section-one {
+    position:relative
+}
+.slogan {
+    width:68%;
+    height:0;
+    margin-left:16%;
+    padding-bottom:43%;
+    background:url(slogan.792a39d3.png)
+    /*tpa=http://static02.babytreeimg.com/img/wetime_promo_static/mg/project/future_appearance/css/img/slogan.792a39d3.png*/
+
+;
+    background-size:100% auto;
+    background-repeat:no-repeat
+}
+.wait {
+    position:absolute;
+    display:none;
+    width:35%;
+    height:0;
+    padding-bottom:25%;
+    top:20%;
+    right:10%;
+    z-index:10;
+    animation:move 1.25s infinite;
+    background:url(wait_two.65432195.png)
+    /*tpa=http://static02.babytreeimg.com/img/wetime_promo_static/mg/project/future_appearance/css/img/wait_two.65432195.png*/
+
+;
+    background-size:100% auto;
+    background-repeat:no-repeat
+}
+.baby-img {
+    position:relative;
+    width:68%;
+    height:0;
+    margin-left:16%;
+    margin-top:-27%;
+    padding-bottom:92.5%;
+    background:url(baby_img.7a053743.png)
+    /*tpa=http://static02.babytreeimg.com/img/wetime_promo_static/mg/project/future_appearance/css/img/baby_img.7a053743.png*/
+
+;
+    background-size:100% auto;
+    background-repeat:no-repeat
+}
+.baby-img .baby-img-file {
+    position:absolute;
+    width:80%;
+    height:60%;
+    background-color:#fff000;
+    top:32.8%;
+    left:7%;
+    border-radius:1.1rem
+}
+.baby-img .baby-img-file .wait-pic {
+    display:none;
+    position:absolute;
+    height:3rem;
+    width:3rem;
+    left:50%;
+    top:50%;
+    margin-left:-1.5rem;
+    margin-top:-1.5rem;
+    background:url(wait.08dae91a.png)
+    /*tpa=http://static02.babytreeimg.com/img/wetime_promo_static/mg/project/future_appearance/css/img/wait.08dae91a.png*/
+
+;
+    background-size:100% auto;
+    background-repeat:no-repeat;
+    animation:rotate 1s linear infinite
+}
+.baby-img .baby-img-file .baby-pic {
+    border-radius:1.1rem;
+    width:auto;
+    height:auto;
+    max-height:100%;
+    max-width:100%;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    margin:auto;
+    position:absolute
+}
+.input-button {
+    display:block;
+    position:absolute;
+    width:38%;
+    height:0;
+    padding-bottom:15%;
+    margin-left:31%;
+    top:83%;
+    animation:notice .5s 2;
+    animation-delay:2s;
+    animation-timing-function:ease-in-out;
+    -moz-animation-timing-function:ease-in-out;
+    -webkit-animation-timing-function:ease-in-out;
+    background:url(../input_button.e58123b5.png)
+    /*tpa=http://static02.babytreeimg.com/img/wetime_promo_static/mg/project/future_appearance/css/img/input_button.e58123b5.png*/
+
+;
+    background-size:100% auto;
+    background-repeat:no-repeat
+}
+.input-button .click-input {
+    position:absolute;
+    opacity:0;
+    width:100%;
+    height:100%
+}
+.input-amount {
+    display:block;
+    width:100%;
+    text-align:center;
+    margin-top:20%;
+    margin-bottom:70px;
+    font-size:1.2rem;
+    font-weight:700
+}
+.text-notice {
+    display:none;
+    width:65%;
+    height:0;
+    padding-bottom:10%;
+    margin-left:17.5%;
+    margin-top:1.5rem;
+    background:url(text_notice.4de1fcd2.png)
+    /*tpa=http://static02.babytreeimg.com/img/wetime_promo_static/mg/project/future_appearance/css/img/text_notice.4de1fcd2.png*/
+
+;
+    background-size:100% auto;
+    background-repeat:no-repeat
+}
+.baby {
+    position:relative;
+    display:none;
+    width:100%;
+    height:0;
+    padding-bottom:20%;
+    margin-bottom:1.3rem
+}
+.baby .boy {
+    position:absolute;
+    width:34%;
+    height:0;
+    padding-bottom:14%;
+    left:9%;
+    top:23%;
+    background:url(boy.e74d7ddc.png)
+    /*tpa=http://static02.babytreeimg.com/img/wetime_promo_static/mg/project/future_appearance/css/img/boy.e74d7ddc.png*/
+
+;
+    background-size:100% auto;
+    background-repeat:no-repeat
+}
+.baby .girl {
+    position:absolute;
+    width:34%;
+    height:0;
+    padding-bottom:14%;
+    right:9%;
+    top:23%;
+    background:url(girl.e82ddc69.png)
+    /*tpa=http://static02.babytreeimg.com/img/wetime_promo_static/mg/project/future_appearance/css/img/girl.e82ddc69.png*/
+
+;
+    background-size:100% auto;
+    background-repeat:no-repeat
+}
+.download-button {
+    display:none;
+    position:relative
+}
+.download-button .download-tab {
+    position:absolute;
+    padding:.2rem .4rem;
+    width:11rem;
+    height:2.4rem;
+    left:50%;
+    margin-left:-5.5rem;
+    margin-top:.4rem;
+    line-height:40px;
+    background-color:#ff2021;
+    font-size:.94rem;
+    letter-spacing:.1rem;
+    font-weight:400;
+    border:0;
+    border-radius:24px;
+    box-shadow:.2rem .1rem 0 #a78d8f;
+    color:#fff;
+    text-align:center;
+    text-decoration:none
+}
+.download-button p {
+    color:#000;
+    position:absolute;
+    top:2.75rem;
+    padding-bottom:2rem;
+    width:100%;
+    text-align:center;
+    font-size:1rem;
+    font-weight:500
+}
+.download {
+    display:none;
+    position:fixed;
+    left:0;
+    bottom:0;
+    z-index:200;
+    width:100%;
+    height:62px;
+    box-sizing:border-box;
+    padding:10px 2px;
+    background:rgba(127,127,127,.8)
+}
+.download img {
+    float:left;
+    width:46px;
+    height:46px;
+    top:8px;
+    left:13px;
+    position:absolute
+}
+.download .download-button {
+    position:absolute;
+    float:right;
+    padding:0;
+    width:85px;
+    height:40px;
+    line-height:40px;
+    background-color:#ff4a49;
+    font-size:.9rem;
+    letter-spacing:.1rem;
+    font-weight:300;
+    border:0;
+    border-radius:6px;
+    color:#fff;
+    text-align:center;
+    text-decoration:none;
+    right:10px
+}
+.download .text {
+    margin:12px 0 0 64px;
+    color:#fff;
+    position:absolute;
+    top:10px;
+    left:12px;
+    font-size:.85rem;
+    font-weight:300
+}
+.section-two {
+    display:none;
+    position:relative
+}
+.section-two .slogan-two {
+    width:70%;
+    height:0;
+    margin-left:15%;
+    padding-bottom:25%;
+    background:url(slogan_two.379231e1.png)
+    /*tpa=http://static02.babytreeimg.com/img/wetime_promo_static/mg/project/future_appearance/css/img/slogan_two.379231e1.png*/
+
+;
+    background-size:100% auto;
+    background-repeat:no-repeat
+}
+.section-two .wait-two {
+    position:absolute;
+    width:35%;
+    height:0;
+    padding-bottom:25%;
+    top:20%;
+    right:10%;
+    z-index:10;
+    animation:move 1.25s infinite;
+    background:url(wait_two.65432195.png)
+    /*tpa=http://static02.babytreeimg.com/img/wetime_promo_static/mg/project/future_appearance/css/img/wait_two.65432195.png*/
+
+;
+    background-size:100% auto;
+    background-repeat:no-repeat
+}
+.section-two .baby-img-two {
+    position:relative;
+    width:92%;
+    height:0;
+    margin-left:4%;
+    margin-top:-32%;
+    padding-bottom:120.5%;
+    background:url(baby_img_two.5fd3be0e.png)
+    /*tpa=http://static02.babytreeimg.com/img/wetime_promo_static/mg/project/future_appearance/css/img/baby_img_two.5fd3be0e.png*/
+
+;
+    background-size:100% auto;
+    background-repeat:no-repeat
+}
+.section-two .baby-img-two .raw-img {
+    position:absolute;
+    width:38%;
+    height:43%;
+    bottom:10%;
+    left:5.5%;
+    border-radius:1.1rem
+}
+.section-two .baby-img-two .raw-img img {
+    position:absolute;
+    border-radius:1.1rem;
+    width:auto;
+    height:auto;
+    max-height:100%;
+    max-width:100%;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    margin:auto
+}
+.section-two .baby-img-two .generated-img {
+    position:absolute;
+    width:38%;
+    height:43%;
+    bottom:10%;
+    right:11.5%;
+    border-radius:1.1rem
+}
+.section-two .baby-img-two .generated-img img {
+    position:absolute;
+    border-radius:1.1rem;
+    width:auto;
+    height:auto;
+    max-height:100%;
+    max-width:100%;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    margin:auto
+}
+.section-two .record-button {
+    width:50%;
+    height:0;
+    padding-bottom:15%;
+    margin-left:25%;
+    margin-top:10%;
+    background:url(record_button.d29288bf.png)
+    /*tpa=http://static02.babytreeimg.com/img/wetime_promo_static/mg/project/future_appearance/css/img/record_button.d29288bf.png*/
+
+;
+    background-size:100% auto;
+    background-repeat:no-repeat
+}
+.section-three {
+    display:none;
+    position:relative
+}
+.section-three .slogan-three {
+    width:70%;
+    height:0;
+    margin-left:15%;
+    padding-bottom:25%;
+    background:url(slogan_two.379231e1.png)
+    /*tpa=http://static02.babytreeimg.com/img/wetime_promo_static/mg/project/future_appearance/css/img/slogan_two.379231e1.png*/
+
+;
+    background-size:100% auto;
+    background-repeat:no-repeat
+}
+.section-three .result-container {
+    width:90%;
+    height:0;
+    padding-bottom:78%;
+    margin:5% 0 -10% 5%;
+    background:url(result_container_1.0ada4b7b.png)
+    /*tpa=http://static02.babytreeimg.com/img/wetime_promo_static/mg/project/future_appearance/css/img/result_container_1.0ada4b7b.png*/
+
+;
+    background-size:100% auto;
+    background-repeat:no-repeat
+}
+.section-three .result-container .pic-container {
+    width:100%;
+    height:0;
+    padding-bottom:45%
+}
+.section-three .result-container .pic-container .pic-content {
+    display:inline-block;
+    width:23%;
+    height:auto;
+    margin-top:12%;
+    margin-left:1.8%;
+    margin-right:-2%;
+    border-radius:.4rem
+}
+.section-three .result-container .qrcode {
+    position:relative;
+    width:18%;
+    height:0;
+    padding-bottom:26%;
+    margin-left:7%;
+    margin-top:6.5%;
+    background:url(qrcode.4cb2c485.png)
+    /*tpa=http://static02.babytreeimg.com/img/wetime_promo_static/mg/project/future_appearance/css/img/qrcode.4cb2c485.png*/
+
+;
+    background-size:100% auto;
+    background-repeat:no-repeat
+}
+.section-three .save-img {
+    display:block;
+    width:100%;
+    height:0;
+    margin-top:15%;
+    padding-bottom:8%;
+    text-align:center;
+    font-size:1.55rem;
+    font-weight:700;
+    letter-spacing:.2rem
+}
+.section-three .replay {
+    display:inline-block;
+    width:35%;
+    height:0;
+    padding-bottom:14%;
+    margin:8% 3% 0 9%;
+    background:url(replay.9361f7dd.png)
+    /*tpa=http://static02.babytreeimg.com/img/wetime_promo_static/mg/project/future_appearance/css/img/replay.9361f7dd.png*/
+
+;
+    background-size:100% auto;
+    background-repeat:no-repeat
+}
+.section-three .share {
+    display:inline-block;
+    width:35%;
+    height:0;
+    padding-bottom:14%;
+    margin:8% 0 0 7%;
+    background:url(share.99f53273.png)
+    /*tpa=http://static02.babytreeimg.com/img/wetime_promo_static/mg/project/future_appearance/css/img/share.99f53273.png*/
+
+;
+    background-size:100% auto;
+    background-repeat:no-repeat
+}
