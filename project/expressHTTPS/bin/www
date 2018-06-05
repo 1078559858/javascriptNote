@@ -6,14 +6,15 @@ var http = require('http');
 var https = require('https');
 var fs = require("fs");
 
-var privateKey  = fs.readFileSync('./bin/private.pem', 'utf8');
-var certificate = fs.readFileSync('./bin/file.crt', 'utf8');
+var privateKey  = fs.readFileSync('./bin/hmzyx.pem', 'utf8');
+var certificate = fs.readFileSync('./bin/hmzyx.crt', 'utf8');
 var credentials = {key: privateKey, cert: certificate};
 
 var httpServer = http.createServer(app);
 var httpsServer = https.createServer(credentials, app);
 var PORT = 18080;
-var SSLPORT = 18081;
+var SSLPORT = 18083;
+var host = "www.yangmengmeng.com";
 
 httpServer.listen(PORT, function() {
 	console.log('HTTP Server is running on: http://localhost:%s', PORT);

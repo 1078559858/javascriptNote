@@ -161,10 +161,8 @@ body {
     margin-left:20%;
     margin-top:50vh;
     top:-20vw;
-    background:url(stop_activity.cc64051b.png)
+    background:url(stop_activity.cc64051b.png);
     /*tpa=http://static02.babytreeimg.com/img/wetime_promo_static/mg/project/future_appearance/css/img/stop_activity.cc64051b.png*/
-
-;
     background-size:100% auto;
     background-repeat:no-repeat
 }
@@ -175,10 +173,8 @@ body {
     margin-left:20%;
     margin-top:50vh;
     top:-20vw;
-    background:url(reload_activity.c84f2305.png)
+    background:url(reload_activity.c84f2305.png);
     /*tpa=http://static02.babytreeimg.com/img/wetime_promo_static/mg/project/future_appearance/css/img/reload_activity.c84f2305.png*/
-
-;
     background-size:100% auto;
     background-repeat:no-repeat
 }
