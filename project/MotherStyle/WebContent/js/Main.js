@@ -1,6 +1,6 @@
 var gGame = null;
 window.onload = function() {
-	gGame = new Phaser.Game(750, 1206, Phaser.CANVAS, "id_game");
+	gGame = new Phaser.Game(640, 1008, Phaser.CANVAS, "id_game");
 
 	// Add the States your game has.
 	gGame.state.add("Boot", Boot);

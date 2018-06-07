@@ -2,8 +2,8 @@
   "canvas-version": 2,
   "settings": {
     "className": "prefab_2",
-    "sceneWidth": 750,
-    "sceneHeight": 1206,
+    "sceneWidth": 640,
+    "sceneHeight": 1008,
     "generateOnSave": true,
     "enableStepping": false,
     "lang": "JAVA_SCRIPT",
@@ -45,184 +45,86 @@
           "setAll": [],
           "children": [
             {
-              "type": "atlas-sprite",
-              "id": "3adee5d4-5f9d-4c18-b275-b221eb012954",
+              "type": "image",
+              "id": "4fad06b3-c2ad-46ba-a464-49f5aa37eb2b",
               "asset": "0",
               "info": {
-                "editorName": "heiban_png",
-                "x": 105
-              }
-            },
-            {
-              "type": "text",
-              "id": "ef48ebd1-8035-4f43-84a6-7826d50834cf",
-              "info": {
-                "editorName": "textTitle",
-                "editorPublic": true,
-                "x": 142,
-                "y": 239,
-                "text": "2、2岁的宝宝想爬楼梯,\r\n     此时你会?",
-                "style.fontSize": 45,
-                "style.fill": "#ffffff"
-              }
-            },
-            {
-              "type": "image",
-              "id": "6ac5b480-62fc-42af-96b6-0c3042d75dee",
-              "asset": "1",
-              "info": {
-                "editorName": "temp",
-                "scale.x": 0.3,
-                "scale.y": 0.3
-              }
-            },
-            {
-              "type": "group",
-              "id": "c8b17d0d-b786-42da-bcc3-8a56b61fb7d1",
-              "info": {
-                "editorName": "group1",
-                "editorPublic": true,
-                "x": 55,
-                "y": 570,
-                "setAll": [],
-                "children": [
-                  {
-                    "type": "button",
-                    "id": "10fe6996-8dc8-48bb-a004-9b0efde46d4d",
-                    "asset": "2",
-                    "info": {
-                      "editorName": "dhk_png4",
-                      "data": "{\r\n\"value\":\"a\"\r\n}",
-                      "callback": "this.clickBtn"
-                    }
-                  },
-                  {
-                    "type": "text",
-                    "id": "1fe3152e-88ee-4ddc-9350-a0fea8cc877b",
-                    "info": {
-                      "editorName": "text1",
-                      "x": 122,
-                      "y": 14,
-                      "text": "A:他想爬就爬，稍微看着\r\n   点就行了",
-                      "style.fontSize": 36,
-                      "style.fill": "#ffffff"
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "type": "group",
-              "id": "c629e0cd-25ee-4357-99a9-808766063acd",
-              "info": {
-                "editorName": "group2",
-                "editorPublic": true,
-                "x": 55,
-                "y": 720,
-                "setAll": [],
-                "children": [
-                  {
-                    "type": "button",
-                    "id": "70ceb4e4-79d9-4bb2-9a10-d5b3c77ceeb7",
-                    "asset": "2",
-                    "info": {
-                      "editorName": "dhk_png",
-                      "data": "{\r\n\"value\":\"b\"\r\n}",
-                      "callback": "this.clickBtn"
-                    }
-                  },
-                  {
-                    "type": "text",
-                    "id": "317be3a3-2952-4f8f-8f9b-854eb4793e3a",
-                    "info": {
-                      "editorName": "text",
-                      "x": 122,
-                      "y": 14,
-                      "text": "B:不许爬，包衣服和手都\r\n    弄脏了",
-                      "style.fontSize": 36,
-                      "style.fill": "#ffffff"
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "type": "group",
-              "id": "c02102b3-ffd7-4117-86aa-80408a04994c",
-              "info": {
-                "editorName": "group3",
-                "editorPublic": true,
-                "x": 55,
-                "y": 870,
-                "setAll": [],
-                "children": [
-                  {
-                    "type": "button",
-                    "id": "7c6f7376-8700-48bb-b0cb-7cf7e0eea00b",
-                    "asset": "2",
-                    "info": {
-                      "editorName": "dhk_png1",
-                      "data": "{\r\n\"value\":\"c\"\r\n}",
-                      "callback": "this.clickBtn"
-                    }
-                  },
-                  {
-                    "type": "text",
-                    "id": "4dcb8243-984a-4041-9a14-55658342c2a1",
-                    "info": {
-                      "editorName": "text3",
-                      "x": 122,
-                      "y": 33,
-                      "text": "C:跟在宝宝背后保护Ta",
-                      "style.fontSize": 36,
-                      "style.fill": "#ffffff"
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "type": "group",
-              "id": "cdce7858-f465-465a-8232-45c4ec1e5c38",
-              "info": {
-                "editorName": "group4",
-                "editorPublic": true,
-                "x": 55,
-                "y": 1020,
-                "setAll": [],
-                "children": [
-                  {
-                    "type": "button",
-                    "id": "66ac2a93-99c2-4820-bf7a-34a9c268a6ca",
-                    "asset": "2",
-                    "info": {
-                      "editorName": "dhk_png2",
-                      "data": "{\r\n\"value\":\"d\"\r\n}",
-                      "callback": "this.clickBtn"
-                    }
-                  },
-                  {
-                    "type": "text",
-                    "id": "247e5849-d16f-4eaf-b544-74dc17178892",
-                    "info": {
-                      "editorName": "text2",
-                      "x": 122,
-                      "y": 33,
-                      "text": "D:懒得拾掇，交给Ta爹",
-                      "style.fontSize": 36,
-                      "style.fill": "#ffffff"
-                    }
-                  }
-                ]
+                "editorName": "posterBG",
+                "alpha": 0
               }
             },
             {
               "type": "atlas-sprite",
-              "id": "a18bd599-e8d8-41e4-9e78-c998fa09825c",
+              "id": "6daa1b67-009c-4232-aee9-58d35e2a04f2",
+              "asset": "1",
+              "info": {
+                "editorName": "boy2_png",
+                "x": 1,
+                "y": 747,
+                "scale.x": 1.3,
+                "scale.y": 1.3
+              }
+            },
+            {
+              "type": "atlas-sprite",
+              "id": "348d0579-2799-4f89-91bf-c05c36cbbabc",
+              "asset": "2",
+              "info": {
+                "editorName": "s2_title_png",
+                "x": 110,
+                "y": 156
+              }
+            },
+            {
+              "type": "button",
+              "id": "f05affe1-2268-4cb0-86e6-32ad9d0dbcc7",
               "asset": "3",
               "info": {
-                "editorName": "huli_png",
-                "x": 275
+                "editorName": "btn_a",
+                "editorPublic": true,
+                "x": 111,
+                "y": 419,
+                "data": "{\r\n\"value\":\"a\"\r\n}",
+                "callback": "this.clickBtn"
+              }
+            },
+            {
+              "type": "button",
+              "id": "d10c3f2d-eab3-4bdc-9107-3915492080f9",
+              "asset": "4",
+              "info": {
+                "editorName": "btn_b",
+                "editorPublic": true,
+                "x": 340,
+                "y": 419,
+                "data": "{\r\n\"value\":\"b\"\r\n}",
+                "callback": "this.clickBtn"
+              }
+            },
+            {
+              "type": "button",
+              "id": "f848cf11-2c52-4226-bcb0-bff2ccffc0f7",
+              "asset": "5",
+              "info": {
+                "editorName": "btn_c",
+                "editorPublic": true,
+                "x": 111,
+                "y": 603,
+                "data": "{\r\n\"value\":\"c\"\r\n}",
+                "callback": "this.clickBtn"
+              }
+            },
+            {
+              "type": "button",
+              "id": "1ac5842f-dfe6-4671-a102-465a9eb694e5",
+              "asset": "6",
+              "info": {
+                "editorName": "btn_d",
+                "editorPublic": true,
+                "x": 340,
+                "y": 603,
+                "data": "{\r\n\"value\":\"d\"\r\n}",
+                "callback": "this.clickBtn"
               }
             }
           ]
@@ -234,26 +136,44 @@
   "asset-table": {
     "0": {
       "file": "WebContent/assets/pack.json",
-      "section": "colorAtlas",
-      "asset": "common1",
-      "sprite": "heiban.png"
+      "section": "common",
+      "asset": "posterBG"
     },
     "1": {
       "file": "WebContent/assets/pack.json",
-      "section": "temp",
-      "asset": "temp3"
+      "section": "colorAtlas",
+      "asset": "ip",
+      "sprite": "boy2.png"
     },
     "2": {
       "file": "WebContent/assets/pack.json",
       "section": "colorAtlas",
-      "asset": "common1",
-      "sprite": "dhk.png"
+      "asset": "sceneTitle",
+      "sprite": "s2_title.png"
     },
     "3": {
       "file": "WebContent/assets/pack.json",
       "section": "colorAtlas",
-      "asset": "ip",
-      "sprite": "huli.png"
+      "asset": "sceneProblem",
+      "sprite": "s2_a.png"
+    },
+    "4": {
+      "file": "WebContent/assets/pack.json",
+      "section": "colorAtlas",
+      "asset": "sceneProblem",
+      "sprite": "s2_b.png"
+    },
+    "5": {
+      "file": "WebContent/assets/pack.json",
+      "section": "colorAtlas",
+      "asset": "sceneProblem",
+      "sprite": "s2_c.png"
+    },
+    "6": {
+      "file": "WebContent/assets/pack.json",
+      "section": "colorAtlas",
+      "asset": "sceneProblem",
+      "sprite": "s2_d.png"
     }
   },
   "prefab-table": {}

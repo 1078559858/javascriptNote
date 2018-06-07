@@ -2,8 +2,8 @@
   "canvas-version": 2,
   "settings": {
     "className": "prefab_3",
-    "sceneWidth": 750,
-    "sceneHeight": 1206,
+    "sceneWidth": 640,
+    "sceneHeight": 1008,
     "generateOnSave": true,
     "enableStepping": false,
     "lang": "JAVA_SCRIPT",
@@ -42,188 +42,90 @@
         "id": "3232c060-d2ed-4bf0-a5f8-7e8c17a8ef97",
         "info": {
           "editorName": "group",
+          "y": 4,
           "setAll": [],
           "children": [
             {
-              "type": "atlas-sprite",
-              "id": "93aed97c-1292-4798-9471-e64ce635f9a7",
+              "type": "image",
+              "id": "a6799aad-8619-4b66-9bcf-b5ece7ec5986",
               "asset": "0",
               "info": {
-                "editorName": "heiban_png",
-                "x": 104.99996948242188,
-                "y": -3
-              }
-            },
-            {
-              "type": "text",
-              "id": "f211cc2b-f6f5-4059-9d20-a419e7381bb2",
-              "info": {
-                "editorName": "textTitle",
-                "editorPublic": true,
-                "x": 138.97512817382812,
-                "y": 248,
-                "text": "3、宝宝的小卧室，你最\r\n     希望装成什么风格?",
-                "style.fontSize": 45,
-                "style.fill": "#ffffff"
-              }
-            },
-            {
-              "type": "image",
-              "id": "d9f80a86-99f1-4647-baf4-d2dea4d44f15",
-              "asset": "1",
-              "info": {
-                "editorName": "temp",
-                "scale.x": 0.3,
-                "scale.y": 0.3
-              }
-            },
-            {
-              "type": "group",
-              "id": "bda343a5-ae53-415e-aa2d-272997a5c4aa",
-              "info": {
-                "editorName": "group1",
-                "editorPublic": true,
-                "x": 56,
-                "y": 567,
-                "setAll": [],
-                "children": [
-                  {
-                    "type": "button",
-                    "id": "08121e45-7be2-4b70-9645-f577ac39757a",
-                    "asset": "2",
-                    "info": {
-                      "editorName": "dhk_png",
-                      "data": "{\r\n\"value\":\"a\"\r\n}",
-                      "callback": "this.clickBtn"
-                    }
-                  },
-                  {
-                    "type": "text",
-                    "id": "6d3fcdb7-b180-45f2-915b-0cd362d90ee0",
-                    "info": {
-                      "editorName": "text",
-                      "x": 122,
-                      "y": 33,
-                      "text": "A:小猪佩奇社会风",
-                      "style.fontSize": 36,
-                      "style.fill": "#ffffff"
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "type": "group",
-              "id": "28276ce6-f971-4682-89c5-75b065a18bcf",
-              "info": {
-                "editorName": "group2",
-                "editorPublic": true,
-                "x": 56,
-                "y": 717,
-                "setAll": [],
-                "children": [
-                  {
-                    "type": "button",
-                    "id": "5fc17467-0ad4-4296-80c2-8180e83b2372",
-                    "asset": "2",
-                    "info": {
-                      "editorName": "dhk_png1",
-                      "data": "{\r\n\"value\":\"b\"\r\n}",
-                      "callback": "this.clickBtn"
-                    }
-                  },
-                  {
-                    "type": "text",
-                    "id": "38f725dd-f556-43cd-b7f5-7c0268187238",
-                    "info": {
-                      "editorName": "text1",
-                      "x": 122,
-                      "y": 33,
-                      "text": "B:幻想童话风",
-                      "style.fontSize": 36,
-                      "style.fill": "#ffffff"
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "type": "group",
-              "id": "09dfd4e7-7376-41f0-9f60-848db218f0f6",
-              "info": {
-                "editorName": "group3",
-                "editorPublic": true,
-                "x": 56,
-                "y": 867,
-                "setAll": [],
-                "children": [
-                  {
-                    "type": "button",
-                    "id": "7333f842-763e-45bf-a93d-8de8368907fb",
-                    "asset": "2",
-                    "info": {
-                      "editorName": "dhk_png2",
-                      "data": "{\r\n\"value\":\"c\"\r\n}",
-                      "callback": "this.clickBtn"
-                    }
-                  },
-                  {
-                    "type": "text",
-                    "id": "fd160946-ed37-4e99-8229-f02357caad9e",
-                    "info": {
-                      "editorName": "text2",
-                      "x": 122,
-                      "y": 33,
-                      "text": "C:运动风",
-                      "style.fontSize": 36,
-                      "style.fill": "#ffffff"
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "type": "group",
-              "id": "3987383b-2e97-4066-bc33-ac6abf33731e",
-              "info": {
-                "editorName": "group4",
-                "editorPublic": true,
-                "x": 56,
-                "y": 1017,
-                "setAll": [],
-                "children": [
-                  {
-                    "type": "button",
-                    "id": "a1502176-84f6-420f-8a05-614c9240ad96",
-                    "asset": "2",
-                    "info": {
-                      "editorName": "dhk_png3",
-                      "data": "{\r\n\"value\":\"d\"\r\n}",
-                      "callback": "this.clickBtn"
-                    }
-                  },
-                  {
-                    "type": "text",
-                    "id": "1c5e1238-2189-4e1e-b180-bf2b1667af24",
-                    "info": {
-                      "editorName": "text3",
-                      "x": 122,
-                      "y": 33,
-                      "text": "D:懒得拾掇，交给Ta爹",
-                      "style.fontSize": 36,
-                      "style.fill": "#ffffff"
-                    }
-                  }
-                ]
+                "editorName": "posterBG",
+                "alpha": 0
               }
             },
             {
               "type": "atlas-sprite",
-              "id": "7bb9e6fd-2ba4-4f23-a11b-0ecce2f69d0c",
+              "id": "120d2afc-53c2-4e0c-a5c2-d0e13e815d78",
+              "asset": "1",
+              "info": {
+                "editorName": "s1_title_png",
+                "x": 110,
+                "y": 156
+              }
+            },
+            {
+              "type": "atlas-sprite",
+              "id": "d38e51de-eabf-4642-a8b8-f7c37571c997",
+              "asset": "2",
+              "info": {
+                "editorName": "boy2_png",
+                "x": 1,
+                "y": 747,
+                "scale.x": 1.3,
+                "scale.y": 1.3
+              }
+            },
+            {
+              "type": "button",
+              "id": "88b2f591-245a-42ea-949b-95cea047a65d",
               "asset": "3",
               "info": {
-                "editorName": "huli_png",
-                "x": 319
+                "editorName": "btn_a",
+                "editorPublic": true,
+                "x": 95,
+                "y": 380,
+                "data": "{\r\n\"value\":\"a\"\r\n}",
+                "callback": "this.clickBtn"
+              }
+            },
+            {
+              "type": "button",
+              "id": "92eba569-b5e4-4980-b947-5734aa1ff6c4",
+              "asset": "4",
+              "info": {
+                "editorName": "btn_b",
+                "editorPublic": true,
+                "x": 95,
+                "y": 493,
+                "data": "{\r\n\"value\":\"b\"\r\n}",
+                "callback": "this.clickBtn"
+              }
+            },
+            {
+              "type": "button",
+              "id": "ba3c37f1-72c6-429d-bfae-a4cba9f45488",
+              "asset": "5",
+              "info": {
+                "editorName": "btn_c",
+                "editorPublic": true,
+                "x": 95,
+                "y": 606,
+                "data": "{\r\n\"value\":\"c\"\r\n}",
+                "callback": "this.clickBtn"
+              }
+            },
+            {
+              "type": "button",
+              "id": "be49ca12-4ef6-4ca9-aeac-c4f8910210c4",
+              "asset": "6",
+              "info": {
+                "editorName": "btn_d",
+                "editorPublic": true,
+                "x": 95,
+                "y": 720,
+                "data": "{\r\n\"value\":\"d\"\r\n}",
+                "callback": "this.clickBtn"
               }
             }
           ]
@@ -235,26 +137,44 @@
   "asset-table": {
     "0": {
       "file": "WebContent/assets/pack.json",
-      "section": "colorAtlas",
-      "asset": "common1",
-      "sprite": "heiban.png"
+      "section": "common",
+      "asset": "posterBG"
     },
     "1": {
       "file": "WebContent/assets/pack.json",
-      "section": "temp",
-      "asset": "temp3"
+      "section": "colorAtlas",
+      "asset": "sceneTitle",
+      "sprite": "s3_title.png"
     },
     "2": {
       "file": "WebContent/assets/pack.json",
       "section": "colorAtlas",
-      "asset": "common1",
-      "sprite": "dhk.png"
+      "asset": "ip",
+      "sprite": "boy2.png"
     },
     "3": {
       "file": "WebContent/assets/pack.json",
       "section": "colorAtlas",
-      "asset": "ip",
-      "sprite": "boy.png"
+      "asset": "sceneBtn",
+      "sprite": "s3_a.png"
+    },
+    "4": {
+      "file": "WebContent/assets/pack.json",
+      "section": "colorAtlas",
+      "asset": "sceneBtn",
+      "sprite": "s3_b.png"
+    },
+    "5": {
+      "file": "WebContent/assets/pack.json",
+      "section": "colorAtlas",
+      "asset": "sceneBtn",
+      "sprite": "s1_c.png"
+    },
+    "6": {
+      "file": "WebContent/assets/pack.json",
+      "section": "colorAtlas",
+      "asset": "sceneBtn",
+      "sprite": "s1_d.png"
     }
   },
   "prefab-table": {}

@@ -96,7 +96,7 @@ Preload.prototype.preload = function() {
 	this.load.pack("preSetName","assets/pack.json");
 	this.load.pack("over","assets/pack.json");
 	this.load.pack("colorAtlas","assets/pack.json");
-	this.load.pack("ninePic","assets/pack.json");
+	this.load.pack("common","assets/pack.json");
 	// this.load.bitmapFont("yellow", "assets/fnt/yellow_0.png", "assets/fnt/yellow.xml");
 	// this.load.bitmapFont("myBetText", "assets/fnt/mine_0.png", "assets/fnt/mine.xml");
 	// this.load.bitmapFont("totalBetText", "assets/fnt/total_0.png", "assets/fnt/total.xml");

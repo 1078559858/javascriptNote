@@ -1,0 +1,104 @@
+{
+  "canvas-version": 2,
+  "settings": {
+    "className": "prefab_0",
+    "sceneWidth": 640,
+    "sceneHeight": 1008,
+    "generateOnSave": true,
+    "enableStepping": false,
+    "lang": "JAVA_SCRIPT",
+    "baseClass": "Phaser.Group",
+    "backgroundColor": [
+      180,
+      180,
+      180
+    ],
+    "gridColor": [
+      200,
+      200,
+      200
+    ],
+    "showGrid": true
+  },
+  "stateSettings": {
+    "stageBackgroundColor": [
+      0,
+      0,
+      0
+    ],
+    "autoLoad": true,
+    "preloadSpriteId": "",
+    "preloadSprite_direction": 0,
+    "load.pack": []
+  },
+  "world": {
+    "type": "group",
+    "id": "fac62206-b328-410e-9938-b2c9ad801b1e",
+    "info": {
+      "editorName": "prefab_0",
+      "setAll": [],
+      "children": [{
+        "type": "group",
+        "id": "4787a9c3-c374-409f-a922-28427a4bbaaf",
+        "info": {
+          "editorName": "group",
+          "setAll": [],
+          "children": [
+            {
+              "type": "atlas-sprite",
+              "id": "0ffd6e16-d2eb-46d6-a610-f31679924476",
+              "asset": "0",
+              "info": {"editorName": "s0_1_png"}
+            },
+            {
+              "type": "atlas-sprite",
+              "id": "e3efcf96-ea8a-4383-b342-65a43ad168d2",
+              "asset": "1",
+              "info": {
+                "editorName": "boy_png",
+                "x": 208,
+                "y": 164,
+                "scale.x": 2,
+                "scale.y": 2
+              }
+            },
+            {
+              "type": "button",
+              "id": "20f0368f-b182-4df1-9e5d-b62a7f1b8680",
+              "asset": "2",
+              "info": {
+                "editorName": "btnBegain",
+                "editorPublic": true,
+                "x": 190,
+                "y": 870,
+                "callback": "this.clickBegain"
+              }
+            }
+          ]
+        }
+      }]
+    }
+  },
+  "type": "GROUP",
+  "asset-table": {
+    "0": {
+      "file": "WebContent/assets/pack.json",
+      "section": "colorAtlas",
+      "asset": "scene0",
+      "sprite": "s0_1.png"
+    },
+    "1": {
+      "file": "WebContent/assets/pack.json",
+      "section": "colorAtlas",
+      "asset": "ip",
+      "sprite": "boy.png"
+    },
+    "2": {
+      "file": "WebContent/assets/pack.json",
+      "section": "colorAtlas",
+      "asset": "scene0",
+      "sprite": "s0_3.png"
+    }
+  },
+  "prefab-table": {}
+}

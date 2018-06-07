@@ -2,8 +2,8 @@
   "canvas-version": 2,
   "settings": {
     "className": "preloadScene",
-    "sceneWidth": 750,
-    "sceneHeight": 1206,
+    "sceneWidth": 640,
+    "sceneHeight": 1008,
     "generateOnSave": true,
     "enableStepping": false,
     "lang": "JAVA_SCRIPT",
@@ -46,39 +46,39 @@
           "children": [
             {
               "type": "image",
-              "id": "5d58e32b-372b-441d-9ce6-3dc3cc8a4142",
+              "id": "118d657a-5d27-4902-b2b7-f2c4459f557e",
               "asset": "0",
-              "info": {"editorName": "Load_bg"}
-            },
-            {
-              "type": "image",
-              "id": "26fd8b0c-c202-4a19-bb7b-4bf5d8b86b8d",
-              "asset": "1",
-              "info": {
-                "editorName": "temp1",
-                "x": 200,
-                "y": 478
-              }
+              "info": {"editorName": "bg"}
             },
             {
               "type": "image",
               "id": "65af7c6b-aac2-4787-ae60-46a16cb14b25",
-              "asset": "2",
+              "asset": "1",
               "info": {
                 "editorName": "processbar",
                 "editorPublic": true,
-                "x": 238,
-                "y": 950
+                "x": 182.99996948242188,
+                "y": 804
               }
             },
             {
               "type": "image",
               "id": "4d125b39-55ac-498f-96d0-040ff0f4fb58",
-              "asset": "3",
+              "asset": "2",
               "info": {
                 "editorName": "logo",
                 "x": 34,
                 "y": 26
+              }
+            },
+            {
+              "type": "image",
+              "id": "43a6dec6-baea-4c98-967d-f3baf63fd921",
+              "asset": "3",
+              "info": {
+                "editorName": "loadingTitle",
+                "x": 144.99996948242188,
+                "y": 379.0000305175781
               }
             }
           ]
@@ -91,22 +91,22 @@
     "0": {
       "file": "WebContent/assets/pack.json",
       "section": "boot",
-      "asset": "Load_bg"
+      "asset": "bg"
     },
     "1": {
-      "file": "WebContent/assets/pack.json",
-      "section": "temp",
-      "asset": "temp2"
-    },
-    "2": {
       "file": "WebContent/assets/pack.json",
       "section": "boot",
       "asset": "processbar2"
     },
-    "3": {
+    "2": {
       "file": "WebContent/assets/pack.json",
       "section": "boot",
       "asset": "logo"
+    },
+    "3": {
+      "file": "WebContent/assets/pack.json",
+      "section": "boot",
+      "asset": "loadingTitle"
     }
   },
   "prefab-table": {}

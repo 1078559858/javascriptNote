@@ -18,64 +18,42 @@
 function prefab_2(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyType) {
 	
 	Phaser.Group.call(this, aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyType);
-	this.game.add.sprite(105, 0, 'common1', 'heiban.png', this);
+	var _posterBG = this.game.add.sprite(0, 0, 'posterBG', null, this);
+	_posterBG.alpha = 0.0;
 	
-	var _textTitle = this.game.add.text(142, 239, '2、2岁的宝宝想爬楼梯,\n     此时你会?', {"font":"bold 45px Arial","fill":"#ffffff"}, this);
+	var _boy2_png = this.game.add.sprite(1, 747, 'ip', 'boy2.png', this);
+	_boy2_png.scale.setTo(1.3, 1.3);
 	
-	var _temp = this.game.add.sprite(0, 0, 'temp3', null, this);
-	_temp.scale.setTo(0.3, 0.3);
+	this.game.add.sprite(110, 156, 'sceneTitle', 's2_title.png', this);
 	
-	var _group1 = this.game.add.group(this);
-	_group1.position.setTo(55, 570);
-	
-	var _dhk_png4 = this.game.add.button(0, 0, 'common1', this.clickBtn, this, null, 'dhk.png', null, null, _group1);
-	_dhk_png4.data = {
+	var _btn_a = this.game.add.button(111, 419, 'sceneProblem', this.clickBtn, this, null, 's2_a.png', null, null, this);
+	_btn_a.data = {
 	"value":"a"
 	};
 	
-	this.game.add.text(122, 14, 'A:他想爬就爬，稍微看着\n   点就行了', {"font":"bold 36px Arial","fill":"#ffffff"}, _group1);
-	
-	var _group2 = this.game.add.group(this);
-	_group2.position.setTo(55, 720);
-	
-	var _dhk_png = this.game.add.button(0, 0, 'common1', this.clickBtn, this, null, 'dhk.png', null, null, _group2);
-	_dhk_png.data = {
+	var _btn_b = this.game.add.button(340, 419, 'sceneProblem', this.clickBtn, this, null, 's2_b.png', null, null, this);
+	_btn_b.data = {
 	"value":"b"
 	};
 	
-	this.game.add.text(122, 14, 'B:不许爬，包衣服和手都\n    弄脏了', {"font":"bold 36px Arial","fill":"#ffffff"}, _group2);
-	
-	var _group3 = this.game.add.group(this);
-	_group3.position.setTo(55, 870);
-	
-	var _dhk_png1 = this.game.add.button(0, 0, 'common1', this.clickBtn, this, null, 'dhk.png', null, null, _group3);
-	_dhk_png1.data = {
+	var _btn_c = this.game.add.button(111, 603, 'sceneProblem', this.clickBtn, this, null, 's2_c.png', null, null, this);
+	_btn_c.data = {
 	"value":"c"
 	};
 	
-	this.game.add.text(122, 33, 'C:跟在宝宝背后保护Ta', {"font":"bold 36px Arial","fill":"#ffffff"}, _group3);
-	
-	var _group4 = this.game.add.group(this);
-	_group4.position.setTo(55, 1020);
-	
-	var _dhk_png2 = this.game.add.button(0, 0, 'common1', this.clickBtn, this, null, 'dhk.png', null, null, _group4);
-	_dhk_png2.data = {
+	var _btn_d = this.game.add.button(340, 603, 'sceneProblem', this.clickBtn, this, null, 's2_d.png', null, null, this);
+	_btn_d.data = {
 	"value":"d"
 	};
-	
-	this.game.add.text(122, 33, 'D:懒得拾掇，交给Ta爹', {"font":"bold 36px Arial","fill":"#ffffff"}, _group4);
-	
-	this.game.add.sprite(275, 0, 'ip', 'huli.png', this);
 	
 	
 	
 	// public fields
 	
-	this.fTextTitle = _textTitle;
-	this.fGroup1 = _group1;
-	this.fGroup2 = _group2;
-	this.fGroup3 = _group3;
-	this.fGroup4 = _group4;
+	this.fBtn_a = _btn_a;
+	this.fBtn_b = _btn_b;
+	this.fBtn_c = _btn_c;
+	this.fBtn_d = _btn_d;
 	
 }
 

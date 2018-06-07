@@ -20,20 +20,14 @@
     },
     {
       "type": "image",
-      "key": "Load_bg",
-      "url": "assets/image/loading/Load_bg.jpg",
-      "overwrite": false
-    },
-    {
-      "type": "image",
-      "key": "bird",
-      "url": "assets/image/loading/bird.png",
-      "overwrite": false
-    },
-    {
-      "type": "image",
       "key": "logo",
       "url": "assets/image/loading/logo.png",
+      "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "loadingTitle",
+      "url": "assets/image/loading/loadingTitle.png",
       "overwrite": false
     }
   ],
@@ -87,22 +81,9 @@
       "key": "nullLittle",
       "url": "assets/image/temp/nullLittle.png",
       "overwrite": false
-    },
-    {
-      "type": "image",
-      "key": "temp2",
-      "url": "assets/image/temp/temp2.png",
-      "overwrite": false
     }
   ],
   "colorAtlas": [
-    {
-      "type": "atlas",
-      "key": "color",
-      "textureURL": "assets/image/colorAtlas/color.png",
-      "atlasURL": "assets/image/colorAtlas/color.json",
-      "format": "TEXTURE_ATLAS_JSON_ARRAY"
-    },
     {
       "type": "atlas",
       "key": "common1",
@@ -123,66 +104,66 @@
       "textureURL": "assets/image/colorAtlas/eightProblems.png",
       "atlasURL": "assets/image/colorAtlas/eightProblems.json",
       "format": "TEXTURE_ATLAS_JSON_ARRAY"
+    },
+    {
+      "type": "atlas",
+      "key": "scene0",
+      "textureURL": "assets/image/colorAtlas/scene0.png",
+      "atlasURL": "assets/image/colorAtlas/scene0.json",
+      "format": "TEXTURE_ATLAS_JSON_ARRAY"
+    },
+    {
+      "type": "atlas",
+      "key": "scene2",
+      "textureURL": "assets/image/colorAtlas/scene2.png",
+      "atlasURL": "assets/image/colorAtlas/scene2.json",
+      "format": "TEXTURE_ATLAS_JSON_ARRAY"
+    },
+    {
+      "type": "atlas",
+      "key": "scene3",
+      "textureURL": "assets/image/colorAtlas/scene3.png",
+      "atlasURL": "assets/image/colorAtlas/scene3.json",
+      "format": "TEXTURE_ATLAS_JSON_ARRAY"
+    },
+    {
+      "type": "atlas",
+      "key": "sceneBtn",
+      "textureURL": "assets/image/colorAtlas/sceneBtn.png",
+      "atlasURL": "assets/image/colorAtlas/sceneBtn.json",
+      "format": "TEXTURE_ATLAS_JSON_ARRAY"
+    },
+    {
+      "type": "atlas",
+      "key": "sceneProblem",
+      "textureURL": "assets/image/colorAtlas/sceneProblem.png",
+      "atlasURL": "assets/image/colorAtlas/sceneProblem.json",
+      "format": "TEXTURE_ATLAS_JSON_ARRAY"
+    },
+    {
+      "type": "atlas",
+      "key": "sceneTitle",
+      "textureURL": "assets/image/colorAtlas/sceneTitle.png",
+      "atlasURL": "assets/image/colorAtlas/sceneTitle.json",
+      "format": "TEXTURE_ATLAS_JSON_ARRAY"
     }
   ],
-  "ninePic": [
+  "common": [
     {
       "type": "image",
-      "key": "nine_1",
-      "url": "assets/image/ninePic/nine_1.png",
+      "key": "Dialog_mc",
+      "url": "assets/image/common/Dialog_mc.png",
       "overwrite": false
     },
     {
       "type": "image",
-      "key": "nine_2",
-      "url": "assets/image/ninePic/nine_2.png",
-      "overwrite": false
-    },
-    {
-      "type": "image",
-      "key": "nine_3",
-      "url": "assets/image/ninePic/nine_3.png",
-      "overwrite": false
-    },
-    {
-      "type": "image",
-      "key": "nine_4",
-      "url": "assets/image/ninePic/nine_4.png",
-      "overwrite": false
-    },
-    {
-      "type": "image",
-      "key": "nine_5",
-      "url": "assets/image/ninePic/nine_5.png",
-      "overwrite": false
-    },
-    {
-      "type": "image",
-      "key": "nine_6",
-      "url": "assets/image/ninePic/nine_6.png",
-      "overwrite": false
-    },
-    {
-      "type": "image",
-      "key": "nine_7",
-      "url": "assets/image/ninePic/nine_7.png",
-      "overwrite": false
-    },
-    {
-      "type": "image",
-      "key": "nine_8",
-      "url": "assets/image/ninePic/nine_8.png",
-      "overwrite": false
-    },
-    {
-      "type": "image",
-      "key": "nine_9",
-      "url": "assets/image/ninePic/nine_9.png",
+      "key": "posterBG",
+      "url": "assets/image/common/posterBG.png",
       "overwrite": false
     }
   ],
   "meta": {
-    "generated": "1527788586292",
+    "generated": "1528376970958",
     "app": "Phaser Editor",
     "url": "http://phasereditor.boniatillo.com",
     "version": "1.0",

@@ -1,0 +1,44 @@
+{"frames": [
+
+{
+	"filename": "s2_a.png",
+	"frame": {"x":0,"y":0,"w":222,"h":162},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":222,"h":162},
+	"sourceSize": {"w":222,"h":162}
+},
+{
+	"filename": "s2_b.png",
+	"frame": {"x":222,"y":0,"w":223,"h":162},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":223,"h":162},
+	"sourceSize": {"w":223,"h":162}
+},
+{
+	"filename": "s2_c.png",
+	"frame": {"x":0,"y":162,"w":222,"h":163},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":222,"h":163},
+	"sourceSize": {"w":222,"h":163}
+},
+{
+	"filename": "s2_d.png",
+	"frame": {"x":222,"y":162,"w":223,"h":162},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":223,"h":162},
+	"sourceSize": {"w":223,"h":162}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "sceneProblem.png",
+	"format": "RGBA8888",
+	"size": {"w":445,"h":325},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:2b3f6bf19659e06d0f8812c4e9ed2130:622324433cc305271958b7b1b45c4264:698b56f056e428a081b8e5dc02ef3bb9$"
+}
+}

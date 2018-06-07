@@ -2,8 +2,8 @@
   "canvas-version": 2,
   "settings": {
     "className": "mainScene",
-    "sceneWidth": 750,
-    "sceneHeight": 1206,
+    "sceneWidth": 640,
+    "sceneHeight": 1008,
     "generateOnSave": true,
     "enableStepping": false,
     "lang": "JAVA_SCRIPT",
@@ -45,56 +45,10 @@
           "setAll": [],
           "children": [
             {
-              "type": "group",
-              "id": "acd5fe64-b902-4069-9f27-fd53b423d951",
-              "info": {
-                "editorName": "groupColor",
-                "editorPublic": true,
-                "x": -55,
-                "y": -40,
-                "setAll": [],
-                "children": [
-                  {
-                    "type": "atlas-sprite",
-                    "id": "cbfc1340-5810-4f76-9fac-ecb222f61211",
-                    "asset": "0",
-                    "info": {
-                      "editorName": "white_png",
-                      "x": 30,
-                      "y": -10,
-                      "scale.x": 2.5,
-                      "scale.y": 8.5
-                    }
-                  },
-                  {
-                    "type": "atlas-sprite",
-                    "id": "edadc6ff-8dc8-4957-8161-a30bfa884807",
-                    "asset": "1",
-                    "info": {
-                      "editorName": "colorBottom",
-                      "editorPublic": true,
-                      "x": 30,
-                      "y": -17,
-                      "scale.x": 2.5,
-                      "scale.y": 8.5,
-                      "alpha": 0
-                    }
-                  },
-                  {
-                    "type": "atlas-sprite",
-                    "id": "d384c675-3f9a-4b45-9d15-dc5061a5449c",
-                    "asset": "2",
-                    "info": {
-                      "editorName": "color_up",
-                      "editorPublic": true,
-                      "x": 812,
-                      "y": -19,
-                      "scale.x": 2.5,
-                      "scale.y": 8.5
-                    }
-                  }
-                ]
-              }
+              "type": "image",
+              "id": "a1ddfbc2-e2af-4261-9d10-a107ab31ec09",
+              "asset": "0",
+              "info": {"editorName": "posterBG"}
             },
             {
               "type": "prefab",
@@ -113,9 +67,10 @@
               "id": "a2cf1b3c-9982-4dd6-9ce3-f416177e4f38",
               "info": {
                 "editorName": "group2",
+                "editorPick": false,
                 "editorPublic": true,
-                "x": 751,
-                "y": 0
+                "x": 1429,
+                "y": 2
               }
             },
             {
@@ -197,18 +152,8 @@
             },
             {
               "type": "button",
-              "id": "0b36a72d-b16b-4765-92f4-15d4a682684d",
-              "asset": "3",
-              "info": {
-                "editorName": "bgBtn",
-                "editorPublic": true,
-                "alpha": 0
-              }
-            },
-            {
-              "type": "button",
               "id": "c9511a7e-7e21-470a-8cef-9df4f4f489dd",
-              "asset": "4",
+              "asset": "1",
               "info": {
                 "editorName": "music_btn",
                 "editorPublic": true,
@@ -220,22 +165,33 @@
             {
               "type": "prefab",
               "prefab": "9",
-              "id": "f491f675-0abb-41a2-86dd-4a2b04523ddd",
+              "id": "6f994a64-f0e1-45a0-87cc-7183a9c78929",
               "info": {
-                "editorName": "groupAD",
+                "editorName": "groupSetName",
                 "editorPublic": true,
-                "x": 0,
-                "y": 0
+                "x": -871,
+                "y": -13
+              }
+            },
+            {
+              "type": "button",
+              "id": "0b36a72d-b16b-4765-92f4-15d4a682684d",
+              "asset": "2",
+              "info": {
+                "editorName": "bgBtn",
+                "editorPick": false,
+                "editorPublic": true,
+                "scale.x": 0
               }
             },
             {
               "type": "prefab",
               "prefab": "10",
-              "id": "6f994a64-f0e1-45a0-87cc-7183a9c78929",
+              "id": "ff5da2e4-4bba-41fe-b349-b62dfeb47f5d",
               "info": {
-                "editorName": "groupSetName",
+                "editorName": "group0",
                 "editorPublic": true,
-                "x": -751,
+                "x": 0,
                 "y": 0
               }
             }
@@ -248,31 +204,18 @@
   "asset-table": {
     "0": {
       "file": "WebContent/assets/pack.json",
-      "section": "colorAtlas",
-      "asset": "color",
-      "sprite": "white.png"
+      "section": "common",
+      "asset": "posterBG"
     },
     "1": {
       "file": "WebContent/assets/pack.json",
-      "section": "colorAtlas",
-      "asset": "color",
-      "sprite": "fde500.png"
+      "section": "preSetName",
+      "asset": "music_btn"
     },
     "2": {
       "file": "WebContent/assets/pack.json",
-      "section": "colorAtlas",
-      "asset": "color",
-      "sprite": "404040.png"
-    },
-    "3": {
-      "file": "WebContent/assets/pack.json",
       "section": "boot",
       "asset": "bg"
-    },
-    "4": {
-      "file": "WebContent/assets/pack.json",
-      "section": "preSetName",
-      "asset": "music_btn"
     }
   },
   "prefab-table": {
@@ -285,7 +228,7 @@
     "6": "WebContent/assets/canvas/prefab/prefab_7.canvas",
     "7": "WebContent/assets/canvas/prefab/prefab_8.canvas",
     "8": "WebContent/assets/canvas/prefab/overPrefab.canvas",
-    "9": "WebContent/assets/canvas/prefab/adPrefab.canvas",
-    "10": "WebContent/assets/canvas/prefab/pre_1.canvas"
+    "9": "WebContent/assets/canvas/prefab/pre_1.canvas",
+    "10": "WebContent/assets/canvas/prefab/prefab_0.canvas"
   }
 }

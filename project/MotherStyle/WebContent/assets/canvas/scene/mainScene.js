@@ -9,8 +9,7 @@
 /**
  * mainScene.
  * @param {Phaser.Game} aGame A reference to the currently running game.
- * @param {Phaser.Group} aParent The parent Group (or other {@link DisplayObject}) that this group will be added to.
-    If undefined/unspecified the Group will be added to the {@link Phaser.Game#world Game World}; if null the Group will not be added to any parent.
+ * @param {Phaser.Group} aParent The parent Group (or other {@link DisplayObject}) that this group will be added to.    If undefined/unspecified the Group will be added to the {@link Phaser.Game#world Game World}; if null the Group will not be added to any parent.
  * @param {string} aName A name for this group. Not used internally but useful for debugging.
  * @param {boolean} aAddToStage If true this group will be added directly to the Game.Stage instead of Game.World.
  * @param {boolean} aEnableBody If true all Sprites created with {@link #create} or {@link #createMulitple} will have a physics body created on them. Change the body type with {@link #physicsBodyType}.
@@ -19,24 +18,13 @@
 function mainScene(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyType) {
 	
 	Phaser.Group.call(this, aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyType);
-	var _groupColor = this.game.add.group(this);
-	_groupColor.position.setTo(-55, -40);
-	
-	var _white_png = this.game.add.sprite(30, -10, 'color', 'white.png', _groupColor);
-	_white_png.scale.setTo(2.5, 8.5);
-	
-	var _colorBottom = this.game.add.sprite(30, -17, 'color', 'fde500.png', _groupColor);
-	_colorBottom.scale.setTo(2.5, 8.5);
-	_colorBottom.alpha = 0.0;
-	
-	var _color_up = this.game.add.sprite(812, -19, 'color', '404040.png', _groupColor);
-	_color_up.scale.setTo(2.5, 8.5);
+	this.game.add.sprite(0, 0, 'posterBG', null, this);
 	
 	var _group1 = new prefab_1(this.game, this);
 	_group1.position.setTo(751, 0);
 	
 	var _group2 = new prefab_2(this.game, this);
-	_group2.position.setTo(751, 0);
+	_group2.position.setTo(1429, 2);
 	
 	var _group3 = new prefab_3(this.game, this);
 	_group3.position.setTo(751, 0);
@@ -59,23 +47,20 @@ function mainScene(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBody
 	var _groupOver = new overPrefab(this.game, this);
 	_groupOver.position.setTo(751, 0);
 	
-	var _bgBtn = this.game.add.button(0, 0, 'bg', null, this, null, null, null, null, this);
-	_bgBtn.alpha = 0.0;
-	
 	var _music_btn = this.game.add.button(859, -23, 'music_btn', this.clickMusic, this, null, null, null, null, this);
 	
-	var _groupAD = new adPrefab(this.game, this);
-	
 	var _groupSetName = new pre_1(this.game, this);
-	_groupSetName.position.setTo(-751, 0);
+	_groupSetName.position.setTo(-871, -13);
+	
+	var _bgBtn = this.game.add.button(0, 0, 'bg', null, this, null, null, null, null, this);
+	_bgBtn.scale.setTo(0.0, 1.0);
+	
+	var _group0 = new prefab_0(this.game, this);
 	
 	
 	
 	// public fields
 	
-	this.fGroupColor = _groupColor;
-	this.fColorBottom = _colorBottom;
-	this.fColor_up = _color_up;
 	this.fGroup1 = _group1;
 	this.fGroup2 = _group2;
 	this.fGroup3 = _group3;
@@ -85,10 +70,10 @@ function mainScene(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBody
 	this.fGroup7 = _group7;
 	this.fGroup8 = _group8;
 	this.fGroupOver = _groupOver;
-	this.fBgBtn = _bgBtn;
 	this.fMusic_btn = _music_btn;
-	this.fGroupAD = _groupAD;
 	this.fGroupSetName = _groupSetName;
+	this.fBgBtn = _bgBtn;
+	this.fGroup0 = _group0;
 	
 }
 
@@ -129,7 +114,7 @@ mainScene.prototype.appearGroup2 = function (bObj, eObj) {
 
 	var group = eObj;
 	group.x = 0;
-	group.setBackground();
+	//group.setBackground();
 
 	for(var i = 0; i < group.length; i++){
 		this.setTempAction1(group.getChildAt(i));
@@ -209,9 +194,9 @@ mainScene.prototype.setTempAction1 = function (group) {
 	group.x += gGameConf.width;
 
 	var time = Math.random()*200;
-	var tweenA = this.game.add.tween(group).to({x:group.x - 350}, 100, Phaser.Easing.Linear.None, true);
+	var tweenA = this.game.add.tween(group).to({x:group.x - 300}, 100, Phaser.Easing.Linear.None, true);
 	tweenA.onComplete.addOnce(function () {
-		var tweenB = gGame.add.tween(group).to({x:group.x - 390}, 1600 + time, Phaser.Easing.Elastic.Out, true);
+		var tweenB = gGame.add.tween(group).to({x:group.x - 340}, 1600 + time, Phaser.Easing.Elastic.Out, true);
 		tweenB.onComplete.addOnce(function () {
 			gGame.gameScene.fBgBtn.inputEnabled = false;
 		})

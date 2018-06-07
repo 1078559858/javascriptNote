@@ -18,56 +18,43 @@
 function prefab_1(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyType) {
 	
 	Phaser.Group.call(this, aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyType);
-	this.game.add.sprite(105, 0, 'common1', 'heiban.png', this);
+	var _posterBG = this.game.add.sprite(0, 0, 'posterBG', null, this);
+	_posterBG.alpha = 0.0;
 	
-	this.game.add.text(167, 254, '1、陪孩子学习时，哪句\n     话最符合你的心情？', {"font":"bold 40px Arial","fill":"#ffffff"}, this);
+	this.game.add.sprite(110, 156, 'sceneTitle', 's1_title.png', this);
 	
-	var _temp = this.game.add.sprite(23, 17, 'temp3', null, this);
-	_temp.scale.setTo(0.3, 0.3);
+	var _boy2_png = this.game.add.sprite(1, 747, 'ip', 'boy2.png', this);
+	_boy2_png.scale.setTo(1.3, 1.3);
 	
-	this.game.add.sprite(275, 0, 'ip', 'bird.png', this);
-	
-	var _group1 = this.game.add.group(this);
-	_group1.position.setTo(66, 579);
-	
-	var _p11_jpg1 = this.game.add.button(0, 0, 'eightProblems', this.clickBtn, this, null, 'p11.jpg', null, null, _group1);
-	_p11_jpg1.data = {
+	var _btn_a = this.game.add.button(95, 380, 'sceneBtn', this.clickBtn, this, null, 's1_a.png', null, null, this);
+	_btn_a.data = {
 	"value":"a"
 	};
 	
-	this.game.add.text(6, 245, 'A:这么笨，是时候打一下了。', {"font":"bold 20px Arial","fill":"#ffffff"}, _group1);
-	
-	var _group2 = this.game.add.group(this);
-	_group2.position.setTo(408, 579);
-	
-	var _p11_jpg = this.game.add.button(0, 0, 'eightProblems', this.clickBtn, this, null, 'p12.jpg', null, null, _group2);
-	_p11_jpg.data = {
+	var _btn_b = this.game.add.button(95, 493, 'sceneBtn', this.clickBtn, this, null, 's1_b.png', null, null, this);
+	_btn_b.data = {
 	"value":"b"
 	};
 	
-	this.game.add.text(28, 244, 'B:不管怎样，不能熬夜！', {"font":"bold 20px Arial","fill":"#ffffff"}, _group2);
-	
-	var _group3 = this.game.add.group(this);
-	_group3.position.setTo(66, 887);
-	
-	var _p11_jpg2 = this.game.add.button(0, 0, 'eightProblems', this.clickBtn, this, null, 'p13.jpg', null, null, _group3);
-	_p11_jpg2.data = {
+	var _btn_c = this.game.add.button(95, 606, 'sceneBtn', this.clickBtn, this, null, 's1_c.png', null, null, this);
+	_btn_c.data = {
 	"value":"c"
 	};
 	
-	this.game.add.text(19, 244, 'C:头可断，剧不可不看！', {"font":"bold 20px Arial","fill":"#ffffff"}, _group3);
-	
-	var _group4 = this.game.add.group(this);
-	_group4.position.setTo(408, 887);
-	
-	var _p11_jpg3 = this.game.add.button(0, 0, 'eightProblems', this.clickBtn, this, null, 'p14.jpg', null, null, _group4);
-	_p11_jpg3.data = {
+	var _btn_d = this.game.add.button(95, 720, 'sceneBtn', this.clickBtn, this, null, 's1_d.png', null, null, this);
+	_btn_d.data = {
 	"value":"d"
 	};
 	
-	this.game.add.text(49, 244, 'D:孩他爹，赶快去！', {"font":"bold 20px Arial","fill":"#ffffff"}, _group4);
 	
+	this.position.setTo(1, 3);
 	
+	// public fields
+	
+	this.fBtn_a = _btn_a;
+	this.fBtn_b = _btn_b;
+	this.fBtn_c = _btn_c;
+	this.fBtn_d = _btn_d;
 	
 }
 

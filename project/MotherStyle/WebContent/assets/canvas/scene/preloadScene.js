@@ -18,13 +18,13 @@
 function preloadScene(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyType) {
 	
 	Phaser.Group.call(this, aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyType);
-	this.game.add.sprite(0, 0, 'Load_bg', null, this);
+	this.game.add.sprite(0, 0, 'bg', null, this);
 	
-	this.game.add.sprite(200, 478, 'temp2', null, this);
-	
-	var _processbar = this.game.add.sprite(238, 950, 'processbar2', null, this);
+	var _processbar = this.game.add.sprite(183, 804, 'processbar2', null, this);
 	
 	this.game.add.sprite(34, 26, 'logo', null, this);
+	
+	this.game.add.sprite(145, 379, 'loadingTitle', null, this);
 	
 	
 	

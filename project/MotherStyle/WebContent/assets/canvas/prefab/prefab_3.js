@@ -18,64 +18,43 @@
 function prefab_3(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyType) {
 	
 	Phaser.Group.call(this, aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyType);
-	this.game.add.sprite(105, -3, 'common1', 'heiban.png', this);
+	var _posterBG = this.game.add.sprite(0, 0, 'posterBG', null, this);
+	_posterBG.alpha = 0.0;
 	
-	var _textTitle = this.game.add.text(139, 248, '3、宝宝的小卧室，你最\n     希望装成什么风格?', {"font":"bold 45px Arial","fill":"#ffffff"}, this);
+	this.game.add.sprite(110, 156, 'sceneTitle', 's3_title.png', this);
 	
-	var _temp = this.game.add.sprite(0, 0, 'temp3', null, this);
-	_temp.scale.setTo(0.3, 0.3);
+	var _boy2_png = this.game.add.sprite(1, 747, 'ip', 'boy2.png', this);
+	_boy2_png.scale.setTo(1.3, 1.3);
 	
-	var _group1 = this.game.add.group(this);
-	_group1.position.setTo(56, 567);
-	
-	var _dhk_png = this.game.add.button(0, 0, 'common1', this.clickBtn, this, null, 'dhk.png', null, null, _group1);
-	_dhk_png.data = {
+	var _btn_a = this.game.add.button(95, 380, 'sceneBtn', this.clickBtn, this, null, 's3_a.png', null, null, this);
+	_btn_a.data = {
 	"value":"a"
 	};
 	
-	this.game.add.text(122, 33, 'A:小猪佩奇社会风', {"font":"bold 36px Arial","fill":"#ffffff"}, _group1);
-	
-	var _group2 = this.game.add.group(this);
-	_group2.position.setTo(56, 717);
-	
-	var _dhk_png1 = this.game.add.button(0, 0, 'common1', this.clickBtn, this, null, 'dhk.png', null, null, _group2);
-	_dhk_png1.data = {
+	var _btn_b = this.game.add.button(95, 493, 'sceneBtn', this.clickBtn, this, null, 's3_b.png', null, null, this);
+	_btn_b.data = {
 	"value":"b"
 	};
 	
-	this.game.add.text(122, 33, 'B:幻想童话风', {"font":"bold 36px Arial","fill":"#ffffff"}, _group2);
-	
-	var _group3 = this.game.add.group(this);
-	_group3.position.setTo(56, 867);
-	
-	var _dhk_png2 = this.game.add.button(0, 0, 'common1', this.clickBtn, this, null, 'dhk.png', null, null, _group3);
-	_dhk_png2.data = {
+	var _btn_c = this.game.add.button(95, 606, 'sceneBtn', this.clickBtn, this, null, 's1_c.png', null, null, this);
+	_btn_c.data = {
 	"value":"c"
 	};
 	
-	this.game.add.text(122, 33, 'C:运动风', {"font":"bold 36px Arial","fill":"#ffffff"}, _group3);
-	
-	var _group4 = this.game.add.group(this);
-	_group4.position.setTo(56, 1017);
-	
-	var _dhk_png3 = this.game.add.button(0, 0, 'common1', this.clickBtn, this, null, 'dhk.png', null, null, _group4);
-	_dhk_png3.data = {
+	var _btn_d = this.game.add.button(95, 720, 'sceneBtn', this.clickBtn, this, null, 's1_d.png', null, null, this);
+	_btn_d.data = {
 	"value":"d"
 	};
 	
-	this.game.add.text(122, 33, 'D:懒得拾掇，交给Ta爹', {"font":"bold 36px Arial","fill":"#ffffff"}, _group4);
 	
-	this.game.add.sprite(319, 0, 'ip', 'boy.png', this);
-	
-	
+	this.position.setTo(0, 4);
 	
 	// public fields
 	
-	this.fTextTitle = _textTitle;
-	this.fGroup1 = _group1;
-	this.fGroup2 = _group2;
-	this.fGroup3 = _group3;
-	this.fGroup4 = _group4;
+	this.fBtn_a = _btn_a;
+	this.fBtn_b = _btn_b;
+	this.fBtn_c = _btn_c;
+	this.fBtn_d = _btn_d;
 	
 }
 
