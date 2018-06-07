@@ -114,20 +114,6 @@
     },
     {
       "type": "atlas",
-      "key": "scene2",
-      "textureURL": "assets/image/colorAtlas/scene2.png",
-      "atlasURL": "assets/image/colorAtlas/scene2.json",
-      "format": "TEXTURE_ATLAS_JSON_ARRAY"
-    },
-    {
-      "type": "atlas",
-      "key": "scene3",
-      "textureURL": "assets/image/colorAtlas/scene3.png",
-      "atlasURL": "assets/image/colorAtlas/scene3.json",
-      "format": "TEXTURE_ATLAS_JSON_ARRAY"
-    },
-    {
-      "type": "atlas",
       "key": "sceneBtn",
       "textureURL": "assets/image/colorAtlas/sceneBtn.png",
       "atlasURL": "assets/image/colorAtlas/sceneBtn.json",
@@ -163,7 +149,7 @@
     }
   ],
   "meta": {
-    "generated": "1528376970958",
+    "generated": "1528377595477",
     "app": "Phaser Editor",
     "url": "http://phasereditor.boniatillo.com",
     "version": "1.0",
