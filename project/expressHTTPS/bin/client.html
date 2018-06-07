@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name=viewport content="width=device-width,initial-scale=1, user-scalable=no" />
+
+    <title>火猫——战英雄</title>
+
+</head>
+<body>
+<script type="text/javascript">
+	var ws = new WebSocket('wss://localhost:15449/');
+	ws.onopen = function(evt) {
+		console.log("Connection open ...");
+		ws.send("Hello WebSockets!");
+	};
+
+	ws.onmessage = function(evt) {
+		console.log( "Received Message: " + evt.data);
+		ws.close();
+	};
+
+	ws.onclose = function(evt) {
+		console.log("Connection closed.");
+	};
+
+
+
+</script>
+
+
+</body>
+</html>
