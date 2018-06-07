@@ -104,5 +104,5 @@ prefab_8.prototype.clickBtn = function (btn) {
 };
 
 prefab_8.prototype.setBackground = function () {
-	gGame.gameScene.setColorChange( '995ba3');
+
 };
