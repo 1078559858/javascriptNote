@@ -1,6 +1,6 @@
 # -*-coding:utf-8-*-
-pic = 's5.png';
-name = 's5';
+pic = 's4.png';
+name = 's4';
 
 from PIL import Image
 im = Image.open(pic)
