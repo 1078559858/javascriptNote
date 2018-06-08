@@ -2,8 +2,8 @@
   "canvas-version": 2,
   "settings": {
     "className": "prefab_7",
-    "sceneWidth": 750,
-    "sceneHeight": 1206,
+    "sceneWidth": 640,
+    "sceneHeight": 1008,
     "generateOnSave": true,
     "enableStepping": false,
     "lang": "JAVA_SCRIPT",
@@ -45,185 +45,85 @@
           "setAll": [],
           "children": [
             {
-              "type": "atlas-sprite",
-              "id": "554bd339-27a2-4270-b9ce-c24d2827cca7",
+              "type": "image",
+              "id": "c4100ab1-b24a-4abf-b4a3-3e4635e06653",
               "asset": "0",
               "info": {
-                "editorName": "heiban_png",
-                "x": 105
-              }
-            },
-            {
-              "type": "text",
-              "id": "8698b2df-16fc-4e32-9766-0baf7f02b5f7",
-              "info": {
-                "editorName": "text",
-                "x": 165.1640625,
-                "y": 236,
-                "text": "6、逢年过节收到给孩子\r\n     的10万元压岁钱后，\r\n     你会？",
-                "style.fontSize": 40,
-                "style.fill": "#ffffff"
-              }
-            },
-            {
-              "type": "image",
-              "id": "d0edae5c-5508-44c7-96eb-51e133ee29ad",
-              "asset": "1",
-              "info": {
-                "editorName": "temp",
-                "x": 22,
-                "y": 17,
-                "scale.x": 0.3,
-                "scale.y": 0.3
+                "editorName": "posterBG",
+                "alpha": 0
               }
             },
             {
               "type": "atlas-sprite",
-              "id": "1c9ebeb3-673e-4f28-a90a-4fba86599594",
+              "id": "96600d8d-f52f-4304-b4a7-ca85fc04e4b5",
+              "asset": "1",
+              "info": {
+                "editorName": "s7_title_png",
+                "x": 110,
+                "y": 156
+              }
+            },
+            {
+              "type": "atlas-sprite",
+              "id": "2eb4a4fa-e0d8-4943-8246-4208690b50d2",
               "asset": "2",
               "info": {
-                "editorName": "bird_png",
-                "x": 332.5
+                "editorName": "boy2_png",
+                "y": 831,
+                "scale.x": 0.8,
+                "scale.y": 0.8
               }
             },
             {
-              "type": "group",
-              "id": "9f310738-4f3e-498d-ba97-17768bc7eba4",
+              "type": "button",
+              "id": "8e73686d-9b6a-4003-a07a-8eb61cc22ee6",
+              "asset": "3",
               "info": {
-                "editorName": "group1",
+                "editorName": "btn_a",
                 "editorPublic": true,
-                "x": 55,
-                "y": 570,
-                "setAll": [],
-                "children": [
-                  {
-                    "type": "button",
-                    "id": "b344254a-14bd-425c-8133-5ebcbc3a9f33",
-                    "asset": "3",
-                    "info": {
-                      "editorName": "dhk_png",
-                      "data": "{\r\n\"value\":\"a\"\r\n}",
-                      "callback": "this.clickBtn"
-                    }
-                  },
-                  {
-                    "type": "text",
-                    "id": "f5044b40-4697-496a-b38c-9c9e67543a19",
-                    "info": {
-                      "editorName": "text1",
-                      "x": 100.9999771118164,
-                      "y": 12,
-                      "text": "A:全给我家宝宝存起来，长大全给\r\n   他花，让他从小开始抛弃同龄人。 ",
-                      "style.fontSize": 33,
-                      "style.fill": "#ffffff"
-                    }
-                  }
-                ]
+                "x": 95,
+                "y": 380,
+                "data": "{\r\n\"value\":\"a\"\r\n}",
+                "callback": "this.clickBtn"
               }
             },
             {
-              "type": "group",
-              "id": "c14f02dd-93ba-49e7-b08c-2bd71f9cf2b8",
+              "type": "button",
+              "id": "44af99f1-e558-4fe4-ac51-691b9de30fab",
+              "asset": "4",
               "info": {
-                "editorName": "group2",
+                "editorName": "btn_b",
                 "editorPublic": true,
-                "x": 59,
+                "x": 95,
+                "y": 493,
+                "data": "{\r\n\"value\":\"b\"\r\n}",
+                "callback": "this.clickBtn"
+              }
+            },
+            {
+              "type": "button",
+              "id": "9deccb70-bc4d-410a-bf0c-3a697b28db9e",
+              "asset": "5",
+              "info": {
+                "editorName": "btn_c",
+                "editorPublic": true,
+                "x": 95,
+                "y": 606,
+                "data": "{\r\n\"value\":\"c\"\r\n}",
+                "callback": "this.clickBtn"
+              }
+            },
+            {
+              "type": "button",
+              "id": "060fb0f8-7879-4d38-b45f-0a894ba6b44a",
+              "asset": "6",
+              "info": {
+                "editorName": "btn_d",
+                "editorPublic": true,
+                "x": 95,
                 "y": 720,
-                "setAll": [],
-                "children": [
-                  {
-                    "type": "button",
-                    "id": "794ec15b-bf43-4c9e-a382-29e8c81375e5",
-                    "asset": "3",
-                    "info": {
-                      "editorName": "dhk_png1",
-                      "data": "{\r\n\"value\":\"b\"\r\n}",
-                      "callback": "this.clickBtn"
-                    }
-                  },
-                  {
-                    "type": "text",
-                    "id": "db6b5924-2dad-440a-b3a5-203e858074af",
-                    "info": {
-                      "editorName": "text2",
-                      "x": 96.9999771118164,
-                      "y": 12,
-                      "text": "B:又有钱报辅导班了，周四晚\r\n上还空着...内心止不住的兴奋。",
-                      "style.fontSize": 36,
-                      "style.fill": "#ffffff"
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "type": "group",
-              "id": "6431fbad-a59c-4c5a-9c51-33f49b99202b",
-              "info": {
-                "editorName": "group3",
-                "editorPublic": true,
-                "x": 59,
-                "y": 870,
-                "setAll": [],
-                "children": [
-                  {
-                    "type": "button",
-                    "id": "c67ea622-8fc1-453d-a929-742c48b639a9",
-                    "asset": "3",
-                    "info": {
-                      "editorName": "dhk_png2",
-                      "data": "{\r\n\"value\":\"c\"\r\n}",
-                      "callback": "this.clickBtn"
-                    }
-                  },
-                  {
-                    "type": "text",
-                    "id": "997f4c30-7e99-45de-aaaf-a22f9e543fc5",
-                    "info": {
-                      "editorName": "text3",
-                      "x": 96.9999771118164,
-                      "y": 12,
-                      "text": "C:孩子的钱就是我的钱，\u201c这个\r\n包、还有那双鞋，统统包起来\u201d。 ",
-                      "style.fontSize": 36,
-                      "style.fill": "#ffffff"
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "type": "group",
-              "id": "3df7ba9a-6d68-4b50-851f-901b7fb47e68",
-              "info": {
-                "editorName": "group4",
-                "editorPublic": true,
-                "x": 59,
-                "y": 1020,
-                "setAll": [],
-                "children": [
-                  {
-                    "type": "button",
-                    "id": "41a07980-6900-41aa-963b-05788e6e58e9",
-                    "asset": "3",
-                    "info": {
-                      "editorName": "dhk_png3",
-                      "data": "{\r\n\"value\":\"d\"\r\n}",
-                      "callback": "this.clickBtn"
-                    }
-                  },
-                  {
-                    "type": "text",
-                    "id": "a62cd87e-f016-416b-a2fc-f817722baddb",
-                    "info": {
-                      "editorName": "text4",
-                      "x": 96.9999771118164,
-                      "y": 33,
-                      "text": "D:一房间小猪佩奇的周边送给TA。",
-                      "style.fontSize": 36,
-                      "style.fill": "#ffffff"
-                    }
-                  }
-                ]
+                "data": "{\r\n\"value\":\"d\"\r\n}",
+                "callback": "this.clickBtn"
               }
             }
           ]
@@ -235,26 +135,44 @@
   "asset-table": {
     "0": {
       "file": "WebContent/assets/pack.json",
-      "section": "colorAtlas",
-      "asset": "common1",
-      "sprite": "heiban.png"
+      "section": "common",
+      "asset": "posterBG"
     },
     "1": {
       "file": "WebContent/assets/pack.json",
-      "section": "temp",
-      "asset": "temp3"
+      "section": "colorAtlas",
+      "asset": "sceneTitle",
+      "sprite": "s7_title.png"
     },
     "2": {
       "file": "WebContent/assets/pack.json",
       "section": "colorAtlas",
       "asset": "ip",
-      "sprite": "girl2.png"
+      "sprite": "eyu.png"
     },
     "3": {
       "file": "WebContent/assets/pack.json",
       "section": "colorAtlas",
-      "asset": "common1",
-      "sprite": "dhk.png"
+      "asset": "sceneBtn",
+      "sprite": "s7_a.png"
+    },
+    "4": {
+      "file": "WebContent/assets/pack.json",
+      "section": "colorAtlas",
+      "asset": "sceneBtn",
+      "sprite": "s7_b.png"
+    },
+    "5": {
+      "file": "WebContent/assets/pack.json",
+      "section": "colorAtlas",
+      "asset": "sceneBtn",
+      "sprite": "s7_c.png"
+    },
+    "6": {
+      "file": "WebContent/assets/pack.json",
+      "section": "colorAtlas",
+      "asset": "sceneBtn",
+      "sprite": "s7_d.png"
     }
   },
   "prefab-table": {}

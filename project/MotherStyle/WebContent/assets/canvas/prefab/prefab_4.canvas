@@ -2,8 +2,8 @@
   "canvas-version": 2,
   "settings": {
     "className": "prefab_4",
-    "sceneWidth": 750,
-    "sceneHeight": 1206,
+    "sceneWidth": 640,
+    "sceneHeight": 1008,
     "generateOnSave": true,
     "enableStepping": false,
     "lang": "JAVA_SCRIPT",
@@ -45,184 +45,83 @@
           "setAll": [],
           "children": [
             {
-              "type": "atlas-sprite",
-              "id": "3fa9cd86-4521-4797-9455-c96bdb1c0478",
+              "type": "image",
+              "id": "f078676a-e3f6-41fe-868d-8714a6a3dba2",
               "asset": "0",
               "info": {
-                "editorName": "heiban_png",
-                "x": 105
-              }
-            },
-            {
-              "type": "text",
-              "id": "3469598f-5f01-48ab-9fd9-0b3a29efcb4a",
-              "info": {
-                "editorName": "textTitle",
-                "editorPublic": true,
-                "x": 155.729248046875,
-                "y": 225,
-                "text": "4、宝宝把你2000多块\r\n     的神仙水给弄砸了，\r\n     你会怎么处理？",
-                "style.fontSize": 45,
-                "style.fill": "#ffffff"
-              }
-            },
-            {
-              "type": "image",
-              "id": "1d535744-cb49-4690-82cc-b9762b962f50",
-              "asset": "1",
-              "info": {
-                "editorName": "temp",
-                "scale.x": 0.3,
-                "scale.y": 0.3
-              }
-            },
-            {
-              "type": "group",
-              "id": "0b6b9815-4a1c-4ce1-a9d6-9eaf6652102d",
-              "info": {
-                "editorName": "group1",
-                "editorPublic": true,
-                "x": 55,
-                "y": 570,
-                "setAll": [],
-                "children": [
-                  {
-                    "type": "button",
-                    "id": "8605d849-e05c-4d73-8bd4-e36073d1564d",
-                    "asset": "2",
-                    "info": {
-                      "editorName": "dhk_png",
-                      "data": "{\r\n\"value\":\"a\"\r\n}",
-                      "callback": "this.clickBtn"
-                    }
-                  },
-                  {
-                    "type": "text",
-                    "id": "f0943f9d-a7a1-48aa-8891-d51d8bcb2e00",
-                    "info": {
-                      "editorName": "text",
-                      "x": 122,
-                      "y": 33,
-                      "text": "A:啥也憋说了，先揍一顿吧",
-                      "style.fontSize": 36,
-                      "style.fill": "#ffffff"
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "type": "group",
-              "id": "8ead3b56-1cc2-4605-a594-6cdb1ca9fb38",
-              "info": {
-                "editorName": "group2",
-                "editorPublic": true,
-                "x": 55,
-                "y": 720,
-                "setAll": [],
-                "children": [
-                  {
-                    "type": "button",
-                    "id": "44c6ee1d-7a4e-4546-8d3b-4abf6914087d",
-                    "asset": "2",
-                    "info": {
-                      "editorName": "dhk_png1",
-                      "data": "{\r\n\"value\":\"b\"\r\n}",
-                      "callback": "this.clickBtn"
-                    }
-                  },
-                  {
-                    "type": "text",
-                    "id": "47699cf6-62e7-446f-b2c9-cd6bfdc3a226",
-                    "info": {
-                      "editorName": "text1",
-                      "x": 122,
-                      "y": 33,
-                      "text": "B:太心疼了，哇哇大哭",
-                      "style.fontSize": 36,
-                      "style.fill": "#ffffff"
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "type": "group",
-              "id": "21938b53-1875-4472-94e2-8de118110ffe",
-              "info": {
-                "editorName": "group3",
-                "editorPublic": true,
-                "x": 55,
-                "y": 870,
-                "setAll": [],
-                "children": [
-                  {
-                    "type": "button",
-                    "id": "a40c7a5f-bf14-491c-a8e5-d78a23b61ce2",
-                    "asset": "2",
-                    "info": {
-                      "editorName": "dhk_png2",
-                      "data": "{\r\n\"value\":\"c\"\r\n}",
-                      "callback": "this.clickBtn"
-                    }
-                  },
-                  {
-                    "type": "text",
-                    "id": "69975b06-574f-4bf6-8f02-f5c863ada709",
-                    "info": {
-                      "editorName": "text2",
-                      "x": 122,
-                      "y": 12,
-                      "text": "C:耐心地教导孩子，下次把\r\n    神仙水放高一点",
-                      "style.fontSize": 36,
-                      "style.fill": "#ffffff"
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "type": "group",
-              "id": "a2fa221f-f3d8-4b8d-80e8-3a59712efa67",
-              "info": {
-                "editorName": "group4",
-                "editorPublic": true,
-                "x": 55,
-                "y": 1020,
-                "setAll": [],
-                "children": [
-                  {
-                    "type": "button",
-                    "id": "5c6e949e-97e6-4495-9ca2-8d4765d46cab",
-                    "asset": "2",
-                    "info": {
-                      "editorName": "dhk_png3",
-                      "data": "{\r\n\"value\":\"d\"\r\n}",
-                      "callback": "this.clickBtn"
-                    }
-                  },
-                  {
-                    "type": "text",
-                    "id": "f072a3d9-c151-4fe4-924f-704c6830cce9",
-                    "info": {
-                      "editorName": "text3",
-                      "x": 122,
-                      "y": 33,
-                      "text": "D:让孩子他爹买个更贵的东西",
-                      "style.fontSize": 36,
-                      "style.fill": "#ffffff"
-                    }
-                  }
-                ]
+                "editorName": "posterBG",
+                "alpha": 0
               }
             },
             {
               "type": "atlas-sprite",
-              "id": "973c6365-5763-472a-bcc9-e369586f71b1",
+              "id": "1bba57ae-2381-45d6-8332-d86c954a7475",
+              "asset": "1",
+              "info": {
+                "editorName": "s4_title_png",
+                "x": 110,
+                "y": 156
+              }
+            },
+            {
+              "type": "atlas-sprite",
+              "id": "2d8fc882-8c27-4935-8130-b45b99fe9cf1",
+              "asset": "2",
+              "info": {
+                "editorName": "boy2_png",
+                "y": 807
+              }
+            },
+            {
+              "type": "button",
+              "id": "1d2e2cd6-4e23-4742-9fd8-67751e9f5c76",
               "asset": "3",
               "info": {
-                "editorName": "huli_png",
-                "x": 307
+                "editorName": "btn_a",
+                "editorPublic": true,
+                "x": 95,
+                "y": 380,
+                "data": "{\r\n\"value\":\"a\"\r\n}",
+                "callback": "this.clickBtn"
+              }
+            },
+            {
+              "type": "button",
+              "id": "abf30ff2-5713-4399-8754-7032bce25215",
+              "asset": "4",
+              "info": {
+                "editorName": "btn_b",
+                "editorPublic": true,
+                "x": 95,
+                "y": 493,
+                "data": "{\r\n\"value\":\"b\"\r\n}",
+                "callback": "this.clickBtn"
+              }
+            },
+            {
+              "type": "button",
+              "id": "39bb962e-d4fd-4e40-857d-25f60fac166a",
+              "asset": "5",
+              "info": {
+                "editorName": "btn_c",
+                "editorPublic": true,
+                "x": 95,
+                "y": 606,
+                "data": "{\r\n\"value\":\"c\"\r\n}",
+                "callback": "this.clickBtn"
+              }
+            },
+            {
+              "type": "button",
+              "id": "be1db17b-fafb-469c-83ea-09ffcf51846e",
+              "asset": "6",
+              "info": {
+                "editorName": "btn_d",
+                "editorPublic": true,
+                "x": 95,
+                "y": 720,
+                "data": "{\r\n\"value\":\"d\"\r\n}",
+                "callback": "this.clickBtn"
               }
             }
           ]
@@ -234,26 +133,44 @@
   "asset-table": {
     "0": {
       "file": "WebContent/assets/pack.json",
-      "section": "colorAtlas",
-      "asset": "common1",
-      "sprite": "heiban.png"
+      "section": "common",
+      "asset": "posterBG"
     },
     "1": {
       "file": "WebContent/assets/pack.json",
-      "section": "temp",
-      "asset": "temp3"
+      "section": "colorAtlas",
+      "asset": "sceneTitle",
+      "sprite": "s4_title.png"
     },
     "2": {
       "file": "WebContent/assets/pack.json",
       "section": "colorAtlas",
-      "asset": "common1",
-      "sprite": "dhk.png"
+      "asset": "ip",
+      "sprite": "xiong.png"
     },
     "3": {
       "file": "WebContent/assets/pack.json",
       "section": "colorAtlas",
-      "asset": "ip",
-      "sprite": "girl.png"
+      "asset": "sceneBtn",
+      "sprite": "s4_a.png"
+    },
+    "4": {
+      "file": "WebContent/assets/pack.json",
+      "section": "colorAtlas",
+      "asset": "sceneBtn",
+      "sprite": "s4_b.png"
+    },
+    "5": {
+      "file": "WebContent/assets/pack.json",
+      "section": "colorAtlas",
+      "asset": "sceneBtn",
+      "sprite": "s4_c.png"
+    },
+    "6": {
+      "file": "WebContent/assets/pack.json",
+      "section": "colorAtlas",
+      "asset": "sceneBtn",
+      "sprite": "s4_d.png"
     }
   },
   "prefab-table": {}

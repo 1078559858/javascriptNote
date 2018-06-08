@@ -9,8 +9,7 @@
 /**
  * prefab_4.
  * @param {Phaser.Game} aGame A reference to the currently running game.
- * @param {Phaser.Group} aParent The parent Group (or other {@link DisplayObject}) that this group will be added to.
-    If undefined/unspecified the Group will be added to the {@link Phaser.Game#world Game World}; if null the Group will not be added to any parent.
+ * @param {Phaser.Group} aParent The parent Group (or other {@link DisplayObject}) that this group will be added to.    If undefined/unspecified the Group will be added to the {@link Phaser.Game#world Game World}; if null the Group will not be added to any parent.
  * @param {string} aName A name for this group. Not used internally but useful for debugging.
  * @param {boolean} aAddToStage If true this group will be added directly to the Game.Stage instead of Game.World.
  * @param {boolean} aEnableBody If true all Sprites created with {@link #create} or {@link #createMulitple} will have a physics body created on them. Change the body type with {@link #physicsBodyType}.
@@ -19,64 +18,41 @@
 function prefab_4(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyType) {
 	
 	Phaser.Group.call(this, aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyType);
-	this.game.add.sprite(105, 0, 'common1', 'heiban.png', this);
+	var _posterBG = this.game.add.sprite(0, 0, 'posterBG', null, this);
+	_posterBG.alpha = 0.0;
 	
-	var _textTitle = this.game.add.text(156, 225, '4、宝宝把你2000多块\n     的神仙水给弄砸了，\n     你会怎么处理？', {"font":"bold 45px Arial","fill":"#ffffff"}, this);
+	this.game.add.sprite(110, 156, 'sceneTitle', 's4_title.png', this);
 	
-	var _temp = this.game.add.sprite(0, 0, 'temp3', null, this);
-	_temp.scale.setTo(0.3, 0.3);
+	this.game.add.sprite(0, 807, 'ip', 'xiong.png', this);
 	
-	var _group1 = this.game.add.group(this);
-	_group1.position.setTo(55, 570);
-	
-	var _dhk_png = this.game.add.button(0, 0, 'common1', this.clickBtn, this, null, 'dhk.png', null, null, _group1);
-	_dhk_png.data = {
+	var _btn_a = this.game.add.button(95, 380, 'sceneBtn', this.clickBtn, this, null, 's4_a.png', null, null, this);
+	_btn_a.data = {
 	"value":"a"
 	};
 	
-	this.game.add.text(122, 33, 'A:啥也憋说了，先揍一顿吧', {"font":"bold 36px Arial","fill":"#ffffff"}, _group1);
-	
-	var _group2 = this.game.add.group(this);
-	_group2.position.setTo(55, 720);
-	
-	var _dhk_png1 = this.game.add.button(0, 0, 'common1', this.clickBtn, this, null, 'dhk.png', null, null, _group2);
-	_dhk_png1.data = {
+	var _btn_b = this.game.add.button(95, 493, 'sceneBtn', this.clickBtn, this, null, 's4_b.png', null, null, this);
+	_btn_b.data = {
 	"value":"b"
 	};
 	
-	this.game.add.text(122, 33, 'B:太心疼了，哇哇大哭', {"font":"bold 36px Arial","fill":"#ffffff"}, _group2);
-	
-	var _group3 = this.game.add.group(this);
-	_group3.position.setTo(55, 870);
-	
-	var _dhk_png2 = this.game.add.button(0, 0, 'common1', this.clickBtn, this, null, 'dhk.png', null, null, _group3);
-	_dhk_png2.data = {
+	var _btn_c = this.game.add.button(95, 606, 'sceneBtn', this.clickBtn, this, null, 's4_c.png', null, null, this);
+	_btn_c.data = {
 	"value":"c"
 	};
 	
-	this.game.add.text(122, 12, 'C:耐心地教导孩子，下次把\n    神仙水放高一点', {"font":"bold 36px Arial","fill":"#ffffff"}, _group3);
-	
-	var _group4 = this.game.add.group(this);
-	_group4.position.setTo(55, 1020);
-	
-	var _dhk_png3 = this.game.add.button(0, 0, 'common1', this.clickBtn, this, null, 'dhk.png', null, null, _group4);
-	_dhk_png3.data = {
+	var _btn_d = this.game.add.button(95, 720, 'sceneBtn', this.clickBtn, this, null, 's4_d.png', null, null, this);
+	_btn_d.data = {
 	"value":"d"
 	};
-	
-	this.game.add.text(122, 33, 'D:让孩子他爹买个更贵的东西', {"font":"bold 36px Arial","fill":"#ffffff"}, _group4);
-	
-	this.game.add.sprite(307, 0, 'ip', 'girl.png', this);
 	
 	
 	
 	// public fields
 	
-	this.fTextTitle = _textTitle;
-	this.fGroup1 = _group1;
-	this.fGroup2 = _group2;
-	this.fGroup3 = _group3;
-	this.fGroup4 = _group4;
+	this.fBtn_a = _btn_a;
+	this.fBtn_b = _btn_b;
+	this.fBtn_c = _btn_c;
+	this.fBtn_d = _btn_d;
 	
 }
 

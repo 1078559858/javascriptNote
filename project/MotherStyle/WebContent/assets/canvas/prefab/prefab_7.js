@@ -9,8 +9,7 @@
 /**
  * prefab_7.
  * @param {Phaser.Game} aGame A reference to the currently running game.
- * @param {Phaser.Group} aParent The parent Group (or other {@link DisplayObject}) that this group will be added to.
-    If undefined/unspecified the Group will be added to the {@link Phaser.Game#world Game World}; if null the Group will not be added to any parent.
+ * @param {Phaser.Group} aParent The parent Group (or other {@link DisplayObject}) that this group will be added to.    If undefined/unspecified the Group will be added to the {@link Phaser.Game#world Game World}; if null the Group will not be added to any parent.
  * @param {string} aName A name for this group. Not used internally but useful for debugging.
  * @param {boolean} aAddToStage If true this group will be added directly to the Game.Stage instead of Game.World.
  * @param {boolean} aEnableBody If true all Sprites created with {@link #create} or {@link #createMulitple} will have a physics body created on them. Change the body type with {@link #physicsBodyType}.
@@ -19,63 +18,42 @@
 function prefab_7(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyType) {
 	
 	Phaser.Group.call(this, aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyType);
-	this.game.add.sprite(105, 0, 'common1', 'heiban.png', this);
+	var _posterBG = this.game.add.sprite(0, 0, 'posterBG', null, this);
+	_posterBG.alpha = 0.0;
 	
-	this.game.add.text(165, 236, '6、逢年过节收到给孩子\n     的10万元压岁钱后，\n     你会？', {"font":"bold 40px Arial","fill":"#ffffff"}, this);
+	this.game.add.sprite(110, 156, 'sceneTitle', 's7_title.png', this);
 	
-	var _temp = this.game.add.sprite(22, 17, 'temp3', null, this);
-	_temp.scale.setTo(0.3, 0.3);
+	var _boy2_png = this.game.add.sprite(0, 831, 'ip', 'eyu.png', this);
+	_boy2_png.scale.setTo(0.8, 0.8);
 	
-	this.game.add.sprite(333, 0, 'ip', 'girl2.png', this);
-	
-	var _group1 = this.game.add.group(this);
-	_group1.position.setTo(55, 570);
-	
-	var _dhk_png = this.game.add.button(0, 0, 'common1', this.clickBtn, this, null, 'dhk.png', null, null, _group1);
-	_dhk_png.data = {
+	var _btn_a = this.game.add.button(95, 380, 'sceneBtn', this.clickBtn, this, null, 's7_a.png', null, null, this);
+	_btn_a.data = {
 	"value":"a"
 	};
 	
-	this.game.add.text(101, 12, 'A:全给我家宝宝存起来，长大全给\n   他花，让他从小开始抛弃同龄人。 ', {"font":"bold 33px Arial","fill":"#ffffff"}, _group1);
-	
-	var _group2 = this.game.add.group(this);
-	_group2.position.setTo(59, 720);
-	
-	var _dhk_png1 = this.game.add.button(0, 0, 'common1', this.clickBtn, this, null, 'dhk.png', null, null, _group2);
-	_dhk_png1.data = {
+	var _btn_b = this.game.add.button(95, 493, 'sceneBtn', this.clickBtn, this, null, 's7_b.png', null, null, this);
+	_btn_b.data = {
 	"value":"b"
 	};
 	
-	this.game.add.text(97, 12, 'B:又有钱报辅导班了，周四晚\n上还空着...内心止不住的兴奋。', {"font":"bold 36px Arial","fill":"#ffffff"}, _group2);
-	
-	var _group3 = this.game.add.group(this);
-	_group3.position.setTo(59, 870);
-	
-	var _dhk_png2 = this.game.add.button(0, 0, 'common1', this.clickBtn, this, null, 'dhk.png', null, null, _group3);
-	_dhk_png2.data = {
+	var _btn_c = this.game.add.button(95, 606, 'sceneBtn', this.clickBtn, this, null, 's7_c.png', null, null, this);
+	_btn_c.data = {
 	"value":"c"
 	};
 	
-	this.game.add.text(97, 12, 'C:孩子的钱就是我的钱，“这个\n包、还有那双鞋，统统包起来”。 ', {"font":"bold 36px Arial","fill":"#ffffff"}, _group3);
-	
-	var _group4 = this.game.add.group(this);
-	_group4.position.setTo(59, 1020);
-	
-	var _dhk_png3 = this.game.add.button(0, 0, 'common1', this.clickBtn, this, null, 'dhk.png', null, null, _group4);
-	_dhk_png3.data = {
+	var _btn_d = this.game.add.button(95, 720, 'sceneBtn', this.clickBtn, this, null, 's7_d.png', null, null, this);
+	_btn_d.data = {
 	"value":"d"
 	};
-	
-	this.game.add.text(97, 33, 'D:一房间小猪佩奇的周边送给TA。', {"font":"bold 36px Arial","fill":"#ffffff"}, _group4);
 	
 	
 	
 	// public fields
 	
-	this.fGroup1 = _group1;
-	this.fGroup2 = _group2;
-	this.fGroup3 = _group3;
-	this.fGroup4 = _group4;
+	this.fBtn_a = _btn_a;
+	this.fBtn_b = _btn_b;
+	this.fBtn_c = _btn_c;
+	this.fBtn_d = _btn_d;
 	
 }
 

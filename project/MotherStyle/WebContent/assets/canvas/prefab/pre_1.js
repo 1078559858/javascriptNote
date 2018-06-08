@@ -19,12 +19,12 @@
 function pre_1(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyType) {
 	
 	Phaser.Group.call(this, aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyType);
-	var _bg = this.game.add.button(0, 0, 'bg', null, this, null, null, null, null, this);
-	_bg.scale.setTo(1.18, 0.98);
+	var _Dialog_mc = this.game.add.button(-153, -359, 'Dialog_mc', null, this, null, null, null, null, this);
+	_Dialog_mc.scale.setTo(1.5, 1.5);
 	
-	this.game.add.sprite(75, 352, 'pop', null, this);
+	this.game.add.sprite(20, 253, 'pop', null, this);
 	
-	var _close_png = this.game.add.button(628, 319, 'common1', this.clickClose, this, null, 'close.png', null, null, this);
+	var _close_png = this.game.add.button(545, 238, 'common1', this.clickClose, this, null, 'close.png', null, null, this);
 	_close_png.scale.setTo(1.5, 1.5);
 	
 	
@@ -89,31 +89,6 @@ pre_1.prototype.clickClose = function () {
 	this.game.add.tween(this.scale).to({x:0, y:0}, 1000, Phaser.Easing.Bounce.Out, true);
 };
 
-pre_1.prototype.checkName = function () {
-	var str = String(this.gChatInput.text.text);
-
-	if(!str){
-		this.fDialog_home_null.visible = true;
-		this.gChatInput.setText("");
-		return;
-	}
-
-	if(str.length > 4){
-		this.fDialog_home_fourl.visible = true;
-		this.gChatInput.setText("");
-		return;
-	}
-
-
-	this.x = -gGameConf.width;
-	gGame.gameScene.fGroup1.x = 0;
-	gGame.gameScene.fColor_up.frameName = "fde500.png";
-	//this.game.stage.backgroundColor = '#4dbb84';
-
-	// gGame.gameScene.disAppearGroup(this);
-	// gGame.gameScene.appearGroup(gGame.gameScene.fGroup1);
-};
-
 pre_1.prototype.focusIn = function () {
 	this.fDialog_home_error.visible = false;
 	this.fDialog_home_fourl.visible = false;
@@ -134,9 +109,4 @@ pre_1.prototype.clickRight = function () {
 	this.game.state.states.Video.playClick();
 	this.fBall.x = 350;
 	gUserInfo.haveBoy = false;
-};
-
-pre_1.prototype.clickGo = function () {
-	this.game.state.states.Video.playClick();
-	this.checkName();
 };

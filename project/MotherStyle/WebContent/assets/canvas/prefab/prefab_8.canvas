@@ -2,8 +2,8 @@
   "canvas-version": 2,
   "settings": {
     "className": "prefab_8",
-    "sceneWidth": 750,
-    "sceneHeight": 1206,
+    "sceneWidth": 640,
+    "sceneHeight": 1008,
     "generateOnSave": true,
     "enableStepping": false,
     "lang": "JAVA_SCRIPT",
@@ -45,187 +45,83 @@
           "setAll": [],
           "children": [
             {
-              "type": "atlas-sprite",
-              "id": "46fea781-4c2e-4fbd-a172-6c540e79fd24",
+              "type": "image",
+              "id": "5c5c4466-108d-4ed5-8676-4d0cde4da013",
               "asset": "0",
               "info": {
-                "editorName": "heiban_png",
-                "x": 105,
-                "y": -7
-              }
-            },
-            {
-              "type": "text",
-              "id": "a102b37f-acf1-4792-a17c-5dd614652bd3",
-              "info": {
-                "editorName": "textTitle",
-                "editorPublic": true,
-                "x": 194.5435791015625,
-                "y": 248,
-                "text": "8、面4个，你最想\r\n      拥有？",
-                "style.fontSize": 45,
-                "style.fill": "#ffffff"
-              }
-            },
-            {
-              "type": "image",
-              "id": "d8027206-3786-4e66-8cdc-cc10667b92a2",
-              "asset": "1",
-              "info": {
-                "editorName": "temp",
-                "y": -4,
-                "scale.x": 0.3,
-                "scale.y": 0.3
-              }
-            },
-            {
-              "type": "group",
-              "id": "346c79c0-c57a-43d6-bef1-1084fe2c99a3",
-              "info": {
-                "editorName": "group1",
-                "editorPublic": true,
-                "x": 56,
-                "y": 563,
-                "setAll": [],
-                "children": [
-                  {
-                    "type": "button",
-                    "id": "4ab18157-0631-4bcc-9ceb-133e9ab16eb3",
-                    "asset": "2",
-                    "info": {
-                      "editorName": "dhk_png",
-                      "data": "{\r\n\"value\":\"a\"\r\n}",
-                      "callback": "this.clickBtn"
-                    }
-                  },
-                  {
-                    "type": "text",
-                    "id": "863511cb-6b24-414c-addb-9799fb1211c3",
-                    "info": {
-                      "editorName": "text",
-                      "x": 122,
-                      "y": 33,
-                      "text": "A:全新戴森无绳吸尘器",
-                      "style.fontSize": 36,
-                      "style.fill": "#ffffff"
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "type": "group",
-              "id": "4219817f-462a-4e80-aa4e-51213e92ddbf",
-              "info": {
-                "editorName": "group2",
-                "editorPublic": true,
-                "x": 56,
-                "y": 713,
-                "setAll": [],
-                "children": [
-                  {
-                    "type": "button",
-                    "id": "2926da30-808f-4a11-be66-d0f0876bf942",
-                    "asset": "2",
-                    "info": {
-                      "editorName": "dhk_png1",
-                      "data": "{\r\n\"value\":\"b\"\r\n}",
-                      "callback": "this.clickBtn"
-                    }
-                  },
-                  {
-                    "type": "text",
-                    "id": "159ebf05-37cf-4e47-9b72-9e2a6a198b3f",
-                    "info": {
-                      "editorName": "text1",
-                      "x": 122,
-                      "y": 33,
-                      "text": "B:LV最新限量款包包",
-                      "style.fontSize": 36,
-                      "style.fill": "#ffffff"
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "type": "group",
-              "id": "a99141b2-8489-4ac3-b47c-3ec967442e1a",
-              "info": {
-                "editorName": "group3",
-                "editorPublic": true,
-                "x": 56,
-                "y": 863,
-                "setAll": [],
-                "children": [
-                  {
-                    "type": "button",
-                    "id": "f6cfe442-f6b1-45f5-8834-297af6a5ecdc",
-                    "asset": "2",
-                    "info": {
-                      "editorName": "dhk_png2",
-                      "data": "{\r\n\"value\":\"c\"\r\n}",
-                      "callback": "this.clickBtn"
-                    }
-                  },
-                  {
-                    "type": "text",
-                    "id": "7f75a68e-fc6c-4829-865b-c780b0c587a3",
-                    "info": {
-                      "editorName": "text2",
-                      "x": 122,
-                      "y": 33,
-                      "text": "C:环游世界的旅游",
-                      "style.fontSize": 36,
-                      "style.fill": "#ffffff"
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "type": "group",
-              "id": "32bc12b1-88a1-4ea0-882a-c1824348ee0b",
-              "info": {
-                "editorName": "group4",
-                "editorPublic": true,
-                "x": 56,
-                "y": 1013,
-                "setAll": [],
-                "children": [
-                  {
-                    "type": "button",
-                    "id": "c8516280-9ee1-40fb-ab7b-c36853e5b890",
-                    "asset": "2",
-                    "info": {
-                      "editorName": "dhk_png3",
-                      "data": "{\r\n\"value\":\"d\"\r\n}",
-                      "callback": "this.clickBtn"
-                    }
-                  },
-                  {
-                    "type": "text",
-                    "id": "30a513ee-d046-47a4-a93d-6692cf4863cf",
-                    "info": {
-                      "editorName": "text3",
-                      "x": 122,
-                      "y": 33,
-                      "text": "D:孩子是牛娃",
-                      "style.fontSize": 36,
-                      "style.fill": "#ffffff"
-                    }
-                  }
-                ]
+                "editorName": "posterBG",
+                "alpha": 0
               }
             },
             {
               "type": "atlas-sprite",
-              "id": "38f70d60-1243-47b8-a18a-c17e314378fe",
+              "id": "45d26e07-3a9b-4c37-b56b-2b231c9807fb",
+              "asset": "1",
+              "info": {
+                "editorName": "s8_title_png",
+                "x": 110,
+                "y": 156
+              }
+            },
+            {
+              "type": "atlas-sprite",
+              "id": "4edfc012-27fc-48e0-bb46-55a14fc42999",
+              "asset": "2",
+              "info": {
+                "editorName": "boy2_png",
+                "y": 805
+              }
+            },
+            {
+              "type": "button",
+              "id": "5dc3163b-2103-4b14-9c3a-cff6ce249bf5",
               "asset": "3",
               "info": {
-                "editorName": "huli_png",
-                "x": 284,
-                "y": -4
+                "editorName": "btn_a",
+                "editorPublic": true,
+                "x": 95,
+                "y": 380,
+                "data": "{\r\n\"value\":\"a\"\r\n}",
+                "callback": "this.clickBtn"
+              }
+            },
+            {
+              "type": "button",
+              "id": "19a01387-3ccd-4acb-9f4e-54a57cea6f3d",
+              "asset": "4",
+              "info": {
+                "editorName": "btn_b",
+                "editorPublic": true,
+                "x": 95,
+                "y": 493,
+                "data": "{\r\n\"value\":\"b\"\r\n}",
+                "callback": "this.clickBtn"
+              }
+            },
+            {
+              "type": "button",
+              "id": "b989f2a6-9e1a-404f-bdb9-b8fcf05ba3a4",
+              "asset": "5",
+              "info": {
+                "editorName": "btn_c",
+                "editorPublic": true,
+                "x": 95,
+                "y": 606,
+                "data": "{\r\n\"value\":\"c\"\r\n}",
+                "callback": "this.clickBtn"
+              }
+            },
+            {
+              "type": "button",
+              "id": "aa74b27c-96af-4501-b67f-4537e76c68bb",
+              "asset": "6",
+              "info": {
+                "editorName": "btn_d",
+                "editorPublic": true,
+                "x": 95,
+                "y": 720,
+                "data": "{\r\n\"value\":\"d\"\r\n}",
+                "callback": "this.clickBtn"
               }
             }
           ]
@@ -237,26 +133,44 @@
   "asset-table": {
     "0": {
       "file": "WebContent/assets/pack.json",
-      "section": "colorAtlas",
-      "asset": "common1",
-      "sprite": "heiban.png"
+      "section": "common",
+      "asset": "posterBG"
     },
     "1": {
       "file": "WebContent/assets/pack.json",
-      "section": "temp",
-      "asset": "temp3"
+      "section": "colorAtlas",
+      "asset": "sceneTitle",
+      "sprite": "s8_title.png"
     },
     "2": {
       "file": "WebContent/assets/pack.json",
       "section": "colorAtlas",
-      "asset": "common1",
-      "sprite": "dhk.png"
+      "asset": "ip",
+      "sprite": "girl2.png"
     },
     "3": {
       "file": "WebContent/assets/pack.json",
       "section": "colorAtlas",
-      "asset": "ip",
-      "sprite": "xiong.png"
+      "asset": "sceneBtn",
+      "sprite": "s8_a.png"
+    },
+    "4": {
+      "file": "WebContent/assets/pack.json",
+      "section": "colorAtlas",
+      "asset": "sceneBtn",
+      "sprite": "s8_b.png"
+    },
+    "5": {
+      "file": "WebContent/assets/pack.json",
+      "section": "colorAtlas",
+      "asset": "sceneBtn",
+      "sprite": "s8_c.png"
+    },
+    "6": {
+      "file": "WebContent/assets/pack.json",
+      "section": "colorAtlas",
+      "asset": "sceneBtn",
+      "sprite": "s8_d.png"
     }
   },
   "prefab-table": {}

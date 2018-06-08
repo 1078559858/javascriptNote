@@ -17,18 +17,8 @@
       <file leaf-file-name="mainScene.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebContent/assets/canvas/scene/mainScene.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="158" column="0" lean-forward="true" selection-start-line="158" selection-start-column="0" selection-end-line="158" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="prefab_2.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebContent/assets/canvas/prefab/prefab_2.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="722">
-              <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+            <state relative-caret-position="303">
+              <caret line="153" column="0" lean-forward="false" selection-start-line="153" selection-start-column="0" selection-end-line="153" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -37,7 +27,7 @@
       <file leaf-file-name="prefab_3.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebContent/assets/canvas/prefab/prefab_3.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="746">
+            <state relative-caret-position="2075">
               <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
               <folding />
             </state>
@@ -47,28 +37,38 @@
       <file leaf-file-name="overPrefab.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebContent/assets/canvas/prefab/overPrefab.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="722">
-              <caret line="130" column="6" lean-forward="false" selection-start-line="130" selection-start-column="6" selection-end-line="130" selection-end-column="47" />
+            <state relative-caret-position="647">
+              <caret line="119" column="0" lean-forward="true" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Boot.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Boot.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebContent/js/Boot.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="22" column="2" lean-forward="true" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
+            <state relative-caret-position="611">
+              <caret line="28" column="11" lean-forward="false" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pre_1.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebContent/assets/canvas/prefab/pre_1.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="672">
+              <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/WebContent/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="53" column="22" lean-forward="false" selection-start-line="53" selection-start-column="12" selection-end-line="53" selection-end-column="22" />
+            <state relative-caret-position="361">
+              <caret line="53" column="31" lean-forward="false" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -77,9 +77,16 @@
       <file leaf-file-name="prefab_4.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebContent/assets/canvas/prefab/prefab_4.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="746">
-              <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="2000">
+              <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+              <folding>
+                <marker date="1528453750183" expanded="true" signature="1110:2150" ph="{...}" />
+                <marker date="1528453750183" expanded="true" signature="2152:2177" ph="/*Phaser.Group*/" />
+                <marker date="1528453750183" expanded="true" signature="2319:2351" ph="/*...*/" />
+                <marker date="1528453750183" expanded="true" signature="2418:2422" ph="{...}" />
+                <marker date="1528453750183" expanded="true" signature="2470:2719" ph="{...}" />
+                <marker date="1528453750183" expanded="true" signature="2619:2717" ph="//..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -87,9 +94,16 @@
       <file leaf-file-name="prefab_5.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebContent/assets/canvas/prefab/prefab_5.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="746">
-              <caret line="95" column="0" lean-forward="false" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="2000">
+              <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+              <folding>
+                <marker date="1528454030856" expanded="true" signature="1110:2169" ph="{...}" />
+                <marker date="1528454030856" expanded="true" signature="2171:2196" ph="/*Phaser.Group*/" />
+                <marker date="1528454030856" expanded="true" signature="2338:2370" ph="/*...*/" />
+                <marker date="1528454030856" expanded="true" signature="2489:2738" ph="{...}" />
+                <marker date="1528454030856" expanded="true" signature="2638:2736" ph="//..." />
+                <marker date="1528454030856" expanded="true" signature="2788:2792" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -97,9 +111,15 @@
       <file leaf-file-name="prefab_6.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebContent/assets/canvas/prefab/prefab_6.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="746">
-              <caret line="102" column="0" lean-forward="false" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="2000">
+              <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+              <folding>
+                <marker date="1528455488214" expanded="true" signature="1110:2149" ph="{...}" />
+                <marker date="1528455488214" expanded="true" signature="2151:2176" ph="/*Phaser.Group*/" />
+                <marker date="1528455488214" expanded="true" signature="2318:2350" ph="/*...*/" />
+                <marker date="1528455488214" expanded="true" signature="2469:2718" ph="{...}" />
+                <marker date="1528455488214" expanded="true" signature="2618:2716" ph="//..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -107,9 +127,16 @@
       <file leaf-file-name="prefab_7.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebContent/assets/canvas/prefab/prefab_7.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="746">
-              <caret line="102" column="0" lean-forward="false" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="2025">
+              <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+              <folding>
+                <marker date="1528455707017" expanded="true" signature="1110:2198" ph="{...}" />
+                <marker date="1528455707017" expanded="true" signature="2200:2225" ph="/*Phaser.Group*/" />
+                <marker date="1528455707017" expanded="true" signature="2367:2399" ph="/*...*/" />
+                <marker date="1528455707017" expanded="true" signature="2466:2470" ph="{...}" />
+                <marker date="1528455707017" expanded="true" signature="2518:2767" ph="{...}" />
+                <marker date="1528455707017" expanded="true" signature="2667:2765" ph="//..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -118,16 +145,7 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>onDragStart</find>
-      <find>fde500</find>
-      <find>ClickGo</find>
-      <find>clickAgain</find>
-      <find>appearGroup</find>
-      <find>set</find>
-      <find>appearNameLimitPic</find>
-      <find>popL</find>
       <find>appearPopLayer</find>
-      <find>clickGo</find>
       <find>fGroupSetName</find>
       <find>fde</find>
       <find>clickStudy</find>
@@ -142,12 +160,21 @@
       <find>stage.backgroundColor = '#ffffff';</find>
       <find>&quot;#ffffff&quot;</find>
       <find>setColorChange</find>
-      <find>background</find>
       <find>ment.body.style.background=</find>
       <find>ody.style.backgroun</find>
       <find>yle.background</find>
       <find>setBackgroundColor</find>
       <find>background.</find>
+      <find>fgo</find>
+      <find>body.style.background=</find>
+      <find>style.background</find>
+      <find>ffbc49</find>
+      <find>background</find>
+      <find>document.body.</find>
+      <find>game.stage</find>
+      <find>checkName</find>
+      <find>clickGo</find>
+      <find>focusIn</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -157,7 +184,6 @@
         <option value="$PROJECT_DIR$/WebContent/lib/phaser-input.js" />
         <option value="$PROJECT_DIR$/WebContent/js/Video.js" />
         <option value="$PROJECT_DIR$/WebContent/assets/canvas/scene/preloadScene.js" />
-        <option value="$PROJECT_DIR$/WebContent/assets/canvas/prefab/pre_1.js" />
         <option value="$PROJECT_DIR$/WebContent/assets/canvas/prefab/adPrefab.js" />
         <option value="$PROJECT_DIR$/WebContent/js/base/GlobalConf.js" />
         <option value="$PROJECT_DIR$/WebContent/js/Main.js" />
@@ -174,9 +200,10 @@
         <option value="$PROJECT_DIR$/WebContent/assets/canvas/prefab/prefab_6.js" />
         <option value="$PROJECT_DIR$/WebContent/assets/canvas/prefab/prefab_7.js" />
         <option value="$PROJECT_DIR$/WebContent/assets/canvas/scene/mainScene.js" />
-        <option value="$PROJECT_DIR$/WebContent/index.html" />
-        <option value="$PROJECT_DIR$/WebContent/assets/canvas/prefab/overPrefab.js" />
         <option value="$PROJECT_DIR$/WebContent/js/Boot.js" />
+        <option value="$PROJECT_DIR$/WebContent/assets/canvas/prefab/overPrefab.js" />
+        <option value="$PROJECT_DIR$/WebContent/assets/canvas/prefab/pre_1.js" />
+        <option value="$PROJECT_DIR$/WebContent/index.html" />
       </list>
     </option>
   </component>
@@ -214,6 +241,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -293,7 +321,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -340,27 +367,27 @@
       <workItem from="1527739799321" duration="3419000" />
       <workItem from="1527766009470" duration="12662000" />
       <workItem from="1527821696946" duration="606000" />
-      <workItem from="1528360139366" duration="6025000" />
+      <workItem from="1528360139366" duration="6119000" />
+      <workItem from="1528423275749" duration="5493000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90658000" />
+    <option name="totallyTimeSpent" value="96245000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22814499" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23081024" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19989339" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -580,26 +607,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/assets/canvas/prefab/adPrefab.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1200">
-          <caret line="48" column="21" lean-forward="false" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/assets/canvas/prefab/adPrefab.js" />
     <entry file="file://$PROJECT_DIR$/WebContent/js/Main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/assets/canvas/prefab/pre_1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -616,7 +628,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
           <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -670,7 +681,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/assets/canvas/prefab/prefab_2.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
+        <state relative-caret-position="2100">
           <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
           <folding />
         </state>
@@ -678,7 +689,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/assets/canvas/prefab/prefab_3.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="746">
+        <state relative-caret-position="2075">
           <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
           <folding />
         </state>
@@ -686,41 +697,60 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/assets/canvas/prefab/prefab_4.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="746">
-          <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="2000">
+          <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+          <folding>
+            <marker date="1528453750183" expanded="true" signature="1110:2150" ph="{...}" />
+            <marker date="1528453750183" expanded="true" signature="2152:2177" ph="/*Phaser.Group*/" />
+            <marker date="1528453750183" expanded="true" signature="2319:2351" ph="/*...*/" />
+            <marker date="1528453750183" expanded="true" signature="2418:2422" ph="{...}" />
+            <marker date="1528453750183" expanded="true" signature="2470:2719" ph="{...}" />
+            <marker date="1528453750183" expanded="true" signature="2619:2717" ph="//..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/assets/canvas/prefab/prefab_5.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="746">
-          <caret line="95" column="0" lean-forward="false" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="2000">
+          <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+          <folding>
+            <marker date="1528454030856" expanded="true" signature="1110:2169" ph="{...}" />
+            <marker date="1528454030856" expanded="true" signature="2171:2196" ph="/*Phaser.Group*/" />
+            <marker date="1528454030856" expanded="true" signature="2338:2370" ph="/*...*/" />
+            <marker date="1528454030856" expanded="true" signature="2489:2738" ph="{...}" />
+            <marker date="1528454030856" expanded="true" signature="2638:2736" ph="//..." />
+            <marker date="1528454030856" expanded="true" signature="2788:2792" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/assets/canvas/prefab/prefab_6.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="746">
-          <caret line="102" column="0" lean-forward="false" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="2000">
+          <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+          <folding>
+            <marker date="1528455488214" expanded="true" signature="1110:2149" ph="{...}" />
+            <marker date="1528455488214" expanded="true" signature="2151:2176" ph="/*Phaser.Group*/" />
+            <marker date="1528455488214" expanded="true" signature="2318:2350" ph="/*...*/" />
+            <marker date="1528455488214" expanded="true" signature="2469:2718" ph="{...}" />
+            <marker date="1528455488214" expanded="true" signature="2618:2716" ph="//..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/assets/canvas/prefab/prefab_7.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="746">
-          <caret line="102" column="0" lean-forward="false" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/assets/canvas/scene/mainScene.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="158" column="0" lean-forward="true" selection-start-line="158" selection-start-column="0" selection-end-line="158" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="2025">
+          <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+          <folding>
+            <marker date="1528455707017" expanded="true" signature="1110:2198" ph="{...}" />
+            <marker date="1528455707017" expanded="true" signature="2200:2225" ph="/*Phaser.Group*/" />
+            <marker date="1528455707017" expanded="true" signature="2367:2399" ph="/*...*/" />
+            <marker date="1528455707017" expanded="true" signature="2466:2470" ph="{...}" />
+            <marker date="1528455707017" expanded="true" signature="2518:2767" ph="{...}" />
+            <marker date="1528455707017" expanded="true" signature="2667:2765" ph="//..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -732,26 +762,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/index.html">
+    <entry file="file://$PROJECT_DIR$/WebContent/assets/canvas/scene/mainScene.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="53" column="22" lean-forward="false" selection-start-line="53" selection-start-column="12" selection-end-line="53" selection-end-column="22" />
+        <state relative-caret-position="303">
+          <caret line="153" column="0" lean-forward="false" selection-start-line="153" selection-start-column="0" selection-end-line="153" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/assets/canvas/prefab/overPrefab.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="130" column="6" lean-forward="false" selection-start-line="130" selection-start-column="6" selection-end-line="130" selection-end-column="47" />
+        <state relative-caret-position="647">
+          <caret line="119" column="0" lean-forward="true" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/js/Boot.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="22" column="2" lean-forward="true" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
+        <state relative-caret-position="611">
+          <caret line="28" column="11" lean-forward="false" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/assets/canvas/prefab/pre_1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="53" column="31" lean-forward="false" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
           <folding />
         </state>
       </provider>

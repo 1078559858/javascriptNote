@@ -9,8 +9,7 @@
 /**
  * prefab_5.
  * @param {Phaser.Game} aGame A reference to the currently running game.
- * @param {Phaser.Group} aParent The parent Group (or other {@link DisplayObject}) that this group will be added to.
-    If undefined/unspecified the Group will be added to the {@link Phaser.Game#world Game World}; if null the Group will not be added to any parent.
+ * @param {Phaser.Group} aParent The parent Group (or other {@link DisplayObject}) that this group will be added to.    If undefined/unspecified the Group will be added to the {@link Phaser.Game#world Game World}; if null the Group will not be added to any parent.
  * @param {string} aName A name for this group. Not used internally but useful for debugging.
  * @param {boolean} aAddToStage If true this group will be added directly to the Game.Stage instead of Game.World.
  * @param {boolean} aEnableBody If true all Sprites created with {@link #create} or {@link #createMulitple} will have a physics body created on them. Change the body type with {@link #physicsBodyType}.
@@ -19,56 +18,41 @@
 function prefab_5(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyType) {
 	
 	Phaser.Group.call(this, aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyType);
-	this.game.add.sprite(105, 0, 'common1', 'heiban.png', this);
+	var _posterBG = this.game.add.sprite(0, 0, 'posterBG', null, this);
+	_posterBG.alpha = 0.0;
 	
-	this.game.add.text(179, 254, '5、哪个是孩子开学后，\n     你的真实状态？', {"font":"bold 40px Arial","fill":"#ffffff"}, this);
+	this.game.add.sprite(1, 807, 'ip', 'girl.png', this);
 	
-	var _temp = this.game.add.sprite(-1, 17, 'temp3', null, this);
-	_temp.scale.setTo(0.3, 0.3);
+	this.game.add.sprite(110, 156, 'sceneTitle', 's2_title.png', this);
 	
-	this.game.add.sprite(275, 0, 'ip', 'eyu.png', this);
-	
-	var _group1 = this.game.add.group(this);
-	_group1.position.setTo(42, 579);
-	
-	var _p11_jpg = this.game.add.button(0, 0, 'eightProblems', this.clickBtn, this, null, 'p21.jpg', null, null, _group1);
-	_p11_jpg.data = {
+	var _btn_a = this.game.add.button(111, 419, 'sceneProblem', this.clickBtn, this, null, 's5_a.png', null, null, this);
+	_btn_a.data = {
 	"value":"a"
 	};
 	
-	this.game.add.text(50, 244, 'A:风清扬，心飞扬！', {"font":"bold 20px Arial"}, _group1);
-	
-	var _group2 = this.game.add.group(this);
-	_group2.position.setTo(384, 579);
-	
-	var _p11_jpg1 = this.game.add.button(0, 0, 'eightProblems', this.clickBtn, this, null, 'p22.jpg', null, null, _group2);
-	_p11_jpg1.data = {
+	var _btn_b = this.game.add.button(340, 419, 'sceneProblem', this.clickBtn, this, null, 's5_b.png', null, null, this);
+	_btn_b.data = {
 	"value":"b"
 	};
 	
-	this.game.add.text(-5, 244, 'B:终于可以开心的shopping了！', {"font":"bold 20px Arial"}, _group2);
-	
-	var _group3 = this.game.add.group(this);
-	_group3.position.setTo(42, 887);
-	
-	var _p11_jpg2 = this.game.add.button(0, 0, 'eightProblems', this.clickBtn, this, null, 'p23.jpg', null, null, _group3);
-	_p11_jpg2.data = {
+	var _btn_c = this.game.add.button(111, 603, 'sceneProblem', this.clickBtn, this, null, 's5_c.png', null, null, this);
+	_btn_c.data = {
 	"value":"c"
 	};
 	
-	this.game.add.text(19, 244, 'C:还得自己干家务，唉。', {"font":"bold 20px Arial"}, _group3);
-	
-	var _group4 = this.game.add.group(this);
-	_group4.position.setTo(384, 887);
-	
-	var _p11_jpg3 = this.game.add.button(0, 0, 'eightProblems', this.clickBtn, this, null, 'p24.jpg', null, null, _group4);
-	_p11_jpg3.data = {
+	var _btn_d = this.game.add.button(340, 603, 'sceneProblem', this.clickBtn, this, null, 's5_d.png', null, null, this);
+	_btn_d.data = {
 	"value":"d"
 	};
 	
-	this.game.add.text(0, 244, 'D:我想孩子了，孩子会想我吗？', {"font":"bold 20px Arial"}, _group4);
 	
 	
+	// public fields
+	
+	this.fBtn_a = _btn_a;
+	this.fBtn_b = _btn_b;
+	this.fBtn_c = _btn_c;
+	this.fBtn_d = _btn_d;
 	
 }
 

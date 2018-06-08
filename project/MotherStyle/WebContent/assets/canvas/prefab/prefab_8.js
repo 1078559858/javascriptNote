@@ -9,8 +9,7 @@
 /**
  * prefab_8.
  * @param {Phaser.Game} aGame A reference to the currently running game.
- * @param {Phaser.Group} aParent The parent Group (or other {@link DisplayObject}) that this group will be added to.
-    If undefined/unspecified the Group will be added to the {@link Phaser.Game#world Game World}; if null the Group will not be added to any parent.
+ * @param {Phaser.Group} aParent The parent Group (or other {@link DisplayObject}) that this group will be added to.    If undefined/unspecified the Group will be added to the {@link Phaser.Game#world Game World}; if null the Group will not be added to any parent.
  * @param {string} aName A name for this group. Not used internally but useful for debugging.
  * @param {boolean} aAddToStage If true this group will be added directly to the Game.Stage instead of Game.World.
  * @param {boolean} aEnableBody If true all Sprites created with {@link #create} or {@link #createMulitple} will have a physics body created on them. Change the body type with {@link #physicsBodyType}.
@@ -19,64 +18,41 @@
 function prefab_8(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyType) {
 	
 	Phaser.Group.call(this, aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyType);
-	this.game.add.sprite(105, -7, 'common1', 'heiban.png', this);
+	var _posterBG = this.game.add.sprite(0, 0, 'posterBG', null, this);
+	_posterBG.alpha = 0.0;
 	
-	var _textTitle = this.game.add.text(195, 248, '8、面4个，你最想\n      拥有？', {"font":"bold 45px Arial","fill":"#ffffff"}, this);
+	this.game.add.sprite(110, 156, 'sceneTitle', 's8_title.png', this);
 	
-	var _temp = this.game.add.sprite(0, -4, 'temp3', null, this);
-	_temp.scale.setTo(0.3, 0.3);
+	this.game.add.sprite(0, 805, 'ip', 'girl2.png', this);
 	
-	var _group1 = this.game.add.group(this);
-	_group1.position.setTo(56, 563);
-	
-	var _dhk_png = this.game.add.button(0, 0, 'common1', this.clickBtn, this, null, 'dhk.png', null, null, _group1);
-	_dhk_png.data = {
+	var _btn_a = this.game.add.button(95, 380, 'sceneBtn', this.clickBtn, this, null, 's8_a.png', null, null, this);
+	_btn_a.data = {
 	"value":"a"
 	};
 	
-	this.game.add.text(122, 33, 'A:全新戴森无绳吸尘器', {"font":"bold 36px Arial","fill":"#ffffff"}, _group1);
-	
-	var _group2 = this.game.add.group(this);
-	_group2.position.setTo(56, 713);
-	
-	var _dhk_png1 = this.game.add.button(0, 0, 'common1', this.clickBtn, this, null, 'dhk.png', null, null, _group2);
-	_dhk_png1.data = {
+	var _btn_b = this.game.add.button(95, 493, 'sceneBtn', this.clickBtn, this, null, 's8_b.png', null, null, this);
+	_btn_b.data = {
 	"value":"b"
 	};
 	
-	this.game.add.text(122, 33, 'B:LV最新限量款包包', {"font":"bold 36px Arial","fill":"#ffffff"}, _group2);
-	
-	var _group3 = this.game.add.group(this);
-	_group3.position.setTo(56, 863);
-	
-	var _dhk_png2 = this.game.add.button(0, 0, 'common1', this.clickBtn, this, null, 'dhk.png', null, null, _group3);
-	_dhk_png2.data = {
+	var _btn_c = this.game.add.button(95, 606, 'sceneBtn', this.clickBtn, this, null, 's8_c.png', null, null, this);
+	_btn_c.data = {
 	"value":"c"
 	};
 	
-	this.game.add.text(122, 33, 'C:环游世界的旅游', {"font":"bold 36px Arial","fill":"#ffffff"}, _group3);
-	
-	var _group4 = this.game.add.group(this);
-	_group4.position.setTo(56, 1013);
-	
-	var _dhk_png3 = this.game.add.button(0, 0, 'common1', this.clickBtn, this, null, 'dhk.png', null, null, _group4);
-	_dhk_png3.data = {
+	var _btn_d = this.game.add.button(95, 720, 'sceneBtn', this.clickBtn, this, null, 's8_d.png', null, null, this);
+	_btn_d.data = {
 	"value":"d"
 	};
-	
-	this.game.add.text(122, 33, 'D:孩子是牛娃', {"font":"bold 36px Arial","fill":"#ffffff"}, _group4);
-	
-	this.game.add.sprite(284, -4, 'ip', 'xiong.png', this);
 	
 	
 	
 	// public fields
 	
-	this.fTextTitle = _textTitle;
-	this.fGroup1 = _group1;
-	this.fGroup2 = _group2;
-	this.fGroup3 = _group3;
-	this.fGroup4 = _group4;
+	this.fBtn_a = _btn_a;
+	this.fBtn_b = _btn_b;
+	this.fBtn_c = _btn_c;
+	this.fBtn_d = _btn_d;
 	
 }
 

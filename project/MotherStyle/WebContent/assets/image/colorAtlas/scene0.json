@@ -1,6 +1,14 @@
 {"frames": [
 
 {
+	"filename": "miji.png",
+	"frame": {"x":0,"y":0,"w":121,"h":31},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":121,"h":31},
+	"sourceSize": {"w":121,"h":31}
+},
+{
 	"filename": "s0_1.png",
 	"frame": {"x":0,"y":85,"w":640,"h":1040},
 	"rotated": false,
@@ -10,7 +18,7 @@
 },
 {
 	"filename": "s0_2.png",
-	"frame": {"x":0,"y":0,"w":176,"h":73},
+	"frame": {"x":121,"y":0,"w":176,"h":73},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":176,"h":73},
@@ -18,7 +26,7 @@
 },
 {
 	"filename": "s0_3.png",
-	"frame": {"x":176,"y":0,"w":260,"h":85},
+	"frame": {"x":297,"y":0,"w":260,"h":85},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":260,"h":85},
@@ -31,6 +39,6 @@
 	"format": "RGBA8888",
 	"size": {"w":640,"h":1125},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:97daa305b443c7854d0c25c6bb7fd5a0:e0bb32d9732ddf7ccdcef95fd592995f:2d5b579420da61c928871f404aa787d2$"
+	"smartupdate": "$TexturePacker:SmartUpdate:87ccbf30a952d21a00e5dc93cfcbc10f:29b416ace3b53a445f5dbd2c08facfe7:2d5b579420da61c928871f404aa787d2$"
 }
 }

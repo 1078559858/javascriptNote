@@ -2,8 +2,8 @@
   "canvas-version": 2,
   "settings": {
     "className": "overPrefab",
-    "sceneWidth": 750,
-    "sceneHeight": 1206,
+    "sceneWidth": 640,
+    "sceneHeight": 1008,
     "generateOnSave": true,
     "enableStepping": false,
     "lang": "JAVA_SCRIPT",
@@ -55,10 +55,7 @@
                   "type": "image",
                   "id": "a997590e-a148-4086-9f9d-e3cf5ded0aff",
                   "asset": "0",
-                  "info": {
-                    "editorName": "Result_foxi",
-                    "scale.x": 0
-                  }
+                  "info": {"editorName": "Result_foxi"}
                 }]
               }
             },
@@ -118,39 +115,25 @@
             },
             {
               "type": "button",
-              "id": "af31e9fe-51cc-4ee8-9e18-48a43999b2bf",
+              "id": "2a7471d8-0f35-4298-8423-098c6f30899b",
               "asset": "4",
               "info": {
-                "editorName": "again_png",
-                "x": 36,
-                "y": 775,
-                "alpha": 0,
-                "callback": "this.clickAgain"
-              }
-            },
-            {
-              "type": "button",
-              "id": "3a9d0e88-101a-4396-819a-efb9679aee50",
-              "asset": "5",
-              "info": {
-                "editorName": "goStudy",
+                "editorName": "btnMiji",
                 "editorPublic": true,
-                "x": 342,
-                "y": 772,
+                "x": 243.00003051757812,
+                "y": 758,
                 "callback": "this.clickStudy"
               }
             },
             {
               "type": "atlas-sprite",
-              "id": "07c363eb-b6ef-433f-9e3b-c3315fe3b805",
-              "asset": "6",
+              "id": "adf12406-c486-41de-bd6f-00cc3c061bcb",
+              "asset": "5",
               "info": {
-                "editorName": "get",
+                "editorName": "pngMiji",
                 "editorPublic": true,
-                "x": 753,
-                "y": 795,
-                "scale.x": -0.5,
-                "scale.y": 0.5
+                "x": 270.5000305175781,
+                "y": 777
               }
             }
           ]
@@ -183,20 +166,14 @@
     "4": {
       "file": "WebContent/assets/pack.json",
       "section": "colorAtlas",
-      "asset": "common1",
-      "sprite": "again.png"
+      "asset": "scene0",
+      "sprite": "s0_2.png"
     },
     "5": {
       "file": "WebContent/assets/pack.json",
       "section": "colorAtlas",
-      "asset": "common1",
-      "sprite": "go.png"
-    },
-    "6": {
-      "file": "WebContent/assets/pack.json",
-      "section": "colorAtlas",
-      "asset": "common1",
-      "sprite": "get.png"
+      "asset": "scene0",
+      "sprite": "miji.png"
     }
   },
   "prefab-table": {}
