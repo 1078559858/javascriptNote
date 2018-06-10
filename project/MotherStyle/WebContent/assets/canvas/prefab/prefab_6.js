@@ -21,8 +21,6 @@ function prefab_6(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyT
 	var _posterBG = this.game.add.sprite(0, 0, 'posterBG', null, this);
 	_posterBG.alpha = 0.0;
 	
-	this.game.add.sprite(110, 156, 'sceneTitle', 's6_title.png', this);
-	
 	this.game.add.sprite(0, 822, 'ip', 'huli.png', this);
 	
 	var _btn_a = this.game.add.button(95, 380, 'sceneBtn', this.clickBtn, this, null, 's6_a.png', null, null, this);
@@ -44,6 +42,12 @@ function prefab_6(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyT
 	_btn_d.data = {
 	"value":"d"
 	};
+	
+	this.game.add.sprite(111, 156, 'sceneTitle', 's_bg.png', this);
+	
+	this.game.add.sprite(184, 173, 'sceneTitle', 's6_1.png', this);
+	
+	this.game.add.sprite(118, 215, 'sceneTitle', 's6_2.png', this);
 	
 	
 	

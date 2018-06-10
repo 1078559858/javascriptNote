@@ -21,9 +21,8 @@ function prefab_4(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyT
 	var _posterBG = this.game.add.sprite(0, 0, 'posterBG', null, this);
 	_posterBG.alpha = 0.0;
 	
-	this.game.add.sprite(110, 156, 'sceneTitle', 's4_title.png', this);
-	
-	this.game.add.sprite(0, 807, 'ip', 'xiong.png', this);
+	var _boy2_png = this.game.add.sprite(1, 819, 'ip', 'bird.png', this);
+	_boy2_png.scale.setTo(0.9, 0.9);
 	
 	var _btn_a = this.game.add.button(95, 380, 'sceneBtn', this.clickBtn, this, null, 's4_a.png', null, null, this);
 	_btn_a.data = {
@@ -44,6 +43,12 @@ function prefab_4(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyT
 	_btn_d.data = {
 	"value":"d"
 	};
+	
+	this.game.add.sprite(110, 156, 'sceneTitle', 's_bg.png', this);
+	
+	this.game.add.sprite(124, 173, 'sceneTitle', 's4_1.png', this);
+	
+	this.game.add.sprite(125, 214, 'sceneTitle', 's4_2.png', this);
 	
 	
 	

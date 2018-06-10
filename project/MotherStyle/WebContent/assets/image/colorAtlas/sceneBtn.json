@@ -18,19 +18,19 @@
 },
 {
 	"filename": "s1_c.png",
-	"frame": {"x":944,"y":0,"w":470,"h":90},
+	"frame": {"x":944,"y":0,"w":472,"h":90},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":470,"h":90},
-	"sourceSize": {"w":470,"h":90}
+	"spriteSourceSize": {"x":0,"y":0,"w":472,"h":90},
+	"sourceSize": {"w":472,"h":90}
 },
 {
 	"filename": "s1_d.png",
-	"frame": {"x":1414,"y":0,"w":466,"h":90},
+	"frame": {"x":1416,"y":0,"w":472,"h":90},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":466,"h":90},
-	"sourceSize": {"w":466,"h":90}
+	"spriteSourceSize": {"x":0,"y":0,"w":472,"h":90},
+	"sourceSize": {"w":472,"h":90}
 },
 {
 	"filename": "s3_a.png",
@@ -199,6 +199,6 @@
 	"format": "RGBA8888",
 	"size": {"w":1888,"h":540},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:b49eae48dd92d83d67be711012b2f8c3:6b50c6b62b87097bcfe4efbf09522bcd:4062a5c614ded19c4c587807fdd7cfdb$"
+	"smartupdate": "$TexturePacker:SmartUpdate:73a1919c3c942800ae9fd7983f575ec7:e2086aa98f9a96abcdde607ac8b4c4ba:4062a5c614ded19c4c587807fdd7cfdb$"
 }
 }

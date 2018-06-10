@@ -2,7 +2,7 @@
 
 {
 	"filename": "s2_a.png",
-	"frame": {"x":668,"y":0,"w":222,"h":162},
+	"frame": {"x":0,"y":0,"w":222,"h":162},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":222,"h":162},
@@ -10,15 +10,15 @@
 },
 {
 	"filename": "s2_b.png",
-	"frame": {"x":0,"y":162,"w":223,"h":162},
+	"frame": {"x":0,"y":162,"w":213,"h":144},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":223,"h":162},
-	"sourceSize": {"w":223,"h":162}
+	"spriteSourceSize": {"x":0,"y":0,"w":213,"h":144},
+	"sourceSize": {"w":213,"h":144}
 },
 {
 	"filename": "s2_c.png",
-	"frame": {"x":667,"y":162,"w":222,"h":163},
+	"frame": {"x":0,"y":306,"w":222,"h":163},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":222,"h":163},
@@ -26,7 +26,7 @@
 },
 {
 	"filename": "s2_d.png",
-	"frame": {"x":223,"y":0,"w":223,"h":162},
+	"frame": {"x":0,"y":469,"w":223,"h":162},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":223,"h":162},
@@ -34,7 +34,7 @@
 },
 {
 	"filename": "s5_a.png",
-	"frame": {"x":446,"y":0,"w":222,"h":162},
+	"frame": {"x":0,"y":631,"w":222,"h":162},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":222,"h":162},
@@ -42,7 +42,7 @@
 },
 {
 	"filename": "s5_b.png",
-	"frame": {"x":0,"y":0,"w":223,"h":162},
+	"frame": {"x":0,"y":793,"w":223,"h":162},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":223,"h":162},
@@ -50,7 +50,7 @@
 },
 {
 	"filename": "s5_c.png",
-	"frame": {"x":445,"y":162,"w":222,"h":163},
+	"frame": {"x":0,"y":955,"w":222,"h":163},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":222,"h":163},
@@ -58,7 +58,7 @@
 },
 {
 	"filename": "s5_d.png",
-	"frame": {"x":223,"y":162,"w":222,"h":163},
+	"frame": {"x":0,"y":1118,"w":222,"h":163},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":222,"h":163},
@@ -69,8 +69,8 @@
 	"version": "1.0",
 	"image": "sceneProblem.png",
 	"format": "RGBA8888",
-	"size": {"w":890,"h":325},
+	"size": {"w":223,"h":1281},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:b96618133184a35a6590480008349b30:d22c8e9a78de5b4a57177085889271ef:698b56f056e428a081b8e5dc02ef3bb9$"
+	"smartupdate": "$TexturePacker:SmartUpdate:503ba46fd51dd8fd238d4dde460b15c6:bb99bbc6c8332f89a716904121181b7a:698b56f056e428a081b8e5dc02ef3bb9$"
 }
 }

@@ -55,18 +55,8 @@
             },
             {
               "type": "atlas-sprite",
-              "id": "45d26e07-3a9b-4c37-b56b-2b231c9807fb",
-              "asset": "1",
-              "info": {
-                "editorName": "s8_title_png",
-                "x": 110,
-                "y": 156
-              }
-            },
-            {
-              "type": "atlas-sprite",
               "id": "4edfc012-27fc-48e0-bb46-55a14fc42999",
-              "asset": "2",
+              "asset": "1",
               "info": {
                 "editorName": "boy2_png",
                 "y": 805
@@ -75,7 +65,7 @@
             {
               "type": "button",
               "id": "5dc3163b-2103-4b14-9c3a-cff6ce249bf5",
-              "asset": "3",
+              "asset": "2",
               "info": {
                 "editorName": "btn_a",
                 "editorPublic": true,
@@ -88,7 +78,7 @@
             {
               "type": "button",
               "id": "19a01387-3ccd-4acb-9f4e-54a57cea6f3d",
-              "asset": "4",
+              "asset": "3",
               "info": {
                 "editorName": "btn_b",
                 "editorPublic": true,
@@ -101,7 +91,7 @@
             {
               "type": "button",
               "id": "b989f2a6-9e1a-404f-bdb9-b8fcf05ba3a4",
-              "asset": "5",
+              "asset": "4",
               "info": {
                 "editorName": "btn_c",
                 "editorPublic": true,
@@ -114,7 +104,7 @@
             {
               "type": "button",
               "id": "aa74b27c-96af-4501-b67f-4537e76c68bb",
-              "asset": "6",
+              "asset": "5",
               "info": {
                 "editorName": "btn_d",
                 "editorPublic": true,
@@ -122,6 +112,26 @@
                 "y": 720,
                 "data": "{\r\n\"value\":\"d\"\r\n}",
                 "callback": "this.clickBtn"
+              }
+            },
+            {
+              "type": "atlas-sprite",
+              "id": "eb2d9c78-6072-4a4f-be40-8f5f85184687",
+              "asset": "6",
+              "info": {
+                "editorName": "s_bg_png",
+                "x": 109,
+                "y": 155
+              }
+            },
+            {
+              "type": "atlas-sprite",
+              "id": "e2334877-3b29-4136-8170-e10aaa0540a1",
+              "asset": "7",
+              "info": {
+                "editorName": "s8_1_png",
+                "x": 150,
+                "y": 195
               }
             }
           ]
@@ -139,38 +149,44 @@
     "1": {
       "file": "WebContent/assets/pack.json",
       "section": "colorAtlas",
-      "asset": "sceneTitle",
-      "sprite": "s8_title.png"
-    },
-    "2": {
-      "file": "WebContent/assets/pack.json",
-      "section": "colorAtlas",
       "asset": "ip",
       "sprite": "girl2.png"
     },
-    "3": {
+    "2": {
       "file": "WebContent/assets/pack.json",
       "section": "colorAtlas",
       "asset": "sceneBtn",
       "sprite": "s8_a.png"
     },
-    "4": {
+    "3": {
       "file": "WebContent/assets/pack.json",
       "section": "colorAtlas",
       "asset": "sceneBtn",
       "sprite": "s8_b.png"
     },
-    "5": {
+    "4": {
       "file": "WebContent/assets/pack.json",
       "section": "colorAtlas",
       "asset": "sceneBtn",
       "sprite": "s8_c.png"
     },
-    "6": {
+    "5": {
       "file": "WebContent/assets/pack.json",
       "section": "colorAtlas",
       "asset": "sceneBtn",
       "sprite": "s8_d.png"
+    },
+    "6": {
+      "file": "WebContent/assets/pack.json",
+      "section": "colorAtlas",
+      "asset": "sceneTitle",
+      "sprite": "s_bg.png"
+    },
+    "7": {
+      "file": "WebContent/assets/pack.json",
+      "section": "colorAtlas",
+      "asset": "sceneTitle",
+      "sprite": "s8_1.png"
     }
   },
   "prefab-table": {}

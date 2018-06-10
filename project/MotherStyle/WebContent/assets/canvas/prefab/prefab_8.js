@@ -21,8 +21,6 @@ function prefab_8(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyT
 	var _posterBG = this.game.add.sprite(0, 0, 'posterBG', null, this);
 	_posterBG.alpha = 0.0;
 	
-	this.game.add.sprite(110, 156, 'sceneTitle', 's8_title.png', this);
-	
 	this.game.add.sprite(0, 805, 'ip', 'girl2.png', this);
 	
 	var _btn_a = this.game.add.button(95, 380, 'sceneBtn', this.clickBtn, this, null, 's8_a.png', null, null, this);
@@ -44,6 +42,10 @@ function prefab_8(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyT
 	_btn_d.data = {
 	"value":"d"
 	};
+	
+	this.game.add.sprite(109, 155, 'sceneTitle', 's_bg.png', this);
+	
+	this.game.add.sprite(150, 195, 'sceneTitle', 's8_1.png', this);
 	
 	
 	

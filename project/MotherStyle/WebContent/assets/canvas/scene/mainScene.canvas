@@ -181,7 +181,7 @@
                 "editorName": "bgBtn",
                 "editorPick": false,
                 "editorPublic": true,
-                "scale.x": 0
+                "alpha": 0
               }
             },
             {

@@ -55,18 +55,8 @@
             },
             {
               "type": "atlas-sprite",
-              "id": "96600d8d-f52f-4304-b4a7-ca85fc04e4b5",
-              "asset": "1",
-              "info": {
-                "editorName": "s7_title_png",
-                "x": 110,
-                "y": 156
-              }
-            },
-            {
-              "type": "atlas-sprite",
               "id": "2eb4a4fa-e0d8-4943-8246-4208690b50d2",
-              "asset": "2",
+              "asset": "1",
               "info": {
                 "editorName": "boy2_png",
                 "y": 831,
@@ -77,7 +67,7 @@
             {
               "type": "button",
               "id": "8e73686d-9b6a-4003-a07a-8eb61cc22ee6",
-              "asset": "3",
+              "asset": "2",
               "info": {
                 "editorName": "btn_a",
                 "editorPublic": true,
@@ -90,7 +80,7 @@
             {
               "type": "button",
               "id": "44af99f1-e558-4fe4-ac51-691b9de30fab",
-              "asset": "4",
+              "asset": "3",
               "info": {
                 "editorName": "btn_b",
                 "editorPublic": true,
@@ -103,7 +93,7 @@
             {
               "type": "button",
               "id": "9deccb70-bc4d-410a-bf0c-3a697b28db9e",
-              "asset": "5",
+              "asset": "4",
               "info": {
                 "editorName": "btn_c",
                 "editorPublic": true,
@@ -116,7 +106,7 @@
             {
               "type": "button",
               "id": "060fb0f8-7879-4d38-b45f-0a894ba6b44a",
-              "asset": "6",
+              "asset": "5",
               "info": {
                 "editorName": "btn_d",
                 "editorPublic": true,
@@ -124,6 +114,36 @@
                 "y": 720,
                 "data": "{\r\n\"value\":\"d\"\r\n}",
                 "callback": "this.clickBtn"
+              }
+            },
+            {
+              "type": "atlas-sprite",
+              "id": "3e183489-a61d-4fa4-8c24-23a6728b2b1b",
+              "asset": "6",
+              "info": {
+                "editorName": "s_bg_png",
+                "x": 110,
+                "y": 156
+              }
+            },
+            {
+              "type": "atlas-sprite",
+              "id": "35534132-e95c-49bb-a9d6-78f06e3fadd5",
+              "asset": "7",
+              "info": {
+                "editorName": "s7_1_png",
+                "x": 134,
+                "y": 173
+              }
+            },
+            {
+              "type": "atlas-sprite",
+              "id": "97be352c-9b6e-4945-9499-3a94b046c8a8",
+              "asset": "8",
+              "info": {
+                "editorName": "s7_2_png",
+                "x": 172,
+                "y": 215
               }
             }
           ]
@@ -141,38 +161,50 @@
     "1": {
       "file": "WebContent/assets/pack.json",
       "section": "colorAtlas",
-      "asset": "sceneTitle",
-      "sprite": "s7_title.png"
-    },
-    "2": {
-      "file": "WebContent/assets/pack.json",
-      "section": "colorAtlas",
       "asset": "ip",
       "sprite": "eyu.png"
     },
-    "3": {
+    "2": {
       "file": "WebContent/assets/pack.json",
       "section": "colorAtlas",
       "asset": "sceneBtn",
       "sprite": "s7_a.png"
     },
-    "4": {
+    "3": {
       "file": "WebContent/assets/pack.json",
       "section": "colorAtlas",
       "asset": "sceneBtn",
       "sprite": "s7_b.png"
     },
-    "5": {
+    "4": {
       "file": "WebContent/assets/pack.json",
       "section": "colorAtlas",
       "asset": "sceneBtn",
       "sprite": "s7_c.png"
     },
-    "6": {
+    "5": {
       "file": "WebContent/assets/pack.json",
       "section": "colorAtlas",
       "asset": "sceneBtn",
       "sprite": "s7_d.png"
+    },
+    "6": {
+      "file": "WebContent/assets/pack.json",
+      "section": "colorAtlas",
+      "asset": "sceneTitle",
+      "sprite": "s_bg.png"
+    },
+    "7": {
+      "file": "WebContent/assets/pack.json",
+      "section": "colorAtlas",
+      "asset": "sceneTitle",
+      "sprite": "s7_1.png"
+    },
+    "8": {
+      "file": "WebContent/assets/pack.json",
+      "section": "colorAtlas",
+      "asset": "sceneTitle",
+      "sprite": "s7_2.png"
     }
   },
   "prefab-table": {}

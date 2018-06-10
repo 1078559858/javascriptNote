@@ -9,8 +9,7 @@
 /**
  * prefab_3.
  * @param {Phaser.Game} aGame A reference to the currently running game.
- * @param {Phaser.Group} aParent The parent Group (or other {@link DisplayObject}) that this group will be added to.
-    If undefined/unspecified the Group will be added to the {@link Phaser.Game#world Game World}; if null the Group will not be added to any parent.
+ * @param {Phaser.Group} aParent The parent Group (or other {@link DisplayObject}) that this group will be added to.    If undefined/unspecified the Group will be added to the {@link Phaser.Game#world Game World}; if null the Group will not be added to any parent.
  * @param {string} aName A name for this group. Not used internally but useful for debugging.
  * @param {boolean} aAddToStage If true this group will be added directly to the Game.Stage instead of Game.World.
  * @param {boolean} aEnableBody If true all Sprites created with {@link #create} or {@link #createMulitple} will have a physics body created on them. Change the body type with {@link #physicsBodyType}.
@@ -22,10 +21,8 @@ function prefab_3(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyT
 	var _posterBG = this.game.add.sprite(0, 0, 'posterBG', null, this);
 	_posterBG.alpha = 0.0;
 	
-	this.game.add.sprite(110, 156, 'sceneTitle', 's3_title.png', this);
-	
-	var _boy2_png = this.game.add.sprite(1, 747, 'ip', 'boy2.png', this);
-	_boy2_png.scale.setTo(1.3, 1.3);
+	var _boy2_png = this.game.add.sprite(1, 825, 'ip', 'xiong.png', this);
+	_boy2_png.scale.setTo(0.9, 0.9);
 	
 	var _btn_a = this.game.add.button(95, 380, 'sceneBtn', this.clickBtn, this, null, 's3_a.png', null, null, this);
 	_btn_a.data = {
@@ -46,6 +43,12 @@ function prefab_3(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyT
 	_btn_d.data = {
 	"value":"d"
 	};
+	
+	this.game.add.sprite(113, 159, 'sceneTitle', 's_bg.png', this);
+	
+	this.game.add.sprite(119, 178, 'sceneTitle', 's3_1.png', this);
+	
+	this.game.add.sprite(209, 218, 'sceneTitle', 's3_2.png', this);
 	
 	
 	this.position.setTo(0, 4);
