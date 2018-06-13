@@ -81,6 +81,12 @@
       "key": "nullLittle",
       "url": "assets/image/temp/nullLittle.png",
       "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "1",
+      "url": "assets/image/temp/1.png",
+      "overwrite": false
     }
   ],
   "colorAtlas": [
@@ -142,7 +148,7 @@
     }
   ],
   "meta": {
-    "generated": "1528544368673",
+    "generated": "1528651715973",
     "app": "Phaser Editor",
     "url": "http://phasereditor.boniatillo.com",
     "version": "1.0",

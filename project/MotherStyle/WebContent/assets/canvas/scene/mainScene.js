@@ -9,7 +9,8 @@
 /**
  * mainScene.
  * @param {Phaser.Game} aGame A reference to the currently running game.
- * @param {Phaser.Group} aParent The parent Group (or other {@link DisplayObject}) that this group will be added to.    If undefined/unspecified the Group will be added to the {@link Phaser.Game#world Game World}; if null the Group will not be added to any parent.
+ * @param {Phaser.Group} aParent The parent Group (or other {@link DisplayObject}) that this group will be added to.
+    If undefined/unspecified the Group will be added to the {@link Phaser.Game#world Game World}; if null the Group will not be added to any parent.
  * @param {string} aName A name for this group. Not used internally but useful for debugging.
  * @param {boolean} aAddToStage If true this group will be added directly to the Game.Stage instead of Game.World.
  * @param {boolean} aEnableBody If true all Sprites created with {@link #create} or {@link #createMulitple} will have a physics body created on them. Change the body type with {@link #physicsBodyType}.
@@ -130,6 +131,33 @@ mainScene.prototype.disAppearGroup = function (group) {
 mainScene.prototype.initOnce = function () {
 	this.setAnchorMiddle(this.fMusic_btn);
 	this.fBgBtn.inputEnabled = false;
+
+
+	// var img = $('#id_leftUp')[0];
+	// var tsWidth = Math.round(img.clientWidth/ this.game.scale.scaleFactor.x);
+	// var tsHeight = Math.round(img.clientHeight / this.game.scale.scaleFactor.y);
+	// img.style.width = tsWidth + 'px';
+	// img.style.width = tsHeight + 'px';
+
+
+	// // img.style.margin = '10px 0px 0px 200px';
+	//  img.style.margin = '0px 0px 0px 0px';
+
+
+	//img.style.left = '100px';
+	//
+	//
+	//
+	// // this.f111.anchor.set(0,0);
+	// // this.f111.x = -this.game.scale.bounds.x;
+	// // this.f111.y = 0;
+	//
+	// console.log(img.style);
+	// console.log(img);
+	//
+	// console.log(this.game.scale.scaleFactor.x);
+	// console.log(this.game.scale.scaleFactor.y);
+	// console.log(this.game.scale.bounds);
 
 	// this.game.input.onDown.add(this.onGameDown, "down");
 	// this.game.input.onUp.add(this.onGameUp, "up");

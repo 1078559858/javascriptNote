@@ -86,7 +86,7 @@
                 "editorName": "btn_b",
                 "editorPublic": true,
                 "x": 340,
-                "y": 419,
+                "y": 416,
                 "data": "{\r\n\"value\":\"b\"\r\n}",
                 "callback": "this.clickBtn"
               }

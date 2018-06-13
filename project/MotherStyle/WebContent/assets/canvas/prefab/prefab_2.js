@@ -29,7 +29,7 @@ function prefab_2(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyT
 	"value":"a"
 	};
 	
-	var _btn_b = this.game.add.button(340, 419, 'sceneProblem', this.clickBtn, this, null, 's2_b.png', null, null, this);
+	var _btn_b = this.game.add.button(340, 416, 'sceneProblem', this.clickBtn, this, null, 's2_b.png', null, null, this);
 	_btn_b.data = {
 	"value":"b"
 	};
