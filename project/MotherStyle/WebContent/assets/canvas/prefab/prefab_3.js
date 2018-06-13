@@ -34,12 +34,12 @@ function prefab_3(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyT
 	"value":"b"
 	};
 	
-	var _btn_c = this.game.add.button(95, 606, 'sceneBtn', this.clickBtn, this, null, 's1_c.png', null, null, this);
+	var _btn_c = this.game.add.button(95, 606, 'sceneBtn', this.clickBtn, this, null, 's3_c.png', null, null, this);
 	_btn_c.data = {
 	"value":"c"
 	};
 	
-	var _btn_d = this.game.add.button(95, 720, 'sceneBtn', this.clickBtn, this, null, 's1_d.png', null, null, this);
+	var _btn_d = this.game.add.button(95, 720, 'sceneBtn', this.clickBtn, this, null, 's3_d.png', null, null, this);
 	_btn_d.data = {
 	"value":"d"
 	};

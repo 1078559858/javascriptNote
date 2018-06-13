@@ -182,13 +182,13 @@
       "file": "WebContent/assets/pack.json",
       "section": "colorAtlas",
       "asset": "sceneBtn",
-      "sprite": "s1_c.png"
+      "sprite": "s3_c.png"
     },
     "5": {
       "file": "WebContent/assets/pack.json",
       "section": "colorAtlas",
       "asset": "sceneBtn",
-      "sprite": "s1_d.png"
+      "sprite": "s3_d.png"
     },
     "6": {
       "file": "WebContent/assets/pack.json",
