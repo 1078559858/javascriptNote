@@ -87,6 +87,9 @@ pre_1.prototype.initOnce  = function () {
 
 pre_1.prototype.clickClose = function () {
 	this.game.add.tween(this.scale).to({x:0, y:0}, 1000, Phaser.Easing.Bounce.Out, true);
+
+	gGame.gameScene.fGroupOver.convertImageAppear();
+	console.log("appear");
 };
 
 pre_1.prototype.focusIn = function () {

@@ -30,5 +30,12 @@ var gUserInfo = {
 	"haveBoy":false,
 	"choice":[],
 	"moveTime":0,
-	"moveBegainY":0
+	"moveBegainY":0,
+	"fileName":'',
+	"toumingName":"assets/image/temp/touming.png",
+	"uppicHeight":0,
+	"uppicWidth":0,
+	"downpicHeight":0,
+	"downpicWidth":0,
+	"downpicMarginUp":0
 };

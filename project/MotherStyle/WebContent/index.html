@@ -18,6 +18,7 @@
     <script src="lib/phaser-min.js"></script>
     <script src="lib/phaser-spine.js"></script>
     <script src="lib/phaser-input.js"></script>
+    <script src="lib/canvas2image.js"></script>
 
     <!--base-->
     <script src="js/base/GlobalConf.js"></script>
@@ -67,8 +68,8 @@
             z-index: -1;
         }
 
-        .style_left_up {
-            positon:relative;
+        .style_corner {
+            positon:absolute;
             height:0px;
             margin-left: 0%;
             z-index: 1;
@@ -90,8 +91,11 @@
 
 </head>
 <body>
+<!--<div class="style_corner"><img src="assets/image/temp/touming.png" id="id_rightUp"></div>-->
+<!--<div class="style_corner"><img src="assets/image/temp/touming.png" id="id_rightDown"></div>-->
 
-    <!--<div class="style_left_up"><img src="assets/image/temp/1.png" id="id_leftUp"></div>-->
+    <div class="style_corner" ><img src="assets/image/temp/touming.png" id="id_leftUp"></div>
+    <div class="style_corner" ><img src="assets/image/temp/touming.png" id="id_leftDown"></div>
     <div id="id_game" class="style_game"></div>
 </body>
 

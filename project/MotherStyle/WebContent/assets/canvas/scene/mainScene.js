@@ -132,13 +132,42 @@ mainScene.prototype.initOnce = function () {
 	this.setAnchorMiddle(this.fMusic_btn);
 	this.fBgBtn.inputEnabled = false;
 
-
 	// var img = $('#id_leftUp')[0];
-	// var tsWidth = Math.round(img.clientWidth/ this.game.scale.scaleFactor.x);
-	// var tsHeight = Math.round(img.clientHeight / this.game.scale.scaleFactor.y);
+	// img.src = 'assets/image/temp/1.png';
+	// var tsWidth = Math.round(img.clientWidth/ this.game.scale.scaleFactor.x/window.devicePixelRatio);
+	// var tsHeight = Math.round(img.clientHeight / this.game.scale.scaleFactor.y/window.devicePixelRatio);
 	// img.style.width = tsWidth + 'px';
 	// img.style.width = tsHeight + 'px';
-
+	//
+	//
+	// var img = $('#id_rightUp')[0];
+	// img.src = 'assets/image/temp/3.png';
+	// var tsWidth = Math.round(img.clientWidth/ this.game.scale.scaleFactor.x/window.devicePixelRatio);
+	// var tsHeight = Math.round(img.clientHeight / this.game.scale.scaleFactor.y/window.devicePixelRatio);
+	// img.style.width = tsWidth + 'px';
+	// img.style.width = tsHeight + 'px';
+	// img.style.float = 'right';
+	//
+	// var img = $('#id_rightDown')[0];
+	// img.src = 'assets/image/temp/2.png';
+	// var tsWidth = Math.round(img.clientWidth/ this.game.scale.scaleFactor.x/window.devicePixelRatio);
+	// var tsHeight = Math.round(img.clientHeight / this.game.scale.scaleFactor.y/window.devicePixelRatio);
+	// img.style.width = tsWidth + 'px';
+	// img.style.width = tsHeight + 'px';
+	// img.style.float = 'right';
+	//
+	//
+	// var idGame = $('#id_game')[0];
+	// var screenWidth =  document.body.clientWidth;
+	// var screenHeight = document.body.scrollHeight ;
+	//
+	// img.style.marginLeft = (screenWidth - tsWidth) + 'px';
+	// img.style.marginTop = (screenHeight - tsHeight*2) + 'px';
+	// // img.style.float = 'right';
+	// //
+	// console.log(img.style);
+	// console.log(screenHeight);
+	// console.log(this.game.scale.bounds);
 
 	// // img.style.margin = '10px 0px 0px 200px';
 	//  img.style.margin = '0px 0px 0px 0px';
@@ -204,7 +233,7 @@ mainScene.prototype.setTempAction1 = function (group) {
 	var time = Math.random()*200;
 	var tweenA = this.game.add.tween(group).to({x:group.x - 300}, 100, Phaser.Easing.Linear.None, true);
 	tweenA.onComplete.addOnce(function () {
-		var tweenB = gGame.add.tween(group).to({x:group.x - 340}, 1600 + time, Phaser.Easing.Elastic.Out, true);
+		var tweenB = gGame.add.tween(group).to({x:group.x - 340}, 1000 + time, Phaser.Easing.Elastic.Out, true);
 		tweenB.onComplete.addOnce(function () {
 			gGame.gameScene.fBgBtn.inputEnabled = false;
 		})

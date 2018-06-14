@@ -115,6 +115,17 @@
             },
             {
               "type": "button",
+              "id": "7a46356d-a2fd-4c45-ac14-ff555e1dae76",
+              "asset": "0",
+              "info": {
+                "editorName": "btnConvert",
+                "editorPublic": true,
+                "alpha": 0,
+                "callback": "this.clickConvertImg"
+              }
+            },
+            {
+              "type": "button",
               "id": "2a7471d8-0f35-4298-8423-098c6f30899b",
               "asset": "4",
               "info": {
