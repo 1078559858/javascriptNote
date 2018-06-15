@@ -22,7 +22,7 @@ function prefab_0(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyT
 	
 	var _btnBegain = this.game.add.button(190, 870, 'scene0', this.clickBegain, this, null, 's0_3.png', null, null, this);
 	
-	this.game.add.sprite(185, 105, 'boy', null, this);
+	this.game.add.sprite(180, 105, 'boy', null, this);
 	
 	
 	

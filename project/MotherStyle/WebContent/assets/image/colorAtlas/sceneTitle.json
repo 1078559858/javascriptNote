@@ -26,11 +26,11 @@
 },
 {
 	"filename": "s2_2.png",
-	"frame": {"x":0,"y":74,"w":308,"h":62},
+	"frame": {"x":0,"y":74,"w":343,"h":62},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":308,"h":62},
-	"sourceSize": {"w":308,"h":62}
+	"spriteSourceSize": {"x":0,"y":0,"w":343,"h":62},
+	"sourceSize": {"w":343,"h":62}
 },
 {
 	"filename": "s3_1.png",
@@ -106,7 +106,7 @@
 },
 {
 	"filename": "s7_2.png",
-	"frame": {"x":308,"y":74,"w":343,"h":62},
+	"frame": {"x":343,"y":74,"w":343,"h":62},
 	"rotated": false,
 	"trimmed": false,
 	"spriteSourceSize": {"x":0,"y":0,"w":343,"h":62},
@@ -135,6 +135,6 @@
 	"format": "RGBA8888",
 	"size": {"w":964,"h":528},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:42d5758926604b67e00dfb51d89f3b3b:4bd5ab2c28138308424947304157fa3e:cc42691664b6984fc29d1060bdacda67$"
+	"smartupdate": "$TexturePacker:SmartUpdate:8d921bb1b69ad488809bc6e595fff3e6:a447e0705c54487ef1d602f719089747:cc42691664b6984fc29d1060bdacda67$"
 }
 }
