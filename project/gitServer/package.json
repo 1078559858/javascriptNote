@@ -1,0 +1,15 @@
+{
+  "name": "gitServer",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www.js --prof httpPort 4000 --gamePort 10000 --gameHost www.yangmengmeng.com"
+  },
+  "dependencies": {
+    "jssha": "^1.5.0",
+    "optimist": "~0.6.1",
+    "mongodb": "~2.1.18",
+    "mongojs": "~2.4.0",
+    "ws": "~1.1.0"
+  }
+}
