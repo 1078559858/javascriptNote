@@ -24,22 +24,22 @@ function prefab_2(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyT
 	var _boy2_png = this.game.add.sprite(1, 747, 'ip', 'boy.png', this);
 	_boy2_png.scale.setTo(1.3, 1.3);
 	
-	var _btn_a = this.game.add.button(111, 419, 'sceneProblem', this.clickBtn, this, null, 's2_a.png', null, null, this);
+	var _btn_a = this.game.add.button(97, 419, 'sceneProblem', this.clickBtn, this, null, 's2_a.png', null, null, this);
 	_btn_a.data = {
 	"value":"a"
 	};
 	
-	var _btn_b = this.game.add.button(340, 416, 'sceneProblem', this.clickBtn, this, null, 's2_b.png', null, null, this);
+	var _btn_b = this.game.add.button(342, 419, 'sceneProblem', this.clickBtn, this, null, 's2_b.png', null, null, this);
 	_btn_b.data = {
 	"value":"b"
 	};
 	
-	var _btn_c = this.game.add.button(111, 603, 'sceneProblem', this.clickBtn, this, null, 's2_c.png', null, null, this);
+	var _btn_c = this.game.add.button(97, 603, 'sceneProblem', this.clickBtn, this, null, 's2_c.png', null, null, this);
 	_btn_c.data = {
 	"value":"c"
 	};
 	
-	var _btn_d = this.game.add.button(340, 603, 'sceneProblem', this.clickBtn, this, null, 's2_d.png', null, null, this);
+	var _btn_d = this.game.add.button(342, 603, 'sceneProblem', this.clickBtn, this, null, 's2_d.png', null, null, this);
 	_btn_d.data = {
 	"value":"d"
 	};

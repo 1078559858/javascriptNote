@@ -23,7 +23,7 @@ function prefab_5(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyT
 	
 	this.game.add.sprite(1, 807, 'ip', 'girl.png', this);
 	
-	var _btn_a = this.game.add.button(111, 419, 'sceneProblem', this.clickBtn, this, null, 's5_a.png', null, null, this);
+	var _btn_a = this.game.add.button(97, 419, 'sceneProblem', this.clickBtn, this, null, 's5_a.png', null, null, this);
 	_btn_a.data = {
 	"value":"a"
 	};
@@ -33,7 +33,7 @@ function prefab_5(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyT
 	"value":"b"
 	};
 	
-	var _btn_c = this.game.add.button(111, 603, 'sceneProblem', this.clickBtn, this, null, 's5_c.png', null, null, this);
+	var _btn_c = this.game.add.button(97, 603, 'sceneProblem', this.clickBtn, this, null, 's5_c.png', null, null, this);
 	_btn_c.data = {
 	"value":"c"
 	};

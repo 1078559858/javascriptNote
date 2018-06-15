@@ -51,27 +51,25 @@
               "info": {"editorName": "s0_1_png"}
             },
             {
-              "type": "atlas-sprite",
-              "id": "e3efcf96-ea8a-4383-b342-65a43ad168d2",
-              "asset": "1",
-              "info": {
-                "editorName": "boy_png",
-                "x": 208,
-                "y": 164,
-                "scale.x": 2,
-                "scale.y": 2
-              }
-            },
-            {
               "type": "button",
               "id": "20f0368f-b182-4df1-9e5d-b62a7f1b8680",
-              "asset": "2",
+              "asset": "1",
               "info": {
                 "editorName": "btnBegain",
                 "editorPublic": true,
                 "x": 190,
                 "y": 870,
                 "callback": "this.clickBegain"
+              }
+            },
+            {
+              "type": "image",
+              "id": "a6c5477b-d9d6-49f3-81e8-e715894be869",
+              "asset": "2",
+              "info": {
+                "editorName": "boy",
+                "x": 185,
+                "y": 105
               }
             }
           ]
@@ -90,14 +88,13 @@
     "1": {
       "file": "WebContent/assets/pack.json",
       "section": "colorAtlas",
-      "asset": "ip",
-      "sprite": "boy.png"
+      "asset": "scene0",
+      "sprite": "s0_3.png"
     },
     "2": {
       "file": "WebContent/assets/pack.json",
-      "section": "colorAtlas",
-      "asset": "scene0",
-      "sprite": "s0_3.png"
+      "section": "common",
+      "asset": "boy"
     }
   },
   "prefab-table": {}

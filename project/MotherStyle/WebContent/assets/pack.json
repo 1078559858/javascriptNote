@@ -139,10 +139,16 @@
       "key": "posterBG",
       "url": "assets/image/common/posterBG.png",
       "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "boy",
+      "url": "assets/image/common/boy.png",
+      "overwrite": false
     }
   ],
   "meta": {
-    "generated": "1528890189442",
+    "generated": "1528982340118",
     "app": "Phaser Editor",
     "url": "http://phasereditor.boniatillo.com",
     "version": "1.0",

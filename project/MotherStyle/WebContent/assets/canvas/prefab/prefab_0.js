@@ -9,8 +9,7 @@
 /**
  * prefab_0.
  * @param {Phaser.Game} aGame A reference to the currently running game.
- * @param {Phaser.Group} aParent The parent Group (or other {@link DisplayObject}) that this group will be added to.
-    If undefined/unspecified the Group will be added to the {@link Phaser.Game#world Game World}; if null the Group will not be added to any parent.
+ * @param {Phaser.Group} aParent The parent Group (or other {@link DisplayObject}) that this group will be added to.    If undefined/unspecified the Group will be added to the {@link Phaser.Game#world Game World}; if null the Group will not be added to any parent.
  * @param {string} aName A name for this group. Not used internally but useful for debugging.
  * @param {boolean} aAddToStage If true this group will be added directly to the Game.Stage instead of Game.World.
  * @param {boolean} aEnableBody If true all Sprites created with {@link #create} or {@link #createMulitple} will have a physics body created on them. Change the body type with {@link #physicsBodyType}.
@@ -21,10 +20,9 @@ function prefab_0(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyT
 	Phaser.Group.call(this, aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyType);
 	this.game.add.sprite(0, 0, 'scene0', 's0_1.png', this);
 	
-	var _boy_png = this.game.add.sprite(208, 164, 'ip', 'boy.png', this);
-	_boy_png.scale.setTo(2.0, 2.0);
-	
 	var _btnBegain = this.game.add.button(190, 870, 'scene0', this.clickBegain, this, null, 's0_3.png', null, null, this);
+	
+	this.game.add.sprite(185, 105, 'boy', null, this);
 	
 	
 	

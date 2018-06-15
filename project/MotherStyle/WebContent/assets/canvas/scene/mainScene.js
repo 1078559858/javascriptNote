@@ -233,7 +233,7 @@ mainScene.prototype.setTempAction1 = function (group) {
 	var time = Math.random()*200;
 	var tweenA = this.game.add.tween(group).to({x:group.x - 300}, 100, Phaser.Easing.Linear.None, true);
 	tweenA.onComplete.addOnce(function () {
-		var tweenB = gGame.add.tween(group).to({x:group.x - 340}, 1000 + time, Phaser.Easing.Elastic.Out, true);
+		var tweenB = gGame.add.tween(group).to({x:group.x - 340}, 1600 + time, Phaser.Easing.Elastic.Out, true);
 		tweenB.onComplete.addOnce(function () {
 			gGame.gameScene.fBgBtn.inputEnabled = false;
 		})

@@ -72,7 +72,7 @@
               "info": {
                 "editorName": "btn_a",
                 "editorPublic": true,
-                "x": 111,
+                "x": 97,
                 "y": 419,
                 "data": "{\r\n\"value\":\"a\"\r\n}",
                 "callback": "this.clickBtn"
@@ -85,8 +85,8 @@
               "info": {
                 "editorName": "btn_b",
                 "editorPublic": true,
-                "x": 340,
-                "y": 416,
+                "x": 342,
+                "y": 419,
                 "data": "{\r\n\"value\":\"b\"\r\n}",
                 "callback": "this.clickBtn"
               }
@@ -98,7 +98,7 @@
               "info": {
                 "editorName": "btn_c",
                 "editorPublic": true,
-                "x": 111,
+                "x": 97,
                 "y": 603,
                 "data": "{\r\n\"value\":\"c\"\r\n}",
                 "callback": "this.clickBtn"
@@ -111,7 +111,7 @@
               "info": {
                 "editorName": "btn_d",
                 "editorPublic": true,
-                "x": 340,
+                "x": 342,
                 "y": 603,
                 "data": "{\r\n\"value\":\"d\"\r\n}",
                 "callback": "this.clickBtn"
