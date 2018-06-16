@@ -26,6 +26,18 @@ Date.prototype.Format = function (fmt) {
 };
 
 var GlobalUtils = {
+	"GetNonceStr":function (len) {
+		len = len || 32;
+
+		var pwd = '';
+		var chars = 'ABCDEFGHJKMNPQRSTWXYZabcdefhijkmnprstwxyz2345678';
+
+		for(var i = 0; i < len; i++){
+			pwd += chars.charAt(Math.floor(Math.random()*chars.length));
+		}
+
+		return pwd;
+	},
 	"RandomRange":function (from,to) {
 		var value = Math.random()*(to-from);
 		value += from;
@@ -193,6 +205,59 @@ var FormatNumber = {
 		}
 
 		return false;
+	}
+};
+
+var GlobalSocket = {
+	"CreateAjaxObject":function () {
+		var xmlHttp;
+		try {
+			// Firefox, Opera 8.0+, Safari
+			xmlHttp = new XMLHttpRequest();
+		}
+		catch (e) {
+			// Internet Explorer
+			try {
+				xmlHttp = new ActiveXObject("Msxml2.XMLHTTP");
+			} catch (e) {
+				try {
+					xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+				} catch (e) {
+					return false;
+				}
+			}
+		}
+		return xmlHttp;
+	},
+	"CreateAjaxPost":function (url, data, callback) {
+		var ajax = this.CreateAjaxObject();
+		if (!ajax) {
+			callback(null);
+			return;
+		}
+
+		ajax.open("POST",url,true );
+		ajax.setRequestHeader( "Access-Control-Allow-Origin",'*');
+		ajax.setRequestHeader( "Content-Type" , "application/x-www-form-urlencoded" );
+		ajax.onreadystatechange = function () {
+			if( ajax.readyState == 4 ) {
+				if( ajax.status == 200 ) {
+					callback(ajax.responseText);
+				}
+				else {
+					callback(null);
+					console.log("HTTP请求错误！错误码："+ajax.status);
+				}
+			}
+		};
+		ajax.send(data);
+	},
+	"createGet":function (url, callback) {
+		$.get(url, function (result) {
+			callback && callback(result);
+		}).error(function () {
+			callback && callback(null);
+		});
 	}
 };
 

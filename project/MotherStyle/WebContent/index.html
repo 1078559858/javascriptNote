@@ -10,7 +10,7 @@
     <meta name="screen-orientation" content="portrait" />
     <meta name="x5-fullscreen" content="true" />
     <meta name="360-fullscreen" content="true" />
-    <title>MatherType5</title>
+    <title>MatherType</title>
 
     <!--libs-->
     <script src="lib/jquery-1.12.4.min.js"></script>
@@ -19,10 +19,12 @@
     <script src="lib/phaser-spine.js"></script>
     <script src="lib/phaser-input.js"></script>
     <script src="lib/canvas2image.js"></script>
+    <script src="lib/jwexin-1.0.0.js"></script>
 
     <!--base-->
     <script src="js/base/GlobalConf.js"></script>
     <script src="js/base/GlobalUtils.js"></script>
+    <script src="js/base/wxshare.js"></script>
 
     <!--prefab-->
     <script src="assets/canvas/prefab/pre_1.js"></script>
@@ -107,6 +109,37 @@
 //		$('#id_game').height(bHeight1);
 //		$('#id_game').width(bWidth1);
 //	})
+
+
+	wxPostLocalHost(function (data) {
+        if(!data){
+        	alert("微信分享初始化失败，无法微信分享！");
+            return;
+        }
+
+        data = JSON.parse(data);
+
+		wx.config({
+			debug:true,
+			appId:data.appId,
+			timestamp: Number(data.timestamp),
+			nonceStr:data.nonceStr,
+			signature:data.signature,
+			jsApiList:[
+				'onMenuShareTimeline',      //分享朋友圈、分享给朋友、分享QQ、分享微博、分享QZone
+				'onMenuShareAppMessage'
+			]
+		});
+
+        console.log(data);
+	});
+
+//	$.get("https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wx80839de5b232cf04&secret=c3e65b9428ede1687e65f45562aa12ab", function (result) {
+//		console.log(result);
+//	}).error(function (err) {
+//		console.log(err)
+//	});
+
 
 </script>
 </html>
