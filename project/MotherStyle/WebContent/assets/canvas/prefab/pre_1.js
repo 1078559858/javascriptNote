@@ -108,8 +108,8 @@ pre_1.prototype.convertImageAppear = function () {
 	var img = $('#id_pop_layer_up')[0];
 	img.src = gUserInfo.overFileName;
 	img.style.opacity = 0;
-	var tsWidth = Math.round(img.clientWidth/ this.game.scale.scaleFactor.x);
-	var tsHeight = Math.round(img.clientHeight / this.game.scale.scaleFactor.y);
+	var tsWidth = Math.round(600/ this.game.scale.scaleFactor.x);
+	var tsHeight = Math.round(502 / this.game.scale.scaleFactor.y);
 	if(!gUserInfo.overpicWidth){
 		gUserInfo.overpicWidth = tsWidth + 'px';
 	}

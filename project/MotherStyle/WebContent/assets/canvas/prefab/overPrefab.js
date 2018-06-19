@@ -9,7 +9,8 @@
 /**
  * overPrefab.
  * @param {Phaser.Game} aGame A reference to the currently running game.
- * @param {Phaser.Group} aParent The parent Group (or other {@link DisplayObject}) that this group will be added to.    If undefined/unspecified the Group will be added to the {@link Phaser.Game#world Game World}; if null the Group will not be added to any parent.
+ * @param {Phaser.Group} aParent The parent Group (or other {@link DisplayObject}) that this group will be added to.
+    If undefined/unspecified the Group will be added to the {@link Phaser.Game#world Game World}; if null the Group will not be added to any parent.
  * @param {string} aName A name for this group. Not used internally but useful for debugging.
  * @param {boolean} aAddToStage If true this group will be added directly to the Game.Stage instead of Game.World.
  * @param {boolean} aEnableBody If true all Sprites created with {@link #create} or {@link #createMulitple} will have a physics body created on them. Change the body type with {@link #physicsBodyType}.
@@ -139,8 +140,8 @@ overPrefab.prototype.clickAgain = function (btn) {
 overPrefab.prototype.convertImageAppear = function () {
 	var img = $('#id_leftUp')[0];
 	img.src = gUserInfo.fileName;
-	var tsWidth = Math.round(img.clientWidth/ this.game.scale.scaleFactor.x);
-	var tsHeight = Math.round(img.clientHeight / this.game.scale.scaleFactor.y);
+	var tsWidth = Math.round(640/ this.game.scale.scaleFactor.x);
+	var tsHeight = Math.round(1008 / this.game.scale.scaleFactor.y);
 	if(!gUserInfo.uppicWidth){
 		gUserInfo.uppicWidth = tsWidth + 'px';
 	}
@@ -156,8 +157,8 @@ overPrefab.prototype.convertImageAppear = function () {
 
 	var img = $('#id_leftDown')[0];
 	img.src = gUserInfo.fileName;
-	var tsWidth = Math.round(img.clientWidth/ this.game.scale.scaleFactor.x);
-	var tsHeight = Math.round(img.clientHeight / this.game.scale.scaleFactor.y);
+	var tsWidth = Math.round(640/ this.game.scale.scaleFactor.x);
+	var tsHeight = Math.round(1008 / this.game.scale.scaleFactor.y);
 
 	if(!gUserInfo.downpicHeight){
 		gUserInfo.downpicHeight = tsHeight/4+ 'px';
