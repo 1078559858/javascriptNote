@@ -103,7 +103,6 @@ wx.ready(function () {
 
 	wx.onMenuShareTimeline({
 		title: '叽里呱啦——快来测试一下是什么类型的妈咪吧！',
-		desc: '我们诚挚邀请您莅临第十九届投洽会三维码科技体验馆，体验不一样的三维码时代产品，更有多重好礼等您来！',
 		link: location.href,
 		imgUrl: 'http://www.yangmengmeng.com/wxShare.jpg',
 		trigger: function (res) {
