@@ -40,63 +40,91 @@ var wxPostLocalHost = function (callback) {
 	var eURL = encodeURIComponent(url);
 	var dURL = decodeURIComponent(url);
 
-	var pUrl = 'http://yangmengmeng.com:11000';
+	var pUrl = 'http://yangmengmeng.com:13000';
 
 	var data = {};
-	data.url = url;
+	data.url = encodeURIComponent(url);
 
 	$.post(pUrl, data, function(data,status){
 		callback && callback(data);
 	});
 };
 
-wx.ready(function () {
-	alert('微信认证OK8');
+var wxGetLocalHost = function (callback) {
+    var url = (location.href.split('#')[0]);
+    var eURL = encodeURIComponent(url);
+    var dURL = decodeURIComponent(url);
 
+    //var pUrl = 'http://localhost:13000?' + url;
+    var pUrl = 'http://www.yangmengmeng.com:13000?' + url;
+
+    $.get(pUrl, function(data){
+        callback && callback(data);
+    });
+};
+
+var wxAjaxGetLocalHost = function (callback) {
+    var link = location.href;
+    $.ajax({
+        url:"http://www.yangmengmeng.com:11000",//后台给你提供的接口
+        type:"GET",
+        data:{"url":link},
+        async:true,
+        dataType:"json",
+        success:function (data){
+            callback(data);
+        },
+        error:function (error){
+            alert(JSON.stringify(error));
+        }
+    });
+};
+
+wx.ready(function () {
 	wx.onMenuShareAppMessage({
-		title: '互联网之子',
+		title: '叽里呱啦',
 		desc: '在长大的过程中，我才慢慢发现，我身边的所有事，别人跟我说的所有事，那些所谓本来如此，注定如此的事，它们其实没有非得如此，事情是可以改变的。更重要的是，有些事既然错了，那就该做出改变。',
-		link: 'http://www.yangmengmeng.com/index.html',
-		imgUrl: 'http://www.yangmengmeng.com/wxShare.png',
+		link: location.href,
+		imgUrl: 'http://www.yangmengmeng.com/wxShare.jpg',
 		trigger: function (res) {
 			// 不要尝试在trigger中使用ajax异步请求修改本次分享的内容，因为客户端分享操作是一个同步操作，这时候使用ajax的回包会还没有返回
-			alert('用户点击发送给朋友');
+			//alert('用户点击发送给朋友');
 		},
 		success: function (res) {
-			alert('已分享');
+			//alert('已分享');
 		},
 		cancel: function (res) {
-			alert('已取消');
+			//alert('已取消');
 		},
 		fail: function (res) {
-			alert(JSON.stringify(res));
+			//alert(JSON.stringify(res));
 		}
 	});
 
 	wx.onMenuShareTimeline({
-		title: '相约98.  “码”上中奖 ',
+		title: '叽里呱啦——快来测试一下是什么类型的妈咪吧！',
 		desc: '我们诚挚邀请您莅临第十九届投洽会三维码科技体验馆，体验不一样的三维码时代产品，更有多重好礼等您来！',
-		link: 'http://www.yangmengmeng.com/index.html',
-		imgUrl: 'http://www.yangmengmeng.com/wxShare.png',
+		link: location.href,
+		imgUrl: 'http://www.yangmengmeng.com/wxShare.jpg',
 		trigger: function (res) {
 			// 不要尝试在trigger中使用ajax异步请求修改本次分享的内容，因为客户端分享操作是一个同步操作，这时候使用ajax的回包会还没有返回
-			alert('用户点击发送给朋友圈');
+			//alert('用户点击发送给朋友圈');
 		},
 		success: function (res) {
-			alert('已分享');
+			//alert('已分享');
 		},
 		cancel: function (res) {
-			alert('已取消');
+			//alert('已取消');
 		},
 		fail: function (res) {
-			alert(JSON.stringify(res));
+			//alert(JSON.stringify(res));
 		}
 	});
 
 	wx.error(function(res){
 
 		// config信息验证失败会执行error函数，如签名过期导致验证失败，具体错误信息可以打开config的debug模式查看，也可以在返回的res参数中查看，对于SPA可以在这里更新签名。
-		alert("微信验证失败");
+		//alert("微信验证失败");
 	});
 });
 

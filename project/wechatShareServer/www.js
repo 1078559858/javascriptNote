@@ -4,6 +4,9 @@ var queryString = require("querystring");
 var libHttp = require('http');  //HTTP协议模块
 var gCheckSign = require('./check_sign');
 
+var gURL = require('url');
+var gQuerystring = require('querystring');
+
 var headOut = {};
 headOut["Access-Control-Allow-Origin"] = "*";
 headOut["Access-Control-Allow-Methods"] = "POST,GET,OPTIONS";
@@ -98,13 +101,40 @@ var processPost = function (req, res) {
 
 var processGet = function (req, res) {
 	//获取请求的url
-	var reqUrl = req.url;
+	var reqUrl = (gURL.parse(req.url)).query;
+	reqUrl = queryString.parse(reqUrl).url;
 
 	//向控制台输出请求的路径
-	gUtil.MessageLog("Get",JSON.stringify(req));
+	gUtil.MessageLog("Get",reqUrl);
 
-	res.end(JSON.stringify(reqUrl));
-	return;
+    gCheckSign.GetToken(function (getTokenSucceed) {
+        if(getTokenSucceed){
+            gUtil.MessageLog("token:" , gConf.GlobalConf.token);
+
+            gCheckSign.GetJSAPITicket(function (getTickSucceed) {
+                if(getTickSucceed){
+                    gUtil.MessageLog("jsapiTicket:" , gConf.GlobalConf.jsapiTicket);
+
+                    var tObj = gCheckSign.GetSign(reqUrl);
+                    var rObj = {};
+                    rObj.timestamp = tObj.timestamp;
+                    rObj.nonceStr = tObj.nonceStr;
+                    rObj.signature = tObj.signature;
+                    rObj.appId = gConf.GlobalConf.appId;
+                    rObj.url = reqUrl;
+
+                    res.write(JSON.stringify(rObj));
+                    res.end();
+                }else{
+                    res.write("");
+                    res.end();
+                }
+            })
+        }else{
+            res.write("");
+            res.end();
+        }
+    });
 };
 
 

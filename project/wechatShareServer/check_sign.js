@@ -15,12 +15,9 @@ var gConf = require('./base/GlobalConf');
  *}
  */
 
-var wxshareConf = {
-	'appId':'wx80839de5b232cf04',
-	'appSecret':'c3e65b9428ede1687e65f45562aa12ab'
-};
-
 var getToken = function (callback) {
+	gUtils.MessageLog(gConf.GlobalConf.tokenVailedTime);
+	gUtils.MessageLog(Date.now());
 	if(gConf.GlobalConf.tokenVailedTime > Date.now()){
 		callback && callback(true);
 		return;
@@ -29,14 +26,15 @@ var getToken = function (callback) {
 	var url = 'https://api.weixin.qq.com/cgi-bin/token';
 	url += "?grant_type=client_credential";
 	url += "&appid=";
-	url += wxshareConf.appId;
+	url += gConf.GlobalConf.appId;
 	url += "&secret=";
-	url += wxshareConf.appSecret;
+	url += gConf.GlobalConf.appSecret;
 
 	gPlatformBase.HttpGetFunction(url, function (result) {
 		if(result && result.access_token && result.expires_in){
 			gConf.GlobalConf.token = result.access_token;
-			gConf.GlobalConf.tokenRegisterTime = Date.now() + result.expires_in *1000 - 10*60*1000;
+			var tTime =  Date.now() + result.expires_in *1000 - 10*60*1000;
+            gConf.GlobalConf.tokenVailedTime = tTime;
 			callback && callback(true);
 		}else {
 			callback && callback(false);

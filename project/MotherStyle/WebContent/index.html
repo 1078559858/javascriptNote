@@ -10,7 +10,7 @@
     <meta name="screen-orientation" content="portrait" />
     <meta name="x5-fullscreen" content="true" />
     <meta name="360-fullscreen" content="true" />
-    <title>MatherType</title>
+    <title>MatherType4</title>
 
     <!--libs-->
     <script src="lib/jquery-1.12.4.min.js"></script>
@@ -111,16 +111,14 @@
 //	})
 
 
-	wxPostLocalHost(function (data) {
+    wxAjaxGetLocalHost(function (data) {
         if(!data){
         	alert("微信分享初始化失败，无法微信分享！");
             return;
         }
 
-        data = JSON.parse(data);
-
 		wx.config({
-			debug:true,
+			debug:false,
 			appId:data.appId,
 			timestamp: Number(data.timestamp),
 			nonceStr:data.nonceStr,
@@ -130,8 +128,6 @@
 				'onMenuShareAppMessage'
 			]
 		});
-
-        console.log(data);
 	});
 
 //	$.get("https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wx80839de5b232cf04&secret=c3e65b9428ede1687e65f45562aa12ab", function (result) {
@@ -141,5 +137,18 @@
 //	});
 
 
+</script>
+
+<script>
+	var _mtac = {"performanceMonitor":1};
+	(function() {
+		var mta = document.createElement("script");
+		mta.src = "http://pingjs.qq.com/h5/stats.js?v2.0.4";
+		mta.setAttribute("name", "MTAH5");
+		mta.setAttribute("sid", "500620003");
+		mta.setAttribute("cid", "500620004");
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(mta, s);
+	})();
 </script>
 </html>

@@ -9,7 +9,8 @@
 /**
  * prefab_7.
  * @param {Phaser.Game} aGame A reference to the currently running game.
- * @param {Phaser.Group} aParent The parent Group (or other {@link DisplayObject}) that this group will be added to.    If undefined/unspecified the Group will be added to the {@link Phaser.Game#world Game World}; if null the Group will not be added to any parent.
+ * @param {Phaser.Group} aParent The parent Group (or other {@link DisplayObject}) that this group will be added to.
+    If undefined/unspecified the Group will be added to the {@link Phaser.Game#world Game World}; if null the Group will not be added to any parent.
  * @param {string} aName A name for this group. Not used internally but useful for debugging.
  * @param {boolean} aAddToStage If true this group will be added directly to the Game.Stage instead of Game.World.
  * @param {boolean} aEnableBody If true all Sprites created with {@link #create} or {@link #createMulitple} will have a physics body created on them. Change the body type with {@link #physicsBodyType}.
@@ -79,6 +80,16 @@ prefab_7.prototype.clickBtn = function (btn) {
 	gGame.gameScene.appearGroup2(this, gGame.gameScene.fGroup8);
 	// gGame.gameScene.disAppearGroup(this);
 	// gGame.gameScene.appearGroup(gGame.gameScene.fGroup8);
+
+	if(btn.data.value === 'a'){
+		MtaH5.clickStat("7a");
+	}else if(btn.data.value === 'b'){
+		MtaH5.clickStat("7b");
+	}else if(btn.data.value === 'c'){
+		MtaH5.clickStat("7c");
+	}else{
+		MtaH5.clickStat("7d");
+	}
 };
 
 prefab_7.prototype.setBackground = function () {
