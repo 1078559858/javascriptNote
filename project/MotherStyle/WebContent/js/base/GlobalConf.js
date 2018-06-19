@@ -32,10 +32,14 @@ var gUserInfo = {
 	"moveTime":0,
 	"moveBegainY":0,
 	"fileName":'',
+	'overFileName':'assets/image/over/pop.png',
 	"toumingName":"assets/image/temp/touming.png",
 	"uppicHeight":0,
 	"uppicWidth":0,
 	"downpicHeight":0,
 	"downpicWidth":0,
-	"downpicMarginUp":0
+	"downpicMarginUp":0,
+	'overpicHeight':0,
+	"overpicWidth":0,
+	"overpicMarginUp":0
 };
