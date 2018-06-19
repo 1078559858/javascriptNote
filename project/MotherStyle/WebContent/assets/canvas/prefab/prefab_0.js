@@ -9,7 +9,8 @@
 /**
  * prefab_0.
  * @param {Phaser.Game} aGame A reference to the currently running game.
- * @param {Phaser.Group} aParent The parent Group (or other {@link DisplayObject}) that this group will be added to.    If undefined/unspecified the Group will be added to the {@link Phaser.Game#world Game World}; if null the Group will not be added to any parent.
+ * @param {Phaser.Group} aParent The parent Group (or other {@link DisplayObject}) that this group will be added to.
+    If undefined/unspecified the Group will be added to the {@link Phaser.Game#world Game World}; if null the Group will not be added to any parent.
  * @param {string} aName A name for this group. Not used internally but useful for debugging.
  * @param {boolean} aAddToStage If true this group will be added directly to the Game.Stage instead of Game.World.
  * @param {boolean} aEnableBody If true all Sprites created with {@link #create} or {@link #createMulitple} will have a physics body created on them. Change the body type with {@link #physicsBodyType}.
@@ -41,7 +42,10 @@ prefab_0.prototype.constructor = prefab_0;
 // -- user code here --
 
 prefab_0.prototype.initOnce = function () {
-
+	gGame.gameScene.setAnchorMiddle(this.fBtnBegain);
+	var tween = this.game.add.tween(this.fBtnBegain.scale).to({x:1.1, y:1.1}, 389, Phaser.Easing.Linear.None,
+		true, 0, -1);
+	tween.yoyo(true);
 };
 
 prefab_0.prototype.clickBegain = function () {
