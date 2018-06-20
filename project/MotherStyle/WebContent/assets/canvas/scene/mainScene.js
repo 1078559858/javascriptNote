@@ -86,6 +86,91 @@ mainScene.prototype.constructor = mainScene;
 /* --- end generated code --- */
 // -- user code here --
 
+mainScene.prototype.appreaDom = function () {
+	//获取屏幕可见宽高
+	// var screenWidth =  window.screen.availWidth;
+	// var screenHeight = window.screen.availHeight ;
+	// var screenWidth =  this.game.scale.bounds.width;
+	// var screenHeight = this.game.scale.bounds.height;
+	var screenWidth =  this.game.scale.dom.visualBounds.width;
+	var screenHeight = this.game.scale.dom.visualBounds.height ;
+
+	var img = $('#id_dom_1')[0];
+	img.src = 'assets/image/temp/dom01.png';
+	var tsWidth = Math.round(176/ this.game.scale.scaleFactor.x/window.devicePixelRatio);
+	var tsHeight = Math.round(176 / this.game.scale.scaleFactor.y/window.devicePixelRatio);
+	img.style.width = tsWidth + 'px';
+	img.style.width = tsHeight + 'px';
+
+	var img = $('#id_dom_2')[0];
+	img.src = 'assets/image/temp/dom02.png';
+	var tsWidth = Math.round(176/ this.game.scale.scaleFactor.x/window.devicePixelRatio);
+	var tsHeight = Math.round(176 / this.game.scale.scaleFactor.y/window.devicePixelRatio);
+	img.style.width = tsWidth + 'px';
+	img.style.width = tsHeight + 'px';
+	img.style.float = 'right';
+	img.style.marginRight = '-10px';
+
+	var img = $('#id_dom_3')[0];
+	img.src = 'assets/image/temp/dom03.png';
+	var tsWidth = Math.round(176/ this.game.scale.scaleFactor.x/window.devicePixelRatio);
+	var tsHeight = Math.round(176 / this.game.scale.scaleFactor.y/window.devicePixelRatio);
+	img.style.width = tsWidth + 'px';
+	img.style.width = tsHeight + 'px';
+	img.style.marginLeft = screenWidth - tsWidth + 'px';
+	img.style.marginTop = screenHeight - tsHeight*2 + 'px';
+
+	// var img = $('#id_dom_4')[0];
+	// img.src = 'assets/image/temp/dom04.png';
+	// var tsWidth = Math.round(176/ this.game.scale.scaleFactor.x/window.devicePixelRatio);
+	// var tsHeight = Math.round(176 / this.game.scale.scaleFactor.y/window.devicePixelRatio);
+	// img.style.width = tsWidth + 'px';
+	// img.style.width = tsHeight + 'px';
+	// img.style.float = 'left';
+	// img.style.marginTop = screenHeight/3+ 'px';
+	// img.style.marginLeft = '-10px';
+	//
+	//
+	// var img = $('#id_dom_5')[0];
+	// img.src = 'assets/image/temp/dom05.png';
+	// var tsWidth = Math.round(176/ this.game.scale.scaleFactor.x/window.devicePixelRatio);
+	// var tsHeight = Math.round(176 / this.game.scale.scaleFactor.y/window.devicePixelRatio);
+	// img.style.width = tsWidth + 'px';
+	// img.style.width = tsHeight + 'px';
+	// img.style.float = 'left';
+	// img.style.marginTop = screenHeight*3/5+ 'px';
+	// img.style.marginLeft = -tsWidth + 'px';
+
+	var img = $('#id_dom_6')[0];
+	img.src = 'assets/image/temp/dom06.png';
+	var tsWidth = Math.round(176/ this.game.scale.scaleFactor.x/window.devicePixelRatio);
+	var tsHeight = Math.round(176 / this.game.scale.scaleFactor.y/window.devicePixelRatio);
+	img.style.width = tsWidth*2 + 'px';
+	img.style.width = tsHeight*2 + 'px';
+	img.style.marginLeft = screenWidth/2 - tsWidth + 'px';
+	img.style.marginTop = tsHeight/4 + 'px';
+};
+
+mainScene.prototype.disappearDom = function () {
+	var img = $('#id_dom_1')[0];
+	img.style.opacity = 0;
+
+	var img = $('#id_dom_2')[0];
+	img.style.opacity = 0;
+
+	var img = $('#id_dom_3')[0];
+	img.style.opacity = 0;
+
+	var img = $('#id_dom_4')[0];
+	img.style.opacity = 0;
+
+	var img = $('#id_dom_5')[0];
+	img.style.opacity = 0;
+
+	var img = $('#id_dom_6')[0];
+	img.style.opacity = 0;
+};
+
 mainScene.prototype.appearGroup = function (group1, group2) {
 	this.fBgBtn.inputEnabled = true;
 
@@ -131,8 +216,6 @@ mainScene.prototype.disAppearGroup = function (group) {
 mainScene.prototype.initOnce = function () {
 	this.setAnchorMiddle(this.fMusic_btn);
 	this.fBgBtn.inputEnabled = false;
-
-
 
 	// var img = $('#id_leftUp')[0];
 	// img.src = 'assets/image/temp/1.png';

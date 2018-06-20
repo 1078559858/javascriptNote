@@ -68,6 +68,8 @@ overPrefab.prototype.constructor = overPrefab;
 // -- user code here --
 
 overPrefab.prototype.initOnce = function () {
+	gGame.gameScene.disappearDom();
+
 	var score = 0;
 
 	var ballArr = [

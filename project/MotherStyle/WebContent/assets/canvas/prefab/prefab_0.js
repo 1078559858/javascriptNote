@@ -46,9 +46,13 @@ prefab_0.prototype.initOnce = function () {
 	var tween = this.game.add.tween(this.fBtnBegain.scale).to({x:1.1, y:1.1}, 389, Phaser.Easing.Linear.None,
 		true, 0, -1);
 	tween.yoyo(true);
+
+
 };
 
 prefab_0.prototype.clickBegain = function () {
 	gGame.gameScene.appearGroup2(this, gGame.gameScene.fGroup1);
+
+	gGame.gameScene.appreaDom();
 };
 
