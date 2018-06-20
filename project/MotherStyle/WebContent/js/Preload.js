@@ -41,8 +41,11 @@ Preload.prototype.preload = function() {
 
 	this.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
 	// this.scale.fullScreenScaleMode = Phaser.ScaleManager.EXACT_FIT;
-	// this.scale.pageAlignHorizontally = true;
-	// this.scale.pageAlignVertically = true;
+	// this.scale.scaleMode.pageAlignHorizontally = true;
+	// this.scale.scaleMode.pageAlignVertically = true;
+	this.scale.pageAlignHorizontally = true;
+	this.scale.pageAlignVertically = true;
+
 
 	// var bounding = this.game.canvas.getBoundingClientRect();
 	// if(bounding.width/ this.game.width < bounding.height/this.game.height){
