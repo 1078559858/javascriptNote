@@ -132,6 +132,8 @@ mainScene.prototype.initOnce = function () {
 	this.setAnchorMiddle(this.fMusic_btn);
 	this.fBgBtn.inputEnabled = false;
 
+
+
 	// var img = $('#id_leftUp')[0];
 	// img.src = 'assets/image/temp/1.png';
 	// var tsWidth = Math.round(img.clientWidth/ this.game.scale.scaleFactor.x/window.devicePixelRatio);

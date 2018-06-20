@@ -22,9 +22,9 @@ function pre_1(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyType
 	var _Dialog_mc = this.game.add.button(-153, -359, 'Dialog_mc', null, this, null, null, null, null, this);
 	_Dialog_mc.scale.setTo(1.5, 1.5);
 	
-	this.game.add.sprite(20, 253, 'pop', null, this);
+	this.game.add.sprite(0, 0, 'pop', null, this);
 	
-	var _close_png = this.game.add.button(545, 238, 'common1', this.clickClose, this, null, 'close.png', null, null, this);
+	var _close_png = this.game.add.button(560, 0, 'common1', this.clickClose, this, null, 'close.png', null, null, this);
 	_close_png.scale.setTo(1.5, 1.5);
 	
 	
@@ -98,43 +98,30 @@ pre_1.prototype.convertImageDisappear = function () {
 	var img = $('#id_pop_layer_up')[0];
 	img.style.width = 0 + 'px';
 	img.style.height = 0 + 'px';
-
-	var img = $('#id_pop_layer_down')[0];
-	img.style.width ='0px';
-	img.style.height = '0px';
 };
 
 pre_1.prototype.convertImageAppear = function () {
 	var img = $('#id_pop_layer_up')[0];
 	img.src = gUserInfo.overFileName;
 	img.style.opacity = 0;
-	var tsWidth = Math.round(600/ this.game.scale.scaleFactor.x);
-	var tsHeight = Math.round(502 / this.game.scale.scaleFactor.y);
+	var tsWidth = Math.round(640/ this.game.scale.scaleFactor.x);
+	var tsHeight = Math.round(1008 / this.game.scale.scaleFactor.y);
 	if(!gUserInfo.overpicWidth){
 		gUserInfo.overpicWidth = tsWidth + 'px';
 	}
 
 	if(!gUserInfo.overpicHeight){
-		gUserInfo.overpicHeight = tsHeight*3/4+ 'px'
+		gUserInfo.overpicHeight = tsHeight +'px'
 	}
 
 	if(!gUserInfo.overpicMarginUp){
-		gUserInfo.overpicMarginUp = tsHeight*2/3;
+		gUserInfo.overpicMarginUp = tsHeight*1/20;
 	}
 
 	img.style.width = gUserInfo.overpicWidth;
 	img.style.height = gUserInfo.overpicHeight;
 	img.style.margin = gUserInfo.overpicMarginUp + 'px 0px 0px ' + this.game.scale.bounds.x + 'px';
-	// img.style.opacity = 0;
-
-
-	var img = $('#id_pop_layer_down')[0];
-	img.src = gUserInfo.overFileName;
-	img.style.opacity = 0;
-	img.style.width = gUserInfo.overpicWidth;
-	img.style.height = gUserInfo.overpicHeight;
-	img.style.margin = gUserInfo.overpicMarginUp*2 + 'px 0px 0px ' + this.game.scale.bounds.x + 'px';
-	// img.style.opacity = 0;
+	//img.style.opacity = 0;
 };
 
 pre_1.prototype.focusIn = function () {

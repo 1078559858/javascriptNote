@@ -60,11 +60,7 @@
               "type": "image",
               "id": "16c013f8-8f26-4f81-a6c7-421cc0cc8ecf",
               "asset": "1",
-              "info": {
-                "editorName": "pop",
-                "x": 20,
-                "y": 252.99996948242188
-              }
+              "info": {"editorName": "pop"}
             },
             {
               "type": "button",
@@ -72,8 +68,7 @@
               "asset": "2",
               "info": {
                 "editorName": "close_png",
-                "x": 545,
-                "y": 238,
+                "x": 560,
                 "scale.x": 1.5,
                 "scale.y": 1.5,
                 "callback": "this.clickClose"
