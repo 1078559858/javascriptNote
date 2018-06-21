@@ -81,6 +81,7 @@ prefab_8.prototype.clickBtn = function (btn) {
 	gGame.gameScene.fGroupOver.setBackground();
 	gGame.gameScene.fGroupOver.initOnce();
 
+
 	if(btn.data.value === 'a'){
 		MtaH5.clickStat("8a");
 	}else if(btn.data.value === 'b'){

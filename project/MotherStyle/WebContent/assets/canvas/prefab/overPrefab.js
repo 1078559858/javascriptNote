@@ -9,8 +9,7 @@
 /**
  * overPrefab.
  * @param {Phaser.Game} aGame A reference to the currently running game.
- * @param {Phaser.Group} aParent The parent Group (or other {@link DisplayObject}) that this group will be added to.
-    If undefined/unspecified the Group will be added to the {@link Phaser.Game#world Game World}; if null the Group will not be added to any parent.
+ * @param {Phaser.Group} aParent The parent Group (or other {@link DisplayObject}) that this group will be added to.    If undefined/unspecified the Group will be added to the {@link Phaser.Game#world Game World}; if null the Group will not be added to any parent.
  * @param {string} aName A name for this group. Not used internally but useful for debugging.
  * @param {boolean} aAddToStage If true this group will be added directly to the Game.Stage instead of Game.World.
  * @param {boolean} aEnableBody If true all Sprites created with {@link #create} or {@link #createMulitple} will have a physics body created on them. Change the body type with {@link #physicsBodyType}.
@@ -20,6 +19,7 @@ function overPrefab(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBod
 	
 	Phaser.Group.call(this, aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyType);
 	var _groupFoxi = this.game.add.group(this);
+	_groupFoxi.scale.setTo(0.0, 1.0);
 	
 	this.game.add.sprite(0, 0, 'Result_foxi', null, _groupFoxi);
 	
@@ -68,8 +68,6 @@ overPrefab.prototype.constructor = overPrefab;
 // -- user code here --
 
 overPrefab.prototype.initOnce = function () {
-	gGame.gameScene.disappearDom();
-
 	var score = 0;
 
 	var ballArr = [
@@ -92,16 +90,16 @@ overPrefab.prototype.initOnce = function () {
 
 	if(score <= 8){
 		this.fGroupFoxi.scale.x = 1;
-		gUserInfo.fileName = 'assets/image/over/Result_foxi.jpg';
+		gUserInfo.fileName = 'assets/image/over/fo.png';
 	}else if(score <= 16){
 		this.fGroupShaonv.scale.x = 1;
-		gUserInfo.fileName = 'assets/image/over/Result_shaonv.jpg';
+		gUserInfo.fileName = 'assets/image/over/shaonv.png';
 	}else if(score <= 24){
 		this.fGroupHU.scale.x = 1;
-		gUserInfo.fileName = 'assets/image/over/Result_huxi.jpg';
+		gUserInfo.fileName = 'assets/image/over/hu.png';
 	}else {
 		this.fGroupHuan.scale.x = 1;
-		gUserInfo.fileName = 'assets/image/over/Result_naodong.jpg';
+		gUserInfo.fileName = 'assets/image/over/naodong.png';
 	}
 
 	gGame.gameScene.setAnchorMiddle(this.fBtnMiji);
@@ -130,8 +128,9 @@ overPrefab.prototype.clickBtn = function (btn) {
 };
 
 overPrefab.prototype.clickStudy = function (btn) {
-	gGame.gameScene.fGroupSetName.appearPopLayer();
 	this.convertImageDisAppear();
+	gGame.gameScene.disappearDom();
+	gGame.gameScene.fGroupSetName.appearPopLayer();
 };
 
 overPrefab.prototype.clickAgain = function (btn) {
@@ -140,6 +139,14 @@ overPrefab.prototype.clickAgain = function (btn) {
 };
 
 overPrefab.prototype.convertImageAppear = function () {
+	var screenWidth =  this.game.scale.dom.visualBounds.width;
+	var screenHeight = this.game.scale.dom.visualBounds.height;
+	var gameWidth =  this.game.scale.bounds.width;
+	var gameHeight = this.game.scale.bounds.height;
+
+	var spanHeight = (screenHeight - gameHeight)/2;
+
+
 	var img = $('#id_leftUp')[0];
 	img.src = gUserInfo.fileName;
 	var tsWidth = Math.round(640/ this.game.scale.scaleFactor.x);
@@ -149,43 +156,47 @@ overPrefab.prototype.convertImageAppear = function () {
 	}
 
 	if(!gUserInfo.uppicHeight){
-		gUserInfo.uppicHeight = tsHeight*3/4+ 'px'
+		gUserInfo.uppicHeight = tsHeight*760/1008 - gUserInfo.tsHeight  + spanHeight + 'px'
 	}
+
+	var tempY = tsHeight*760/1008 - gUserInfo.tsHeight  + spanHeight + 70/this.game.scale.scaleFactor.y;
 
 	img.style.width = gUserInfo.uppicWidth;
 	img.style.height = gUserInfo.uppicHeight;
 	img.style.margin = '0px 0px 0px ' + this.game.scale.bounds.x + 'px';
-	img.style.opacity = 0;
+	img.style.opacity = 0.01;
 
 	var img = $('#id_leftDown')[0];
 	img.src = gUserInfo.fileName;
 	var tsWidth = Math.round(640/ this.game.scale.scaleFactor.x);
 	var tsHeight = Math.round(1008 / this.game.scale.scaleFactor.y);
 
-	if(!gUserInfo.downpicHeight){
-		gUserInfo.downpicHeight = tsHeight/4+ 'px';
-	}
-
 	if(!gUserInfo.downpicWidth){
 		gUserInfo.downpicWidth = tsWidth + 'px';
 	}
 
+	if(!gUserInfo.downpicHeight){
+		gUserInfo.downpicHeight = screenHeight - tempY + 'px';
+	}
+
 	if(!gUserInfo.downpicMarginUp){
-		gUserInfo.downpicMarginUp = tsHeight*5/6;
+		gUserInfo.downpicMarginUp = Math.floor(tempY);
 	}
 
 	img.style.width = gUserInfo.downpicWidth;
 	img.style.height = gUserInfo.downpicHeight;
 	img.style.margin = gUserInfo.downpicMarginUp + 'px 0px 0px ' + this.game.scale.bounds.x + 'px';
-	img.style.opacity = 0;
+	img.style.opacity = 0.01;
 };
 
 overPrefab.prototype.convertImageDisAppear = function () {
 	var img = $('#id_leftUp')[0];
+	img.src = gUserInfo.toumingName;
 	img.style.width = 0 + 'px';
 	img.style.height = 0 + 'px';
 
 	var img = $('#id_leftDown')[0];
+	img.src = gUserInfo.toumingName;
 	img.style.width ='0px';
 	img.style.height = '0px';
 };

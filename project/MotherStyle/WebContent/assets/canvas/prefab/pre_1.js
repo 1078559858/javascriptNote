@@ -9,7 +9,8 @@
 /**
  * pre_1.
  * @param {Phaser.Game} aGame A reference to the currently running game.
- * @param {Phaser.Group} aParent The parent Group (or other {@link DisplayObject}) that this group will be added to.    If undefined/unspecified the Group will be added to the {@link Phaser.Game#world Game World}; if null the Group will not be added to any parent.
+ * @param {Phaser.Group} aParent The parent Group (or other {@link DisplayObject}) that this group will be added to.
+    If undefined/unspecified the Group will be added to the {@link Phaser.Game#world Game World}; if null the Group will not be added to any parent.
  * @param {string} aName A name for this group. Not used internally but useful for debugging.
  * @param {boolean} aAddToStage If true this group will be added directly to the Game.Stage instead of Game.World.
  * @param {boolean} aEnableBody If true all Sprites created with {@link #create} or {@link #createMulitple} will have a physics body created on them. Change the body type with {@link #physicsBodyType}.
@@ -21,9 +22,9 @@ function pre_1(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyType
 	var _Dialog_mc = this.game.add.button(-153, -359, 'Dialog_mc', null, this, null, null, null, null, this);
 	_Dialog_mc.scale.setTo(1.5, 1.5);
 	
-	this.game.add.sprite(0, 0, 'pop', null, this);
+	this.game.add.sprite(20, 253, 'pop', null, this);
 	
-	var _close_png = this.game.add.button(560, 0, 'common1', this.clickClose, this, null, 'close.png', null, null, this);
+	var _close_png = this.game.add.button(558, 215, 'common1', this.clickClose, this, null, 'close.png', null, null, this);
 	_close_png.scale.setTo(1.5, 1.5);
 	
 	
@@ -91,6 +92,7 @@ pre_1.prototype.clickClose = function () {
 
 	this.convertImageDisappear();
 	gGame.gameScene.fGroupOver.convertImageAppear();
+	gGame.gameScene.appreaDom();
 };
 
 pre_1.prototype.convertImageDisappear = function () {
@@ -100,23 +102,35 @@ pre_1.prototype.convertImageDisappear = function () {
 };
 
 pre_1.prototype.convertImageAppear = function () {
+	var screenWidth =  this.game.scale.dom.visualBounds.width;
+	var screenHeight = this.game.scale.dom.visualBounds.height;
+	var gameWidth =  this.game.scale.bounds.width;
+	var gameHeight = this.game.scale.bounds.height;
+	var spanHeight = (screenHeight - gameHeight)/2;
+
 	var img = $('#id_pop_layer_up')[0];
 	img.src = gUserInfo.overFileName;
 	img.style.opacity = 0;
 	var tsWidth = Math.round(640/ this.game.scale.scaleFactor.x);
 	var tsHeight = Math.round(1008 / this.game.scale.scaleFactor.y);
+
+	var tempY = spanHeight + 293/this.game.scale.scaleFactor.y;
+
 	if(!gUserInfo.overpicWidth){
 		gUserInfo.overpicWidth = tsWidth + 'px';
 	}
 
 	if(!gUserInfo.overpicHeight){
-		gUserInfo.overpicHeight = tsHeight +'px';
+		gUserInfo.overpicHeight = (screenHeight - tempY) +'px';
 	}
 
 	if(!gUserInfo.overpicMarginUp){
-		gUserInfo.overpicMarginUp = tsHeight*1/20;
+		gUserInfo.overpicMarginUp = tempY;
 	}
 
+	console.log(gUserInfo.overpicWidth);
+	console.log(gUserInfo.overpicHeight);
+	console.log(gUserInfo.overpicMarginUp);
 	img.style.width = gUserInfo.overpicWidth;
 	img.style.height = gUserInfo.overpicHeight;
 	img.style.margin = gUserInfo.overpicMarginUp + 'px 0px 0px ' + this.game.scale.bounds.x + 'px';

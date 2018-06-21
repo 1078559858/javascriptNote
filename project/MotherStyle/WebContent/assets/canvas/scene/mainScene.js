@@ -9,8 +9,7 @@
 /**
  * mainScene.
  * @param {Phaser.Game} aGame A reference to the currently running game.
- * @param {Phaser.Group} aParent The parent Group (or other {@link DisplayObject}) that this group will be added to.
-    If undefined/unspecified the Group will be added to the {@link Phaser.Game#world Game World}; if null the Group will not be added to any parent.
+ * @param {Phaser.Group} aParent The parent Group (or other {@link DisplayObject}) that this group will be added to.    If undefined/unspecified the Group will be added to the {@link Phaser.Game#world Game World}; if null the Group will not be added to any parent.
  * @param {string} aName A name for this group. Not used internally but useful for debugging.
  * @param {boolean} aAddToStage If true this group will be added directly to the Game.Stage instead of Game.World.
  * @param {boolean} aEnableBody If true all Sprites created with {@link #create} or {@link #createMulitple} will have a physics body created on them. Change the body type with {@link #physicsBodyType}.
@@ -101,6 +100,9 @@ mainScene.prototype.appreaDom = function () {
 	var tsHeight = Math.round(176 / this.game.scale.scaleFactor.y/window.devicePixelRatio);
 	img.style.width = tsWidth + 'px';
 	img.style.width = tsHeight + 'px';
+	img.style.opacity = 1;
+
+	gUserInfo.tsHeight = tsHeight;
 
 	var img = $('#id_dom_2')[0];
 	img.src = 'assets/image/temp/dom02.png';
@@ -110,6 +112,7 @@ mainScene.prototype.appreaDom = function () {
 	img.style.width = tsHeight + 'px';
 	img.style.float = 'right';
 	img.style.marginRight = '-10px';
+	img.style.opacity = 1;
 
 	var img = $('#id_dom_3')[0];
 	img.src = 'assets/image/temp/dom03.png';
@@ -119,6 +122,7 @@ mainScene.prototype.appreaDom = function () {
 	img.style.width = tsHeight + 'px';
 	img.style.marginLeft = screenWidth - tsWidth + 'px';
 	img.style.marginTop = screenHeight - tsHeight*2 + 'px';
+	img.style.opacity = 1;
 
 	// var img = $('#id_dom_4')[0];
 	// img.src = 'assets/image/temp/dom04.png';
@@ -129,7 +133,7 @@ mainScene.prototype.appreaDom = function () {
 	// img.style.float = 'left';
 	// img.style.marginTop = screenHeight/3+ 'px';
 	// img.style.marginLeft = '-10px';
-	//
+	// img.style.opacity = 1;
 	//
 	// var img = $('#id_dom_5')[0];
 	// img.src = 'assets/image/temp/dom05.png';
@@ -140,6 +144,7 @@ mainScene.prototype.appreaDom = function () {
 	// img.style.float = 'left';
 	// img.style.marginTop = screenHeight*3/5+ 'px';
 	// img.style.marginLeft = -tsWidth + 'px';
+	//img.style.opacity = 1;
 
 	var img = $('#id_dom_6')[0];
 	img.src = 'assets/image/temp/dom06.png';
@@ -149,26 +154,39 @@ mainScene.prototype.appreaDom = function () {
 	img.style.width = tsHeight*2 + 'px';
 	img.style.marginLeft = screenWidth/2 - tsWidth + 'px';
 	img.style.marginTop = tsHeight/4 + 'px';
+	img.style.opacity = 1;
 };
 
 mainScene.prototype.disappearDom = function () {
 	var img = $('#id_dom_1')[0];
+	img.style.width = '0px';
 	img.style.opacity = 0;
+	img.src = gUserInfo.toumingName;
 
 	var img = $('#id_dom_2')[0];
+	img.style.width = '0px';
 	img.style.opacity = 0;
+	img.src = gUserInfo.toumingName;
 
 	var img = $('#id_dom_3')[0];
+	img.style.width = '0px';
 	img.style.opacity = 0;
+	img.src = gUserInfo.toumingName;
 
 	var img = $('#id_dom_4')[0];
+	img.style.width = '0px';
 	img.style.opacity = 0;
+	img.src = gUserInfo.toumingName;
 
 	var img = $('#id_dom_5')[0];
+	img.style.width = '0px';
 	img.style.opacity = 0;
+	img.src = gUserInfo.toumingName;
 
 	var img = $('#id_dom_6')[0];
+	img.style.width = '0px';
 	img.style.opacity = 0;
+	img.src = gUserInfo.toumingName;
 };
 
 mainScene.prototype.appearGroup = function (group1, group2) {
@@ -216,6 +234,12 @@ mainScene.prototype.disAppearGroup = function (group) {
 mainScene.prototype.initOnce = function () {
 	this.setAnchorMiddle(this.fMusic_btn);
 	this.fBgBtn.inputEnabled = false;
+
+	//gGame.gameScene.fGroupSetName.convertImageAppear();
+
+	//this.fGroupOver.convertImageAppear();
+
+	//this.fGroupSetName.convertImageAppear();
 
 	// var img = $('#id_leftUp')[0];
 	// img.src = 'assets/image/temp/1.png';

@@ -50,6 +50,7 @@
               "info": {
                 "editorName": "groupFoxi",
                 "editorPublic": true,
+                "scale.x": 0,
                 "setAll": [],
                 "children": [{
                   "type": "image",

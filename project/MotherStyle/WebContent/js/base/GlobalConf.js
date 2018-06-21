@@ -31,7 +31,7 @@ var gUserInfo = {
 	"choice":[],
 	"moveTime":0,
 	"moveBegainY":0,
-	"fileName":'assets/image/over/Result_foxi.jpg',
+	"fileName":'assets/image/over/fo.png',
 	'overFileName':'assets/image/over/pop.png',
 	"toumingName":"assets/image/temp/touming.png",
 	"uppicHeight":0,
@@ -41,5 +41,7 @@ var gUserInfo = {
 	"downpicMarginUp":0,
 	'overpicHeight':0,
 	"overpicWidth":0,
-	"overpicMarginUp":0
+	"overpicMarginUp":0,
+
+	'tsHeight':0
 };
