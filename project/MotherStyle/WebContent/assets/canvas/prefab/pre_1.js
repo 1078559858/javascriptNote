@@ -24,8 +24,7 @@ function pre_1(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyType
 	
 	this.game.add.sprite(20, 253, 'pop', null, this);
 	
-	var _close_png = this.game.add.button(558, 215, 'common1', this.clickClose, this, null, 'close.png', null, null, this);
-	_close_png.scale.setTo(1.5, 1.5);
+	this.game.add.button(591, 221, 'common1', this.clickClose, this, null, 'close.png', null, null, this);
 	
 	
 	
@@ -43,10 +42,10 @@ pre_1.prototype.constructor = pre_1;
 pre_1.prototype.appearPopLayer = function () {
 	this.x = 375;
 	this.y = 603;
-	this.scale.x = 0;
-	this.scale.y = 0;
+	this.scale.x = 1;
+	this.scale.y = 1;
 
-	this.game.add.tween(this.scale).to({x:1, y:1}, 1500, Phaser.Easing.Bounce.Out, true);
+	//this.game.add.tween(this.scale).to({x:1, y:1}, 1500, Phaser.Easing.Bounce.Out, true);
 
 	this.convertImageAppear();
 };
@@ -99,6 +98,10 @@ pre_1.prototype.convertImageDisappear = function () {
 	var img = $('#id_pop_layer_up')[0];
 	img.style.width = 0 + 'px';
 	img.style.height = 0 + 'px';
+
+	var img = $('#id_pop_layer_down')[0];
+	img.style.width = 0 + 'px';
+	img.style.height = 0 + 'px';
 };
 
 pre_1.prototype.convertImageAppear = function () {
@@ -110,30 +113,48 @@ pre_1.prototype.convertImageAppear = function () {
 
 	var img = $('#id_pop_layer_up')[0];
 	img.src = gUserInfo.overFileName;
-	img.style.opacity = 0.02;
+	img.style.opacity = 1;
 	var tsWidth = Math.round(600/ this.game.scale.scaleFactor.x);
 	var tsHeight = Math.round(502 / this.game.scale.scaleFactor.y);
 
-	var tempY = spanHeight + 293/this.game.scale.scaleFactor.y;
+	//按钮偏移
+	//var tempY = spanHeight + 293/this.game.scale.scaleFactor.y;
+	var tempY = spanHeight + 253/this.game.scale.scaleFactor.y;
 
 	if(!gUserInfo.overpicWidth){
 		gUserInfo.overpicWidth = tsWidth + 'px';
 	}
 
 	if(!gUserInfo.overpicHeight){
-		gUserInfo.overpicHeight = (screenHeight - tempY) +'px';
-		//gUserInfo.overpicHeight = (tsHeight) +'px';
+		//gUserInfo.overpicHeight = (screenHeight - tempY) +'px';
+		gUserInfo.overpicHeight = (tsHeight) +'px';
 	}
 
 	if(!gUserInfo.overpicMarginUp){
 		gUserInfo.overpicMarginUp = tempY;
 	}
 
+
 	var tempX = this.game.scale.bounds.x + 20/this.game.scale.scaleFactor.x;
 
 	img.style.width = gUserInfo.overpicWidth;
 	img.style.height = gUserInfo.overpicHeight;
 	img.style.margin = gUserInfo.overpicMarginUp + 'px 0px 0px ' + tempX + 'px';
+	//img.style.opacity = 0;
+
+
+	var img = $('#id_pop_layer_down')[0];
+	img.src = gUserInfo.overFileName;
+	img.style.opacity = 0;
+	var tsWidth = Math.round(600/ this.game.scale.scaleFactor.x);
+	var tsHeight = Math.round(502 / this.game.scale.scaleFactor.y);
+
+	//按钮偏移
+	var tempYDown = tempY + tsHeight;
+
+	img.style.width = gUserInfo.overpicWidth;
+	img.style.height = screenHeight - tempYDown + 'px';
+	img.style.margin = tempYDown + 'px 0px 0px ' + tempX + 'px';
 	//img.style.opacity = 0;
 };
 

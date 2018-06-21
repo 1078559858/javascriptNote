@@ -76,17 +76,25 @@ prefab_2.prototype.initOnce = function () {
 };
 
 prefab_2.prototype.clickBtn = function (btn) {
+	if(!gGame.gameScene.checkClickTime()){
+		return;
+	}
+
+
 	this.game.state.states.Video.playClick();
 
-	if(btn.data.value === 'a'){
-		MtaH5.clickStat("2a");
-	}else if(btn.data.value === 'b'){
-		MtaH5.clickStat("2b");
-	}else if(btn.data.value === 'c'){
-		MtaH5.clickStat("2c");
-	}else{
-		MtaH5.clickStat("2d");
+	if(MtaH5){
+		if(btn.data.value === 'a'){
+			MtaH5.clickStat("2a");
+		}else if(btn.data.value === 'b'){
+			MtaH5.clickStat("2b");
+		}else if(btn.data.value === 'c'){
+			MtaH5.clickStat("2c");
+		}else{
+			MtaH5.clickStat("2d");
+		}
 	}
+
 
 	gUserInfo.choice.push(btn.data.value);
 

@@ -29,6 +29,7 @@ var gUserInfo = {
 	"nick":"",
 	"haveBoy":false,
 	"choice":[],
+	'clickTime':0,
 	"moveTime":0,
 	"moveBegainY":0,
 	"fileName":'assets/image/over/fo.png',

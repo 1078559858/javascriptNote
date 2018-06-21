@@ -72,10 +72,8 @@
               "asset": "2",
               "info": {
                 "editorName": "close_png",
-                "x": 558,
-                "y": 215,
-                "scale.x": 1.5,
-                "scale.y": 1.5,
+                "x": 591,
+                "y": 221,
                 "callback": "this.clickClose"
               }
             }

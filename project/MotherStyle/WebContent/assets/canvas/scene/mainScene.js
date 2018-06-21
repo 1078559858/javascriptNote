@@ -9,7 +9,8 @@
 /**
  * mainScene.
  * @param {Phaser.Game} aGame A reference to the currently running game.
- * @param {Phaser.Group} aParent The parent Group (or other {@link DisplayObject}) that this group will be added to.    If undefined/unspecified the Group will be added to the {@link Phaser.Game#world Game World}; if null the Group will not be added to any parent.
+ * @param {Phaser.Group} aParent The parent Group (or other {@link DisplayObject}) that this group will be added to.
+    If undefined/unspecified the Group will be added to the {@link Phaser.Game#world Game World}; if null the Group will not be added to any parent.
  * @param {string} aName A name for this group. Not used internally but useful for debugging.
  * @param {boolean} aAddToStage If true this group will be added directly to the Game.Stage instead of Game.World.
  * @param {boolean} aEnableBody If true all Sprites created with {@link #create} or {@link #createMulitple} will have a physics body created on them. Change the body type with {@link #physicsBodyType}.
@@ -96,8 +97,16 @@ mainScene.prototype.appreaDom = function () {
 
 	var img = $('#id_dom_1')[0];
 	img.src = 'assets/image/temp/dom01.png';
-	var tsWidth = Math.round(176/ this.game.scale.scaleFactor.x/window.devicePixelRatio);
-	var tsHeight = Math.round(176 / this.game.scale.scaleFactor.y/window.devicePixelRatio);
+
+	var dpr = window.devicePixelRatio;
+	if(dpr == 3){
+		dpr =  1.75;		//设置为1.75 最完美
+	}else{
+		dpr *= 1.1;
+	}
+
+	var tsWidth = Math.round(176/ this.game.scale.scaleFactor.x/dpr);
+	var tsHeight = Math.round(176 / this.game.scale.scaleFactor.y/dpr);
 	img.style.width = tsWidth + 'px';
 	img.style.width = tsHeight + 'px';
 	img.style.opacity = 1;
@@ -106,8 +115,8 @@ mainScene.prototype.appreaDom = function () {
 
 	var img = $('#id_dom_2')[0];
 	img.src = 'assets/image/temp/dom02.png';
-	var tsWidth = Math.round(176/ this.game.scale.scaleFactor.x/window.devicePixelRatio);
-	var tsHeight = Math.round(176 / this.game.scale.scaleFactor.y/window.devicePixelRatio);
+	var tsWidth = Math.round(176/ this.game.scale.scaleFactor.x/dpr);
+	var tsHeight = Math.round(176 / this.game.scale.scaleFactor.y/dpr);
 	img.style.width = tsWidth + 'px';
 	img.style.width = tsHeight + 'px';
 	img.style.float = 'right';
@@ -116,8 +125,8 @@ mainScene.prototype.appreaDom = function () {
 
 	var img = $('#id_dom_3')[0];
 	img.src = 'assets/image/temp/dom03.png';
-	var tsWidth = Math.round(176/ this.game.scale.scaleFactor.x/window.devicePixelRatio);
-	var tsHeight = Math.round(176 / this.game.scale.scaleFactor.y/window.devicePixelRatio);
+	var tsWidth = Math.round(176/ this.game.scale.scaleFactor.x/dpr);
+	var tsHeight = Math.round(176 / this.game.scale.scaleFactor.y/dpr);
 	img.style.width = tsWidth + 'px';
 	img.style.width = tsHeight + 'px';
 	img.style.marginLeft = screenWidth - tsWidth + 'px';
@@ -148,8 +157,8 @@ mainScene.prototype.appreaDom = function () {
 
 	var img = $('#id_dom_6')[0];
 	img.src = 'assets/image/temp/dom06.png';
-	var tsWidth = Math.round(176/ this.game.scale.scaleFactor.x/window.devicePixelRatio);
-	var tsHeight = Math.round(176 / this.game.scale.scaleFactor.y/window.devicePixelRatio);
+	var tsWidth = Math.round(176/ this.game.scale.scaleFactor.x/dpr);
+	var tsHeight = Math.round(176 / this.game.scale.scaleFactor.y/dpr);
 	img.style.width = tsWidth*2 + 'px';
 	img.style.width = tsHeight*2 + 'px';
 	img.style.marginLeft = screenWidth/2 - tsWidth + 'px';
@@ -314,6 +323,15 @@ mainScene.prototype.clickMusic = function () {
 	this.game.state.states.Video.on_off_Music();
 	this.game.state.states.Video.on_off_Sound();
 	//this.game.state.states.Video.playClick();
+};
+
+mainScene.prototype.checkClickTime = function () {
+	if(Date.now() - gUserInfo.clickTime > 1000){
+		gUserInfo.clickTime = Date.now();
+		return true;
+	}
+
+	return false;
 };
 
 mainScene.prototype.setAnchorMiddle = function (spr) {

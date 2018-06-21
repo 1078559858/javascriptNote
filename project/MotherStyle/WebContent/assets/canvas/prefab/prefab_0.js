@@ -51,6 +51,10 @@ prefab_0.prototype.initOnce = function () {
 };
 
 prefab_0.prototype.clickBegain = function () {
+	if(!gGame.gameScene.checkClickTime()){
+		return;
+	}
+
 	gGame.gameScene.appearGroup2(this, gGame.gameScene.fGroup1);
 
 	gGame.gameScene.appreaDom();
