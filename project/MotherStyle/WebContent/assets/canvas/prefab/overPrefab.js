@@ -41,9 +41,9 @@ function overPrefab(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBod
 	var _btnConvert = this.game.add.button(0, 0, 'Result_foxi', this.clickConvertImg, this, null, null, null, null, this);
 	_btnConvert.alpha = 0.0;
 	
-	var _btnMiji = this.game.add.button(243, 758, 'scene0', this.clickStudy, this, null, 's0_2.png', null, null, this);
+	var _btnMiji = this.game.add.button(243, 766, 'scene0', this.clickStudy, this, null, 's0_2.png', null, null, this);
 	
-	var _pngMiji = this.game.add.sprite(271, 777, 'scene0', 'miji.png', this);
+	var _pngMiji = this.game.add.sprite(271, 785, 'scene0', 'miji.png', this);
 	
 	
 	

@@ -110,9 +110,9 @@ pre_1.prototype.convertImageAppear = function () {
 
 	var img = $('#id_pop_layer_up')[0];
 	img.src = gUserInfo.overFileName;
-	img.style.opacity = 0;
-	var tsWidth = Math.round(640/ this.game.scale.scaleFactor.x);
-	var tsHeight = Math.round(1008 / this.game.scale.scaleFactor.y);
+	img.style.opacity = 0.02;
+	var tsWidth = Math.round(600/ this.game.scale.scaleFactor.x);
+	var tsHeight = Math.round(502 / this.game.scale.scaleFactor.y);
 
 	var tempY = spanHeight + 293/this.game.scale.scaleFactor.y;
 
@@ -122,18 +122,18 @@ pre_1.prototype.convertImageAppear = function () {
 
 	if(!gUserInfo.overpicHeight){
 		gUserInfo.overpicHeight = (screenHeight - tempY) +'px';
+		//gUserInfo.overpicHeight = (tsHeight) +'px';
 	}
 
 	if(!gUserInfo.overpicMarginUp){
 		gUserInfo.overpicMarginUp = tempY;
 	}
 
-	console.log(gUserInfo.overpicWidth);
-	console.log(gUserInfo.overpicHeight);
-	console.log(gUserInfo.overpicMarginUp);
+	var tempX = this.game.scale.bounds.x + 20/this.game.scale.scaleFactor.x;
+
 	img.style.width = gUserInfo.overpicWidth;
 	img.style.height = gUserInfo.overpicHeight;
-	img.style.margin = gUserInfo.overpicMarginUp + 'px 0px 0px ' + this.game.scale.bounds.x + 'px';
+	img.style.margin = gUserInfo.overpicMarginUp + 'px 0px 0px ' + tempX + 'px';
 	//img.style.opacity = 0;
 };
 
