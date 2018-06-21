@@ -9,8 +9,7 @@
 /**
  * overPrefab.
  * @param {Phaser.Game} aGame A reference to the currently running game.
- * @param {Phaser.Group} aParent The parent Group (or other {@link DisplayObject}) that this group will be added to.
-    If undefined/unspecified the Group will be added to the {@link Phaser.Game#world Game World}; if null the Group will not be added to any parent.
+ * @param {Phaser.Group} aParent The parent Group (or other {@link DisplayObject}) that this group will be added to.    If undefined/unspecified the Group will be added to the {@link Phaser.Game#world Game World}; if null the Group will not be added to any parent.
  * @param {string} aName A name for this group. Not used internally but useful for debugging.
  * @param {boolean} aAddToStage If true this group will be added directly to the Game.Stage instead of Game.World.
  * @param {boolean} aEnableBody If true all Sprites created with {@link #create} or {@link #createMulitple} will have a physics body created on them. Change the body type with {@link #physicsBodyType}.
@@ -42,9 +41,9 @@ function overPrefab(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBod
 	var _btnConvert = this.game.add.button(0, 0, 'Result_foxi', this.clickConvertImg, this, null, null, null, null, this);
 	_btnConvert.alpha = 0.0;
 	
-	var _btnMiji = this.game.add.button(243, 766, 'scene0', this.clickStudy, this, null, 's0_2.png', null, null, this);
+	var _btnMiji = this.game.add.button(243, 760, 'scene0', this.clickStudy, this, null, 's0_2.png', null, null, this);
 	
-	var _pngMiji = this.game.add.sprite(271, 785, 'scene0', 'miji.png', this);
+	var _pngMiji = this.game.add.sprite(271, 779, 'scene0', 'miji.png', this);
 	
 	
 	
