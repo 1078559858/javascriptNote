@@ -26,7 +26,8 @@ function pre_1(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyType
 	var _btn = this.game.add.button(561, 196, 'btn', this.clickClose, this, null, null, null, null, this);
 	_btn.scale.setTo(1.5, 1.5);
 	
-	this.game.add.sprite(20, 253, 'pop', null, this);
+	var _pop = this.game.add.sprite(20, 253, 'pop', null, this);
+	_pop.alpha = 0.0;
 	
 	
 	
@@ -138,7 +139,6 @@ pre_1.prototype.convertImageAppear = function () {
 	if(!gUserInfo.overpicMarginUp){
 		gUserInfo.overpicMarginUp = tempY;
 	}
-
 
 	var tempX = this.game.scale.bounds.x + 20/this.game.scale.scaleFactor.x;
 

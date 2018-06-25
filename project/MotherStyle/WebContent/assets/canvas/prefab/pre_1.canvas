@@ -76,7 +76,8 @@
               "info": {
                 "editorName": "pop",
                 "x": 20,
-                "y": 253
+                "y": 253,
+                "alpha": 0
               }
             }
           ]

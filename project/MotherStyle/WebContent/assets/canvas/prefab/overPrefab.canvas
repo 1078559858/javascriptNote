@@ -131,7 +131,7 @@
                 "editorName": "btnMiji",
                 "editorPublic": true,
                 "x": 243,
-                "y": 760,
+                "y": 772,
                 "callback": "this.clickStudy"
               }
             },
@@ -143,7 +143,7 @@
                 "editorName": "pngMiji",
                 "editorPublic": true,
                 "x": 271,
-                "y": 779
+                "y": 791
               }
             }
           ]

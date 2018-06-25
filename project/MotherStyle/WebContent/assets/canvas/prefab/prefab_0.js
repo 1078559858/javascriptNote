@@ -90,5 +90,6 @@ prefab_0.prototype.clickBegain = function () {
 	gGame.gameScene.appearGroup2(this, gGame.gameScene.fGroup1);
 
 	gGame.gameScene.appreaDom();
+	//gGame.gameScene.fGroupOver.convertImageAppear();
 };
 

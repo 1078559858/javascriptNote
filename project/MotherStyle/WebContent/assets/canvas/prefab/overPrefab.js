@@ -42,9 +42,9 @@ function overPrefab(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBod
 	var _btnConvert = this.game.add.button(0, 0, 'Result_foxi', this.clickConvertImg, this, null, null, null, null, this);
 	_btnConvert.alpha = 0.0;
 	
-	var _btnMiji = this.game.add.button(243, 760, 'scene0', this.clickStudy, this, null, 's0_2.png', null, null, this);
+	var _btnMiji = this.game.add.button(243, 772, 'scene0', this.clickStudy, this, null, 's0_2.png', null, null, this);
 	
-	var _pngMiji = this.game.add.sprite(271, 779, 'scene0', 'miji.png', this);
+	var _pngMiji = this.game.add.sprite(271, 791, 'scene0', 'miji.png', this);
 	
 	
 	
@@ -83,7 +83,7 @@ overPrefab.prototype.initOnce = function () {
 		{"a":3, "b":4, "c":2, "d":1}
 	];
 
-	console.log(JSON.stringify(gUserInfo.choice));
+	//console.log(JSON.stringify(gUserInfo.choice));
 
 	for(var i = 0; i < gUserInfo.choice.length && i < ballArr.length; i++){
 		score += ballArr[i][gUserInfo.choice[i]];
@@ -92,24 +92,31 @@ overPrefab.prototype.initOnce = function () {
 	if(score <= 8){
 		this.fGroupFoxi.scale.x = 1;
 		gUserInfo.fileName = 'assets/image/over/fo.png';	//佛系
+		gUserInfo.spanY = 0;
 	}else if(score <= 16){
 		this.fGroupShaonv.scale.x = 1;
 		gUserInfo.fileName = 'assets/image/over/shaonv.png';	//社会辣妈
+		gUserInfo.spanY = 10;
 	}else if(score <= 24){
 		this.fGroupHU.scale.x = 1;
 		gUserInfo.fileName = 'assets/image/over/hu.png';	//狂野虎妈
+		gUserInfo.spanY = 6;
 	}else {
 		this.fGroupHuan.scale.x = 1;
 		gUserInfo.fileName = 'assets/image/over/naodong.png';	//幻想
+		gUserInfo.spanY = 20;
 	}
 
+	this.fPngMiji.y += gUserInfo.spanY;
+	this.fBtnMiji.y += gUserInfo.spanY;
+
 	gGame.gameScene.setAnchorMiddle(this.fBtnMiji);
-	var tween = this.game.add.tween(this.fBtnMiji.scale).to({x:1.389, y:1.389}, 389, Phaser.Easing.Linear.None,
+	var tween = this.game.add.tween(this.fBtnMiji.scale).to({x:1.389, y:1.389}, 600, Phaser.Easing.Linear.None,
 		true, 0, -1);
 	tween.yoyo(true);
 
 	gGame.gameScene.setAnchorMiddle(this.fPngMiji);
-	var tween = this.game.add.tween(this.fPngMiji.scale).to({x:1.389, y:1.389}, 389, Phaser.Easing.Linear.None,
+	var tween = this.game.add.tween(this.fPngMiji.scale).to({x:1.389, y:1.389}, 600, Phaser.Easing.Linear.None,
 		true, 0, -1);
 	tween.yoyo(true);
 
@@ -147,7 +154,6 @@ overPrefab.prototype.convertImageAppear = function () {
 
 	var spanHeight = (screenHeight - gameHeight)/2;
 
-
 	var img = $('#id_leftUp')[0];
 	img.src = gUserInfo.fileName;
 	var tsWidth = Math.round(640/ this.game.scale.scaleFactor.x);
@@ -156,11 +162,13 @@ overPrefab.prototype.convertImageAppear = function () {
 		gUserInfo.uppicWidth = tsWidth + 'px';
 	}
 
+	var tty = spanHeight - gUserInfo.tsHeight + this.fBtnMiji.y*gameHeight/1008;
+
 	if(!gUserInfo.uppicHeight){
-		gUserInfo.uppicHeight = tsHeight*760/1008 - gUserInfo.tsHeight  + spanHeight + 'px'
+		gUserInfo.uppicHeight = tty + 'px';
 	}
 
-	var tempY = tsHeight*760/1008 - gUserInfo.tsHeight  + spanHeight + 70/this.game.scale.scaleFactor.y;
+	var tempY = tty + gUserInfo.tsHeight + 70*gameHeight/1008;
 
 	img.style.width = gUserInfo.uppicWidth;
 	img.style.height = gUserInfo.uppicHeight;
@@ -181,7 +189,7 @@ overPrefab.prototype.convertImageAppear = function () {
 	}
 
 	if(!gUserInfo.downpicMarginUp){
-		gUserInfo.downpicMarginUp = Math.floor(tempY);
+		gUserInfo.downpicMarginUp =   tempY - gUserInfo.tsHeight;
 	}
 
 	img.style.width = gUserInfo.downpicWidth;
