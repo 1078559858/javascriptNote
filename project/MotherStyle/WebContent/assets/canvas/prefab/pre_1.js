@@ -18,12 +18,14 @@
 function pre_1(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyType) {
 	
 	Phaser.Group.call(this, aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyType);
-	var _Dialog_mc = this.game.add.button(-153, -359, 'Dialog_mc', null, this, null, null, null, null, this);
-	_Dialog_mc.scale.setTo(1.5, 1.5);
+	var _Dialog_mc = this.game.add.button(0, 0, 'Dialog_mc', null, this, null, null, null, null, this);
+	_Dialog_mc.scale.setTo(1.0, 0.83);
+	_Dialog_mc.alpha = 0.0;
 	
-	this.game.add.sprite(18, 261, 'pop', null, this);
+	var _btn = this.game.add.button(561, 196, 'btn', this.clickClose, this, null, null, null, null, this);
+	_btn.scale.setTo(1.5, 1.5);
 	
-	this.game.add.button(591, 221, 'common1', this.clickClose, this, null, 'close.png', null, null, this);
+	this.game.add.sprite(20, 253, 'pop', null, this);
 	
 	
 	
@@ -86,7 +88,10 @@ pre_1.prototype.initOnce  = function () {
 };
 
 pre_1.prototype.clickClose = function () {
-	this.game.add.tween(this.scale).to({x:0, y:0}, 1000, Phaser.Easing.Bounce.Out, true);
+	//this.game.add.tween(this.scale).to({x:0, y:0}, 1000, Phaser.Easing.Bounce.Out, true);
+
+	this.scale.x = 0;
+	this.scale.y = 0;
 
 	this.convertImageDisappear();
 	gGame.gameScene.fGroupOver.convertImageAppear();

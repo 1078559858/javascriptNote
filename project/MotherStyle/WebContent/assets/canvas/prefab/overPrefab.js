@@ -90,16 +90,16 @@ overPrefab.prototype.initOnce = function () {
 
 	if(score <= 8){
 		this.fGroupFoxi.scale.x = 1;
-		gUserInfo.fileName = 'assets/image/over/fo.png';
+		gUserInfo.fileName = 'assets/image/over/fo.png';	//佛系
 	}else if(score <= 16){
 		this.fGroupShaonv.scale.x = 1;
-		gUserInfo.fileName = 'assets/image/over/shaonv.png';
+		gUserInfo.fileName = 'assets/image/over/shaonv.png';	//社会辣妈
 	}else if(score <= 24){
 		this.fGroupHU.scale.x = 1;
-		gUserInfo.fileName = 'assets/image/over/hu.png';
+		gUserInfo.fileName = 'assets/image/over/hu.png';	//狂野虎妈
 	}else {
 		this.fGroupHuan.scale.x = 1;
-		gUserInfo.fileName = 'assets/image/over/naodong.png';
+		gUserInfo.fileName = 'assets/image/over/naodong.png';	//幻想
 	}
 
 	gGame.gameScene.setAnchorMiddle(this.fBtnMiji);

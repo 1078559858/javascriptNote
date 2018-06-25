@@ -6,6 +6,8 @@
     "sceneHeight": 1008,
     "generateOnSave": true,
     "enableStepping": false,
+    "stepWidth": 1,
+    "stepHeight": 1,
     "lang": "JAVA_SCRIPT",
     "baseClass": "Phaser.Group",
     "backgroundColor": [
@@ -50,31 +52,31 @@
               "asset": "0",
               "info": {
                 "editorName": "Dialog_mc",
-                "x": -153,
-                "y": -359,
+                "scale.y": 0.83,
+                "alpha": 0
+              }
+            },
+            {
+              "type": "button",
+              "id": "d1439256-c67c-4585-bb0c-549a13c81f11",
+              "asset": "1",
+              "info": {
+                "editorName": "btn",
+                "x": 561,
+                "y": 196,
                 "scale.x": 1.5,
-                "scale.y": 1.5
+                "scale.y": 1.5,
+                "callback": "this.clickClose"
               }
             },
             {
               "type": "image",
               "id": "16c013f8-8f26-4f81-a6c7-421cc0cc8ecf",
-              "asset": "1",
-              "info": {
-                "editorName": "pop",
-                "x": 18,
-                "y": 261
-              }
-            },
-            {
-              "type": "button",
-              "id": "aa88b6dd-362a-4102-be0f-a6b5cf6c2fc2",
               "asset": "2",
               "info": {
-                "editorName": "close_png",
-                "x": 591,
-                "y": 221,
-                "callback": "this.clickClose"
+                "editorName": "pop",
+                "x": 20,
+                "y": 253
               }
             }
           ]
@@ -91,14 +93,13 @@
     },
     "1": {
       "file": "WebContent/assets/pack.json",
-      "section": "over",
-      "asset": "pop"
+      "section": "temp",
+      "asset": "btn"
     },
     "2": {
       "file": "WebContent/assets/pack.json",
-      "section": "colorAtlas",
-      "asset": "common1",
-      "sprite": "close.png"
+      "section": "over",
+      "asset": "pop"
     }
   },
   "prefab-table": {}
