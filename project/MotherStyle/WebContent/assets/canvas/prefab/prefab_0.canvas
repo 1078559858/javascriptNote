@@ -45,10 +45,10 @@
           "setAll": [],
           "children": [
             {
-              "type": "atlas-sprite",
-              "id": "0ffd6e16-d2eb-46d6-a610-f31679924476",
+              "type": "image",
+              "id": "daed0bd0-bbd5-46f9-a492-1e6b719eceac",
               "asset": "0",
-              "info": {"editorName": "s0_1_png"}
+              "info": {"editorName": "bg"}
             },
             {
               "type": "button",
@@ -71,6 +71,29 @@
                 "x": 180,
                 "y": 105
               }
+            },
+            {
+              "type": "atlas-sprite",
+              "id": "266c43d5-95ca-4364-ba4e-f6ee98fbe15f",
+              "asset": "3",
+              "info": {
+                "editorName": "s0_4_png",
+                "x": 109.5,
+                "y": 604
+              }
+            },
+            {
+              "type": "text",
+              "id": "939806a8-52fb-454f-a8a0-f10eba5fbe00",
+              "info": {
+                "editorName": "text",
+                "x": 180.123046875,
+                "y": 796,
+                "text": "*妈妈类型大测试*",
+                "style.font": "方正兰亭超细黑简体",
+                "style.fontSize": 36,
+                "style.fill": "#ffffff"
+              }
             }
           ]
         }
@@ -81,9 +104,8 @@
   "asset-table": {
     "0": {
       "file": "WebContent/assets/pack.json",
-      "section": "colorAtlas",
-      "asset": "scene0",
-      "sprite": "s0_1.png"
+      "section": "boot",
+      "asset": "bg"
     },
     "1": {
       "file": "WebContent/assets/pack.json",
@@ -95,6 +117,12 @@
       "file": "WebContent/assets/pack.json",
       "section": "common",
       "asset": "boy"
+    },
+    "3": {
+      "file": "WebContent/assets/pack.json",
+      "section": "colorAtlas",
+      "asset": "scene0",
+      "sprite": "s0_4.png"
     }
   },
   "prefab-table": {}

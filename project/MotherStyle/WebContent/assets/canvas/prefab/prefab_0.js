@@ -19,11 +19,15 @@
 function prefab_0(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyType) {
 	
 	Phaser.Group.call(this, aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyType);
-	this.game.add.sprite(0, 0, 'scene0', 's0_1.png', this);
+	this.game.add.sprite(0, 0, 'bg', null, this);
 	
 	var _btnBegain = this.game.add.button(190, 870, 'scene0', this.clickBegain, this, null, 's0_3.png', null, null, this);
 	
 	this.game.add.sprite(180, 105, 'boy', null, this);
+	
+	this.game.add.sprite(110, 604, 'scene0', 's0_4.png', this);
+	
+	this.game.add.text(180, 796, '*妈妈类型大测试*', {"font":"bold 36px 方正兰亭超细黑简体","fill":"#ffffff"}, this);
 	
 	
 	
@@ -46,8 +50,35 @@ prefab_0.prototype.initOnce = function () {
 	var tween = this.game.add.tween(this.fBtnBegain.scale).to({x:1.1, y:1.1}, 389, Phaser.Easing.Linear.None,
 		true, 0, -1);
 	tween.yoyo(true);
+};
 
+prefab_0.prototype.appearTitle = function () {
+	var screenWidth =  this.game.scale.dom.visualBounds.width;
+	var screenHeight = this.game.scale.dom.visualBounds.height ;
 
+	var dpr = window.devicePixelRatio;
+	if(dpr == 3){
+		dpr =  1.75;		//设置为1.75 最完美
+	}else{
+		dpr *= 1.1;
+	}
+
+	var img = $('#id_dom_7')[0];
+	img.src = 'assets/image/temp/dom06.png';
+	var tsWidth = Math.round(176/ this.game.scale.scaleFactor.x/dpr);
+	var tsHeight = Math.round(176 / this.game.scale.scaleFactor.y/dpr);
+	img.style.width = tsWidth*2 + 'px';
+	img.style.width = tsHeight*2 + 'px';
+	// img.style.marginLeft = screenWidth - tsWidth + 'px';
+	// img.style.marginTop = tsHeight/4 + 'px';
+	img.style.opacity = 1;
+};
+
+prefab_0.prototype.disAppearTitle = function () {
+	var img = $('#id_dom_7')[0];
+	img.style.width = '0px';
+	img.style.opacity = 0;
+	img.src = gUserInfo.toumingName;
 };
 
 prefab_0.prototype.clickBegain = function () {
@@ -55,6 +86,7 @@ prefab_0.prototype.clickBegain = function () {
 		return;
 	}
 
+	this.disAppearTitle();
 	gGame.gameScene.appearGroup2(this, gGame.gameScene.fGroup1);
 
 	gGame.gameScene.appreaDom();
