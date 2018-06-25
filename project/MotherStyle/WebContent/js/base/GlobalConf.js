@@ -44,5 +44,6 @@ var gUserInfo = {
 	"overpicWidth":0,
 	"overpicMarginUp":0,
 
-	'tsHeight':0
+	'tsHeight':0,
+	"spanY":0
 };
