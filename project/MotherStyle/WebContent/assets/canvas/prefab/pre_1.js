@@ -9,7 +9,8 @@
 /**
  * pre_1.
  * @param {Phaser.Game} aGame A reference to the currently running game.
- * @param {Phaser.Group} aParent The parent Group (or other {@link DisplayObject}) that this group will be added to.    If undefined/unspecified the Group will be added to the {@link Phaser.Game#world Game World}; if null the Group will not be added to any parent.
+ * @param {Phaser.Group} aParent The parent Group (or other {@link DisplayObject}) that this group will be added to.
+    If undefined/unspecified the Group will be added to the {@link Phaser.Game#world Game World}; if null the Group will not be added to any parent.
  * @param {string} aName A name for this group. Not used internally but useful for debugging.
  * @param {boolean} aAddToStage If true this group will be added directly to the Game.Stage instead of Game.World.
  * @param {boolean} aEnableBody If true all Sprites created with {@link #create} or {@link #createMulitple} will have a physics body created on them. Change the body type with {@link #physicsBodyType}.
@@ -95,7 +96,7 @@ pre_1.prototype.clickClose = function () {
 
 	this.convertImageDisappear();
 	gGame.gameScene.fGroupOver.convertImageAppear();
-	gGame.gameScene.appreaDom();
+	//gGame.gameScene.appreaDom();
 };
 
 pre_1.prototype.convertImageDisappear = function () {
@@ -123,7 +124,7 @@ pre_1.prototype.convertImageAppear = function () {
 
 	//按钮偏移
 	//var tempY = spanHeight + 293/this.game.scale.scaleFactor.y;
-	var tempY = spanHeight + 253/this.game.scale.scaleFactor.y;
+	var tempY = spanHeight + 253/this.game.scale.scaleFactor.y - gUserInfo.tsHeight;
 
 	if(!gUserInfo.overpicWidth){
 		gUserInfo.overpicWidth = tsWidth + 'px';
