@@ -9,7 +9,8 @@
 /**
  * pre_1.
  * @param {Phaser.Game} aGame A reference to the currently running game.
- * @param {Phaser.Group} aParent The parent Group (or other {@link DisplayObject}) that this group will be added to.    If undefined/unspecified the Group will be added to the {@link Phaser.Game#world Game World}; if null the Group will not be added to any parent.
+ * @param {Phaser.Group} aParent The parent Group (or other {@link DisplayObject}) that this group will be added to.
+    If undefined/unspecified the Group will be added to the {@link Phaser.Game#world Game World}; if null the Group will not be added to any parent.
  * @param {string} aName A name for this group. Not used internally but useful for debugging.
  * @param {boolean} aAddToStage If true this group will be added directly to the Game.Stage instead of Game.World.
  * @param {boolean} aEnableBody If true all Sprites created with {@link #create} or {@link #createMulitple} will have a physics body created on them. Change the body type with {@link #physicsBodyType}.
@@ -60,6 +61,12 @@ pre_1.prototype.initOnce  = function () {
 	this.pivot.x = 375;
 	this.pivot.y = 603;
 
+	var img = $('#id_pop_layer_btn_close')[0];
+	img.addEventListener('click', function () {
+		gGame && gGame.gameScene.fGroupSetName.clickClose();
+		console.log('close');
+	});
+
 	// this.fDialog_home_error.visible = false;
 	// this.fDialog_home_fourl.visible = false;
 	// this.fDialog_home_null.visible = false;
@@ -109,6 +116,10 @@ pre_1.prototype.convertImageDisappear = function () {
 	img.style.height = 0 + 'px';
 
 	var img = $('#id_pop_layer_down')[0];
+	img.style.width = 0 + 'px';
+	img.style.height = 0 + 'px';
+
+	var img = $('#id_pop_layer_btn_close')[0];
 	img.style.width = 0 + 'px';
 	img.style.height = 0 + 'px';
 };
@@ -164,6 +175,19 @@ pre_1.prototype.convertImageAppear = function () {
 	img.style.height = screenHeight - tempYDown + 'px';
 	img.style.margin = tempYDown + 'px 0px 0px ' + tempX + 'px';
 	//img.style.opacity = 0;
+
+	var img = $('#id_pop_layer_btn_close')[0];
+	img.src = gUserInfo.btncloseFileName;
+	var tsWidth = Math.round(80/ this.game.scale.scaleFactor.x);
+	var tsHeight = Math.round(80 / this.game.scale.scaleFactor.y);
+
+	var tempX = this.game.scale.bounds.x + 564/this.game.scale.scaleFactor.x;
+	var tempYDown = spanHeight + 213/this.game.scale.scaleFactor.x - gUserInfo.tsHeight;
+
+	img.style.width = tsWidth + 'px';
+	img.style.height = tsHeight + 'px';
+	img.style.margin = tempYDown + 'px 0px 0px ' + tempX + 'px';
+	img.style.opacity = 1;
 };
 
 pre_1.prototype.focusIn = function () {

@@ -99,6 +99,7 @@ mainScene.prototype.appreaDom = function () {
 	img.src = 'assets/image/temp/dom01.png';
 
 	var dpr = window.devicePixelRatio;
+
 	if(dpr == 3){
 		dpr =  1.75;		//设置为1.75 最完美
 	}else{

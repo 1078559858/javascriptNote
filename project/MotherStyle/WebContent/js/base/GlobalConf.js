@@ -34,6 +34,7 @@ var gUserInfo = {
 	"moveBegainY":0,
 	"fileName":'assets/image/over/fo.png',
 	'overFileName':'assets/image/over/pop.png',
+	'btncloseFileName':'assets/image/over/btn.png',
 	"toumingName":"assets/image/temp/touming.png",
 	"uppicHeight":0,
 	"uppicWidth":0,

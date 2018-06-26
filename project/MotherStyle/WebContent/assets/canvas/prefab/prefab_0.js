@@ -70,7 +70,7 @@ prefab_0.prototype.appearTitle = function () {
 	img.style.width = tsWidth*2 + 'px';
 	img.style.width = tsHeight*2 + 'px';
 	// img.style.marginLeft = screenWidth - tsWidth + 'px';
-	// img.style.marginTop = tsHeight/4 + 'px';
+	img.style.marginTop = 10 + 'px';
 	img.style.opacity = 1;
 };
 
@@ -90,6 +90,6 @@ prefab_0.prototype.clickBegain = function () {
 	gGame.gameScene.appearGroup2(this, gGame.gameScene.fGroup1);
 
 	gGame.gameScene.appreaDom();
-	//gGame.gameScene.fGroupOver.convertImageAppear();
+	//gGame.gameScene.fGroupSetName.convertImageAppear();
 };
 

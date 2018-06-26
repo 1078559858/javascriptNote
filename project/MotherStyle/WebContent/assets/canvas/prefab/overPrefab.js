@@ -123,12 +123,12 @@ overPrefab.prototype.initOnce = function () {
 	this.fBtnMiji.y += gUserInfo.spanY;
 
 	gGame.gameScene.setAnchorMiddle(this.fBtnMiji);
-	var tween = this.game.add.tween(this.fBtnMiji.scale).to({x:1.389, y:1.389}, 600, Phaser.Easing.Linear.None,
+	var tween = this.game.add.tween(this.fBtnMiji.scale).to({x:1.23, y:1.23}, 600, Phaser.Easing.Linear.None,
 		true, 0, -1);
 	tween.yoyo(true);
 
 	gGame.gameScene.setAnchorMiddle(this.fPngMiji);
-	var tween = this.game.add.tween(this.fPngMiji.scale).to({x:1.389, y:1.389}, 600, Phaser.Easing.Linear.None,
+	var tween = this.game.add.tween(this.fPngMiji.scale).to({x:1.23, y:1.23}, 600, Phaser.Easing.Linear.None,
 		true, 0, -1);
 	tween.yoyo(true);
 
@@ -191,7 +191,6 @@ overPrefab.prototype.convertImageAppear = function () {
 	img.src = gUserInfo.fileName;
 	var tsWidth = Math.round(640/ this.game.scale.scaleFactor.x);
 	var tsHeight = Math.round(1008 / this.game.scale.scaleFactor.y);
-
 	if(!gUserInfo.downpicWidth){
 		gUserInfo.downpicWidth = tsWidth + 'px';
 	}
