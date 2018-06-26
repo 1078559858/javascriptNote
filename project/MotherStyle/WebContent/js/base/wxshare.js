@@ -83,7 +83,7 @@ var wxAjaxGetLocalHost = function (callback) {
 wx.ready(function () {
 	wx.onMenuShareAppMessage({
 		title: '叽里呱啦',
-		desc: '在长大的过程中，我才慢慢发现，我身边的所有事，别人跟我说的所有事，那些所谓本来如此，注定如此的事，它们其实没有非得如此，事情是可以改变的。更重要的是，有些事既然错了，那就该做出改变。',
+		desc: '致想长大的小孩，不想老的大人，妈妈性格大测试，快来测试吧！',
 		link: location.href,
 		imgUrl: 'http://www.yangmengmeng.com/wxShare.jpg',
 		trigger: function (res) {
@@ -102,7 +102,7 @@ wx.ready(function () {
 	});
 
 	wx.onMenuShareTimeline({
-		title: '叽里呱啦——快来测试一下是什么类型的妈咪吧！',
+		title: '叽里呱啦——快来测试一下你是什么类型的妈妈吧！',
 		link: location.href,
 		imgUrl: 'http://www.yangmengmeng.com/wxShare.jpg',
 		trigger: function (res) {

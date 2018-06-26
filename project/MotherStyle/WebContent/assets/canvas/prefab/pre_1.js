@@ -9,8 +9,7 @@
 /**
  * pre_1.
  * @param {Phaser.Game} aGame A reference to the currently running game.
- * @param {Phaser.Group} aParent The parent Group (or other {@link DisplayObject}) that this group will be added to.
-    If undefined/unspecified the Group will be added to the {@link Phaser.Game#world Game World}; if null the Group will not be added to any parent.
+ * @param {Phaser.Group} aParent The parent Group (or other {@link DisplayObject}) that this group will be added to.    If undefined/unspecified the Group will be added to the {@link Phaser.Game#world Game World}; if null the Group will not be added to any parent.
  * @param {string} aName A name for this group. Not used internally but useful for debugging.
  * @param {boolean} aAddToStage If true this group will be added directly to the Game.Stage instead of Game.World.
  * @param {boolean} aEnableBody If true all Sprites created with {@link #create} or {@link #createMulitple} will have a physics body created on them. Change the body type with {@link #physicsBodyType}.
@@ -23,13 +22,17 @@ function pre_1(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyType
 	_Dialog_mc.scale.setTo(1.0, 0.83);
 	_Dialog_mc.alpha = 0.0;
 	
-	var _btn = this.game.add.button(561, 196, 'btn', this.clickClose, this, null, null, null, null, this);
+	var _btn = this.game.add.button(564, 213, 'btn', this.clickClose, this, null, null, null, null, this);
 	_btn.scale.setTo(1.5, 1.5);
 	
 	var _pop = this.game.add.sprite(20, 253, 'pop', null, this);
 	_pop.alpha = 0.0;
 	
 	
+	
+	// public fields
+	
+	this.fPop = _pop;
 	
 }
 

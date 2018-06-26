@@ -83,6 +83,18 @@ overPrefab.prototype.initOnce = function () {
 		{"a":3, "b":4, "c":2, "d":1}
 	];
 
+	// var ballArr = [
+	// 	{"a":1, "b":2, "c":3, "d":4},
+	// 	{"a":1, "b":2, "c":3, "d":4},
+	// 	{"a":1, "b":2, "c":3, "d":4},
+	// 	{"a":1, "b":2, "c":3, "d":4},
+	//
+	// 	{"a":1, "b":2, "c":3, "d":4},
+	// 	{"a":1, "b":2, "c":3, "d":4},
+	// 	{"a":1, "b":2, "c":3, "d":4},
+	// 	{"a":1, "b":2, "c":3, "d":4}
+	// ];
+
 	//console.log(JSON.stringify(gUserInfo.choice));
 
 	for(var i = 0; i < gUserInfo.choice.length && i < ballArr.length; i++){
@@ -92,7 +104,7 @@ overPrefab.prototype.initOnce = function () {
 	if(score <= 8){
 		this.fGroupFoxi.scale.x = 1;
 		gUserInfo.fileName = 'assets/image/over/fo.png';	//佛系
-		gUserInfo.spanY = 0;
+		gUserInfo.spanY = 15;
 	}else if(score <= 16){
 		this.fGroupShaonv.scale.x = 1;
 		gUserInfo.fileName = 'assets/image/over/shaonv.png';	//社会辣妈
@@ -104,7 +116,7 @@ overPrefab.prototype.initOnce = function () {
 	}else {
 		this.fGroupHuan.scale.x = 1;
 		gUserInfo.fileName = 'assets/image/over/naodong.png';	//幻想
-		gUserInfo.spanY = 20;
+		gUserInfo.spanY = 0;
 	}
 
 	this.fPngMiji.y += gUserInfo.spanY;
@@ -162,7 +174,7 @@ overPrefab.prototype.convertImageAppear = function () {
 		gUserInfo.uppicWidth = tsWidth + 'px';
 	}
 
-	var tty = spanHeight - gUserInfo.tsHeight + this.fBtnMiji.y*gameHeight/1008;
+	var tty = spanHeight - gUserInfo.tsHeight + (this.fBtnMiji.y - this.fBtnMiji.height/2)*gameHeight/1008;
 
 	if(!gUserInfo.uppicHeight){
 		gUserInfo.uppicHeight = tty + 'px';
