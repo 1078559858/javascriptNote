@@ -64,7 +64,7 @@ pre_1.prototype.initOnce  = function () {
 	var img = $('#id_pop_layer_btn_close')[0];
 	img.addEventListener('click', function () {
 		gGame && gGame.gameScene.fGroupSetName.clickClose();
-		console.log('close');
+		//console.log('close');
 	});
 
 	// this.fDialog_home_error.visible = false;
