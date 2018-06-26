@@ -123,14 +123,14 @@ overPrefab.prototype.initOnce = function () {
 	this.fBtnMiji.y += gUserInfo.spanY;
 
 	gGame.gameScene.setAnchorMiddle(this.fBtnMiji);
-	var tween = this.game.add.tween(this.fBtnMiji.scale).to({x:1.23, y:1.23}, 600, Phaser.Easing.Linear.None,
+	this.fTweenBtn = this.game.add.tween(this.fBtnMiji.scale).to({x:1.23, y:1.23}, 600, Phaser.Easing.Linear.None,
 		true, 0, -1);
-	tween.yoyo(true);
+	this.fTweenBtn.yoyo(true);
 
 	gGame.gameScene.setAnchorMiddle(this.fPngMiji);
-	var tween = this.game.add.tween(this.fPngMiji.scale).to({x:1.23, y:1.23}, 600, Phaser.Easing.Linear.None,
+	this.fTweenPng = this.game.add.tween(this.fPngMiji.scale).to({x:1.23, y:1.23}, 600, Phaser.Easing.Linear.None,
 		true, 0, -1);
-	tween.yoyo(true);
+	this.fTweenPng.yoyo(true);
 
 	// this.fBtnConvert.events.onInputDown.add(function () {
 	// 	gUserInfo.clickTime = Date.now();
@@ -151,6 +151,9 @@ overPrefab.prototype.clickStudy = function (btn) {
 	this.convertImageDisAppear();
 	//gGame.gameScene.disappearDom();
 	gGame.gameScene.fGroupSetName.appearPopLayer();
+
+	this.fTweenBtn.pause();
+	this.fTweenPng.pause();
 };
 
 overPrefab.prototype.clickAgain = function (btn) {
@@ -174,7 +177,11 @@ overPrefab.prototype.convertImageAppear = function () {
 		gUserInfo.uppicWidth = tsWidth + 'px';
 	}
 
-	var tty = spanHeight - gUserInfo.tsHeight + (this.fBtnMiji.y - this.fBtnMiji.height/2)*gameHeight/1008;
+	if(0){
+		var tty = spanHeight + (this.fBtnMiji.y - this.fBtnMiji.height/2)*gameHeight/1008;
+	}else{
+		var tty = spanHeight - gUserInfo.tsHeight + (this.fBtnMiji.y - this.fBtnMiji.height/2)*gameHeight/1008;
+	}
 
 	if(!gUserInfo.uppicHeight){
 		gUserInfo.uppicHeight = tty + 'px';

@@ -62,10 +62,8 @@
               "asset": "1",
               "info": {
                 "editorName": "btn",
-                "x": 564,
-                "y": 213,
-                "scale.x": 1.5,
-                "scale.y": 1.5,
+                "x": 583,
+                "y": 232,
                 "callback": "this.clickClose"
               }
             },
@@ -77,8 +75,7 @@
                 "editorName": "pop",
                 "editorPublic": true,
                 "x": 20,
-                "y": 253,
-                "alpha": 0
+                "y": 253
               }
             }
           ]

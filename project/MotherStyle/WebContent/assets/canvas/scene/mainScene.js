@@ -245,8 +245,6 @@ mainScene.prototype.initOnce = function () {
 	this.setAnchorMiddle(this.fMusic_btn);
 	this.fBgBtn.inputEnabled = false;
 
-	//gGame.gameScene.fGroupSetName.convertImageAppear();
-
 	//this.fGroupOver.convertImageAppear();
 
 	//this.fGroupSetName.convertImageAppear();

@@ -23,11 +23,9 @@ function pre_1(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyType
 	_Dialog_mc.scale.setTo(1.0, 0.83);
 	_Dialog_mc.alpha = 0.0;
 	
-	var _btn = this.game.add.button(564, 213, 'btn', this.clickClose, this, null, null, null, null, this);
-	_btn.scale.setTo(1.5, 1.5);
+	this.game.add.button(583, 232, 'btn', this.clickClose, this, null, null, null, null, this);
 	
 	var _pop = this.game.add.sprite(20, 253, 'pop', null, this);
-	_pop.alpha = 0.0;
 	
 	
 	
@@ -107,10 +105,18 @@ pre_1.prototype.clickClose = function () {
 
 	this.convertImageDisappear();
 	gGame.gameScene.fGroupOver.convertImageAppear();
+
+	gGame.gameScene.fGroupOver.fTweenPng.resume();
+	gGame.gameScene.fGroupOver.fTweenBtn.resume();
+
 	//gGame.gameScene.appreaDom();
 };
 
 pre_1.prototype.convertImageDisappear = function () {
+	var img = $('#id_pop_layer_shade')[0];
+	img.style.width = 0 + 'px';
+	img.style.height = 0 + 'px';
+
 	var img = $('#id_pop_layer_up')[0];
 	img.style.width = 0 + 'px';
 	img.style.height = 0 + 'px';
@@ -131,6 +137,31 @@ pre_1.prototype.convertImageAppear = function () {
 	var gameHeight = this.game.scale.bounds.height;
 	var spanHeight = (screenHeight - gameHeight)/2;
 
+
+	// var dpr = window.devicePixelRatio;
+	//
+	// if(dpr == 3){
+	// 	dpr =  1.75;		//设置为1.75 最完美
+	// }else{
+	// 	dpr *= 1.1;
+	// }
+	//
+	// var tsWidth = Math.round(176/ this.game.scale.scaleFactor.x/dpr);
+	// var tsHeight = Math.round(176 / this.game.scale.scaleFactor.y/dpr);
+	// img.style.width = tsWidth + 'px';
+	// img.style.width = tsHeight + 'px';
+	// img.style.opacity = 1;
+
+	//遮罩
+	var img = $('#id_pop_layer_shade')[0];
+	img.src = gUserInfo.shadeFileName;
+	var tsWidth = Math.round(screenWidth/ this.game.scale.scaleFactor.x);
+	var tsHeight = Math.round(screenHeight / this.game.scale.scaleFactor.y);
+	img.style.width = screenWidth + 'px';
+	img.style.height = screenHeight + 'px';
+	img.style.marginTop = -gUserInfo.tsHeight + 'px';
+	img.style.opacity = 1;
+
 	var img = $('#id_pop_layer_up')[0];
 	img.src = gUserInfo.overFileName;
 	img.style.opacity = 1;
@@ -139,7 +170,11 @@ pre_1.prototype.convertImageAppear = function () {
 
 	//按钮偏移
 	//var tempY = spanHeight + 293/this.game.scale.scaleFactor.y;
-	var tempY = spanHeight + 253/this.game.scale.scaleFactor.y - gUserInfo.tsHeight;
+	if(spanHeight == 0){
+		var tempY = spanHeight + 253/this.game.scale.scaleFactor.y;
+	}else{
+		var tempY = spanHeight + 253/this.game.scale.scaleFactor.y - gUserInfo.tsHeight;
+	}
 
 	if(!gUserInfo.overpicWidth){
 		gUserInfo.overpicWidth = tsWidth + 'px';
@@ -155,34 +190,28 @@ pre_1.prototype.convertImageAppear = function () {
 	}
 
 	var tempX = this.game.scale.bounds.x + 20/this.game.scale.scaleFactor.x;
-
 	img.style.width = gUserInfo.overpicWidth;
 	img.style.height = gUserInfo.overpicHeight;
 	img.style.margin = gUserInfo.overpicMarginUp + 'px 0px 0px ' + tempX + 'px';
-	//img.style.opacity = 0;
 
-
+	//down
 	var img = $('#id_pop_layer_down')[0];
 	img.src = gUserInfo.overFileName;
 	img.style.opacity = 0;
 	var tsWidth = Math.round(600/ this.game.scale.scaleFactor.x);
 	var tsHeight = Math.round(502 / this.game.scale.scaleFactor.y);
-
-	//按钮偏移
 	var tempYDown = tempY + tsHeight;
-
 	img.style.width = gUserInfo.overpicWidth;
-	img.style.height = screenHeight - tempYDown + 'px';
+	img.style.height = screenHeight - tempYDown- gUserInfo.tsHeight + 'px';
 	img.style.margin = tempYDown + 'px 0px 0px ' + tempX + 'px';
-	//img.style.opacity = 0;
 
 	var img = $('#id_pop_layer_btn_close')[0];
 	img.src = gUserInfo.btncloseFileName;
-	var tsWidth = Math.round(80/ this.game.scale.scaleFactor.x);
-	var tsHeight = Math.round(80 / this.game.scale.scaleFactor.y);
+	var tsWidth = Math.round(53/ this.game.scale.scaleFactor.x);
+	var tsHeight = Math.round(53 / this.game.scale.scaleFactor.y);
 
-	var tempX = this.game.scale.bounds.x + 564/this.game.scale.scaleFactor.x;
-	var tempYDown = spanHeight + 213/this.game.scale.scaleFactor.x - gUserInfo.tsHeight;
+	var tempX = this.game.scale.bounds.x + 583/this.game.scale.scaleFactor.x;
+	var tempYDown = spanHeight + 232/this.game.scale.scaleFactor.x - gUserInfo.tsHeight;
 
 	img.style.width = tsWidth + 'px';
 	img.style.height = tsHeight + 'px';
