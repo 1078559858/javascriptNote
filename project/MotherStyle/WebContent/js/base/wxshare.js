@@ -83,7 +83,7 @@ var wxAjaxGetLocalHost = function (callback) {
 wx.ready(function () {
 	wx.onMenuShareAppMessage({
 		title: '叽里呱啦',
-		desc: '致想长大的小孩，不想老的大人，妈妈性格大测试，快来测试吧！',
+		desc: '致想长大的小孩，不想老的大人，妈妈类型大测试，快来测试吧！',
 		link: location.href,
 		imgUrl: 'http://www.yangmengmeng.com/wxShare.jpg',
 		trigger: function (res) {
