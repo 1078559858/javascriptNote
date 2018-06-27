@@ -23,9 +23,11 @@ function pre_1(aGame, aParent, aName, aAddToStage, aEnableBody, aPhysicsBodyType
 	_Dialog_mc.scale.setTo(1.0, 0.83);
 	_Dialog_mc.alpha = 0.0;
 	
-	this.game.add.button(583, 232, 'btn', this.clickClose, this, null, null, null, null, this);
+	var _btn = this.game.add.button(583, 232, 'btn', this.clickClose, this, null, null, null, null, this);
+	_btn.alpha = 0.0;
 	
 	var _pop = this.game.add.sprite(20, 253, 'pop', null, this);
+	_pop.alpha = 0.0;
 	
 	
 	
@@ -205,13 +207,21 @@ pre_1.prototype.convertImageAppear = function () {
 	img.style.height = screenHeight - tempYDown- gUserInfo.tsHeight + 'px';
 	img.style.margin = tempYDown + 'px 0px 0px ' + tempX + 'px';
 
+
+
+
 	var img = $('#id_pop_layer_btn_close')[0];
 	img.src = gUserInfo.btncloseFileName;
 	var tsWidth = Math.round(53/ this.game.scale.scaleFactor.x);
 	var tsHeight = Math.round(53 / this.game.scale.scaleFactor.y);
 
 	var tempX = this.game.scale.bounds.x + 583/this.game.scale.scaleFactor.x;
-	var tempYDown = spanHeight + 232/this.game.scale.scaleFactor.x - gUserInfo.tsHeight;
+
+	if(spanHeight == 0){
+		var tempYDown = spanHeight + 232/this.game.scale.scaleFactor.x;
+	}else{
+		var tempYDown = spanHeight + 232/this.game.scale.scaleFactor.x - gUserInfo.tsHeight;
+	}
 
 	img.style.width = tsWidth + 'px';
 	img.style.height = tsHeight + 'px';

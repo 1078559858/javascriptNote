@@ -64,6 +64,7 @@
                 "editorName": "btn",
                 "x": 583,
                 "y": 232,
+                "alpha": 0,
                 "callback": "this.clickClose"
               }
             },
@@ -75,7 +76,8 @@
                 "editorName": "pop",
                 "editorPublic": true,
                 "x": 20,
-                "y": 253
+                "y": 253,
+                "alpha": 0
               }
             }
           ]

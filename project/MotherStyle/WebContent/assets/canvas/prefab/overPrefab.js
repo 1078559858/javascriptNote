@@ -177,7 +177,7 @@ overPrefab.prototype.convertImageAppear = function () {
 		gUserInfo.uppicWidth = tsWidth + 'px';
 	}
 
-	if(0){
+	if(spanHeight == 0){
 		var tty = spanHeight + (this.fBtnMiji.y - this.fBtnMiji.height/2)*gameHeight/1008;
 	}else{
 		var tty = spanHeight - gUserInfo.tsHeight + (this.fBtnMiji.y - this.fBtnMiji.height/2)*gameHeight/1008;
