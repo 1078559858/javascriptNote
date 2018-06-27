@@ -154,6 +154,10 @@ overPrefab.prototype.clickStudy = function (btn) {
 
 	this.fTweenBtn.pause();
 	this.fTweenPng.pause();
+
+	if(MtaH5){
+		MtaH5.clickStat("btn_daiwa");
+	}
 };
 
 overPrefab.prototype.clickAgain = function (btn) {
