@@ -114,6 +114,13 @@ mainScene.prototype.appreaDom = function () {
 
 	gUserInfo.tsHeight = tsHeight;
 
+
+	// alert('screenWidth:' + screenWidth + "\n" +
+	// 	"screenHeight:" + screenHeight + "\n" +
+	// 	'dpr:' + window.devicePixelRatio+ "\n" +
+	// 	'tsWidth:' + tsWidth + "\n" +
+	// 	'tsHeight:' + tsHeight);
+
 	var img = $('#id_dom_2')[0];
 	img.src = 'assets/image/temp/dom02.png';
 	var tsWidth = Math.round(176/ this.game.scale.scaleFactor.x/dpr);
