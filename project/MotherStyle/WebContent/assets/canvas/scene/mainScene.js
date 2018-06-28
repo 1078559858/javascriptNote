@@ -115,9 +115,17 @@ mainScene.prototype.appreaDom = function () {
 	gUserInfo.tsHeight = tsHeight;
 
 
+
+	// var gameWidth =  this.game.scale.bounds.width;
+	// var gameHeight = this.game.scale.bounds.height;
+	// var spanHeight = (screenHeight - gameHeight)/2;
+	//
 	// alert('screenWidth:' + screenWidth + "\n" +
 	// 	"screenHeight:" + screenHeight + "\n" +
 	// 	'dpr:' + window.devicePixelRatio+ "\n" +
+	// 	'gameWidth:' + gameWidth+ "\n" +
+	// 	'gameHeight:' + gameHeight+ "\n" +
+	// 	'spanHeight:' + gameHeight+ "\n" +
 	// 	'tsWidth:' + tsWidth + "\n" +
 	// 	'tsHeight:' + tsHeight);
 
