@@ -9,7 +9,8 @@
 /**
  * mainScene.
  * @param {Phaser.Game} aGame A reference to the currently running game.
- * @param {Phaser.Group} aParent The parent Group (or other {@link DisplayObject}) that this group will be added to.    If undefined/unspecified the Group will be added to the {@link Phaser.Game#world Game World}; if null the Group will not be added to any parent.
+ * @param {Phaser.Group} aParent The parent Group (or other {@link DisplayObject}) that this group will be added to.
+    If undefined/unspecified the Group will be added to the {@link Phaser.Game#world Game World}; if null the Group will not be added to any parent.
  * @param {string} aName A name for this group. Not used internally but useful for debugging.
  * @param {boolean} aAddToStage If true this group will be added directly to the Game.Stage instead of Game.World.
  * @param {boolean} aEnableBody If true all Sprites created with {@link #create} or {@link #createMulitple} will have a physics body created on them. Change the body type with {@link #physicsBodyType}.
@@ -101,13 +102,7 @@ mainScene.prototype.appreaDom = function () {
 	var img = $('#id_dom_1')[0];
 	img.src = 'assets/image/temp/dom01.png';
 
-	var dpr = window.devicePixelRatio;
-
-	if(dpr == 3){
-		dpr =  1.75;		//设置为1.75 最完美
-	}else{
-		dpr *= 1.1;
-	}
+	var dpr = this.GetDpr();
 
 	var tsWidth = Math.round(176/ this.game.scale.scaleFactor.x/dpr);
 	var tsHeight = Math.round(176 / this.game.scale.scaleFactor.y/dpr);
@@ -117,12 +112,10 @@ mainScene.prototype.appreaDom = function () {
 
 	gUserInfo.tsHeight = tsHeight;
 
+	var gameWidth =  this.game.scale.bounds.width;
+	var gameHeight = this.game.scale.bounds.height;
+	var spanHeight = (screenHeight - gameHeight)/2;
 
-
-	// var gameWidth =  this.game.scale.bounds.width;
-	// var gameHeight = this.game.scale.bounds.height;
-	// var spanHeight = (screenHeight - gameHeight)/2;
-	//
 	// alert('screenWidth:' + screenWidth + "\n" +
 	// 	"screenHeight:" + screenHeight + "\n" +
 	// 	'dpr:' + window.devicePixelRatio+ "\n" +
@@ -349,6 +342,46 @@ mainScene.prototype.checkClickTime = function () {
 	}
 
 	return false;
+};
+
+mainScene.prototype.GetTsHeight = function () {
+	var tsHeight = gUserInfo.tsHeight;
+
+	var screenWidth =  this.game.scale.dom.visualBounds.width;
+	var screenHeight = this.game.scale.dom.visualBounds.height ;
+	var gameWidth =  this.game.scale.bounds.width;
+	var gameHeight = this.game.scale.bounds.height;
+
+	// alert('screenWidth:' + screenWidth + "\n" +
+	// 	"screenHeight:" + screenHeight + "\n" +
+	// 	'gameWidth:' + gameWidth+ "\n" +
+	// 	'gameHeight:' + gameHeight+ "\n" +
+	// 	'tsHeight:' + tsHeight);
+
+	if(screenWidth - gameWidth  + 10>= tsHeight*2){
+		return gUserInfo.tsHeight;
+	}
+
+	return 0;
+};
+
+mainScene.prototype.GetDpr = function () {
+	var screenWidth =  this.game.scale.dom.visualBounds.width;
+	var screenHeight = this.game.scale.dom.visualBounds.height ;
+	var dpr = window.devicePixelRatio;
+
+	// if(dpr == 3){
+	// 	dpr =  1.75;		//设置为1.75 最完美
+	// }else{
+	// 	dpr *= 1.1;
+	// }
+
+	//华为机型
+	if(screenHeight === 360 && screenWidth === 524 && window.devicePixelRatio === 3){
+		dpr = 2.5;
+	}
+
+	return dpr;
 };
 
 mainScene.prototype.setAnchorMiddle = function (spr) {

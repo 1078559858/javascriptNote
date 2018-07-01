@@ -56,12 +56,7 @@ prefab_0.prototype.appearTitle = function () {
 	var screenWidth =  this.game.scale.dom.visualBounds.width;
 	var screenHeight = this.game.scale.dom.visualBounds.height ;
 
-	var dpr = window.devicePixelRatio;
-	if(dpr == 3){
-		dpr =  1.75;		//设置为1.75 最完美
-	}else{
-		dpr *= 1.1;
-	}
+	var dpr = gGame.gameScene.GetDpr() || 1;
 
 	var img = $('#id_dom_7')[0];
 	img.src = 'assets/image/temp/dom06.png';

@@ -189,6 +189,8 @@ overPrefab.prototype.convertImageAppear = function () {
 
 	var tty = spanHeight - gUserInfo.tsHeight + (this.fBtnMiji.y - this.fBtnMiji.height/2)*gameHeight/1008;
 
+	tty += gGame.gameScene.GetTsHeight();
+
 	if(!gUserInfo.uppicHeight){
 		gUserInfo.uppicHeight = tty + 'px';
 	}
