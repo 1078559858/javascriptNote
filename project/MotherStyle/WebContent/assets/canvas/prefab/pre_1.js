@@ -172,11 +172,13 @@ pre_1.prototype.convertImageAppear = function () {
 
 	//按钮偏移
 	//var tempY = spanHeight + 293/this.game.scale.scaleFactor.y;
-	if(spanHeight == 0){
-		var tempY = spanHeight + 253/this.game.scale.scaleFactor.y;
-	}else{
-		var tempY = spanHeight + 253/this.game.scale.scaleFactor.y - gUserInfo.tsHeight;
-	}
+	// if(spanHeight == 0){
+	// 	var tempY = spanHeight + 253/this.game.scale.scaleFactor.y;
+	// }else{
+	// 	var tempY = spanHeight + 253/this.game.scale.scaleFactor.y - gUserInfo.tsHeight;
+	// }
+
+	var tempY = spanHeight + 253/this.game.scale.scaleFactor.y - gUserInfo.tsHeight;
 
 	if(!gUserInfo.overpicWidth){
 		gUserInfo.overpicWidth = tsWidth + 'px';
@@ -208,8 +210,6 @@ pre_1.prototype.convertImageAppear = function () {
 	img.style.margin = tempYDown + 'px 0px 0px ' + tempX + 'px';
 
 
-
-
 	var img = $('#id_pop_layer_btn_close')[0];
 	img.src = gUserInfo.btncloseFileName;
 	var tsWidth = Math.round(53/ this.game.scale.scaleFactor.x);
@@ -217,11 +217,13 @@ pre_1.prototype.convertImageAppear = function () {
 
 	var tempX = this.game.scale.bounds.x + 583/this.game.scale.scaleFactor.x;
 
-	if(spanHeight == 0){
-		var tempYDown = spanHeight + 232/this.game.scale.scaleFactor.x;
-	}else{
-		var tempYDown = spanHeight + 232/this.game.scale.scaleFactor.x - gUserInfo.tsHeight;
-	}
+	// if(spanHeight == 0){
+	// 	var tempYDown = spanHeight + 232/this.game.scale.scaleFactor.x;
+	// }else{
+	// 	var tempYDown = spanHeight + 232/this.game.scale.scaleFactor.x - gUserInfo.tsHeight;
+	// }
+
+	var tempYDown = spanHeight + 232/this.game.scale.scaleFactor.x - gUserInfo.tsHeight;
 
 	img.style.width = tsWidth + 'px';
 	img.style.height = tsHeight + 'px';

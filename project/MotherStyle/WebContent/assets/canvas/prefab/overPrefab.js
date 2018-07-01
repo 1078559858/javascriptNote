@@ -181,11 +181,13 @@ overPrefab.prototype.convertImageAppear = function () {
 		gUserInfo.uppicWidth = tsWidth + 'px';
 	}
 
-	if(spanHeight == 0){
-		var tty = spanHeight + (this.fBtnMiji.y - this.fBtnMiji.height/2)*gameHeight/1008;
-	}else{
-		var tty = spanHeight - gUserInfo.tsHeight + (this.fBtnMiji.y - this.fBtnMiji.height/2)*gameHeight/1008;
-	}
+	// if(spanHeight == 0){
+	// 	var tty = spanHeight + (this.fBtnMiji.y - this.fBtnMiji.height/2)*gameHeight/1008;
+	// }else{
+	// 	var tty = spanHeight - gUserInfo.tsHeight + (this.fBtnMiji.y - this.fBtnMiji.height/2)*gameHeight/1008;
+	// }
+
+	var tty = spanHeight - gUserInfo.tsHeight + (this.fBtnMiji.y - this.fBtnMiji.height/2)*gameHeight/1008;
 
 	if(!gUserInfo.uppicHeight){
 		gUserInfo.uppicHeight = tty + 'px';

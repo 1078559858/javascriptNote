@@ -87,6 +87,12 @@
       "key": "btn",
       "url": "assets/image/temp/btn.png",
       "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "red",
+      "url": "assets/image/temp/red.png",
+      "overwrite": false
     }
   ],
   "colorAtlas": [
@@ -154,7 +160,7 @@
     }
   ],
   "meta": {
-    "generated": "1529923884265",
+    "generated": "1530418751628",
     "app": "Phaser Editor",
     "url": "http://phasereditor.boniatillo.com",
     "version": "1.0",
