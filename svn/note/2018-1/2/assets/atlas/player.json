@@ -1,0 +1,76 @@
+{"frames": [
+
+{
+	"filename": "ball.png",
+	"frame": {"x":0,"y":0,"w":33,"h":33},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":33,"h":33},
+	"sourceSize": {"w":33,"h":33}
+},
+{
+	"filename": "blue1.png",
+	"frame": {"x":0,"y":84,"w":61,"h":61},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":61,"h":61},
+	"sourceSize": {"w":61,"h":61}
+},
+{
+	"filename": "blue2.png",
+	"frame": {"x":42,"y":42,"w":42,"h":42},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":42,"h":42},
+	"sourceSize": {"w":42,"h":42}
+},
+{
+	"filename": "blue3.png",
+	"frame": {"x":75,"y":0,"w":42,"h":42},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":42,"h":42},
+	"sourceSize": {"w":42,"h":42}
+},
+{
+	"filename": "nickbg.png",
+	"frame": {"x":0,"y":145,"w":119,"h":24},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":119,"h":24},
+	"sourceSize": {"w":119,"h":24}
+},
+{
+	"filename": "red1.png",
+	"frame": {"x":61,"y":84,"w":61,"h":61},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":61,"h":61},
+	"sourceSize": {"w":61,"h":61}
+},
+{
+	"filename": "red2.png",
+	"frame": {"x":33,"y":0,"w":42,"h":42},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":42,"h":42},
+	"sourceSize": {"w":42,"h":42}
+},
+{
+	"filename": "red3.png",
+	"frame": {"x":0,"y":42,"w":42,"h":42},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":42,"h":42},
+	"sourceSize": {"w":42,"h":42}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "player.png",
+	"format": "RGBA8888",
+	"size": {"w":122,"h":169},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:164f93ea0eac74d129bfc50477d19ab5:92948564d851f2b0bb7aa0061ddada0b:86d5339b780aedd87b35e2b7c0a7e11b$"
+}
+}

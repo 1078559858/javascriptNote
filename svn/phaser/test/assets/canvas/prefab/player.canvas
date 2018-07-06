@@ -1,0 +1,92 @@
+{
+  "canvas-version": 2,
+  "settings": {
+    "className": "player",
+    "sceneWidth": 640,
+    "sceneHeight": 360,
+    "generateOnSave": true,
+    "enableStepping": false,
+    "lang": "JAVA_SCRIPT",
+    "baseClass": "Phaser.Group",
+    "backgroundColor": [
+      180,
+      180,
+      180
+    ],
+    "gridColor": [
+      200,
+      200,
+      200
+    ],
+    "showGrid": true
+  },
+  "stateSettings": {
+    "stageBackgroundColor": [
+      0,
+      0,
+      0
+    ],
+    "autoLoad": true,
+    "preloadSpriteId": "",
+    "preloadSprite_direction": 0,
+    "load.pack": []
+  },
+  "world": {
+    "type": "group",
+    "id": "b6b107eb-37c2-467c-918d-944808f7ea8d",
+    "info": {
+      "editorName": "root",
+      "setAll": [],
+      "children": [{
+        "type": "group",
+        "id": "c555d87d-e425-49cd-a376-6bb9179a6883",
+        "info": {
+          "editorName": "group",
+          "setAll": [],
+          "children": [
+            {
+              "type": "atlas-sprite",
+              "id": "ba7223d8-a902-42e3-a2c0-033ab5d56c4c",
+              "asset": "0",
+              "info": {
+                "editorName": "logo_png",
+                "y": -1
+              }
+            },
+            {
+              "type": "text",
+              "id": "b2f6d76f-473f-497c-88ef-8266fd72de66",
+              "info": {
+                "editorName": "nick",
+                "editorPublic": true,
+                "x": 144,
+                "y": 18,
+                "text": "nick"
+              }
+            },
+            {
+              "type": "text",
+              "id": "53d44bb4-d62c-4ba8-bad6-62dc5a456267",
+              "info": {
+                "editorName": "power",
+                "editorPublic": true,
+                "x": 142,
+                "y": 57,
+                "text": "100,000,000",
+                "style.fill": "#ffffff"
+              }
+            }
+          ]
+        }
+      }]
+    }
+  },
+  "type": "GROUP",
+  "asset-table": {"0": {
+    "file": "WebContent/assets/assets-pack.json",
+    "section": "main",
+    "asset": "bg2",
+    "sprite": "logo.png"
+  }},
+  "prefab-table": {}
+}

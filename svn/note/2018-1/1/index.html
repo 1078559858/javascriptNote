@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name=viewport
+        content="width=device-width,initial-scale=1, user-scalable=yes" />
+    <!--<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />-->
+    <!--<meta http-equiv="index.html" content="no-cache" />-->
+    <!--<meta http-equiv="Expires" content="0" />-->
+
+    <title>phaser模版</title>
+    <script src="GlobalTemp.js"></script>
+
+    <!--libs-->
+    <script src="lib/jquery-1.12.4.min.js"></script>
+    <script src="lib/phaser.js"></script>
+    <script src="lib/phaser-spine.js"></script>
+    <script src="lib/phaser-input.js"></script>
+
+    <!--base-->
+    <script src="js/base/GlobalConf.js"></script>
+    <script src="js/base/GlobalUtils.js"></script>
+    <script src="js/base/ByteUTF8.js"></script>
+    <script src="js/base/ByteCache.js"></script>
+    <script src="js/base/RC4Util.js"></script>
+    <script src="js/base/ObjectWebSocket.js"></script>
+
+    <!--prefab-->
+    <script src="assets/canvas/prefab/allFootBallers.js"></script>
+    <script src="assets/canvas/prefab/jingChaiPrefab.js"></script>
+    <script src="assets/canvas/prefab/bet.js"></script>
+    <script src="assets/canvas/prefab/betOptPrefab.js"></script>
+    <script src="assets/canvas/prefab/betChoicePrefab.js"></script>
+    <script src="assets/canvas/prefab/player.js"></script>
+    <script src="assets/canvas/prefab/ballgroundPrefab.js"></script>
+
+    <!--layer-->
+    <script src="assets/canvas/layer/disConnectLayer.js"></script>
+    <script src="assets/canvas/layer/menuPrefabLayer.js"></script>
+    <script src="assets/canvas/layer/bonusLayer.js"></script>
+    <script src="assets/canvas/layer/shopLayer.js"></script>
+
+    <!--scene-->
+    <script src="assets/canvas/scene/preloadScene.js"></script>
+    <script src="assets/canvas/scene/mainScene.js"></script>
+
+    <!--v2-->
+    <!--<script src="assets/layer/limitBetLayer.js"></script>-->
+    <!--<script src="assets/layer/settingLayer.js"></script>-->
+    <!--<script src="assets/layer/exchangeMoney.js"></script>-->
+    <!--<script src="assets/layer/overLayer.js"></script>-->
+    <!--<script src="assets/layer/popLayer.js"></script>-->
+    <!--<script src="assets/layer/zhuLayer.js"></script>-->
+    <!--<script src="assets/layer/chatLayer.js"></script>-->
+    <!--<script src="assets/scenes/mainScene.js"></script>-->
+    <!--<script src="assets/prefab/gamePrefab.js"></script>-->
+    <!--<script src="assets/prefab/bankerPrefab.js"></script>-->
+    <!--<script src="assets/prefab/historyPrefab.js"></script>-->
+    <!--<script src="assets/prefab/challengeHero.js"></script>-->
+    <!--<script src="assets/prefab/twoMaJiangPrefab.js"></script>-->
+    <!--<script src="assets/prefabLayer/historyLayer.js"></script>-->
+    <!--<script src="assets/prefabLayer/menuPrefabLayer.js"></script>-->
+
+    <script src="js/Main.js"></script>
+    <script src="js/Video.js"></script>
+    <script src="js/Net.js"></script>
+    <script src="js/Boot.js"></script>
+    <script src="js/Preload.js"></script>
+    <script src="js/Level.js"></script>
+
+
+<style>
+body {
+	background: black;
+	margin: 0;
+	padding: 0;
+}
+
+canvas {
+	margin: 0 auto;
+}
+
+.style_game {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+input, input:focus, input:active {
+	user-select: text
+}
+</style>
+
+</head>
+<body>
+	<script type="text/javascript">
+    var user = "";
+    var pwd = "";
+
+    function getUrlArgObject(){
+        var args=new Object();
+        var query=location.search.substring(1);
+        var pairs=query.split("&");
+        for(var i=0;i<pairs.length;i++){
+            var pos=pairs[i].indexOf('=');
+            if(pos==-1){
+                continue;
+            }
+            var argname=pairs[i].substring(0,pos);
+            var value=pairs[i].substring(pos+1);
+            args[argname]=unescape(value);
+        }
+        return args;
+    }
+
+    var objParams = getUrlArgObject();
+    //console.log(JSON.stringify(objParams));
+    if (objParams.hasOwnProperty("user")) {
+        user = objParams.user;
+        gUserInfo.user = user;
+    }
+    if (objParams.hasOwnProperty("pwd")) {
+        pwd = objParams.pwd;
+        gUserInfo.pwd = pwd;
+    }
+
+    function GetUser() {
+        return user;
+    }
+
+    function GetPwd() {
+        return pwd;
+    }
+
+    function ShowLog(log) {
+    }
+    </script>
+
+	<div id="id_game" class="style_game"></div>
+</body>
+</html>

@@ -1,0 +1,128 @@
+{
+  "canvas-version": 2,
+  "settings": {
+    "className": "preloadScene",
+    "sceneWidth": 750,
+    "sceneHeight": 1206,
+    "generateOnSave": true,
+    "enableStepping": false,
+    "lang": "JAVA_SCRIPT",
+    "baseClass": "Phaser.Group",
+    "backgroundColor": [
+      128,
+      128,
+      128
+    ],
+    "gridColor": [
+      200,
+      200,
+      200
+    ],
+    "showGrid": true
+  },
+  "stateSettings": {
+    "stageBackgroundColor": [
+      0,
+      0,
+      0
+    ],
+    "autoLoad": true,
+    "preloadSpriteId": "",
+    "preloadSprite_direction": 0,
+    "load.pack": []
+  },
+  "world": {
+    "type": "group",
+    "id": "1adf78a4-98dd-4c10-b63d-c68e9d9a3ef8",
+    "info": {
+      "editorName": "preloadScene",
+      "setAll": [],
+      "children": [{
+        "type": "group",
+        "id": "4bbe86c6-2812-491d-991f-0c9ae7b902ed",
+        "info": {
+          "editorName": "group",
+          "setAll": [],
+          "children": [
+            {
+              "type": "image",
+              "id": "d5414823-7c56-4608-b7f6-06fb3e3a32ed",
+              "asset": "0",
+              "info": {
+                "editorName": "processBg",
+                "x": -2,
+                "y": 2
+              }
+            },
+            {
+              "type": "image",
+              "id": "db95d38b-4573-49d1-98fe-17c4ef4caf8a",
+              "asset": "1",
+              "info": {
+                "editorName": "LOGO",
+                "x": 103,
+                "y": 145
+              }
+            },
+            {
+              "type": "image",
+              "id": "6ee6f901-635d-4d79-a7a5-b3e0ac3ca591",
+              "asset": "2",
+              "info": {
+                "editorName": "processbar1",
+                "x": 237,
+                "y": 739
+              }
+            },
+            {
+              "type": "text",
+              "id": "72db3466-7a57-45c2-a83f-68a01870b170",
+              "info": {
+                "editorName": "text",
+                "x": 305.8398132324219,
+                "y": 695,
+                "text": "赛前热身中...",
+                "style.fontSize": 24
+              }
+            },
+            {
+              "type": "image",
+              "id": "e0f2259f-1c8d-4405-8fc5-3987179fb552",
+              "asset": "3",
+              "info": {
+                "editorName": "processBar",
+                "editorPublic": true,
+                "x": 237,
+                "y": 739
+              }
+            }
+          ]
+        }
+      }]
+    }
+  },
+  "type": "GROUP",
+  "asset-table": {
+    "0": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "boot",
+      "asset": "processBg"
+    },
+    "1": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "boot",
+      "asset": "LOGO"
+    },
+    "2": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "boot",
+      "asset": "processbar1"
+    },
+    "3": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "boot",
+      "asset": "processbar2"
+    }
+  },
+  "prefab-table": {}
+}

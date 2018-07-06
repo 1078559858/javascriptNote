@@ -1,0 +1,210 @@
+{
+  "canvas-version": 2,
+  "settings": {
+    "className": "bet",
+    "sceneWidth": 750,
+    "sceneHeight": 120,
+    "generateOnSave": true,
+    "enableStepping": false,
+    "stepWidth": 1,
+    "stepHeight": 1,
+    "lang": "JAVA_SCRIPT",
+    "baseClass": "Phaser.Group",
+    "backgroundColor": [
+      180,
+      180,
+      180
+    ],
+    "gridColor": [
+      200,
+      200,
+      200
+    ],
+    "showGrid": true
+  },
+  "stateSettings": {
+    "stageBackgroundColor": [
+      0,
+      0,
+      0
+    ],
+    "autoLoad": true,
+    "preloadSpriteId": "",
+    "preloadSprite_direction": 0,
+    "load.pack": []
+  },
+  "world": {
+    "type": "group",
+    "id": "0a019fd9-18d4-471d-baed-3182ffd797b8",
+    "info": {
+      "editorName": "root",
+      "setAll": [],
+      "children": [{
+        "type": "group",
+        "id": "57d7f1d2-d3ad-42fb-a048-66a813ea3f2c",
+        "info": {
+          "editorName": "group",
+          "setAll": [],
+          "children": [
+            {
+              "type": "atlas-sprite",
+              "id": "274ccd6d-73bb-4766-bc8a-061cb8903fa3",
+              "asset": "0",
+              "info": {"editorName": "betbg_png"}
+            },
+            {
+              "type": "button",
+              "id": "1cb20a58-3c60-4a8d-87ab-7a94283ba5a0",
+              "asset": "1",
+              "info": {
+                "editorName": "btn_5000",
+                "editorPublic": true,
+                "x": 371,
+                "y": 8.499996185302734,
+                "data": "{\r\n\"value\":5000\r\n}",
+                "callback": "this.clickChangeBetLevel",
+                "downFrame": "5000.png",
+                "upFrame": "5000.png"
+              }
+            },
+            {
+              "type": "button",
+              "id": "e1ab9568-0c74-495d-8d84-ab871bffd10b",
+              "asset": "2",
+              "info": {
+                "editorName": "btn_1000",
+                "editorPublic": true,
+                "x": 256,
+                "y": 8.499996185302734,
+                "data": "{\r\n\"value\":1000\r\n}",
+                "callback": "this.clickChangeBetLevel",
+                "downFrame": "1000.png",
+                "upFrame": "1000.png"
+              }
+            },
+            {
+              "type": "button",
+              "id": "62a0ffea-3b33-4eb7-bc65-8b6ebc35bf7a",
+              "asset": "3",
+              "info": {
+                "editorName": "btn_500",
+                "editorPublic": true,
+                "x": 141,
+                "y": 8.499996185302734,
+                "data": "{\r\n\"value\":500\r\n}",
+                "callback": "this.clickChangeBetLevel",
+                "downFrame": "500.png",
+                "upFrame": "500.png"
+              }
+            },
+            {
+              "type": "button",
+              "id": "2befbbc1-c145-409a-92cf-0a482facd476",
+              "asset": "4",
+              "info": {
+                "editorName": "btn_1W",
+                "editorPublic": true,
+                "x": 486,
+                "y": 8.499996185302734,
+                "data": "{\r\n\"value\":10000\r\n}",
+                "callback": "this.clickChangeBetLevel",
+                "downFrame": "10000.png",
+                "upFrame": "10000.png"
+              }
+            },
+            {
+              "type": "button",
+              "id": "9e262881-0244-4894-8766-8807ad4d0306",
+              "asset": "5",
+              "info": {
+                "editorName": "btn_100",
+                "editorPublic": true,
+                "x": 26,
+                "y": 7.499996185302734,
+                "data": "{\r\n\"value\":100\r\n}",
+                "callback": "this.clickChangeBetLevel",
+                "downFrame": "100.png",
+                "upFrame": "100.png"
+              }
+            },
+            {
+              "type": "button",
+              "id": "0cbe243f-fc39-4339-bfe2-5fc217224594",
+              "asset": "6",
+              "info": {
+                "editorName": "repeat_btn",
+                "editorPublic": true,
+                "x": 615,
+                "y": 5,
+                "callback": "this.clickRepeat"
+              }
+            },
+            {
+              "type": "atlas-sprite",
+              "id": "e0fa609f-7a7e-4c31-8585-a9fa90d30748",
+              "asset": "7",
+              "info": {
+                "editorName": "xuanzhong_png",
+                "editorPublic": true,
+                "x": 19,
+                "y": -3
+              }
+            }
+          ]
+        }
+      }]
+    }
+  },
+  "type": "GROUP",
+  "asset-table": {
+    "0": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "main",
+      "asset": "bet",
+      "sprite": "betbg.png"
+    },
+    "1": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "main",
+      "asset": "bet",
+      "sprite": "5000.png"
+    },
+    "2": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "main",
+      "asset": "bet",
+      "sprite": "1000.png"
+    },
+    "3": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "main",
+      "asset": "bet",
+      "sprite": "500.png"
+    },
+    "4": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "main",
+      "asset": "bet",
+      "sprite": "10000.png"
+    },
+    "5": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "main",
+      "asset": "bet",
+      "sprite": "100.png"
+    },
+    "6": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "main",
+      "asset": "btn",
+      "sprite": "repeat.png"
+    },
+    "7": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "main",
+      "asset": "bet",
+      "sprite": "xuanzhong.png"
+    }
+  },
+  "prefab-table": {}
+}

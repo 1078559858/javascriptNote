@@ -1,0 +1,117 @@
+{
+  "canvas-version": 2,
+  "settings": {
+    "className": "player",
+    "sceneWidth": 640,
+    "sceneHeight": 360,
+    "generateOnSave": true,
+    "enableStepping": false,
+    "lang": "JAVA_SCRIPT",
+    "baseClass": "Phaser.Group",
+    "backgroundColor": [
+      180,
+      180,
+      180
+    ],
+    "gridColor": [
+      200,
+      200,
+      200
+    ],
+    "showGrid": true
+  },
+  "stateSettings": {
+    "stageBackgroundColor": [
+      0,
+      0,
+      0
+    ],
+    "autoLoad": true,
+    "preloadSpriteId": "",
+    "preloadSprite_direction": 0,
+    "load.pack": []
+  },
+  "world": {
+    "type": "group",
+    "id": "b6b107eb-37c2-467c-918d-944808f7ea8d",
+    "info": {
+      "editorName": "root",
+      "setAll": [],
+      "children": [{
+        "type": "group",
+        "id": "c555d87d-e425-49cd-a376-6bb9179a6883",
+        "info": {
+          "editorName": "group",
+          "setAll": [],
+          "children": [
+            {
+              "type": "atlas-sprite",
+              "id": "ba7223d8-a902-42e3-a2c0-033ab5d56c4c",
+              "asset": "0",
+              "info": {
+                "editorName": "logo_png",
+                "y": -1
+              }
+            },
+            {
+              "type": "text",
+              "id": "b2f6d76f-473f-497c-88ef-8266fd72de66",
+              "info": {
+                "editorName": "nick",
+                "editorPublic": true,
+                "x": 144,
+                "y": 18,
+                "text": "nick"
+              }
+            },
+            {
+              "type": "button",
+              "id": "3f528c63-a07a-48e0-af81-512a3665eb99",
+              "asset": "1",
+              "info": {
+                "editorName": "btn_chongzhi",
+                "editorPublic": true,
+                "x": 325,
+                "y": 38,
+                "callback": "this.clickChongzhi"
+              }
+            },
+            {
+              "type": "atlas-sprite",
+              "id": "cc33a3fb-2f28-4519-a829-12372f1b2843",
+              "asset": "2",
+              "info": {
+                "editorName": "coin_png",
+                "editorPublic": true,
+                "x": 106,
+                "y": 49
+              }
+            }
+          ]
+        }
+      }]
+    }
+  },
+  "type": "GROUP",
+  "asset-table": {
+    "0": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "main",
+      "asset": "bg2",
+      "sprite": "logo.png"
+    },
+    "1": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "main",
+      "asset": "btn",
+      "sprite": "cohngzhi.png"
+    },
+    "2": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "main",
+      "asset": "bg2",
+      "sprite": "coin.png"
+    }
+  },
+  "prefab-table": {}
+}

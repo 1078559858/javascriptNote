@@ -1,0 +1,725 @@
+{
+  "canvas-version": 2,
+  "settings": {
+    "className": "jingChaiPrefab",
+    "sceneWidth": 750,
+    "sceneHeight": 360,
+    "generateOnSave": true,
+    "enableStepping": false,
+    "lang": "JAVA_SCRIPT",
+    "baseClass": "Phaser.Group",
+    "backgroundColor": [
+      180,
+      180,
+      180
+    ],
+    "gridColor": [
+      200,
+      200,
+      200
+    ],
+    "showGrid": true
+  },
+  "stateSettings": {
+    "stageBackgroundColor": [
+      0,
+      0,
+      0
+    ],
+    "autoLoad": true,
+    "preloadSpriteId": "",
+    "preloadSprite_direction": 0,
+    "load.pack": []
+  },
+  "world": {
+    "type": "group",
+    "id": "f30f9b8b-611c-4dd2-8f54-1a4f10b1e0a8",
+    "info": {
+      "editorName": "root",
+      "setAll": [],
+      "children": [{
+        "type": "group",
+        "id": "2c92ff40-7a7a-4469-8c27-20630f6d15f8",
+        "info": {
+          "editorName": "group",
+          "setAll": [],
+          "children": [
+            {
+              "type": "atlas-sprite",
+              "id": "021fd897-f0b2-4727-b891-da8c5bfb2be1",
+              "asset": "0",
+              "info": {
+                "editorName": "bg",
+                "editorPublic": true,
+                "x": 68,
+                "scale.y": 1.8
+              }
+            },
+            {
+              "type": "atlas-sprite",
+              "id": "0a5ac1ac-2973-420e-98ea-8e69c55cb746",
+              "asset": "1",
+              "info": {
+                "editorName": "heng_png",
+                "x": 75.49996948242188,
+                "y": 51
+              }
+            },
+            {
+              "type": "atlas-sprite",
+              "id": "356ca9dd-30f5-4c79-935d-7a327ee627ee",
+              "asset": "2",
+              "info": {
+                "editorName": "shu",
+                "editorPublic": true,
+                "x": 375,
+                "y": 66,
+                "scale.y": 3.1
+              }
+            },
+            {
+              "type": "text",
+              "id": "7d8070f9-822c-4103-a535-89fab2b9db7a",
+              "info": {
+                "editorName": "textVS",
+                "editorPublic": true,
+                "x": 76,
+                "y": 12,
+                "text": "沙特阿利伯 VS 吉尔吉斯斯坦",
+                "style.fontSize": 30,
+                "style.fill": "#555555"
+              }
+            },
+            {
+              "type": "text",
+              "id": "74581102-1e2a-4f62-a36b-7bcd129a7736",
+              "info": {
+                "editorName": "textWin",
+                "editorPublic": true,
+                "x": 497,
+                "y": 12,
+                "text": "+100000000",
+                "style.fontSize": 30,
+                "style.fill": "#ffa800"
+              }
+            },
+            {
+              "type": "group",
+              "id": "7b28d261-1130-46b6-8628-ba00fbecf675",
+              "info": {
+                "editorName": "groupTitleLeft",
+                "setAll": [],
+                "children": [
+                  {
+                    "type": "text",
+                    "id": "e194027f-9f34-484a-8dfe-2c2a6ea26f75",
+                    "info": {
+                      "editorName": "tDuiZhan",
+                      "x": 76,
+                      "y": 54,
+                      "text": "对战情况",
+                      "style.fill": "#555555"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "29db077a-72a9-4068-82af-d414b4d1f61a",
+                    "info": {
+                      "editorName": "tBet",
+                      "x": 228,
+                      "y": 54,
+                      "text": "入",
+                      "style.fill": "#555555"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "114ec91b-f884-4e61-b563-74b57104e8e9",
+                    "info": {
+                      "editorName": "tBonus",
+                      "x": 328,
+                      "y": 53,
+                      "text": "结",
+                      "style.fill": "#555555"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "group",
+              "id": "1a1c9dfd-31a7-4103-94c1-e09598a516e1",
+              "info": {
+                "editorName": "groupTitleLeftRight",
+                "x": 350,
+                "y": -1,
+                "setAll": [],
+                "children": [
+                  {
+                    "type": "text",
+                    "id": "6e827694-991d-4c49-83fc-972dc8dfd440",
+                    "info": {
+                      "editorName": "tDuiZhan1",
+                      "x": 43,
+                      "y": 55,
+                      "text": "对战情况",
+                      "style.fill": "#555555"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "a3a2b315-9940-426d-9057-7a8c7ca549ae",
+                    "info": {
+                      "editorName": "tBet1",
+                      "x": 195,
+                      "y": 54,
+                      "text": "入",
+                      "style.fill": "#555555"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "6c4fcfa9-5ab9-4da2-ba5f-bd0abc3d9209",
+                    "info": {
+                      "editorName": "tBonus1",
+                      "x": 299,
+                      "y": 57,
+                      "text": "结",
+                      "style.fill": "#555555"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "group",
+              "id": "d34dfb8f-cf99-445e-aed6-340aff42d93d",
+              "info": {
+                "editorName": "groupResultLeft",
+                "editorPublic": true,
+                "x": 77,
+                "y": 79,
+                "setAll": [],
+                "children": [
+                  {
+                    "type": "text",
+                    "id": "bfb9c66b-6a72-45fc-b8b7-b1c59de7d18d",
+                    "info": {
+                      "editorName": "winText0",
+                      "text": "主胜2.96",
+                      "style.fill": "#555555"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "a859b08b-bf2e-4351-a260-99ae4eb3fbdd",
+                    "info": {
+                      "editorName": "winBet0",
+                      "x": 84,
+                      "text": "90000000",
+                      "style.fill": "#555555"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "ad5107b0-579e-4292-8ecb-22de1272aeff",
+                    "info": {
+                      "editorName": "winBet1",
+                      "x": 183,
+                      "text": "90000000",
+                      "style.fill": "#ffa800"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "group",
+              "id": "cdedc6f6-b1c1-4ad1-8c2e-3ccfd1f997f2",
+              "info": {
+                "editorName": "groupResultLeft1",
+                "editorPublic": true,
+                "x": 77,
+                "y": 104,
+                "setAll": [],
+                "children": [
+                  {
+                    "type": "text",
+                    "id": "e2a0773d-8739-41bf-b97e-8642fe60cf51",
+                    "info": {
+                      "editorName": "winText1",
+                      "text": "主胜2.96",
+                      "style.fill": "#555555"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "92f74a80-5622-41b1-bb45-ed4e31cf1216",
+                    "info": {
+                      "editorName": "winBet201",
+                      "x": 84,
+                      "text": "90000000",
+                      "style.fill": "#555555"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "1000dca6-31e8-4997-be34-c160bb6d2bdb",
+                    "info": {
+                      "editorName": "winBet202",
+                      "x": 183,
+                      "text": "90000000",
+                      "style.fill": "#ffa800"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "group",
+              "id": "f22ffcf1-777e-4e23-8c64-a9d33fafb821",
+              "info": {
+                "editorName": "groupResultLeft2",
+                "editorPublic": true,
+                "x": 77,
+                "y": 129,
+                "setAll": [],
+                "children": [
+                  {
+                    "type": "text",
+                    "id": "72ae3c70-c62a-4a40-8afe-6f85e5e05f0e",
+                    "info": {
+                      "editorName": "winText2",
+                      "text": "主胜2.96",
+                      "style.fill": "#555555"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "1768a4a1-c526-49bc-a3f2-9651c42fab13",
+                    "info": {
+                      "editorName": "winBet31",
+                      "x": 84,
+                      "text": "90000000",
+                      "style.fill": "#555555"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "f587384c-1df2-496c-8aa2-4386ae1604b4",
+                    "info": {
+                      "editorName": "winBet3",
+                      "x": 183,
+                      "text": "90000000",
+                      "style.fill": "#ffa800"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "group",
+              "id": "f1cf47fb-6416-40f1-b169-77f2dcb409b7",
+              "info": {
+                "editorName": "groupResultLeft3",
+                "editorPublic": true,
+                "x": 77,
+                "y": 154,
+                "setAll": [],
+                "children": [
+                  {
+                    "type": "text",
+                    "id": "28816c32-7139-4f62-bfad-3b9902ff0ad5",
+                    "info": {
+                      "editorName": "winText3",
+                      "text": "主胜2.96",
+                      "style.fill": "#555555"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "f6fff092-f441-473e-8b52-b6f0f6465e3b",
+                    "info": {
+                      "editorName": "winBet44",
+                      "x": 84,
+                      "text": "90000000",
+                      "style.fill": "#555555"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "a5ac40d1-696d-4552-8a49-62ca75108181",
+                    "info": {
+                      "editorName": "winBet4",
+                      "x": 183,
+                      "text": "90000000",
+                      "style.fill": "#ffa800"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "group",
+              "id": "cfbd3057-037d-4081-856f-561e2d832a4d",
+              "info": {
+                "editorName": "groupResultLeft4",
+                "editorPublic": true,
+                "x": 77,
+                "y": 179,
+                "setAll": [],
+                "children": [
+                  {
+                    "type": "text",
+                    "id": "cfeb7be7-bf1d-4e84-bbf8-b86866f4abca",
+                    "info": {
+                      "editorName": "winText4",
+                      "text": "主胜2.96",
+                      "style.fill": "#555555"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "a79c58c2-f012-468b-a965-7daee0c48b76",
+                    "info": {
+                      "editorName": "winBet55",
+                      "x": 84,
+                      "text": "90000000",
+                      "style.fill": "#555555"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "c8d097e1-9315-472c-89f2-67cca556eab3",
+                    "info": {
+                      "editorName": "winBet5",
+                      "x": 183,
+                      "text": "90000000",
+                      "style.fill": "#ffa800"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "group",
+              "id": "785aaa59-f9cb-4921-8419-587d7847b5db",
+              "info": {
+                "editorName": "groupResultLeft5",
+                "editorPublic": true,
+                "x": 77,
+                "y": 204,
+                "setAll": [],
+                "children": [
+                  {
+                    "type": "text",
+                    "id": "07cb6cec-c7aa-42d5-8d27-520a254b95c2",
+                    "info": {
+                      "editorName": "winText5",
+                      "text": "主胜2.96",
+                      "style.fill": "#555555"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "5bce43e2-74ff-4ede-a87e-7f105fc0dcc4",
+                    "info": {
+                      "editorName": "winBet66",
+                      "x": 84,
+                      "text": "90000000",
+                      "style.fill": "#555555"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "2852dc1e-9b5c-493e-bfde-63d78e6a3ba5",
+                    "info": {
+                      "editorName": "winBet6",
+                      "x": 183,
+                      "text": "90000000",
+                      "style.fill": "#ffa800"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "group",
+              "id": "bca5b8fa-752f-47b1-a6a6-8d76a8b07dab",
+              "info": {
+                "editorName": "groupResultLeft6",
+                "editorPublic": true,
+                "x": 392,
+                "y": 80,
+                "setAll": [],
+                "children": [
+                  {
+                    "type": "text",
+                    "id": "d5418bcf-b76d-40a5-a911-3835edc56af2",
+                    "info": {
+                      "editorName": "winText6",
+                      "text": "主胜2.96",
+                      "style.fill": "#555555"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "1601559f-3e61-4f52-848f-770b801539ca",
+                    "info": {
+                      "editorName": "winBet77",
+                      "x": 84,
+                      "text": "90000000",
+                      "style.fill": "#555555"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "a2b389d3-c06c-43a2-8161-2672f1eca2cf",
+                    "info": {
+                      "editorName": "winBet7",
+                      "x": 183,
+                      "text": "90000000",
+                      "style.fill": "#ffa800"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "group",
+              "id": "116b1329-11a2-4892-8cae-6eadbd1c9e29",
+              "info": {
+                "editorName": "groupResultLeft7",
+                "editorPublic": true,
+                "x": 392,
+                "y": 105,
+                "setAll": [],
+                "children": [
+                  {
+                    "type": "text",
+                    "id": "1d80430f-2e59-4136-8c65-fbd183bf0d88",
+                    "info": {
+                      "editorName": "winText7",
+                      "text": "主胜2.96",
+                      "style.fill": "#555555"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "9eac5894-12e2-4d39-870c-b65fab299d36",
+                    "info": {
+                      "editorName": "winBet88",
+                      "x": 84,
+                      "text": "90000000",
+                      "style.fill": "#555555"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "944a8061-9f9e-414e-84c7-372898e190df",
+                    "info": {
+                      "editorName": "winBet8",
+                      "x": 183,
+                      "text": "90000000",
+                      "style.fill": "#ffa800"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "group",
+              "id": "9be4551b-df88-4aa2-b709-6512a8cd6c03",
+              "info": {
+                "editorName": "groupResultLeft8",
+                "editorPublic": true,
+                "x": 392,
+                "y": 130,
+                "setAll": [],
+                "children": [
+                  {
+                    "type": "text",
+                    "id": "44dbcf65-8e2a-42d7-8a75-3db1f15f054a",
+                    "info": {
+                      "editorName": "winText8",
+                      "text": "主胜2.96",
+                      "style.fill": "#555555"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "4127bb93-b43b-485b-be37-4a11865cd141",
+                    "info": {
+                      "editorName": "winBet99",
+                      "x": 84,
+                      "text": "90000000",
+                      "style.fill": "#555555"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "3f5ce18e-7a26-4deb-9a2c-5bd17583cfdf",
+                    "info": {
+                      "editorName": "winBet9",
+                      "x": 183,
+                      "text": "90000000",
+                      "style.fill": "#ffa800"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "group",
+              "id": "8a566232-0647-4bb8-95ea-ca0ad74c987b",
+              "info": {
+                "editorName": "groupResultLeft9",
+                "editorPublic": true,
+                "x": 392,
+                "y": 155,
+                "setAll": [],
+                "children": [
+                  {
+                    "type": "text",
+                    "id": "4a03bcc7-fd1e-4e2d-bb63-85768cabd31a",
+                    "info": {
+                      "editorName": "winText9",
+                      "text": "主胜2.96",
+                      "style.fill": "#555555"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "12c33249-5000-49b9-8479-a1877bb68b41",
+                    "info": {
+                      "editorName": "winBet1000",
+                      "x": 84,
+                      "text": "90000000",
+                      "style.fill": "#555555"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "2f7524ee-27cb-40fc-9bc2-3c207159842f",
+                    "info": {
+                      "editorName": "winBet10",
+                      "x": 183,
+                      "text": "90000000",
+                      "style.fill": "#ffa800"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "group",
+              "id": "70f76ea6-97ee-4d4a-a8ad-f8a527843a04",
+              "info": {
+                "editorName": "groupResultLeft10",
+                "editorPublic": true,
+                "x": 392,
+                "y": 180,
+                "setAll": [],
+                "children": [
+                  {
+                    "type": "text",
+                    "id": "1aaf6e3e-8e9a-479b-90c0-43fe89ab2963",
+                    "info": {
+                      "editorName": "winText10",
+                      "text": "主胜2.96",
+                      "style.fill": "#555555"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "5dc38ecb-3782-441c-b077-1b678569cd0b",
+                    "info": {
+                      "editorName": "winBet1111",
+                      "x": 84,
+                      "text": "90000000",
+                      "style.fill": "#555555"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "a0148bb9-48f3-41d3-9b6b-96f62ac8cd12",
+                    "info": {
+                      "editorName": "winBet11",
+                      "x": 183,
+                      "text": "90000000",
+                      "style.fill": "#ffa800"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "group",
+              "id": "bc39a974-2f26-4f0d-a1d5-84e582255d6b",
+              "info": {
+                "editorName": "groupResultLeft11",
+                "editorPublic": true,
+                "x": 392,
+                "y": 205,
+                "setAll": [],
+                "children": [
+                  {
+                    "type": "text",
+                    "id": "5aeb7a8e-43be-469a-bfac-0b583b030b0d",
+                    "info": {
+                      "editorName": "winText11",
+                      "text": "主胜2.96",
+                      "style.fill": "#555555"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "d48c51f7-6336-46c5-bcd5-bbd88ecf0699",
+                    "info": {
+                      "editorName": "winBet1212",
+                      "x": 84,
+                      "text": "90000000",
+                      "style.fill": "#555555"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "95b8e4e3-da1b-42cd-90a6-efd8c3657861",
+                    "info": {
+                      "editorName": "winBet12",
+                      "x": 183,
+                      "text": "90000000",
+                      "style.fill": "#ffa800"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }]
+    }
+  },
+  "type": "GROUP",
+  "asset-table": {
+    "0": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "boot",
+      "asset": "pop",
+      "sprite": "note.png"
+    },
+    "1": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "boot",
+      "asset": "pop",
+      "sprite": "heng.png"
+    },
+    "2": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "boot",
+      "asset": "pop",
+      "sprite": "shu.png"
+    }
+  },
+  "prefab-table": {}
+}

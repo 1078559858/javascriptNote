@@ -1,0 +1,653 @@
+{
+  "canvas-version": 2,
+  "settings": {
+    "className": "betChoicePrefab",
+    "sceneWidth": 750,
+    "sceneHeight": 1206,
+    "generateOnSave": true,
+    "enableStepping": false,
+    "lang": "JAVA_SCRIPT",
+    "baseClass": "Phaser.Group",
+    "backgroundColor": [
+      180,
+      180,
+      180
+    ],
+    "gridColor": [
+      200,
+      200,
+      200
+    ],
+    "showGrid": true
+  },
+  "stateSettings": {
+    "stageBackgroundColor": [
+      0,
+      0,
+      0
+    ],
+    "autoLoad": true,
+    "preloadSpriteId": "",
+    "preloadSprite_direction": 0,
+    "load.pack": []
+  },
+  "world": {
+    "type": "group",
+    "id": "c4d988e3-26e0-47a1-a72e-00370bfb8dfe",
+    "info": {
+      "editorName": "root",
+      "setAll": [],
+      "children": [{
+        "type": "group",
+        "id": "5da30598-f6e3-4760-abb9-3c2740b4845d",
+        "info": {
+          "editorName": "group",
+          "setAll": [],
+          "children": [
+            {
+              "type": "group",
+              "id": "9d067f20-307b-4b11-96ec-74deb92ffb8a",
+              "info": {
+                "editorName": "opt_6",
+                "editorPublic": true,
+                "x": 485,
+                "y": 220.00001525878906,
+                "setAll": [],
+                "children": [
+                  {
+                    "type": "button",
+                    "id": "17b689a1-f3a3-483a-be8c-495a76f82a44",
+                    "asset": "0",
+                    "info": {
+                      "editorName": "betChoice_png31",
+                      "data": "{\r\n\"idx\":6\r\n}",
+                      "callback": "this.clickBet"
+                    }
+                  },
+                  {
+                    "type": "atlas-sprite",
+                    "id": "f89760a0-e53e-4a3c-af0f-376e96b16e3b",
+                    "asset": "1",
+                    "info": {
+                      "editorName": "double_png11",
+                      "x": 82,
+                      "y": 19
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "757ce395-8147-43a9-a5c0-918d90bf1708",
+                    "info": {
+                      "editorName": "text621",
+                      "x": 115,
+                      "y": 173,
+                      "text": "0",
+                      "style.fill": "#ffffff"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "0bc13f1b-60ea-4ca0-a69e-c0546451fe53",
+                    "info": {
+                      "editorName": "text611",
+                      "x": 115,
+                      "y": 136,
+                      "text": "0",
+                      "style.fill": "#ffffff"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "c9e2d8a9-581e-41fe-9c9e-48084e9a10e1",
+                    "info": {
+                      "editorName": "text631",
+                      "x": 42,
+                      "y": 62,
+                      "text": "2.94±¶",
+                      "style.fontSize": 45,
+                      "style.fill": "#0000ff"
+                    }
+                  },
+                  {
+                    "type": "atlas-sprite",
+                    "id": "9a97c7bc-f802-48fb-896d-0733e1de9db5",
+                    "asset": "2",
+                    "info": {
+                      "editorName": "win_png51",
+                      "x": 66,
+                      "y": 37
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "910987c1-1cc0-42f6-94b4-035e8219c4c2",
+                    "info": {
+                      "editorName": "text46666",
+                      "x": 72,
+                      "y": 135,
+                      "style.fontSize": 42,
+                      "style.fill": "#ff0000"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "group",
+              "id": "b1614eb4-9380-4d7e-b243-b8b7bb5dd37b",
+              "info": {
+                "editorName": "opt_5",
+                "editorPublic": true,
+                "x": 246.00001525878906,
+                "y": 220.00001525878906,
+                "setAll": [],
+                "children": [
+                  {
+                    "type": "button",
+                    "id": "9927db4a-5233-424f-8674-021987971c20",
+                    "asset": "3",
+                    "info": {
+                      "editorName": "betChoice_png4",
+                      "x": 5,
+                      "data": "{\r\n\"idx\":5\r\n}",
+                      "callback": "this.clickBet"
+                    }
+                  },
+                  {
+                    "type": "atlas-sprite",
+                    "id": "627cf7a5-fc5c-4edb-9fb6-d6813df01e00",
+                    "asset": "4",
+                    "info": {
+                      "editorName": "double_png",
+                      "x": 92,
+                      "y": 17
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "649cf7d4-ad3d-41c8-ad22-9060c2a19389",
+                    "info": {
+                      "editorName": "text62",
+                      "x": 115,
+                      "y": 173,
+                      "text": "0",
+                      "style.fill": "#ffffff"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "46efcd32-cdb6-48c4-83be-7e18c9ab82ce",
+                    "info": {
+                      "editorName": "text61",
+                      "x": 115,
+                      "y": 136,
+                      "text": "0",
+                      "style.fill": "#ffffff"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "8ef64f9d-db21-4e00-b2fe-90651050e35b",
+                    "info": {
+                      "editorName": "text3",
+                      "x": 42,
+                      "y": 62,
+                      "text": "2.94±¶",
+                      "style.fontSize": 45,
+                      "style.fill": "#0000ff"
+                    }
+                  },
+                  {
+                    "type": "atlas-sprite",
+                    "id": "2842b4b2-c3ed-4309-ad12-c6e0cb90fb2a",
+                    "asset": "2",
+                    "info": {
+                      "editorName": "win_png4",
+                      "x": 66,
+                      "y": 37
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "3a67e6c5-77ca-4492-b777-7489db887999",
+                    "info": {
+                      "editorName": "text45555",
+                      "x": 72,
+                      "y": 135,
+                      "style.fontSize": 42,
+                      "style.fill": "#ff0000"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "group",
+              "id": "526bb026-230d-442e-bbad-cb29cfd2ef9f",
+              "info": {
+                "editorName": "opt_4",
+                "editorPublic": true,
+                "x": 18.999990463256836,
+                "y": 220.00001525878906,
+                "setAll": [],
+                "children": [
+                  {
+                    "type": "button",
+                    "id": "1b0aaeca-4f4f-41fb-9351-f03f02033d9a",
+                    "asset": "3",
+                    "info": {
+                      "editorName": "betChoice_png5",
+                      "data": "{\r\n\"idx\":4\r\n}",
+                      "callback": "this.clickBet"
+                    }
+                  },
+                  {
+                    "type": "atlas-sprite",
+                    "id": "d009ffaa-3d26-4128-bc06-a2a478ca2a75",
+                    "asset": "5",
+                    "info": {
+                      "editorName": "dan_png",
+                      "x": 100,
+                      "y": 17
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "512fa095-a450-40b7-ac0f-32dbcd477a2a",
+                    "info": {
+                      "editorName": "text72",
+                      "x": 115,
+                      "y": 173,
+                      "text": "0",
+                      "style.fill": "#ffffff"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "436e6b6e-bf2f-40ea-8e08-54f3bb418e44",
+                    "info": {
+                      "editorName": "text71",
+                      "x": 115,
+                      "y": 136,
+                      "text": "0",
+                      "style.fill": "#ffffff"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "f3b24d76-0aeb-493c-8058-1e2d4a18d09e",
+                    "info": {
+                      "editorName": "text2",
+                      "x": 46,
+                      "y": 62,
+                      "text": "2.94±¶",
+                      "style.fontSize": 45,
+                      "style.fill": "#0000ff"
+                    }
+                  },
+                  {
+                    "type": "atlas-sprite",
+                    "id": "4a94ec29-4b64-4da4-bdbb-c5d255ef51f8",
+                    "asset": "2",
+                    "info": {
+                      "editorName": "win_png3",
+                      "x": 64,
+                      "y": 43
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "cabe71b9-bbf3-4762-b3bf-526181289a08",
+                    "info": {
+                      "editorName": "text44444",
+                      "x": 72,
+                      "y": 135,
+                      "style.fontSize": 42,
+                      "style.fill": "#ff0000"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "group",
+              "id": "bef15e10-fec3-45f3-99ed-b58cd654db6d",
+              "info": {
+                "editorName": "opt_3",
+                "editorPublic": true,
+                "x": 485,
+                "y": -5.999997138977051,
+                "setAll": [],
+                "children": [
+                  {
+                    "type": "button",
+                    "id": "3cce2a2e-cf62-4325-8f99-05916b14aa06",
+                    "asset": "6",
+                    "info": {
+                      "editorName": "betChoice_png2",
+                      "x": -1,
+                      "data": "{\r\n\"idx\":3\r\n}",
+                      "callback": "this.clickBet"
+                    }
+                  },
+                  {
+                    "type": "atlas-sprite",
+                    "id": "667f5384-8839-41b4-a72b-3d9e69a24476",
+                    "asset": "7",
+                    "info": {
+                      "editorName": "kewin_png",
+                      "x": 60,
+                      "y": 17
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "a5a9d7e5-8dfa-4bb7-b2fb-96e67297ee48",
+                    "info": {
+                      "editorName": "text42",
+                      "x": 115,
+                      "y": 175,
+                      "text": "0",
+                      "style.fill": "#ffffff"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "5fad93c5-20eb-4062-9b7b-bc739f134b7f",
+                    "info": {
+                      "editorName": "text41",
+                      "x": 115,
+                      "y": 140,
+                      "text": "0",
+                      "style.fill": "#ffffff"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "9247270f-ad27-4f35-9151-4fede117c457",
+                    "info": {
+                      "editorName": "text1",
+                      "x": 51,
+                      "y": 67,
+                      "text": "2.94±¶",
+                      "style.fontSize": 45,
+                      "style.fill": "#0000ff"
+                    }
+                  },
+                  {
+                    "type": "atlas-sprite",
+                    "id": "48b950d0-6c27-451a-8a44-57f227736074",
+                    "asset": "2",
+                    "info": {
+                      "editorName": "win_png2",
+                      "x": 64,
+                      "y": 41
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "8b1cc999-f6e9-4753-88b0-2c4ffb86c858",
+                    "info": {
+                      "editorName": "text4222",
+                      "x": 72,
+                      "y": 135,
+                      "style.fontSize": 42,
+                      "style.fill": "#ff0000"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "group",
+              "id": "749846ca-d7d7-4aa5-9973-cfdb2e996250",
+              "info": {
+                "editorName": "opt_2",
+                "editorPublic": true,
+                "x": 246.00001525878906,
+                "y": -5.999997138977051,
+                "setAll": [],
+                "children": [
+                  {
+                    "type": "button",
+                    "id": "a8e6b536-3a93-4461-afc3-160948557f5d",
+                    "asset": "6",
+                    "info": {
+                      "editorName": "betChoice_png1",
+                      "x": 5,
+                      "data": "{\r\n\"idx\":2\r\n}",
+                      "callback": "this.clickBet"
+                    }
+                  },
+                  {
+                    "type": "atlas-sprite",
+                    "id": "04540df6-2f9f-44da-800c-0cb3b4b1573a",
+                    "asset": "8",
+                    "info": {
+                      "editorName": "main_png1",
+                      "x": 82,
+                      "y": 17
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "796ae3bc-bcd5-4fe6-809d-15a4a85b55a9",
+                    "info": {
+                      "editorName": "text32",
+                      "x": 115,
+                      "y": 175,
+                      "text": "0",
+                      "style.fill": "#ffffff"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "f4c73daa-cd78-490f-b7a6-55d2ee9800f6",
+                    "info": {
+                      "editorName": "text31",
+                      "x": 115,
+                      "y": 140,
+                      "text": "0",
+                      "style.fill": "#ffffff"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "0e455829-703d-44c9-84cd-b338bfcac56a",
+                    "info": {
+                      "editorName": "text",
+                      "x": 48,
+                      "y": 69,
+                      "text": "2.94±¶",
+                      "style.fontSize": 45,
+                      "style.fill": "#0000ff"
+                    }
+                  },
+                  {
+                    "type": "atlas-sprite",
+                    "id": "fa415e65-2805-4c03-bfb3-97499539be43",
+                    "asset": "2",
+                    "info": {
+                      "editorName": "win_png1",
+                      "x": 68,
+                      "y": 47
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "3aa7822a-2eda-472f-99d7-253a761509b8",
+                    "info": {
+                      "editorName": "text412",
+                      "x": 72,
+                      "y": 135,
+                      "style.fontSize": 42,
+                      "style.fill": "#ff0000"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "group",
+              "id": "40993243-26b2-41e0-849f-8ac2745673f1",
+              "info": {
+                "editorName": "opt_1",
+                "editorPublic": true,
+                "x": 18.999990463256836,
+                "y": -5.999997138977051,
+                "setAll": [],
+                "children": [
+                  {
+                    "type": "button",
+                    "id": "a7e1df29-0c2c-4e23-a508-c018cc3de550",
+                    "asset": "9",
+                    "info": {
+                      "editorName": "betChoice_png",
+                      "data": "{\r\n\"idx\":1\r\n}",
+                      "callback": "this.clickBet"
+                    }
+                  },
+                  {
+                    "type": "atlas-sprite",
+                    "id": "47987c90-8e68-4e2f-9bc7-d6b7d4cfcb98",
+                    "asset": "10",
+                    "info": {
+                      "editorName": "main_png",
+                      "x": 64,
+                      "y": 17
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "11077cc2-05c4-486d-82c1-172d0ad14b30",
+                    "info": {
+                      "editorName": "text12",
+                      "x": 115,
+                      "y": 175,
+                      "text": "0",
+                      "style.fill": "#ffffff"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "978e4896-1bff-4506-9e30-c88eb0f0c99e",
+                    "info": {
+                      "editorName": "text11",
+                      "x": 115,
+                      "y": 140,
+                      "text": "0",
+                      "style.fill": "#ffffff"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "ec8415d1-98d3-45f2-9203-9bb484dfb598",
+                    "info": {
+                      "editorName": "text10",
+                      "x": 43,
+                      "y": 68,
+                      "text": "2.94±¶",
+                      "style.fontSize": 45,
+                      "style.fill": "#0000ff"
+                    }
+                  },
+                  {
+                    "type": "atlas-sprite",
+                    "id": "f925bd8d-6578-4567-9662-a4548d05c637",
+                    "asset": "2",
+                    "info": {
+                      "editorName": "win_png",
+                      "x": 75,
+                      "y": 50
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "5a857624-f8d1-4caf-a729-527a1f974b17",
+                    "info": {
+                      "editorName": "text41111",
+                      "x": 72,
+                      "y": 135,
+                      "style.fontSize": 42,
+                      "style.fill": "#ff0000"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }]
+    }
+  },
+  "type": "GROUP",
+  "asset-table": {
+    "0": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "main",
+      "asset": "bg",
+      "sprite": "betChoice3.png"
+    },
+    "1": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "main",
+      "asset": "text",
+      "sprite": "rang.png"
+    },
+    "2": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "main",
+      "asset": "bg2",
+      "sprite": "win.png"
+    },
+    "3": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "main",
+      "asset": "bg",
+      "sprite": "betChoice1.png"
+    },
+    "4": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "main",
+      "asset": "text",
+      "sprite": "double.png"
+    },
+    "5": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "main",
+      "asset": "text",
+      "sprite": "dan.png"
+    },
+    "6": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "main",
+      "asset": "bg",
+      "sprite": "betChoice2.png"
+    },
+    "7": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "main",
+      "asset": "text",
+      "sprite": "kewin.png"
+    },
+    "8": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "main",
+      "asset": "text",
+      "sprite": "ping.png"
+    },
+    "9": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "main",
+      "asset": "bg",
+      "sprite": "hehe1.png"
+    },
+    "10": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "main",
+      "asset": "text",
+      "sprite": "main.png"
+    }
+  },
+  "prefab-table": {}
+}

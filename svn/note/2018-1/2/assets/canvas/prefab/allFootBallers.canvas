@@ -1,0 +1,345 @@
+{
+  "canvas-version": 2,
+  "settings": {
+    "className": "allFootBallers",
+    "sceneWidth": 730,
+    "sceneHeight": 480,
+    "generateOnSave": true,
+    "enableStepping": false,
+    "lang": "JAVA_SCRIPT",
+    "baseClass": "Phaser.Group",
+    "backgroundColor": [
+      180,
+      180,
+      180
+    ],
+    "gridColor": [
+      200,
+      200,
+      200
+    ],
+    "showGrid": true
+  },
+  "stateSettings": {
+    "stageBackgroundColor": [
+      0,
+      0,
+      0
+    ],
+    "autoLoad": true,
+    "preloadSpriteId": "",
+    "preloadSprite_direction": 0,
+    "load.pack": []
+  },
+  "world": {
+    "type": "group",
+    "id": "f24a1580-af0e-43d2-8923-beb0140dcd64",
+    "info": {
+      "editorName": "root",
+      "setAll": [],
+      "children": [{
+        "type": "group",
+        "id": "5c3d272b-cd82-4e84-a7fd-5311c5fe6ba9",
+        "info": {
+          "editorName": "group",
+          "setAll": [],
+          "children": [
+            {
+              "type": "atlas-sprite",
+              "id": "19d6b407-2052-4f3a-8d52-a0caaa2253ff",
+              "asset": "0",
+              "info": {
+                "editorName": "ball",
+                "editorPublic": true,
+                "x": 365,
+                "y": 240
+              }
+            },
+            {
+              "type": "atlas-sprite",
+              "id": "ae184ab5-3725-4492-91ea-291659b0b6e4",
+              "asset": "1",
+              "info": {
+                "editorName": "lsmy",
+                "editorPublic": true,
+                "x": 30,
+                "y": 240
+              }
+            },
+            {
+              "type": "atlas-sprite",
+              "id": "5404baad-0c81-48e0-a9d2-a96cb3a4152d",
+              "asset": "2",
+              "info": {
+                "editorName": "rsmy",
+                "editorPublic": true,
+                "x": 700,
+                "y": 240
+              }
+            },
+            {
+              "type": "atlas-sprite",
+              "id": "f10ddfed-81c9-4541-a6ba-5fcc0df23a59",
+              "asset": "3",
+              "info": {
+                "editorName": "lzqf",
+                "editorPublic": true,
+                "x": 360,
+                "y": 230
+              }
+            },
+            {
+              "type": "atlas-sprite",
+              "id": "1e2ac1d9-c9f8-49ad-b8de-bed018a7098a",
+              "asset": "4",
+              "info": {
+                "editorName": "lyqf",
+                "editorPublic": true,
+                "x": 360,
+                "y": 250
+              }
+            },
+            {
+              "type": "atlas-sprite",
+              "id": "314ee5fc-50b3-43d7-a87f-bb25b7dd6d2a",
+              "asset": "4",
+              "info": {
+                "editorName": "lzbzc",
+                "editorPublic": true,
+                "x": 571,
+                "y": 392
+              }
+            },
+            {
+              "type": "atlas-sprite",
+              "id": "ae8210a7-f745-4bb7-b350-4d89250d0cda",
+              "asset": "4",
+              "info": {
+                "editorName": "lzzc",
+                "editorPublic": true,
+                "x": 571,
+                "y": 412
+              }
+            },
+            {
+              "type": "atlas-sprite",
+              "id": "60d784ab-dbfe-4679-871b-fb25cbdd4bde",
+              "asset": "4",
+              "info": {
+                "editorName": "lyzc",
+                "editorPublic": true,
+                "x": 571,
+                "y": 392
+              }
+            },
+            {
+              "type": "atlas-sprite",
+              "id": "dab8f986-bb95-4a47-b046-9ddf3cfb9d13",
+              "asset": "4",
+              "info": {
+                "editorName": "lybzc",
+                "editorPublic": true,
+                "x": 571,
+                "y": 412
+              }
+            },
+            {
+              "type": "atlas-sprite",
+              "id": "f3af4ed6-1b7c-4e0c-8e7a-d60320e0206d",
+              "asset": "4",
+              "info": {
+                "editorName": "lzbhw",
+                "editorPublic": true,
+                "x": 782,
+                "y": 554
+              }
+            },
+            {
+              "type": "atlas-sprite",
+              "id": "df8dfa1a-eac3-4f37-b1dc-e946e75eb3b3",
+              "asset": "4",
+              "info": {
+                "editorName": "lzhw",
+                "editorPublic": true,
+                "x": 782,
+                "y": 574
+              }
+            },
+            {
+              "type": "atlas-sprite",
+              "id": "f1a8b873-d3ac-4b32-b5e1-16e6996cec80",
+              "asset": "4",
+              "info": {
+                "editorName": "lyhw",
+                "editorPublic": true,
+                "x": 571,
+                "y": 392
+              }
+            },
+            {
+              "type": "atlas-sprite",
+              "id": "6f49ac67-306c-44b0-a59e-bbd2b4b5e921",
+              "asset": "4",
+              "info": {
+                "editorName": "lybhw",
+                "editorPublic": true,
+                "x": 571,
+                "y": 412
+              }
+            },
+            {
+              "type": "atlas-sprite",
+              "id": "8bfdf4d2-cc39-4172-a15c-92d664428d58",
+              "asset": "5",
+              "info": {
+                "editorName": "rzqf",
+                "editorPublic": true,
+                "x": 571,
+                "y": 392
+              }
+            },
+            {
+              "type": "atlas-sprite",
+              "id": "94e27574-d267-434f-a012-ff0886f027b6",
+              "asset": "5",
+              "info": {
+                "editorName": "ryqf",
+                "editorPublic": true,
+                "x": 571,
+                "y": 412
+              }
+            },
+            {
+              "type": "atlas-sprite",
+              "id": "2f55c9c7-fe3d-463d-99d6-b243ebd4dca6",
+              "asset": "5",
+              "info": {
+                "editorName": "rzbzc",
+                "editorPublic": true,
+                "x": 782,
+                "y": 554
+              }
+            },
+            {
+              "type": "atlas-sprite",
+              "id": "2def8f6e-a020-40fa-979c-af3118f8f01d",
+              "asset": "5",
+              "info": {
+                "editorName": "rzzc",
+                "editorPublic": true,
+                "x": 782,
+                "y": 574
+              }
+            },
+            {
+              "type": "atlas-sprite",
+              "id": "fb44f587-8902-4587-b14b-94e2d4f5f82b",
+              "asset": "5",
+              "info": {
+                "editorName": "ryzc",
+                "editorPublic": true,
+                "x": 782,
+                "y": 554
+              }
+            },
+            {
+              "type": "atlas-sprite",
+              "id": "d1956fc2-d862-42e3-b0ae-9042ff6bfe5f",
+              "asset": "5",
+              "info": {
+                "editorName": "rybzc",
+                "editorPublic": true,
+                "x": 782,
+                "y": 574
+              }
+            },
+            {
+              "type": "atlas-sprite",
+              "id": "8c35dbb7-519b-4ca6-a7dc-13d883da60c1",
+              "asset": "5",
+              "info": {
+                "editorName": "rzbhw",
+                "editorPublic": true,
+                "x": 993,
+                "y": 716
+              }
+            },
+            {
+              "type": "atlas-sprite",
+              "id": "aedc7d82-9cfd-41f6-99bd-e6e0704aace0",
+              "asset": "5",
+              "info": {
+                "editorName": "rzhw",
+                "editorPublic": true,
+                "x": 993,
+                "y": 736
+              }
+            },
+            {
+              "type": "atlas-sprite",
+              "id": "653d5126-51a4-4bb9-aef2-eceb6b1ea1d5",
+              "asset": "5",
+              "info": {
+                "editorName": "ryhw",
+                "editorPublic": true,
+                "x": 782,
+                "y": 554
+              }
+            },
+            {
+              "type": "atlas-sprite",
+              "id": "2ebefcf3-1c43-4aed-ad2c-f52213e6aae3",
+              "asset": "5",
+              "info": {
+                "editorName": "rybhw",
+                "editorPublic": true,
+                "x": 782,
+                "y": 574
+              }
+            }
+          ]
+        }
+      }]
+    }
+  },
+  "type": "GROUP",
+  "asset-table": {
+    "0": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "main",
+      "asset": "player",
+      "sprite": "ball.png"
+    },
+    "1": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "main",
+      "asset": "player",
+      "sprite": "red3.png"
+    },
+    "2": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "main",
+      "asset": "player",
+      "sprite": "blue3.png"
+    },
+    "3": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "main",
+      "asset": "player",
+      "sprite": "red1.png"
+    },
+    "4": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "main",
+      "asset": "player",
+      "sprite": "red2.png"
+    },
+    "5": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "main",
+      "asset": "player",
+      "sprite": "blue2.png"
+    }
+  },
+  "prefab-table": {}
+}

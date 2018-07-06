@@ -1,0 +1,79 @@
+{
+  "main": [
+    {
+      "type": "atlas",
+      "key": "bet",
+      "textureURL": "assets/atlas/bet.png",
+      "atlasURL": "assets/atlas/bet.json",
+      "format": "TEXTURE_ATLAS_JSON_ARRAY"
+    },
+    {
+      "type": "atlas",
+      "key": "bg",
+      "textureURL": "assets/atlas/bg.png",
+      "atlasURL": "assets/atlas/bg.json",
+      "format": "TEXTURE_ATLAS_JSON_ARRAY"
+    },
+    {
+      "type": "atlas",
+      "key": "player",
+      "textureURL": "assets/atlas/player.png",
+      "atlasURL": "assets/atlas/player.json",
+      "format": "TEXTURE_ATLAS_JSON_ARRAY"
+    },
+    {
+      "type": "atlas",
+      "key": "btn",
+      "textureURL": "assets/atlas/btn.png",
+      "atlasURL": "assets/atlas/btn.json",
+      "format": "TEXTURE_ATLAS_JSON_ARRAY"
+    },
+    {
+      "type": "atlas",
+      "key": "bg2",
+      "textureURL": "assets/atlas/bg2.png",
+      "atlasURL": "assets/atlas/bg2.json",
+      "format": "TEXTURE_ATLAS_JSON_ARRAY"
+    },
+    {
+      "type": "atlas",
+      "key": "text",
+      "textureURL": "assets/atlas/text.png",
+      "atlasURL": "assets/atlas/text.json",
+      "format": "TEXTURE_ATLAS_JSON_ARRAY"
+    }
+  ],
+  "boot": [
+    {
+      "type": "image",
+      "key": "processBg",
+      "url": "assets/image/bg.png",
+      "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "LOGO",
+      "url": "assets/image/LOGO.png",
+      "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "processbar1",
+      "url": "assets/image/processbar1.png",
+      "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "processbar2",
+      "url": "assets/image/processbar2.png",
+      "overwrite": false
+    }
+  ],
+  "meta": {
+    "generated": "1523500161507",
+    "app": "Phaser Editor",
+    "url": "http://phasereditor.boniatillo.com",
+    "version": "1.0",
+    "copyright": "Arian Fornaris (c) 2015,2016"
+  }
+}

@@ -1,0 +1,243 @@
+{
+  "canvas-version": 2,
+  "settings": {
+    "className": "ballgroundPrefab",
+    "sceneWidth": 730,
+    "sceneHeight": 500,
+    "generateOnSave": true,
+    "enableStepping": false,
+    "lang": "JAVA_SCRIPT",
+    "baseClass": "Phaser.Group",
+    "backgroundColor": [
+      180,
+      180,
+      180
+    ],
+    "gridColor": [
+      200,
+      200,
+      200
+    ],
+    "showGrid": true
+  },
+  "stateSettings": {
+    "stageBackgroundColor": [
+      0,
+      0,
+      0
+    ],
+    "autoLoad": true,
+    "preloadSpriteId": "",
+    "preloadSprite_direction": 0,
+    "load.pack": []
+  },
+  "world": {
+    "type": "group",
+    "id": "ae341a63-ed7b-488f-9fab-2cc6fd80a9e8",
+    "info": {
+      "editorName": "root",
+      "setAll": [],
+      "children": [{
+        "type": "group",
+        "id": "9ed35afd-6056-499e-acb0-083a7fb59641",
+        "info": {
+          "editorName": "group",
+          "setAll": [],
+          "children": [
+            {
+              "type": "atlas-sprite",
+              "id": "63a2f328-04e9-4eff-9d85-63b1aba74cb4",
+              "asset": "0",
+              "info": {"editorName": "football_png"}
+            },
+            {
+              "type": "atlas-sprite",
+              "id": "2e5d3e32-7929-469b-b481-a8007602a493",
+              "asset": "1",
+              "info": {
+                "editorName": "mess_png",
+                "x": 129
+              }
+            },
+            {
+              "type": "text",
+              "id": "650cfe26-4ef5-44c2-b46d-a23cbb468941",
+              "info": {
+                "editorName": "textMess",
+                "editorPublic": true,
+                "x": 214,
+                "y": 9,
+                "text": "主队  切科夫斯基耶娃 进了一球",
+                "style.fontSize": 22,
+                "style.fill": "#80ff00"
+              }
+            },
+            {
+              "type": "group",
+              "id": "1837c9d7-257b-4ab6-9d81-da769c77335c",
+              "info": {
+                "editorName": "groupCountry",
+                "setAll": [],
+                "children": [
+                  {
+                    "type": "atlas-sprite",
+                    "id": "ab0c9f3e-b33e-4763-98ef-f438cd3dbc49",
+                    "asset": "2",
+                    "info": {
+                      "editorName": "point_png1",
+                      "x": 27,
+                      "y": 452
+                    }
+                  },
+                  {
+                    "type": "atlas-sprite",
+                    "id": "01d250ac-6461-45d4-8c53-a597bec38903",
+                    "asset": "3",
+                    "info": {
+                      "editorName": "yingguo_png",
+                      "x": 514,
+                      "y": 457,
+                      "scale.x": -1
+                    }
+                  },
+                  {
+                    "type": "atlas-sprite",
+                    "id": "f79c2654-22b5-4815-b29c-95454f827876",
+                    "asset": "4",
+                    "info": {
+                      "editorName": "helan_png",
+                      "x": 291,
+                      "y": 456,
+                      "scale.x": -1
+                    }
+                  },
+                  {
+                    "type": "atlas-sprite",
+                    "id": "822e4948-627b-4383-b312-40794e088208",
+                    "asset": "5",
+                    "info": {
+                      "editorName": "bifenpai_png",
+                      "x": 272,
+                      "y": 414
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "be35c663-0cb0-4ba4-aa1a-b1d7cccf30d7",
+                    "info": {
+                      "editorName": "countryRight",
+                      "editorPublic": true,
+                      "x": 565,
+                      "y": 466,
+                      "text": "法国",
+                      "style.fill": "#ffffff"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "f4ba051b-0232-4eef-8ce9-9b6643ed8ffb",
+                    "info": {
+                      "editorName": "countryLeft",
+                      "editorPublic": true,
+                      "x": 134,
+                      "y": 466,
+                      "text": "法国",
+                      "style.fill": "#ffffff"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "1cc93f91-c66b-4999-ae50-6cbab8b2f4b8",
+                    "info": {
+                      "editorName": "textTime",
+                      "editorPublic": true,
+                      "x": 341,
+                      "y": 420,
+                      "text": "90:00"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "6063a47c-4d4b-4499-975b-0c54c110b993",
+                    "info": {
+                      "editorName": "scoreRight",
+                      "editorPublic": true,
+                      "x": 401,
+                      "y": 460,
+                      "text": "8",
+                      "style.fontSize": 32
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "3946b4c3-d565-4373-b921-f031e5f2adb6",
+                    "info": {
+                      "editorName": "scoreLeft",
+                      "editorPublic": true,
+                      "x": 335,
+                      "y": 460,
+                      "text": "8",
+                      "style.fontSize": 32
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "68138a0c-c9f5-4c08-8518-30a8f00c2756",
+                    "info": {
+                      "editorName": "textfenhao",
+                      "editorPublic": true,
+                      "x": 363,
+                      "y": 456,
+                      "text": ":   ",
+                      "style.fontSize": 32
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }]
+    }
+  },
+  "type": "GROUP",
+  "asset-table": {
+    "0": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "main",
+      "asset": "bg2",
+      "sprite": "football.png"
+    },
+    "1": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "main",
+      "asset": "bg2",
+      "sprite": "mess.png"
+    },
+    "2": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "main",
+      "asset": "bg2",
+      "sprite": "point.png"
+    },
+    "3": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "main",
+      "asset": "bg2",
+      "sprite": "yingguo.png"
+    },
+    "4": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "main",
+      "asset": "bg2",
+      "sprite": "helan.png"
+    },
+    "5": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "main",
+      "asset": "bg2",
+      "sprite": "bifenpai.png"
+    }
+  },
+  "prefab-table": {}
+}

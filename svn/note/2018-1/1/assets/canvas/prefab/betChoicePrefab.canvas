@@ -1,0 +1,121 @@
+{
+  "canvas-version": 2,
+  "settings": {
+    "className": "betChoicePrefab",
+    "sceneWidth": 750,
+    "sceneHeight": 436,
+    "generateOnSave": true,
+    "enableStepping": false,
+    "lang": "JAVA_SCRIPT",
+    "baseClass": "Phaser.Group",
+    "backgroundColor": [
+      180,
+      180,
+      180
+    ],
+    "gridColor": [
+      200,
+      200,
+      200
+    ],
+    "showGrid": true
+  },
+  "stateSettings": {
+    "stageBackgroundColor": [
+      0,
+      0,
+      0
+    ],
+    "autoLoad": true,
+    "preloadSpriteId": "",
+    "preloadSprite_direction": 0,
+    "load.pack": []
+  },
+  "world": {
+    "type": "group",
+    "id": "c4d988e3-26e0-47a1-a72e-00370bfb8dfe",
+    "info": {
+      "editorName": "root",
+      "setAll": [],
+      "children": [{
+        "type": "group",
+        "id": "5da30598-f6e3-4760-abb9-3c2740b4845d",
+        "info": {
+          "editorName": "group",
+          "setAll": [],
+          "children": [
+            {
+              "type": "prefab",
+              "prefab": "0",
+              "id": "6d78bdc0-64c7-4b3a-a0ac-926406dd63c7",
+              "info": {
+                "editorName": "groupZhuWin",
+                "editorPublic": true,
+                "x": 31,
+                "y": 18.9999942779541
+              }
+            },
+            {
+              "type": "prefab",
+              "prefab": "0",
+              "id": "b44c068c-7abc-427e-a797-4c4227d022c4",
+              "info": {
+                "editorName": "groupPingWin",
+                "editorPublic": true,
+                "x": 267,
+                "y": 20
+              }
+            },
+            {
+              "type": "prefab",
+              "prefab": "0",
+              "id": "e4aac47d-03d8-4696-baf6-a52a848d0161",
+              "info": {
+                "editorName": "groupKeWin",
+                "editorPublic": true,
+                "x": 503,
+                "y": 18.9999942779541
+              }
+            },
+            {
+              "type": "prefab",
+              "prefab": "0",
+              "id": "2672ea7d-2f8b-4145-b5e1-7cdd67cafb46",
+              "info": {
+                "editorName": "groupDan",
+                "editorPublic": true,
+                "x": 31,
+                "y": 242
+              }
+            },
+            {
+              "type": "prefab",
+              "prefab": "0",
+              "id": "36bd3c9c-c227-448c-a5e9-790d35c2ccac",
+              "info": {
+                "editorName": "groupShuang",
+                "editorPublic": true,
+                "x": 267,
+                "y": 242
+              }
+            },
+            {
+              "type": "prefab",
+              "prefab": "0",
+              "id": "ef44b649-a12e-46b5-ad97-bc3901375a8f",
+              "info": {
+                "editorName": "groupRang",
+                "editorPublic": true,
+                "x": 503,
+                "y": 242
+              }
+            }
+          ]
+        }
+      }]
+    }
+  },
+  "type": "GROUP",
+  "asset-table": {},
+  "prefab-table": {"0": "WebContent/assets/canvas/prefab/betOptPrefab.canvas"}
+}

@@ -1,0 +1,124 @@
+{"frames": [
+
+{
+	"filename": "btn.png",
+	"frame": {"x":0,"y":192,"w":202,"h":202},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":202,"h":202},
+	"sourceSize": {"w":202,"h":202}
+},
+{
+	"filename": "close1.png",
+	"frame": {"x":41,"y":0,"w":41,"h":41},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":41,"h":41},
+	"sourceSize": {"w":41,"h":41}
+},
+{
+	"filename": "close2.png",
+	"frame": {"x":0,"y":0,"w":41,"h":41},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":41,"h":41},
+	"sourceSize": {"w":41,"h":41}
+},
+{
+	"filename": "cohngzhi.png",
+	"frame": {"x":158,"y":0,"w":90,"h":58},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":90,"h":58},
+	"sourceSize": {"w":90,"h":58}
+},
+{
+	"filename": "gameroule.png",
+	"frame": {"x":0,"y":698,"w":243,"h":76},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":243,"h":76},
+	"sourceSize": {"w":243,"h":76}
+},
+{
+	"filename": "jingcai.png",
+	"frame": {"x":0,"y":850,"w":243,"h":76},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":243,"h":76},
+	"sourceSize": {"w":243,"h":76}
+},
+{
+	"filename": "music1.png",
+	"frame": {"x":0,"y":774,"w":243,"h":76},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":243,"h":76},
+	"sourceSize": {"w":243,"h":76}
+},
+{
+	"filename": "music2.png",
+	"frame": {"x":0,"y":546,"w":243,"h":76},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":243,"h":76},
+	"sourceSize": {"w":243,"h":76}
+},
+{
+	"filename": "repeat.png",
+	"frame": {"x":105,"y":83,"w":105,"h":109},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":105,"h":109},
+	"sourceSize": {"w":105,"h":109}
+},
+{
+	"filename": "repeat2.png",
+	"frame": {"x":0,"y":83,"w":105,"h":109},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":105,"h":109},
+	"sourceSize": {"w":105,"h":109}
+},
+{
+	"filename": "set.png",
+	"frame": {"x":82,"y":0,"w":76,"h":83},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":76,"h":83},
+	"sourceSize": {"w":76,"h":83}
+},
+{
+	"filename": "sound1.png",
+	"frame": {"x":0,"y":470,"w":243,"h":76},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":243,"h":76},
+	"sourceSize": {"w":243,"h":76}
+},
+{
+	"filename": "sound2.png",
+	"frame": {"x":0,"y":394,"w":243,"h":76},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":243,"h":76},
+	"sourceSize": {"w":243,"h":76}
+},
+{
+	"filename": "xinshou.png",
+	"frame": {"x":0,"y":622,"w":243,"h":76},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":243,"h":76},
+	"sourceSize": {"w":243,"h":76}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "btn.png",
+	"format": "RGBA8888",
+	"size": {"w":248,"h":926},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:2613781bd19e337e32adb5ee32412f84:72950090b06aa9937a1308df9be3e9a5:382bbd42eff5a2b763aa915dc00d7597$"
+}
+}

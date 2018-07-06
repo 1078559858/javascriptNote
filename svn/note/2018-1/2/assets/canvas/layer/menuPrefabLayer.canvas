@@ -1,0 +1,296 @@
+{
+  "canvas-version": 2,
+  "settings": {
+    "className": "menuPrefabLayer",
+    "sceneWidth": 750,
+    "sceneHeight": 1206,
+    "generateOnSave": true,
+    "enableStepping": false,
+    "lang": "JAVA_SCRIPT",
+    "baseClass": "Phaser.Group",
+    "backgroundColor": [
+      180,
+      180,
+      180
+    ],
+    "gridColor": [
+      200,
+      200,
+      200
+    ],
+    "showGrid": true
+  },
+  "stateSettings": {
+    "stageBackgroundColor": [
+      0,
+      0,
+      0
+    ],
+    "autoLoad": true,
+    "preloadSpriteId": "",
+    "preloadSprite_direction": 0,
+    "load.pack": []
+  },
+  "world": {
+    "type": "group",
+    "id": "55a7cd96-645f-469c-a8b6-3a6c9c85cbf9",
+    "info": {
+      "editorName": "root",
+      "setAll": [],
+      "children": [{
+        "type": "group",
+        "id": "76150ba1-2f69-4b04-afee-36f835ae7902",
+        "info": {
+          "editorName": "group",
+          "setAll": [],
+          "children": [
+            {
+              "type": "button",
+              "id": "25568d3e-6e27-4cea-86a1-f8679947bd3f",
+              "asset": "0",
+              "info": {
+                "editorName": "bg_btn",
+                "editorPublic": true,
+                "x": -44,
+                "y": -48,
+                "scale.x": 0,
+                "scale.y": 55,
+                "alpha": 0,
+                "callback": "this.clickMenu"
+              }
+            },
+            {
+              "type": "button",
+              "id": "e964c01c-7a6a-4a5f-ba38-ab5389614694",
+              "asset": "1",
+              "info": {
+                "editorName": "btn_menu",
+                "x": 659,
+                "y": 11,
+                "callback": "this.clickMenu"
+              }
+            },
+            {
+              "type": "group",
+              "id": "a0063877-5fc2-4fcc-8b71-44f04dfc1116",
+              "info": {
+                "editorName": "groupMenu",
+                "editorPublic": true,
+                "scale.x": 0,
+                "setAll": [],
+                "children": [
+                  {
+                    "type": "button",
+                    "id": "0dc8876b-de5a-44f9-8d88-8ce68c6d5f63",
+                    "asset": "2",
+                    "info": {
+                      "editorName": "music",
+                      "x": 508,
+                      "y": 401,
+                      "callback": "this.clickMusic"
+                    }
+                  },
+                  {
+                    "type": "button",
+                    "id": "b65e0a97-bf40-4d9c-b908-a39614a82574",
+                    "asset": "3",
+                    "info": {
+                      "editorName": "sound",
+                      "x": 508,
+                      "y": 325,
+                      "callback": "this.clickSound"
+                    }
+                  },
+                  {
+                    "type": "button",
+                    "id": "204aa6fa-03b9-48f4-85ea-d4c1bfaf3482",
+                    "asset": "4",
+                    "info": {
+                      "editorName": "jingcai",
+                      "x": 508,
+                      "y": 249,
+                      "callback": "this.clickJingCai"
+                    }
+                  },
+                  {
+                    "type": "button",
+                    "id": "80371a97-cf4e-45f9-83cb-6df017827853",
+                    "asset": "5",
+                    "info": {
+                      "editorName": "rule",
+                      "x": 508,
+                      "y": 173,
+                      "callback": "this.clickRule"
+                    }
+                  },
+                  {
+                    "type": "button",
+                    "id": "73ead117-cc98-4179-99ca-51878203aa41",
+                    "asset": "6",
+                    "info": {
+                      "editorName": "newbie",
+                      "x": 508,
+                      "y": 97,
+                      "callback": "this.clickNewbie"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "group",
+              "id": "83315310-7e2c-45fd-a559-65a36803b55f",
+              "info": {
+                "editorName": "groupRule",
+                "editorPublic": true,
+                "scale.x": 0,
+                "setAll": [],
+                "children": [
+                  {
+                    "type": "atlas-sprite",
+                    "id": "71c64b80-cb3d-44fd-9431-30aadcd038b2",
+                    "asset": "7",
+                    "info": {
+                      "editorName": "rule_png",
+                      "x": 47,
+                      "y": 125
+                    }
+                  },
+                  {
+                    "type": "button",
+                    "id": "09a4d4df-495f-4b05-be46-79e280c0d74a",
+                    "asset": "8",
+                    "info": {
+                      "editorName": "close_png",
+                      "x": 607,
+                      "y": 130,
+                      "callback": "this.clickMenu"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "group",
+              "id": "6cbef973-ecbe-46d0-81a5-10270384038f",
+              "info": {
+                "editorName": "groupJingChai",
+                "editorPublic": true,
+                "setAll": [],
+                "children": [
+                  {
+                    "type": "atlas-sprite",
+                    "id": "99ccf5d3-bb8d-4634-830f-e6df919e8d3b",
+                    "asset": "9",
+                    "info": {
+                      "editorName": "bg__2__png",
+                      "x": 47.000030517578125,
+                      "y": 125
+                    }
+                  },
+                  {
+                    "type": "button",
+                    "id": "9dd7d2fc-ac37-4b1e-abba-cead023eb79f",
+                    "asset": "8",
+                    "info": {
+                      "editorName": "close_png1",
+                      "x": 611,
+                      "y": 131,
+                      "callback": "this.clickMenu"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "25d3e9d1-8b67-408b-ae2e-fb408cf66eb3",
+                    "info": {
+                      "editorName": "text",
+                      "x": 312,
+                      "y": 152,
+                      "text": "¾º²Â¼ÇÂ¼",
+                      "style.fontSize": 34,
+                      "style.fill": "#111111"
+                    }
+                  },
+                  {
+                    "type": "group",
+                    "id": "6370861e-bdc2-411e-90e7-44797415b7f9",
+                    "info": {
+                      "editorName": "groupOne",
+                      "editorPublic": true,
+                      "setAll": [],
+                      "children": []
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }]
+    }
+  },
+  "type": "GROUP",
+  "asset-table": {
+    "0": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "main",
+      "asset": "bg",
+      "sprite": "exchangebg.png"
+    },
+    "1": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "main",
+      "asset": "btn",
+      "sprite": "set.png"
+    },
+    "2": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "main",
+      "asset": "btn",
+      "sprite": "music1.png"
+    },
+    "3": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "main",
+      "asset": "btn",
+      "sprite": "sound1.png"
+    },
+    "4": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "main",
+      "asset": "btn",
+      "sprite": "jingcai.png"
+    },
+    "5": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "main",
+      "asset": "btn",
+      "sprite": "gameroule.png"
+    },
+    "6": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "main",
+      "asset": "btn",
+      "sprite": "xinshou.png"
+    },
+    "7": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "boot",
+      "asset": "pop",
+      "sprite": "rule.png"
+    },
+    "8": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "boot",
+      "asset": "pop",
+      "sprite": "close.png"
+    },
+    "9": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "boot",
+      "asset": "pop",
+      "sprite": "bg (2).png"
+    }
+  },
+  "prefab-table": {}
+}

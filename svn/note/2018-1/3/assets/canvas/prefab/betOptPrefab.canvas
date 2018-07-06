@@ -1,0 +1,278 @@
+{
+  "canvas-version": 2,
+  "settings": {
+    "className": "betOptPrefab",
+    "sceneWidth": 216,
+    "sceneHeight": 213,
+    "generateOnSave": true,
+    "enableStepping": false,
+    "stepWidth": 1,
+    "stepHeight": 1,
+    "lang": "JAVA_SCRIPT",
+    "baseClass": "Phaser.Group",
+    "backgroundColor": [
+      180,
+      180,
+      180
+    ],
+    "gridColor": [
+      200,
+      200,
+      200
+    ],
+    "showGrid": true
+  },
+  "stateSettings": {
+    "stageBackgroundColor": [
+      0,
+      0,
+      0
+    ],
+    "autoLoad": true,
+    "preloadSpriteId": "",
+    "preloadSprite_direction": 0,
+    "load.pack": []
+  },
+  "world": {
+    "type": "group",
+    "id": "b5725d73-fede-4962-9232-a504ffd8ee0f",
+    "info": {
+      "editorName": "root",
+      "setAll": [],
+      "children": [{
+        "type": "group",
+        "id": "fde0a5f4-0589-437a-90f1-c03920ef463d",
+        "info": {
+          "editorName": "group",
+          "setAll": [],
+          "children": [
+            {
+              "type": "button",
+              "id": "6db4021a-df7c-4ce6-bece-297a3180fdec",
+              "asset": "0",
+              "info": {
+                "editorName": "betBtn",
+                "editorPublic": true,
+                "data": "{\r\n\"idx\":1\r\n}",
+                "callback": "this.clickBet"
+              }
+            },
+            {
+              "type": "atlas-sprite",
+              "id": "a47c7a49-555c-4ef2-ae55-4e3300a17258",
+              "asset": "1",
+              "info": {
+                "editorName": "main_png",
+                "editorPublic": true,
+                "x": 54.5,
+                "y": 17
+              }
+            },
+            {
+              "type": "group",
+              "id": "13d03259-ff12-4c68-8f92-91b48dcdb4ac",
+              "info": {
+                "editorName": "groupPrice",
+                "editorPublic": true,
+                "x": 44,
+                "y": 166,
+                "setAll": [],
+                "children": [
+                  {
+                    "type": "atlas-sprite",
+                    "id": "c8c82617-a629-462f-bb00-28b1d692d375",
+                    "asset": "2",
+                    "info": {
+                      "editorName": "priceDa",
+                      "editorPublic": true,
+                      "y": -91.99999618530273
+                    }
+                  },
+                  {
+                    "type": "atlas-sprite",
+                    "id": "08210d95-267f-474a-a3cf-5db3e4ca07f8",
+                    "asset": "3",
+                    "info": {
+                      "editorName": "priceDian",
+                      "editorPublic": true,
+                      "x": 39,
+                      "y": -54.999996185302734
+                    }
+                  },
+                  {
+                    "type": "atlas-sprite",
+                    "id": "bab4aead-ecba-412f-9a73-02243c0fb38e",
+                    "asset": "4",
+                    "info": {
+                      "editorName": "priceX1",
+                      "editorPublic": true,
+                      "x": 50,
+                      "y": -70.99999618530273
+                    }
+                  },
+                  {
+                    "type": "atlas-sprite",
+                    "id": "db588bff-0853-439d-ab47-a1dc4bbd3aeb",
+                    "asset": "5",
+                    "info": {
+                      "editorName": "priceX2",
+                      "editorPublic": true,
+                      "x": 73,
+                      "y": -70.99999618530273
+                    }
+                  },
+                  {
+                    "type": "atlas-sprite",
+                    "id": "09875230-c127-4199-894c-80df908bafce",
+                    "asset": "6",
+                    "info": {
+                      "editorName": "priceBei",
+                      "editorPublic": true,
+                      "x": 95,
+                      "y": -74.99999618530273
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "group",
+              "id": "95be1e0b-5037-4369-9237-ace5a7f4a0c8",
+              "info": {
+                "editorName": "groupPower",
+                "setAll": [],
+                "children": [
+                  {
+                    "type": "text",
+                    "id": "8cf04c0c-7060-4ea8-a956-313777632e43",
+                    "info": {
+                      "editorName": "countTotal",
+                      "editorPublic": true,
+                      "x": 103,
+                      "y": 172,
+                      "text": "0",
+                      "style.fontSize": 24,
+                      "style.fill": "#ffff00"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "6159d028-f353-4d57-bf01-d567f89000e9",
+                    "info": {
+                      "editorName": "countMine",
+                      "editorPublic": true,
+                      "x": 103,
+                      "y": 137,
+                      "text": "0",
+                      "style.fontSize": 24,
+                      "style.fill": "#ffffff"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "group",
+              "id": "f9c9dcb0-a718-49f6-85a4-1c6bd062fec9",
+              "info": {
+                "editorName": "groupFlyText",
+                "setAll": [],
+                "children": []
+              }
+            },
+            {
+              "type": "group",
+              "id": "3bfe3fed-2b54-4d96-8130-3162723115a6",
+              "info": {
+                "editorName": "groupWin",
+                "setAll": [],
+                "children": [
+                  {
+                    "type": "atlas-sprite",
+                    "id": "bad69dfd-7d97-457c-b62e-746d3ca359c5",
+                    "asset": "7",
+                    "info": {
+                      "editorName": "guang_png",
+                      "editorPublic": true,
+                      "x": -17,
+                      "y": -18
+                    }
+                  },
+                  {
+                    "type": "atlas-sprite",
+                    "id": "1ef7686c-53bd-4e5f-98f6-bd82ff8c9f32",
+                    "asset": "8",
+                    "info": {
+                      "editorName": "win_png",
+                      "editorPublic": true,
+                      "x": 44,
+                      "y": 8
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }]
+    }
+  },
+  "type": "GROUP",
+  "asset-table": {
+    "0": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "main",
+      "asset": "bg",
+      "sprite": "betChoice1.png"
+    },
+    "1": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "main",
+      "asset": "text",
+      "sprite": "main.png"
+    },
+    "2": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "main",
+      "asset": "text",
+      "sprite": "l_d2.png"
+    },
+    "3": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "main",
+      "asset": "text",
+      "sprite": "l_dian.png"
+    },
+    "4": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "main",
+      "asset": "text",
+      "sprite": "l_9.png"
+    },
+    "5": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "main",
+      "asset": "text",
+      "sprite": "l_4.png"
+    },
+    "6": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "main",
+      "asset": "text",
+      "sprite": "l_bei.png"
+    },
+    "7": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "main",
+      "asset": "bg2",
+      "sprite": "guang.png"
+    },
+    "8": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "main",
+      "asset": "bg2",
+      "sprite": "win.png"
+    }
+  },
+  "prefab-table": {}
+}

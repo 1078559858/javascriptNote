@@ -1,0 +1,71 @@
+{
+  "canvas-version": 2,
+  "settings": {
+    "className": "Level",
+    "sceneWidth": 750,
+    "sceneHeight": 1206,
+    "generateOnSave": true,
+    "enableStepping": false,
+    "lang": "JAVA_SCRIPT",
+    "baseClass": "Phaser.State",
+    "backgroundColor": [
+      180,
+      180,
+      180
+    ],
+    "gridColor": [
+      200,
+      200,
+      200
+    ],
+    "showGrid": true,
+    "create_after": "\r\n\r\n"
+  },
+  "stateSettings": {
+    "scaleMode": "SHOW_ALL",
+    "pageAlignHorizontally": true,
+    "pageAlignVertically": true,
+    "stageBackgroundColor": [
+      255,
+      255,
+      255
+    ],
+    "autoLoad": true,
+    "preloadSpriteId": "",
+    "preloadSprite_direction": 0,
+    "load.pack": []
+  },
+  "world": {
+    "type": "group",
+    "id": "8a0fc0bc-e3be-4656-9585-f855ac8ba0bb",
+    "info": {
+      "editorName": "Level",
+      "setAll": [],
+      "children": [
+        {
+          "type": "text",
+          "id": "1caab328-1560-4093-9221-f7313302024f",
+          "info": {
+            "editorName": "hellowText",
+            "x": 343.9580078125,
+            "y": 292.2246398925781,
+            "text": "Hello world!"
+          }
+        },
+        {
+          "type": "text",
+          "id": "479d34ab-3afa-4877-8916-2971c653a5e6",
+          "info": {
+            "editorName": "text",
+            "x": 287,
+            "y": 373,
+            "text": "This is a text"
+          }
+        }
+      ]
+    }
+  },
+  "type": "STATE",
+  "asset-table": {},
+  "prefab-table": {}
+}

@@ -1,0 +1,130 @@
+{
+  "canvas-version": 2,
+  "settings": {
+    "className": "disConnectLayer",
+    "sceneWidth": 750,
+    "sceneHeight": 1206,
+    "generateOnSave": true,
+    "enableStepping": false,
+    "lang": "JAVA_SCRIPT",
+    "baseClass": "Phaser.Group",
+    "backgroundColor": [
+      180,
+      180,
+      180
+    ],
+    "gridColor": [
+      200,
+      200,
+      200
+    ],
+    "showGrid": true
+  },
+  "stateSettings": {
+    "stageBackgroundColor": [
+      0,
+      0,
+      0
+    ],
+    "autoLoad": true,
+    "preloadSpriteId": "",
+    "preloadSprite_direction": 0,
+    "load.pack": []
+  },
+  "world": {
+    "type": "group",
+    "id": "0e196ad1-4c8f-453b-a945-3c4327dae147",
+    "info": {
+      "editorName": "root",
+      "setAll": [],
+      "children": [{
+        "type": "group",
+        "id": "afc6245f-d818-4231-93fc-5c05d0923552",
+        "info": {
+          "editorName": "group",
+          "setAll": [],
+          "children": [
+            {
+              "type": "button",
+              "id": "3e8041b9-6227-42e7-bd03-d0ad1b8f0023",
+              "asset": "0",
+              "info": {
+                "editorName": "bgpop",
+                "x": -106,
+                "y": -37,
+                "scale.x": 15,
+                "scale.y": 55
+              }
+            },
+            {
+              "type": "atlas-sprite",
+              "id": "bce76152-7f5e-4248-b646-63fa25783eca",
+              "asset": "1",
+              "info": {
+                "editorName": "bg_png",
+                "x": 54,
+                "y": 465
+              }
+            },
+            {
+              "type": "text",
+              "id": "afa0f716-c968-4450-9621-c7397f726a43",
+              "info": {
+                "editorName": "text1",
+                "x": 288,
+                "y": 485,
+                "text": "断开连接",
+                "style.fontSize": 48
+              }
+            },
+            {
+              "type": "text",
+              "id": "a626ec27-6b62-4740-bc46-ef1ca0777bb2",
+              "info": {
+                "editorName": "textError",
+                "editorPublic": true,
+                "x": 122,
+                "y": 621,
+                "text": "由于您长时间没有操作，已断开链接！",
+                "style.fontSize": 32,
+                "style.fill": "#ffffff"
+              }
+            },
+            {
+              "type": "button",
+              "id": "892f5017-cb64-4d7d-af40-b67d97f344ef",
+              "asset": "2",
+              "info": {
+                "editorName": "relink_png",
+                "x": 260,
+                "y": 703,
+                "callback": "this.clickConnectAgain"
+              }
+            }
+          ]
+        }
+      }]
+    }
+  },
+  "type": "GROUP",
+  "asset-table": {
+    "0": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "boot",
+      "asset": "bgpop"
+    },
+    "1": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "boot",
+      "asset": "pop",
+      "sprite": "bg.png"
+    },
+    "2": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "boot",
+      "asset": "pop",
+      "sprite": "relink.png"
+    }
+  },
+  "prefab-table": {}
+}

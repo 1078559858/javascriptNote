@@ -1,0 +1,158 @@
+{
+  "canvas-version": 2,
+  "settings": {
+    "className": "bonusLayer",
+    "sceneWidth": 750,
+    "sceneHeight": 1206,
+    "generateOnSave": true,
+    "enableStepping": false,
+    "lang": "JAVA_SCRIPT",
+    "baseClass": "Phaser.Group",
+    "backgroundColor": [
+      180,
+      180,
+      180
+    ],
+    "gridColor": [
+      200,
+      200,
+      200
+    ],
+    "showGrid": true
+  },
+  "stateSettings": {
+    "stageBackgroundColor": [
+      0,
+      0,
+      0
+    ],
+    "autoLoad": true,
+    "preloadSpriteId": "",
+    "preloadSprite_direction": 0,
+    "load.pack": []
+  },
+  "world": {
+    "type": "group",
+    "id": "d6e3ed61-353a-4b95-8358-e8609f7100da",
+    "info": {
+      "editorName": "root",
+      "setAll": [],
+      "children": [{
+        "type": "group",
+        "id": "7f23a048-8b78-481c-97b4-d0f51b4a4243",
+        "info": {
+          "editorName": "group",
+          "setAll": [],
+          "children": [
+            {
+              "type": "button",
+              "id": "00f3739a-7811-4bd1-b238-2e207c54c446",
+              "asset": "0",
+              "info": {
+                "editorName": "bgBtn",
+                "editorPublic": true,
+                "scale.x": 0.565,
+                "scale.y": 1.65
+              }
+            },
+            {
+              "type": "text",
+              "id": "3f309bb2-fa62-4bf6-bd93-cb3260bcf781",
+              "info": {
+                "editorName": "text",
+                "x": 280,
+                "y": 158,
+                "text": "结算界面",
+                "style.fontSize": 36,
+                "style.fill": "#ffffff"
+              }
+            },
+            {
+              "type": "text",
+              "id": "cd1b93d3-1ed6-44de-aea0-8e3e8613c715",
+              "info": {
+                "editorName": "text1",
+                "x": 81,
+                "y": 406.9999694824219,
+                "text": "昵称",
+                "style.fontSize": 22,
+                "style.fill": "#ffffff"
+              }
+            },
+            {
+              "type": "text",
+              "id": "db83e137-679c-4847-8297-100a0cf6a822",
+              "info": {
+                "editorName": "text2",
+                "x": 346,
+                "y": 406.9999694824219,
+                "text": "投注",
+                "style.fontSize": 22,
+                "style.fill": "#ffffff"
+              }
+            },
+            {
+              "type": "text",
+              "id": "0668e984-2dc3-4359-ae74-baf0d3b9b8fc",
+              "info": {
+                "editorName": "text3",
+                "x": 619,
+                "y": 406.9999694824219,
+                "text": "返奖",
+                "style.fontSize": 22,
+                "style.fill": "#ffffff"
+              }
+            },
+            {
+              "type": "text",
+              "id": "0f6624e6-6b2d-4579-85af-6b068e02fe92",
+              "info": {
+                "editorName": "textNick",
+                "editorPublic": true,
+                "x": 64,
+                "y": 495,
+                "text": "testNick",
+                "style.fontSize": 22,
+                "style.fill": "#ffff00"
+              }
+            },
+            {
+              "type": "text",
+              "id": "d1d5b300-f186-44f9-a62b-b504c52e66df",
+              "info": {
+                "editorName": "textBet",
+                "editorPublic": true,
+                "x": 367,
+                "y": 496,
+                "text": "0",
+                "style.fontSize": 22,
+                "style.fill": "#ffff00"
+              }
+            },
+            {
+              "type": "text",
+              "id": "d519b8f0-72e5-4686-9858-8db15a63aa55",
+              "info": {
+                "editorName": "textBonus",
+                "editorPublic": true,
+                "x": 641,
+                "y": 498,
+                "text": "0",
+                "style.fontSize": 22,
+                "style.fill": "#ffff00"
+              }
+            }
+          ]
+        }
+      }]
+    }
+  },
+  "type": "GROUP",
+  "asset-table": {"0": {
+    "file": "WebContent/assets/assets-pack.json",
+    "section": "main",
+    "asset": "bg",
+    "sprite": "blackShade.png"
+  }},
+  "prefab-table": {}
+}

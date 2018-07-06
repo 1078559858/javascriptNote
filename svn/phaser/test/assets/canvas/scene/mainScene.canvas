@@ -1,0 +1,250 @@
+{
+  "canvas-version": 2,
+  "settings": {
+    "className": "mainScene",
+    "sceneWidth": 750,
+    "sceneHeight": 1206,
+    "generateOnSave": true,
+    "enableStepping": false,
+    "lang": "JAVA_SCRIPT",
+    "baseClass": "Phaser.Group",
+    "backgroundColor": [
+      180,
+      180,
+      180
+    ],
+    "gridColor": [
+      200,
+      200,
+      200
+    ],
+    "showGrid": true
+  },
+  "stateSettings": {
+    "stageBackgroundColor": [
+      0,
+      0,
+      0
+    ],
+    "autoLoad": true,
+    "preloadSpriteId": "",
+    "preloadSprite_direction": 0,
+    "load.pack": []
+  },
+  "world": {
+    "type": "group",
+    "id": "d3be8590-a557-48bd-adc2-a5252d3d3d75",
+    "info": {
+      "editorName": "mainScene",
+      "setAll": [],
+      "children": [{
+        "type": "group",
+        "id": "cde28136-f23c-43e6-b3ce-ece0163ebe55",
+        "info": {
+          "editorName": "group",
+          "setAll": [],
+          "children": [
+            {
+              "type": "atlas-sprite",
+              "id": "9d10802d-e474-443b-8b0e-3bd85054b5e1",
+              "asset": "0",
+              "info": {"editorName": "mainbg_png"}
+            },
+            {
+              "type": "prefab",
+              "prefab": "0",
+              "id": "5d2ef974-1762-483e-92a5-ed74ccc304a5",
+              "info": {
+                "editorName": "betPrefab",
+                "editorPublic": true,
+                "x": 2,
+                "y": 1086
+              }
+            },
+            {
+              "type": "prefab",
+              "prefab": "1",
+              "id": "a7b0fa4e-987b-4c9a-b1b3-6b050cd623fc",
+              "info": {
+                "editorName": "betChoicePrefab",
+                "editorPick": false,
+                "editorPublic": true,
+                "x": 17,
+                "y": 645
+              }
+            },
+            {
+              "type": "prefab",
+              "prefab": "2",
+              "id": "33a3103f-2aac-4c19-98c1-4d4aa6aee877",
+              "info": {
+                "editorName": "playerPrefab",
+                "editorPick": false,
+                "editorPublic": true,
+                "x": 9,
+                "y": 17
+              }
+            },
+            {
+              "type": "prefab",
+              "prefab": "3",
+              "id": "8054f4fe-4ade-49cb-bd3b-f9fe3ea3774f",
+              "info": {
+                "editorName": "ballgroundPrefab",
+                "editorPick": false,
+                "editorPublic": true,
+                "x": 10,
+                "y": 112
+              }
+            },
+            {
+              "type": "group",
+              "id": "c0e0ae85-27e9-4913-b656-81771081490a",
+              "info": {
+                "editorName": "menu_group",
+                "setAll": [],
+                "children": [
+                  {
+                    "type": "button",
+                    "id": "bc4fb42c-e2f7-4c23-b91f-a9da15fe002f",
+                    "asset": "1",
+                    "info": {
+                      "editorName": "btn_menu",
+                      "x": 662,
+                      "y": 7,
+                      "callback": "this.clickMenu"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "74aad5e6-4e2b-4bfb-a633-33a28be4b842",
+                    "info": {
+                      "editorName": "bonusText",
+                      "editorPublic": true,
+                      "x": 299,
+                      "y": 121,
+                      "scale.x": 0,
+                      "text": "+100000",
+                      "style.fontSize": 36,
+                      "style.fill": "#ff0000"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "b7852ec6-0007-400e-8938-e24c6a836851",
+                    "info": {
+                      "editorName": "gameNum",
+                      "editorPublic": true,
+                      "x": 321,
+                      "y": 22,
+                      "text": "µÚ 1 ¾Ö",
+                      "style.fontSize": 36,
+                      "style.fill": "#ffffff"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "e00f2bc0-4774-45d9-b33e-41690ac6c3a5",
+                    "info": {
+                      "editorName": "winText",
+                      "editorPublic": true,
+                      "x": 351,
+                      "y": 553,
+                      "style.fontSize": 36,
+                      "style.fill": "#ff0000"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "group",
+              "id": "dfbfa4dc-909a-4dee-8c56-a1cc70948e05",
+              "info": {
+                "editorName": "state",
+                "setAll": [],
+                "children": [
+                  {
+                    "type": "text",
+                    "id": "15d22a36-e1e6-4077-9784-e8c8409f85f2",
+                    "info": {
+                      "editorName": "text_time",
+                      "editorPublic": true,
+                      "x": 370,
+                      "y": 261,
+                      "text": "0",
+                      "style.fontSize": 36,
+                      "style.fill": "#ffffff",
+                      "style.stroke": "#ffffff"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "2c5ae851-b0f3-43fc-86a2-97d7f99e5218",
+                    "info": {
+                      "editorName": "text_tip",
+                      "editorPublic": true,
+                      "x": 354,
+                      "y": 466,
+                      "style.fontSize": 36,
+                      "style.fill": "#ffff00",
+                      "style.stroke": "#ffffff"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "id": "0a0e3cf4-7255-424e-8338-fd3eaa4eb7ed",
+                    "info": {
+                      "editorName": "text_score",
+                      "editorPublic": true,
+                      "x": 358,
+                      "y": 353,
+                      "text": "0",
+                      "style.fontSize": 36,
+                      "style.fill": "#ffffff",
+                      "style.stroke": "#ffffff"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "prefab",
+              "prefab": "4",
+              "id": "c09459bf-62f9-46c7-ade5-d19627930dd8",
+              "info": {
+                "editorName": "bonusLayer",
+                "editorPublic": true,
+                "editorShow": false,
+                "x": 0,
+                "y": 0
+              }
+            }
+          ]
+        }
+      }]
+    }
+  },
+  "type": "GROUP",
+  "asset-table": {
+    "0": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "main",
+      "asset": "bg",
+      "sprite": "mainbg.png"
+    },
+    "1": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "main",
+      "asset": "btn",
+      "sprite": "set.png"
+    }
+  },
+  "prefab-table": {
+    "0": "WebContent/assets/canvas/prefab/bet.canvas",
+    "1": "WebContent/assets/canvas/prefab/betChoicePrefab.canvas",
+    "2": "WebContent/assets/canvas/prefab/player.canvas",
+    "3": "WebContent/assets/canvas/prefab/ballgroundPrefab.canvas",
+    "4": "WebContent/assets/canvas/layer/bonusLayer.canvas"
+  }
+}

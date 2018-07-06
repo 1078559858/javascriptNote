@@ -1,0 +1,141 @@
+{
+  "canvas-version": 2,
+  "settings": {
+    "className": "shopLayer",
+    "sceneWidth": 750,
+    "sceneHeight": 1206,
+    "generateOnSave": true,
+    "enableStepping": false,
+    "lang": "JAVA_SCRIPT",
+    "baseClass": "Phaser.Group",
+    "backgroundColor": [
+      180,
+      180,
+      180
+    ],
+    "gridColor": [
+      200,
+      200,
+      200
+    ],
+    "showGrid": true
+  },
+  "stateSettings": {
+    "stageBackgroundColor": [
+      0,
+      0,
+      0
+    ],
+    "autoLoad": true,
+    "preloadSpriteId": "",
+    "preloadSprite_direction": 0,
+    "load.pack": []
+  },
+  "world": {
+    "type": "group",
+    "id": "09c923c6-75e7-41d3-a45d-adebe756fbe0",
+    "info": {
+      "editorName": "root",
+      "setAll": [],
+      "children": [{
+        "type": "group",
+        "id": "722642bd-9805-4c2f-a865-0ec96c419ed6",
+        "info": {
+          "editorName": "group",
+          "setAll": [],
+          "children": [
+            {
+              "type": "button",
+              "id": "c25c1d2b-8381-4455-94ef-ab3458aff7a1",
+              "asset": "0",
+              "info": {
+                "editorName": "blackShade_png",
+                "scale.x": 0.565,
+                "scale.y": 1.65
+              }
+            },
+            {
+              "type": "button",
+              "id": "400ec936-5c34-4d23-b508-2db59ec43e09",
+              "asset": "1",
+              "info": {
+                "editorName": "close1_png",
+                "x": 552,
+                "y": 118,
+                "callback": "this.clickClose"
+              }
+            },
+            {
+              "type": "text",
+              "id": "543df0dc-3ef6-4e8a-902b-6363af5a6d6e",
+              "info": {
+                "editorName": "text",
+                "x": 310,
+                "y": 111,
+                "text": "商店界面",
+                "style.fontSize": 36,
+                "style.fill": "#ffffff"
+              }
+            },
+            {
+              "type": "button",
+              "id": "26d08a2a-aab1-4fa4-8251-2e9934497dcb",
+              "asset": "2",
+              "info": {
+                "editorName": "btn_png",
+                "x": 443,
+                "y": 491,
+                "callback": "this.clickBuy"
+              }
+            },
+            {
+              "type": "text",
+              "id": "a64914d7-75b9-48b4-89ce-45c4c44a5662",
+              "info": {
+                "editorName": "text1",
+                "x": 37,
+                "y": 575,
+                "text": "点击按钮购买1W游戏币",
+                "style.fontSize": 36,
+                "style.fill": "#ffffff"
+              }
+            },
+            {
+              "type": "text",
+              "id": "4ad0388f-0453-4204-bd50-8cfe2888efc1",
+              "info": {
+                "editorName": "text2",
+                "x": 510,
+                "y": 570,
+                "text": "购买",
+                "style.fontSize": 36
+              }
+            }
+          ]
+        }
+      }]
+    }
+  },
+  "type": "GROUP",
+  "asset-table": {
+    "0": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "main",
+      "asset": "bg",
+      "sprite": "blackShade.png"
+    },
+    "1": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "main",
+      "asset": "btn",
+      "sprite": "close1.png"
+    },
+    "2": {
+      "file": "WebContent/assets/assets-pack.json",
+      "section": "main",
+      "asset": "btn",
+      "sprite": "btn.png"
+    }
+  },
+  "prefab-table": {}
+}

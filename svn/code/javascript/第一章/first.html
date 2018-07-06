@@ -1,0 +1,42 @@
+<html>
+<head>
+	<script type="text/javascript" src="library.js"></script>
+	<script type="text/javascript" src="debug.js"></script>
+	<script type="text/javascript" src="hide.js"></script>
+	hello
+	<button onclick="hide(this, true); debug('hide button 1');">hide</button>
+	<button onclick="hide(this); debug('hide button 2');">hide2</button>
+	world
+	<body>
+		<p>this is a paragraph of HTML</p>
+		<script type="text/javascript">
+			//在这里编写代码
+			function moveon(){
+				var answer = confirm("准备好了吗?");
+				if(answer) window.location = "http://taobao.com";
+			}
+			setTimeout(moveon, 100000);
+
+			debug("debug");
+			//hide('debuglog', true);
+
+			window.onload = function(){
+				var images = document.getElimentsByTagName('img');
+				for(var i = 0; i < images.length; i++){
+					var image = images[i];
+					if(image.addEventListener){
+						image.addEventListener('click', hide, false);
+					}else{
+						image.attachEvent('onclick', hide);
+					}
+				}
+
+				function hide(event){
+					event.target.style.visibility = "hidden";
+				}
+			}
+		</script>
+		<p>here is more HTML.</p>
+	</body>
+</head>
+</html>
